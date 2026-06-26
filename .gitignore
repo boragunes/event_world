@@ -1,0 +1,25 @@
+# --- Raw datasets (large): never committed. Fetch via datasets/*/download_*.sh ---
+/data/
+*.bag
+*.bag.bz2
+*.h5
+*.hdf5
+*.raw
+*.zip
+*.bz2
+
+# --- evo raw result archives (keep metrics.json + plots instead) ---
+*.zip
+
+# --- Python / virtualenv ---
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# --- Harness / editor / OS local files ---
+.claude/
+.vscode/
+.idea/
+.DS_Store
+*.swp
