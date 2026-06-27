@@ -14,7 +14,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # --- Miniconda (provides the Python 3.10 the env pins) ---
 ENV CONDA_DIR=/opt/conda PATH=/opt/conda/bin:$PATH
 RUN wget -q https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /tmp/mc.sh \
- && bash /tmp/mc.sh -b -p $CONDA_DIR && rm /tmp/mc.sh && conda config --set always_yes true
+ && bash /tmp/mc.sh -b -p $CONDA_DIR && rm /tmp/mc.sh && conda config --set always_yes true \
+ && conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main \
+ && conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
 
 # --- Upstream DEIO, pinned ---
 ARG DEIO_COMMIT=47dcc275e9a0fd4fc00c130340e29452a9d510c5
@@ -23,6 +25,8 @@ RUN git clone https://github.com/arclab-hku/DEIO /opt/DEIO \
 WORKDIR /opt/DEIO
 
 # --- Conda env (PyTorch 2.3.1 + cu118 + pytorch-scatter + evo + ...) ---
+# Non-interactively accept the Anaconda default-channel ToS (env.yml lists `defaults`).
+ENV CONDA_PLUGINS_AUTO_ACCEPT_TOS=yes
 RUN conda env create -f environment.yml && conda clean -afy
 SHELL ["conda", "run", "--no-capture-output", "-n", "DEIO", "/bin/bash", "-c"]
 
