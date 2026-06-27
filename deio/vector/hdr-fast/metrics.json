@@ -1,0 +1,43 @@
+{
+  "label": "deio/vector/hdr-fast (Sim3)",
+  "algo": "deio",
+  "dataset": null,
+  "sequence": null,
+  "generated_utc": "2026-06-27T17:40:11+00:00",
+  "evo_version": "v1.36.5",
+  "est_file": "deio/vector/hdr-fast/stamped_traj.tum",
+  "gt_file": "deio/vector/hdr-fast/hdr-fast_gt.txt",
+  "alignment": "sim3",
+  "n_poses_matched": 1183,
+  "n_poses_est_raw": 1183,
+  "gt_trajectory_length_m": 19.167,
+  "duration_s": 39.4,
+  "ate_translation_m": {
+    "rmse": 0.057818,
+    "mean": 0.045709,
+    "median": 0.039616,
+    "std": 0.035406,
+    "min": 0.004935,
+    "max": 0.525925,
+    "sse": 3.95464
+  },
+  "rotation_deg": {
+    "body_frame_offset_deg": 176.105,
+    "residual_after_offset": {
+      "rmse": 2.203536,
+      "mean": 1.947599,
+      "median": 1.796518,
+      "std": 1.030741,
+      "min": 0.101034,
+      "max": 7.603594,
+      "sse": 5744.14078
+    },
+    "note": "absolute orientation error AFTER removing the constant estimator-vs-GT body-frame offset"
+  },
+  "paper_metric": {
+    "MPE_percent_ate": 0.3017,
+    "MPE_percent_rel_1m": 5.2055,
+    "MRE_deg_per_m_rel_1m": 2.45274,
+    "note": "MPE_ate = 100*ATE_trans_RMSE/length (paper SE3 convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
+  }
+}

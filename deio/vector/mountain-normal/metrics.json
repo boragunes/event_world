@@ -1,0 +1,43 @@
+{
+  "label": "deio/vector/mountain-normal (Sim3)",
+  "algo": "deio",
+  "dataset": null,
+  "sequence": null,
+  "generated_utc": "2026-06-27T17:40:04+00:00",
+  "evo_version": "v1.36.5",
+  "est_file": "deio/vector/mountain-normal/stamped_traj.tum",
+  "gt_file": "deio/vector/mountain-normal/mountain-normal_gt.txt",
+  "alignment": "sim3",
+  "n_poses_matched": 1774,
+  "n_poses_est_raw": 1774,
+  "gt_trajectory_length_m": 8.1275,
+  "duration_s": 59.1,
+  "ate_translation_m": {
+    "rmse": 0.110759,
+    "mean": 0.062212,
+    "median": 0.041573,
+    "std": 0.091637,
+    "min": 0.011072,
+    "max": 0.722662,
+    "sse": 21.762696
+  },
+  "rotation_deg": {
+    "body_frame_offset_deg": 179.114,
+    "residual_after_offset": {
+      "rmse": 0.440269,
+      "mean": 0.398022,
+      "median": 0.377713,
+      "std": 0.188189,
+      "min": 0.009997,
+      "max": 1.452426,
+      "sse": 343.865916
+    },
+    "note": "absolute orientation error AFTER removing the constant estimator-vs-GT body-frame offset"
+  },
+  "paper_metric": {
+    "MPE_percent_ate": 1.3628,
+    "MPE_percent_rel_1m": 7.7654,
+    "MRE_deg_per_m_rel_1m": 0.56648,
+    "note": "MPE_ate = 100*ATE_trans_RMSE/length (paper SE3 convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "label": "deio/vector/desk-normal (Sim3)",
+  "algo": "deio",
+  "dataset": null,
+  "sequence": null,
+  "generated_utc": "2026-06-27T17:39:50+00:00",
+  "evo_version": "v1.36.5",
+  "est_file": "deio/vector/desk-normal/stamped_traj.tum",
+  "gt_file": "deio/vector/desk-normal/desk-normal_gt.txt",
+  "alignment": "sim3",
+  "n_poses_matched": 2500,
+  "n_poses_est_raw": 2500,
+  "gt_trajectory_length_m": 8.559,
+  "duration_s": 89.0,
+  "ate_translation_m": {
+    "rmse": 0.028848,
+    "mean": 0.025368,
+    "median": 0.023067,
+    "std": 0.013735,
+    "min": 0.002029,
+    "max": 0.068493,
+    "sse": 2.080507
+  },
+  "rotation_deg": {
+    "body_frame_offset_deg": 44.134,
+    "residual_after_offset": {
+      "rmse": 27.822321,
+      "mean": 25.358329,
+      "median": 23.22025,
+      "std": 11.447126,
+      "min": 3.279548,
+      "max": 55.339015,
+      "sse": 1935203.860073
+    },
+    "note": "absolute orientation error AFTER removing the constant estimator-vs-GT body-frame offset"
+  },
+  "paper_metric": {
+    "MPE_percent_ate": 0.337,
+    "MPE_percent_rel_1m": 11.3538,
+    "MRE_deg_per_m_rel_1m": 37.54141,
+    "note": "MPE_ate = 100*ATE_trans_RMSE/length (paper SE3 convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
+  }
+}
