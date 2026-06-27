@@ -1,11 +1,0 @@
-[0m[INFO] [1782559920.921798117]: Opening /data/sofa-normal_left_event_dvs.bag[0m
-[0m[INFO] [1782559920.939334026]: Opening /data/sofa-normal_right_event_dvs.bag[0m
-[0m[INFO] [1782559920.945636882]: Opening /data/sofa-normal_imu.bag[0m
-[0m[INFO] [1782559920.950128253]: Opening /data/sofa-normal_left_camera.bag[0m
-[0m[INFO] [1782559921.149377354]: Opening /data/sofa-normal_right_camera.bag[0m
-
-Waiting 0.2 seconds after advertising topics... done.
-
-Hit space to toggle paused, or 's' to step.
- [RUNNING]  Bag Time: 1642515318.780882   Duration: 0.000000 / 91.022597                [RUNNING]  Bag Time: 1642515318.780949   Duration: 0.000067 / 91.022597                [RUNNING]  Bag Time: 1642515318.786056   Duration: 0.005173 / 91.022597                [RUNNING]  Bag Time: 1642515318.791080   Duration: 0.010197 / 91.022597                [RUNNING]  Bag Time: 1642515318.796078   Duration: 0.015196 / 91.022597                [RUNNING]  Bag Time: 1642515318.801082   Duration: 0.020200 / 91.022597                [RUNNING]  Bag Time: 1642515318.802446   Duration: 0.021564 / 91.022597                [RUNNING]  Bag Time: 1642515318.803545   Duration: 0.022662 / 91.022597                [RUNNING]  Bag Time: 1642515318.805950   Duration: 0.025068 / 91.022597                [RUNNING]  Bag Time: 1642515318.821542   Duration: 0.040659 / 91.022597                [RUNNING]  Bag Time: 1642515318.825955   Duration: 0.045073 / 91.022597                [RUNNING]  Bag Time: 1642515318.831595   Duration: 0.050713 / 91.022597                [RUNNING]  Bag Time: 1642515318.835658   Duration: 0.054776 / 91.022597                [RUNNING]  Bag Time: 1642515318.835949   Duration: 0.055066 / 91.022597                [RUNNING]  Bag Time: 1642515318.836884   Duration: 0.056001 / 91.022597                [RUNNING]  Bag Time: 1642515318.841650   Duration: 0.060767 / 91.022597               
-Done.

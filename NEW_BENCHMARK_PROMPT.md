@@ -48,11 +48,15 @@ the Dockerfile, run scripts, estimated trajectories, ground truth, metrics and p
    before tuning. Never cherry-pick.
 
 ### Folder structure to create/populate
+Each algorithm is a self-contained top-level folder: the container + run scripts **and** its
+per-dataset/sequence results live together under `{algo}/`.
 ```
-algorithms/{algo}/  Dockerfile, build.sh, run_{algo}.sh, run_in_container.sh, launch/, README.md
-datasets/{dataset}/ download_{dataset}.sh
-scripts/            evaluate.py, run_and_eval.sh         (reuse existing ones if present)
-results/{algo}/{dataset}/{seq}/   COMMITTED: stamped_traj.tum, gt.txt, metrics.json, plots, logs
+{algo}/             Dockerfile, build.sh, run_{algo}.sh, run_in_container.sh,
+                    run_and_eval.sh, launch/, README.md      (the algorithm itself)
+{algo}/{dataset}/{seq}/   COMMITTED: stamped_traj.tum, {seq}_gt.txt, metrics.json,
+                          trajectory_xy.pdf/.png, ape_translation.pdf/.png
+datasets/{dataset}/ download_{dataset}.sh, import_{dataset}_bags.sh   (shared fetchers)
+scripts/            evaluate.py, prophesee_to_dvs_bag.py    (shared tooling; reuse if present)
 docs/validation/{algo}_{dataset}.md     our numbers vs the papers, honest
 data/{dataset}/{seq}/    raw bags (gitignored)
 ```

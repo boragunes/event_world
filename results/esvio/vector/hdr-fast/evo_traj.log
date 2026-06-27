@@ -1,6 +1,0 @@
-[93mInitialized new /root/.evo/settings.json[39m
---------------------------------------------------------------------------------
-name:	/stereo_esvio_estimator/odometry
-infos:	392 poses, 17.861m path length, 39.100s duration
---------------------------------------------------------------------------------
-Trajectory saved to: stereo_esvio_estimator_odometry.tum

@@ -95,8 +95,8 @@ def main():
     a = ap.parse_args()
 
     if a.dataset and a.seq:
-        a.est = a.est or f"{REPO}/results/{a.algo}/{a.dataset}/{a.seq}/stamped_traj.tum"
-        a.out_dir = a.out_dir or f"{REPO}/results/{a.algo}/{a.dataset}/{a.seq}"
+        a.est = a.est or f"{REPO}/{a.algo}/{a.dataset}/{a.seq}/stamped_traj.tum"
+        a.out_dir = a.out_dir or f"{REPO}/{a.algo}/{a.dataset}/{a.seq}"
         a.label = a.label or f"{a.algo}/{a.dataset}/{a.seq}"
         if not a.gt and a.dataset == "vector":
             a.gt = f"{REPO}/data/{a.dataset}/{a.seq}/{a.seq}_gt_txt.txt"
@@ -182,6 +182,7 @@ def main():
         ax.set_title(f"{a.label}  ATE RMSE={ate_rmse:.3f} m  MPE(rel)={rel_trans_pct:.2f}%")
         ax.legend()
         fig.savefig(os.path.join(a.out_dir, "trajectory_xy.png"), dpi=120, bbox_inches="tight")
+        fig.savefig(os.path.join(a.out_dir, "trajectory_xy.pdf"), bbox_inches="tight")
         plt.close(fig)
 
         fig = plt.figure(figsize=(10, 4))
@@ -191,6 +192,7 @@ def main():
         plt.title(f"{a.label} — APE over time")
         plt.grid(True, alpha=0.3)
         fig.savefig(os.path.join(a.out_dir, "ape_translation.png"), dpi=120, bbox_inches="tight")
+        fig.savefig(os.path.join(a.out_dir, "ape_translation.pdf"), bbox_inches="tight")
         plt.close(fig)
     except Exception as e:  # plotting must never block metrics
         print(f"WARN: plotting failed: {e}")

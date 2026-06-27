@@ -1,11 +1,0 @@
-[0m[INFO] [1782558755.902222853]: Opening /data/desk-normal_left_event_dvs.bag[0m
-[0m[INFO] [1782558755.919417420]: Opening /data/desk-normal_right_event_dvs.bag[0m
-[0m[INFO] [1782558755.923690583]: Opening /data/desk-normal_imu.bag[0m
-[0m[INFO] [1782558755.941783534]: Opening /data/desk-normal_left_camera.bag[0m
-[0m[INFO] [1782558756.139076478]: Opening /data/desk-normal_right_camera.bag[0m
-
-Waiting 0.2 seconds after advertising topics... done.
-
-Hit space to toggle paused, or 's' to step.
- [RUNNING]  Bag Time: 1642647813.062094   Duration: 0.000000 / 91.220813                [RUNNING]  Bag Time: 1642647813.062159   Duration: 0.000065 / 91.220813                [RUNNING]  Bag Time: 1642647813.067202   Duration: 0.005108 / 91.220813                [RUNNING]  Bag Time: 1642647813.072195   Duration: 0.010101 / 91.220813                [RUNNING]  Bag Time: 1642647813.077222   Duration: 0.015128 / 91.220813               
-Done.

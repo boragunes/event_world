@@ -1,11 +1,0 @@
-[0m[INFO] [1782559642.927644607]: Opening /data/mountain-fast_left_event_dvs.bag[0m
-[0m[INFO] [1782559643.082614236]: Opening /data/mountain-fast_right_event_dvs.bag[0m
-[0m[INFO] [1782559643.222935819]: Opening /data/mountain-fast_imu.bag[0m
-[0m[INFO] [1782559643.225186258]: Opening /data/mountain-fast_left_camera.bag[0m
-[0m[INFO] [1782559643.300104377]: Opening /data/mountain-fast_right_camera.bag[0m
-
-Waiting 0.2 seconds after advertising topics... done.
-
-Hit space to toggle paused, or 's' to step.
- [RUNNING]  Bag Time: 1642669383.042867   Duration: 0.000000 / 31.238456                [RUNNING]  Bag Time: 1642669383.042929   Duration: 0.000061 / 31.238456                [RUNNING]  Bag Time: 1642669383.047780   Duration: 0.004913 / 31.238456                [RUNNING]  Bag Time: 1642669383.047927   Duration: 0.005059 / 31.238456                [RUNNING]  Bag Time: 1642669383.048047   Duration: 0.005179 / 31.238456                [RUNNING]  Bag Time: 1642669383.052931   Duration: 0.010063 / 31.238456                [RUNNING]  Bag Time: 1642669383.058059   Duration: 0.015192 / 31.238456                [RUNNING]  Bag Time: 1642669383.062999   Duration: 0.020132 / 31.238456                [RUNNING]  Bag Time: 1642669383.064440   Duration: 0.021573 / 31.238456                [RUNNING]  Bag Time: 1642669383.064715   Duration: 0.021848 / 31.238456                [RUNNING]  Bag Time: 1642669383.067964   Duration: 0.025097 / 31.238456               
-Done.

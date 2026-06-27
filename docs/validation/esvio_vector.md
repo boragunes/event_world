@@ -29,10 +29,12 @@ Metric = **MPE %** = 100 × ATE-translation-RMSE / length, SE(3) full-trajectory
 | mountain-normal | **0.72 %** | 0.59 | ✅ |
 | hdr-fast | **1.26 %** | — | ✅ |
 | sofa-fast | 2.54 % | 0.17 | ◑ tracks, drifts |
+| hdr-normal | 3.62 % | 0.57 | ◑ tracks, drifts |
 | robot-fast | **init fails** | — | ✗ |
 | mountain-fast | **init fails** | 0.16 | ✗ |
 
-**8/10 good (<3 %), 6 match or beat the papers.**
+**8/11 good (<3 %), 6 match or beat the papers.** Per-sequence trajectories, ground
+truth, metrics, and plots are committed under [`esvio/vector/<seq>/`](../../esvio/vector/).
 
 ## Tuning journey (config-only)
 - **`FIX_CALIB`** — the decisive fix; rescued the upstream config's divergences (e.g. hdr-fast
@@ -55,7 +57,8 @@ changes (out of scope here). They are reported honestly as initialisation failur
 
 ## Reproduce
 ```bash
-algorithms/esvio/build.sh
-datasets/vector/import_vector_bags.sh <dir>   # or download_vector.sh <seq>
-scripts/run_and_eval.sh vector desk-normal    # FIX_CALIB + VECtor IMU model on by default
+esvio/build.sh
+datasets/vector/import_vector_bags.sh <dir>   # or datasets/vector/download_vector.sh <seq>
+esvio/run_and_eval.sh vector desk-normal      # FIX_CALIB + VECtor IMU model on by default
 ```
+Outputs land in `esvio/vector/desk-normal/` (trajectory + GT + metrics + PDF/PNG plots).
