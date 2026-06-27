@@ -1,114 +1,63 @@
-[0m[INFO] [1782547418.423594474]: init begins[0m
-[0m[INFO] [1782547418.426311347]: Loaded config_file: /tmp/esvio_cfg/esvio.yaml[0m
+[0m[INFO] [1782558744.010548440]: init begins[0m
+[0m[INFO] [1782558744.013222208]: Loaded config_file: /tmp/esvio_cfg/esvio.yaml[0m
 result path /home/cpy/Datasets/output/esvio_result_no_loop.csv
-[33m[WARN] [1782547418.440377147]:  fix extrinsic param [0m
-[0m[INFO] [1782547418.440348688]: ROW_Image: 1024.000000 COL_Image: 1224.000000 [0m
-[0m[INFO] [1782547418.440370241]: ROW_Event: 480.000000 COL_EVENT: 640.000000 [0m
-[0m[INFO] [1782547418.440424778]: give an T to the extrinsic of cam [0m
-[0m[INFO] [1782547418.440431985]: give an T to the extrinsic of event [0m
-[0m[INFO] [1782547418.440454643]: Extrinsic_R : 
+[33m[WARN] [1782558744.013947224]:  fix extrinsic param [0m
+[0m[INFO] [1782558744.013929522]: ROW_Image: 1024.000000 COL_Image: 1224.000000 [0m
+[0m[INFO] [1782558744.013940498]: ROW_Event: 480.000000 COL_EVENT: 640.000000 [0m
+[0m[INFO] [1782558744.013981236]: give an T to the extrinsic of cam [0m
+[0m[INFO] [1782558744.013987097]: give an T to the extrinsic of event [0m
+[0m[INFO] [1782558744.014008086]: Extrinsic_R : 
   0.0172486   0.0128346    0.999769
   -0.999804 -0.00952696   0.0173715
  0.00974772   -0.999872   0.0126678[0m
-[0m[INFO] [1782547418.440463851]: Extrinsic_T : 
+[0m[INFO] [1782558744.014017903]: Extrinsic_T : 
  0.143665 0.0796728 -0.015555[0m
-[0m[INFO] [1782547418.440478694]: Extrinsic_R_event : 
+[0m[INFO] [1782558744.014032988]: Extrinsic_R_event : 
  0.0112035  0.0218441   0.999699
   -0.99976 -0.0185542  0.0116097
  0.0188022  -0.999589   0.021631[0m
-[0m[INFO] [1782547418.440487336]: Extrinsic_T_event : 
+[0m[INFO] [1782558744.014041951]: Extrinsic_T_event : 
  0.129075 0.0793087 0.0250862[0m
-[0m[INFO] [1782547418.441809817]: parameters.cpp: gravity_norm: 1.000000[0m
+[0m[INFO] [1782558744.014934274]: parameters.cpp: gravity_norm: 1.000000[0m
 parameters.cpp: Not use sampson model
 parameters.cpp: Yes use geometric correction
-[33m[WARN] [1782547418.442598925]: waiting for event, image and imu...[0m
-[33m[WARN] [1782547418.450018392]: into event point feature detection and tracking[0m
-[33m[WARN] [1782547418.455095889]: into stereo image feature detection and tracking[0m
+[33m[WARN] [1782558744.015649137]: waiting for event, image and imu...[0m
+[33m[WARN] [1782558744.036985310]: into event point feature detection and tracking[0m
+[33m[WARN] [1782558744.041630551]: into stereo image feature detection and tracking[0m
 vocabulary_file/catkin_ws_dvs/src/ESVIO/pose_graph/support_files/brief_k10L6.bin
 loop start load vocabulary
 BRIEF_PATTERN_FILE/catkin_ws_dvs/src/ESVIO/pose_graph/support_files/brief_pattern.yml
 Failed to create folder  
-[0m[INFO] [1782547418.452661665]: Loaded config_file: /tmp/esvio_cfg/esvio.yaml[0m
-[0m[INFO] [1782547418.453585262]: Loaded esvio_folder: /tmp/esvio_cfg/[0m
-[0m[INFO] [1782547418.453655508]: Rrl_event: 
+[0m[INFO] [1782558744.040443857]: Loaded config_file: /tmp/esvio_cfg/esvio.yaml[0m
+[0m[INFO] [1782558744.041335240]: Loaded esvio_folder: /tmp/esvio_cfg/[0m
+[0m[INFO] [1782558744.041449177]: Rrl_event: 
    0.99968  0.0200383  0.0154395
 -0.0200188   0.999799 -0.0014144
 -0.0154648 0.00110486    0.99988[0m
-[0m[INFO] [1782547418.453666934]: Trl_event: 
+[0m[INFO] [1782558744.041482107]: Trl_event: 
  -0.170177 0.00146904 0.00486952[0m
-[0m[INFO] [1782547418.453676108]: reading paramerter of camera /tmp/esvio_cfg//event0_esvio.yaml[0m
-[0m[INFO] [1782547418.461490974]: reading paramerter of camera /tmp/esvio_cfg//event1_esvio.yaml[0m
+[0m[INFO] [1782558744.041491092]: reading paramerter of camera /tmp/esvio_cfg//event0_esvio.yaml[0m
+[0m[INFO] [1782558744.049323732]: reading paramerter of camera /tmp/esvio_cfg//event1_esvio.yaml[0m
 327.485       0     320
       0 327.554     240
       0       0       1
-[0m[INFO] [1782547418.441844140]: Extrinsic_R2 : 
- 0.0144479  0.0110884   0.999834
- -0.999779  0.0154503  0.0142757
--0.0152894  -0.999819  0.0113092[0m
-[0m[INFO] [1782547418.441855209]: Extrinsic_T2 : 
-  0.142001 -0.0914988  -0.014918[0m
-[0m[INFO] [1782547418.441874260]: Rrl: 
-   0.999685    0.024912 -0.00309425
- -0.0249159    0.999689 -0.00124826
- 0.00306219  0.00132497    0.999994[0m
-[0m[INFO] [1782547418.441883431]: Trl: 
- -0.171154 0.00323261 0.00407665[0m
-[0m[INFO] [1782547418.442042174]: Loaded esvio_folder: /tmp/esvio_cfg/[0m
-[0m[INFO] [1782547418.442068897]: Extrinsic_R2_event : 
-  0.0270726   0.0202015    0.999429
-  -0.999633   0.0014471   0.0270488
--0.00089984   -0.999795   0.0202332[0m
-[0m[INFO] [1782547418.442078515]: Extrinsic_T2_event : 
-  0.128785 -0.0909398  0.0263033[0m
-[0m[INFO] [1782547418.442096427]: Rrl_event: 
-   0.99968  0.0200383  0.0154395
--0.0200188   0.999799 -0.0014144
--0.0154648 0.00110486    0.99988[0m
-[0m[INFO] [1782547418.442105195]: Trl_event: 
- -0.170177 0.00146904 0.00486952[0m
-[0m[INFO] [1782547418.442308533]: Loaded esvio_folder: /tmp/esvio_cfg/[0m
-[0m[INFO] [1782547418.442326104]: Synchronized sensors, fix time offset: 0.00839259[0m
-[0m[INFO] [1782547418.442339069]: estimator.cpp: reading paramerter of camera /tmp/esvio_cfg/cam0_esvio.yaml[0m
-[0m[INFO] [1782547418.442458229]: estimator.cpp: reading paramerter of camera /tmp/esvio_cfg/cam1_esvio.yaml[0m
-[0m[INFO] [1782547418.442508485]: estimator.cpp: reading paramerter of camera /tmp/esvio_cfg/event0_esvio.yaml[0m
-[0m[INFO] [1782547418.442554104]: estimator.cpp: reading paramerter of camera /tmp/esvio_cfg/event1_esvio.yaml[0m
-[0m[INFO] [1782547433.764634072]: esvio Not enough features or parallax; Move device around[0m
-[0m[INFO] [1782547433.764720953]: evio Not enough features or parallax; Move device around[0m
-[0m[INFO] [1782547434.197013096]: esvio IMU excitation not enouth![0m
-[0m[INFO] [1782547434.197239369]: esvio Not enough features or parallax; Move device around[0m
-[0m[INFO] [1782547434.197258348]: evio IMU excitation not enough![0m
-[0m[INFO] [1782547434.197324702]: evio Not enough features or parallax; Move device around[0m
-[0m[INFO] [1782547434.723169211]: esvio IMU excitation not enouth![0m
-[0m[INFO] [1782547434.723478880]: esvio Not enough features or parallax; Move device around[0m
-[0m[INFO] [1782547434.723500095]: evio IMU excitation not enough![0m
-[0m[INFO] [1782547434.723562368]: evio Not enough features or parallax; Move device around[0m
-[0m[INFO] [1782547434.846126131]: esvio IMU excitation not enouth![0m
-[0m[INFO] [1782547434.846335434]: esvio Not enough features or parallax; Move device around[0m
-[0m[INFO] [1782547434.846354250]: evio IMU excitation not enough![0m
-[0m[INFO] [1782547434.846426465]: evio Not enough features or parallax; Move device around[0m
-[0m[INFO] [1782547435.328371059]: esvio IMU excitation not enouth![0m
-[0m[INFO] [1782547435.328605048]: esvio Not enough features or parallax; Move device around[0m
-[0m[INFO] [1782547435.328624205]: evio IMU excitation not enough![0m
-[0m[INFO] [1782547435.328693965]: evio Not enough features or parallax; Move device around[0m
-[0m[INFO] [1782547435.791681159]: esvio IMU excitation not enouth![0m
-[0m[INFO] [1782547435.791919977]: esvio Not enough features or parallax; Move device around[0m
-[0m[INFO] [1782547435.791940313]: evio IMU excitation not enough![0m
-[0m[INFO] [1782547435.792017163]: evio Not enough features or parallax; Move device around[0m
-[0m[INFO] [1782547436.344409298]: esvio IMU excitation not enouth![0m
-[0m[INFO] [1782547436.344607777]: esvio Not enough features or parallax; Move device around[0m
-[0m[INFO] [1782547436.344627823]: evio IMU excitation not enough![0m
-[0m[INFO] [1782547436.344694465]: evio Not enough features or parallax; Move device around[0m
-[0m[INFO] [1782547436.589478764]: esvio IMU excitation not enouth![0m
-[0m[INFO] [1782547436.597313958]: esvio Not enough features or parallax; Move device around[0m
-[0m[INFO] [1782547436.597380618]: evio IMU exc[33m[WARN] [1782547437.230541858]: ---------------5points----------------[0m
-[33m[WARN] [1782547437.230595350]: input points 179 2D inliers 3D inliers 101[0m
-[33m[WARN] [1782547437.337715394]: gyroscope bias initial calibration -0.00129506  0.00224104 -0.00122622[0m
-[33m[WARN] [1782547661.822137671]: Shutdown request received.[0m
-[33m[WARN] [1782547661.822714459]: Reason given for shutdown: [user request][0m
-[33m[WARN] [1782547661.823653464]: Shutdown request received.[0m
-[33m[WARN] [1782547661.823682590]: Reason given for shutdown: [user request][0m
-[33m[WARN] [1782547661.824090659]: Shutdown request received.[0m
-[33m[WARN] [1782547661.824117952]: Reason given for shutdown: [user request][0m
-[33m[WARN] [1782547661.824550035]: Shutdown request received.[0m
-[33m[WARN] [1782547661.824576931]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1782558762.699381201]: ---------------5points----------------[0m
+[33m[WARN] [1782558762.699408726]: input points 188 2D inliers 3D inliers 86[0m
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0627 11:12:42.799059   219 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 11:12:42.800635   219 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 11:12:42.807108   219 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 11:12:42.813463   219 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 11:12:42.814930   219 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 11:12:42.818845   219 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 11:12:42.820340   219 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+[33m[WARN] [1782558762.825587704]: gyroscope bias initial calibration  -0.00136508   0.00359494 -0.000550228[0m
+[33m[WARN] [1782558985.707817802]: Shutdown request received.[0m
+[33m[WARN] [1782558985.708330765]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1782558985.709167079]: Shutdown request received.[0m
+[33m[WARN] [1782558985.709195840]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1782558985.709613063]: Shutdown request received.[0m
+[33m[WARN] [1782558985.709637888]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1782558985.709961529]: Shutdown request received.[0m
+[33m[WARN] [1782558985.709985495]: Reason given for shutdown: [user request][0m
 terminate called without an active exception

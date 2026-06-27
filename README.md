@@ -22,7 +22,7 @@ scripts**, and the **estimated trajectories** — not just a table of numbers.
 
 | Algorithm | Modality | Datasets | State |
 |-----------|----------|----------|-------|
-| [ESVIO](algorithms/esvio/) | stereo events + IMU (+ frames) | VECtor small-scale — [report](docs/validation/esvio_vector.md) | 7/10 match/beat paper; 3 hard seqs drift/diverge |
+| [ESVIO](algorithms/esvio/) | stereo events + IMU (+ frames) | VECtor small-scale — [report](docs/validation/esvio_vector.md) | 8/10 good (6 beat paper); 2 fast seqs fail init |
 | DEIO, ESVO2, SuperEvent, … | — | DSEC, M3ED, … | planned |
 
 ## Layout

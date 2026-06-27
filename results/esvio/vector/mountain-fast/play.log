@@ -1,11 +1,11 @@
-[0m[INFO] [1782556745.335313143]: Opening /data/mountain-fast_left_event_dvs.bag[0m
-[0m[INFO] [1782556745.538683318]: Opening /data/mountain-fast_right_event_dvs.bag[0m
-[0m[INFO] [1782556745.583057679]: Opening /data/mountain-fast_imu.bag[0m
-[0m[INFO] [1782556745.585501637]: Opening /data/mountain-fast_left_camera.bag[0m
-[0m[INFO] [1782556745.676020185]: Opening /data/mountain-fast_right_camera.bag[0m
+[0m[INFO] [1782559642.927644607]: Opening /data/mountain-fast_left_event_dvs.bag[0m
+[0m[INFO] [1782559643.082614236]: Opening /data/mountain-fast_right_event_dvs.bag[0m
+[0m[INFO] [1782559643.222935819]: Opening /data/mountain-fast_imu.bag[0m
+[0m[INFO] [1782559643.225186258]: Opening /data/mountain-fast_left_camera.bag[0m
+[0m[INFO] [1782559643.300104377]: Opening /data/mountain-fast_right_camera.bag[0m
 
 Waiting 0.2 seconds after advertising topics... done.
 
 Hit space to toggle paused, or 's' to step.
- [RUNNING]  Bag Time: 1642669371.042867   Duration: 0.000000 / 43.238456                [RUNNING]  Bag Time: 1642669371.042975   Duration: 0.000107 / 43.238456                [RUNNING]  Bag Time: 1642669371.058310   Duration: 0.015443 / 43.238456                [RUNNING]  Bag Time: 1642669371.062967   Duration: 0.020100 / 43.238456                [RUNNING]  Bag Time: 1642669371.066568   Duration: 0.023701 / 43.238456                [RUNNING]  Bag Time: 1642669371.068364   Duration: 0.025497 / 43.238456               
+ [RUNNING]  Bag Time: 1642669383.042867   Duration: 0.000000 / 31.238456                [RUNNING]  Bag Time: 1642669383.042929   Duration: 0.000061 / 31.238456                [RUNNING]  Bag Time: 1642669383.047780   Duration: 0.004913 / 31.238456                [RUNNING]  Bag Time: 1642669383.047927   Duration: 0.005059 / 31.238456                [RUNNING]  Bag Time: 1642669383.048047   Duration: 0.005179 / 31.238456                [RUNNING]  Bag Time: 1642669383.052931   Duration: 0.010063 / 31.238456                [RUNNING]  Bag Time: 1642669383.058059   Duration: 0.015192 / 31.238456                [RUNNING]  Bag Time: 1642669383.062999   Duration: 0.020132 / 31.238456                [RUNNING]  Bag Time: 1642669383.064440   Duration: 0.021573 / 31.238456                [RUNNING]  Bag Time: 1642669383.064715   Duration: 0.021848 / 31.238456                [RUNNING]  Bag Time: 1642669383.067964   Duration: 0.025097 / 31.238456               
 Done.

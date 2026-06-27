@@ -60,8 +60,8 @@ echo ">> [3/5] recording $ODOM_TOPIC"
 rosbag record -O "$OUT_DIR/odom.bag" "$ODOM_TOPIC" __name:=odomrec >"$OUT_DIR/record.log" 2>&1 &
 sleep 2
 
-echo ">> [4/5] playing ${#BAGS[@]} bags @ ${PLAY_RATE}x"
-rosbag play --clock -r "$PLAY_RATE" "${BAGS[@]}" >"$OUT_DIR/play.log" 2>&1
+echo ">> [4/5] playing ${#BAGS[@]} bags @ ${PLAY_RATE}x (start +${PLAY_START:-0}s)"
+rosbag play --clock -s "${PLAY_START:-0}" -r "$PLAY_RATE" "${BAGS[@]}" >"$OUT_DIR/play.log" 2>&1
 echo "   playback done; draining ${DRAIN_WAIT}s"; sleep "$DRAIN_WAIT"
 
 rosnode kill /odomrec >/dev/null 2>&1 || true

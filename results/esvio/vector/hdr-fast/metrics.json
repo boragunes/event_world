@@ -3,41 +3,41 @@
   "algo": "esvio",
   "dataset": "vector",
   "sequence": "hdr-fast",
-  "generated_utc": "2026-06-27T10:46:25+00:00",
+  "generated_utc": "2026-06-27T11:47:22+00:00",
   "evo_version": "v1.36.5",
   "est_file": "results/esvio/vector/hdr-fast/stamped_traj.tum",
   "gt_file": "data/vector/hdr-fast/hdr-fast_gt_txt.txt",
   "alignment": "se3",
-  "n_poses_matched": 377,
-  "n_poses_est_raw": 377,
-  "gt_trajectory_length_m": 18.2059,
-  "duration_s": 39.167,
+  "n_poses_matched": 392,
+  "n_poses_est_raw": 392,
+  "gt_trajectory_length_m": 18.6708,
+  "duration_s": 39.1,
   "ate_translation_m": {
-    "rmse": 0.43264,
-    "mean": 0.355206,
-    "median": 0.25302,
-    "std": 0.246994,
-    "min": 0.063444,
-    "max": 1.462349,
-    "sse": 70.565794
+    "rmse": 0.235092,
+    "mean": 0.185339,
+    "median": 0.134264,
+    "std": 0.144629,
+    "min": 0.038567,
+    "max": 0.696122,
+    "sse": 21.665106
   },
   "rotation_deg": {
-    "body_frame_offset_deg": 139.184,
+    "body_frame_offset_deg": 146.607,
     "residual_after_offset": {
-      "rmse": 4.921717,
-      "mean": 4.03498,
-      "median": 2.817395,
-      "std": 2.818197,
-      "min": 0.267306,
-      "max": 10.029035,
-      "sse": 9132.183683
+      "rmse": 3.435004,
+      "mean": 3.147829,
+      "median": 2.98344,
+      "std": 1.374927,
+      "min": 0.277008,
+      "max": 7.015117,
+      "sse": 4625.308107
     },
     "note": "absolute orientation error AFTER removing the constant estimator-vs-GT body-frame offset"
   },
   "paper_metric": {
-    "MPE_percent_ate": 2.3764,
-    "MPE_percent_rel_1m": 12.5901,
-    "MRE_deg_per_m_rel_1m": 2.02514,
+    "MPE_percent_ate": 1.2591,
+    "MPE_percent_rel_1m": 12.0587,
+    "MRE_deg_per_m_rel_1m": 3.32676,
     "note": "MPE_ate = 100*ATE_trans_RMSE/length (paper SE3 convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
   }
 }

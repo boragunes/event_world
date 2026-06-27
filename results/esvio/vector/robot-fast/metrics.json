@@ -3,41 +3,41 @@
   "algo": "esvio",
   "dataset": "vector",
   "sequence": "robot-fast",
-  "generated_utc": "2026-06-27T08:46:32+00:00",
+  "generated_utc": "2026-06-27T12:47:46+00:00",
   "evo_version": "v1.36.5",
   "est_file": "results/esvio/vector/robot-fast/stamped_traj.tum",
-  "gt_file": "results/esvio/vector/robot-fast/gt.txt",
+  "gt_file": "data/vector/robot-fast/robot-fast_gt_txt.txt",
   "alignment": "se3",
-  "n_poses_matched": 162,
-  "n_poses_est_raw": 162,
-  "gt_trajectory_length_m": 11.1052,
-  "duration_s": 16.167,
+  "n_poses_matched": 293,
+  "n_poses_est_raw": 293,
+  "gt_trajectory_length_m": 22.0145,
+  "duration_s": 29.267,
   "ate_translation_m": {
-    "rmse": 0.055179,
-    "mean": 0.048548,
-    "median": 0.045644,
-    "std": 0.026227,
-    "min": 0.005177,
-    "max": 0.119164,
-    "sse": 0.493248
+    "rmse": 1332.658204,
+    "mean": 1139.566424,
+    "median": 1164.990314,
+    "std": 690.916965,
+    "min": 56.997638,
+    "max": 2966.208148,
+    "sse": 520361521.194807
   },
   "rotation_deg": {
-    "body_frame_offset_deg": 136.869,
+    "body_frame_offset_deg": 163.744,
     "residual_after_offset": {
-      "rmse": 2.047067,
-      "mean": 1.650051,
-      "median": 1.362321,
-      "std": 1.211533,
-      "min": 0.137207,
-      "max": 6.89795,
-      "sse": 678.858028
+      "rmse": 103.152516,
+      "mean": 90.557016,
+      "median": 84.332966,
+      "std": 49.395024,
+      "min": 13.207767,
+      "max": 179.156188,
+      "sse": 3117649.3705
     },
     "note": "absolute orientation error AFTER removing the constant estimator-vs-GT body-frame offset"
   },
   "paper_metric": {
-    "MPE_percent_ate": 0.4969,
-    "MPE_percent_rel_1m": 5.4179,
-    "MRE_deg_per_m_rel_1m": 2.35993,
+    "MPE_percent_ate": 6053.5495,
+    "MPE_percent_rel_1m": 103.0998,
+    "MRE_deg_per_m_rel_1m": 29.42228,
     "note": "MPE_ate = 100*ATE_trans_RMSE/length (paper SE3 convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
   }
 }

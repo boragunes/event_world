@@ -1,0 +1,29 @@
+<launch>
+    <!-- Headless ESIO (events + IMU only, no images) for VECtor. Upstream esio.launch with
+         rviz removed and config pointed at the VECtor event calibration. ESIO's event-based
+         init is immune to the image motion-blur that breaks ESVIO's global-SFM init on the
+         fast sequences. Same upstream binaries (stereo_event_tracker + stereo_esio_estimator);
+         no source edits. Odometry topic: /stereo_esio_estimator/odometry -->
+    <arg name="config_path" default = "$(find feature_tracker)/../config/esvio_VECtor_small_scale/esvio.yaml" />
+    <arg name="esvio_path"  default = "$(find feature_tracker)/../config/esvio_VECtor_small_scale/" />
+
+    <node name="stereo_event_tracker" pkg="feature_tracker" type="stereo_event_tracker" output="screen" respawn="true">
+        <param name="config_file" type="string" value="$(arg config_path)" />
+        <param name="esvio_folder" type="string" value="$(arg esvio_path)" />
+    </node>
+
+    <node name="stereo_esio_estimator" pkg="esvio_estimator" type="stereo_esio_estimator" output="screen" respawn="true">
+       <param name="use_stereo_correction" type="bool" value="true"/>
+       <param name="opt_verbose" type="bool" value="false"/>
+       <param name="config_file" type="string" value="$(arg config_path)" />
+       <param name="esvio_folder" type="string" value="$(arg esvio_path)" />
+    </node>
+
+    <node name="pose_graph" pkg="pose_graph" type="pose_graph" output="screen" respawn="true">
+        <param name="config_file" type="string" value="$(arg config_path)" />
+        <param name="visualization_shift_x" type="int" value="0" />
+        <param name="visualization_shift_y" type="int" value="0" />
+        <param name="skip_cnt" type="int" value="0" />
+        <param name="skip_dis" type="double" value="0" />
+    </node>
+</launch>

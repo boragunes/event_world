@@ -1,11 +1,11 @@
-[0m[INFO] [1782547430.300324988]: Opening /data/desk-normal_left_event_dvs.bag[0m
-[0m[INFO] [1782547430.315449344]: Opening /data/desk-normal_right_event_dvs.bag[0m
-[0m[INFO] [1782547430.319615133]: Opening /data/desk-normal_imu.bag[0m
-[0m[INFO] [1782547430.322332509]: Opening /data/desk-normal_left_camera.bag[0m
-[0m[INFO] [1782547430.330600700]: Opening /data/desk-normal_right_camera.bag[0m
+[0m[INFO] [1782558755.902222853]: Opening /data/desk-normal_left_event_dvs.bag[0m
+[0m[INFO] [1782558755.919417420]: Opening /data/desk-normal_right_event_dvs.bag[0m
+[0m[INFO] [1782558755.923690583]: Opening /data/desk-normal_imu.bag[0m
+[0m[INFO] [1782558755.941783534]: Opening /data/desk-normal_left_camera.bag[0m
+[0m[INFO] [1782558756.139076478]: Opening /data/desk-normal_right_camera.bag[0m
 
 Waiting 0.2 seconds after advertising topics... done.
 
 Hit space to toggle paused, or 's' to step.
- [RUNNING]  Bag Time: 1642647813.062094   Duration: 0.000000 / 91.220813                [RUNNING]  Bag Time: 1642647813.062162   Duration: 0.000068 / 91.220813                [RUNNING]  Bag Time: 1642647813.067271   Duration: 0.005177 / 91.220813                [RUNNING]  Bag Time: 1642647813.072269   Duration: 0.010175 / 91.220813                [RUNNING]  Bag Time: 1642647813.077211   Duration: 0.015116 / 91.220813               
+ [RUNNING]  Bag Time: 1642647813.062094   Duration: 0.000000 / 91.220813                [RUNNING]  Bag Time: 1642647813.062159   Duration: 0.000065 / 91.220813                [RUNNING]  Bag Time: 1642647813.067202   Duration: 0.005108 / 91.220813                [RUNNING]  Bag Time: 1642647813.072195   Duration: 0.010101 / 91.220813                [RUNNING]  Bag Time: 1642647813.077222   Duration: 0.015128 / 91.220813               
 Done.
