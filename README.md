@@ -23,7 +23,7 @@ scripts**, and the **estimated trajectories** — not just a table of numbers.
 | Algorithm | Modality | Datasets | State |
 |-----------|----------|----------|-------|
 | [ESVIO](esvio/) | stereo events + IMU (+ frames) | VECtor small-scale — [report](docs/validation/esvio_vector.md) | 8/11 good (6 beat paper); 2 fast seqs fail init |
-| [DEIO](deio/) | monocular events + IMU (deep) | VECtor (published traj) — [report](docs/validation/deio_vector.md) | beats ESVIO on 10/11; faithful container builds; UZH-FPV run pending |
+| [DEIO](deio/) | monocular events + IMU (deep) | VECtor (published traj) — [report](docs/validation/deio_vector.md) | beats ESVIO 10/11 under DEIO's own logic; container builds + smoke-tested |
 | ESVO2, SuperEvent, … | — | DSEC, M3ED, … | planned |
 
 ## Layout

@@ -1,45 +1,52 @@
-# DEIO on VECtor — published trajectories vs our ESVIO run
+# DEIO vs ESVIO on VECtor — under DEIO's own evaluation logic
 
 [DEIO](https://arxiv.org/abs/2411.03928) (deep monocular event–inertial odometry, ICCV 2025)
-tops VECtor Table IV. This report compares DEIO to our ESVIO run on the same 11 small-scale
-sequences, with the same evo pipeline and the same VECtor ground truth.
+tops VECtor Table IV. This compares DEIO to our ESVIO run on the same 11 small-scale sequences,
+**both evaluated with DEIO's exact published logic** so it is apples-to-apples.
 
-## Provenance & method (read this first)
-- DEIO's public repo has **no VECtor eval script or config** (only `davis240c.py` / `uzh-fpv.py`
-  run out of the box). It **does** release the authors' VECtor **trajectories**
-  (`estimated_trajectories/VECtor/`). We evaluate *those* — we did **not** re-run DEIO on VECtor.
-- **Alignment:** DEIO is evaluated with **Sim3 (scale-corrected)** — this is DEIO's own
-  convention (`correct_scale=True` in their eval notebook), standard for the DPVO/DEVO family.
-  Our **ESVIO** numbers use **SE3 (metric)**, ESVIO's convention. So the two columns are each
-  faithful to their own paper but *not* aligned the same way (Sim3 ≤ SE3 always).
-- Metric: MPE % = 100 × ATE-RMSE / trajectory-length. Same GT, same evo code.
-- Verified: DEIO trajectories share VECtor's absolute timestamps (µs); under SE3 four of them
-  showed a constant scale error that vanishes under Sim3 (e.g. desk-normal 29.7%→0.34%),
-  confirming they are scale-ambiguous outputs meant for Sim3 evaluation.
+## Provenance & method
+- DEIO's public repo has **no VECtor eval script/config** (only `davis240c.py`/`uzh-fpv.py` run
+  out of the box). It releases the authors' VECtor **trajectories** (`estimated_trajectories/VECtor/`).
+  We evaluate *those* — we did not re-run DEIO on VECtor. ESVIO results are **our own run**.
+- **DEIO's exact metric** (from `utils/eval_utils.py`), applied to *both* methods via
+  [`scripts/compare_deio_logic.py`](../../scripts/compare_deio_logic.py):
+  - **Sim3** alignment (`align=True, correct_scale=True`)
+  - **MPE = mean(APE_translation) / GT_path_length × 100** — the **mean**, not RMSE
+  - association `max_diff = 1 s`
+- **Collapse guard (ours).** Sim3 hides scale error — and can mask a *diverged* estimate by
+  shrinking it to a point near the GT centroid, where `mean/length` still looks small (the path is
+  long). After alignment we compare the estimate's spatial extent to the GT's; **< 0.5× ⇒ FAIL**
+  (a collapsed estimate, not a track), instead of reporting the artifact number.
 
-## Results — MPE %
-| sequence | ESVIO (SE3, our run) | DEIO (Sim3, published) | better |
+## Results — MPE % (DEIO's logic, lower is better)
+| sequence | ESVIO (our run) | DEIO (published) | winner |
 |---|---|---|---|
-| desk-normal | 0.43 | **0.34** | DEIO |
-| desk-fast | 0.24 | **0.15** | DEIO |
-| sofa-normal | 0.24 | **0.19** | DEIO |
-| sofa-fast | 2.54 | **0.50** | DEIO |
-| robot-normal | 0.87 | **0.38** | DEIO |
-| robot-fast | *init fails* | **0.17** | DEIO |
-| corner-slow | 1.95 | **1.02** | DEIO |
-| mountain-normal | **0.72** | 1.36 | ESVIO |
-| mountain-fast | *init fails* | **0.26** | DEIO |
-| hdr-normal | 3.62 | **0.71** | DEIO |
-| hdr-fast | 1.26 | **0.30** | DEIO |
+| desk-normal | 0.38 | **0.30** | DEIO |
+| desk-fast | 0.22 | **0.14** | DEIO |
+| sofa-normal | 0.22 | **0.16** | DEIO |
+| sofa-fast | 0.87 | **0.46** | DEIO |
+| robot-normal | 0.39 | **0.34** | DEIO |
+| robot-fast | **FAIL** | **0.15** | DEIO |
+| corner-slow | 1.56 | **0.83** | DEIO |
+| mountain-normal | **0.52** | 0.76 | ESVIO |
+| mountain-fast | **FAIL** | **0.23** | DEIO |
+| hdr-normal | 0.76 | **0.61** | DEIO |
+| hdr-fast | 0.69 | **0.24** | DEIO |
 
-**DEIO wins 10/11.** Most striking: DEIO cleanly handles **robot-fast** and **mountain-fast**,
-the exact sequences where ESVIO's classical global-SFM init diverges — the deep front-end is
-robust to the fast motion that breaks feature-based initialization. ESVIO's only win is
-mountain-normal. (Part of DEIO's margin is the scale-corrected alignment; the qualitative story
-— deep method robust on fast/HDR motion — holds regardless.)
+**DEIO wins 10/11; ESVIO wins mountain-normal.**
 
-## Reproducing DEIO ourselves
-The faithful container ([`deio/`](../../deio/)) builds DEIO from its `environment.yml` + GTSAM.
-Because VECtor isn't runnable upstream, our *own* DEIO run is validated on **UZH-FPV**
-(event–inertial, the README's example) under `deio/uzhfpv/` — pending the `DEVO.pth` weights and
-the UZH-FPV data.
+## Two findings
+1. **Fair fight helps ESVIO — where it tracks.** Re-scoring ESVIO with DEIO's logic (Sim3 removes
+   benign scale error; mean < RMSE) drops its numbers vs. its own SE3 report
+   ([esvio_vector.md](esvio_vector.md)): sofa-fast 2.54→0.87, hdr-normal 3.62→0.76, desk-normal
+   0.43→0.38. On the 9 sequences ESVIO genuinely tracks it is close to DEIO (0.22–1.56 vs 0.14–0.83).
+2. **The metric would have masked ESVIO's real failures.** On robot-fast and mountain-fast ESVIO's
+   estimate **collapses** (Sim3 scale ≈ 1e-4, spatial extent ~0.1× GT). Raw DEIO-logic MPE reports a
+   bogus 1.29% / 0.89%; the collapse guard correctly calls them **FAIL**. DEIO, the deep method,
+   tracks both (0.15% / 0.23%) — its learned front-end is robust to the fast motion that breaks
+   ESVIO's classical init. The fast-sequence failures are real under either alignment.
+
+## Reproduce
+```bash
+python scripts/compare_deio_logic.py vector esvio deio
+```
