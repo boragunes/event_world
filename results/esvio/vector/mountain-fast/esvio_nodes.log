@@ -1,381 +1,862 @@
-[0m[INFO] [1782539234.422351911]: init begins[0m
-[0m[INFO] [1782539234.425655737]: Loaded config_file: /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale/esvio.yaml[0m
+[0m[INFO] [1782556733.447938829]: init begins[0m
+[0m[INFO] [1782556733.450914582]: Loaded config_file: /tmp/esvio_cfg/esvio.yaml[0m
 result path /home/cpy/Datasets/output/esvio_result_no_loop.csv
-[33m[WARN] [1782539234.426510242]:  Optimize extrinsic param around initial guess![0m
-[0m[INFO] [1782539234.426473371]: ROW_Image: 1024.000000 COL_Image: 1224.000000 [0m
-[0m[INFO] [1782539234.426503944]: ROW_Event: 480.000000 COL_EVENT: 640.000000 [0m
-[0m[INFO] [1782539234.426546021]: give an T to the extrinsic of cam [0m
-[0m[INFO] [1782539234.426552265]: give an T to the extrinsic of event [0m
-[0m[INFO] [1782539234.426576017]: Extrinsic_R : 
-  0.0172486   0.0128346    0.999769
-  -0.999804 -0.00952696   0.0173715
- 0.00974772   -0.999872   0.0126678[0m
-[0m[INFO] [1782539234.426586230]: Extrinsic_T : 
- 0.143665 0.0796728 -0.015555[0m
-[0m[INFO] [1782539234.426601289]: Extrinsic_R_event : 
+[33m[WARN] [1782556733.451861184]:  fix extrinsic param [0m
+[0m[INFO] [1782556733.451842766]: ROW_Image: 1024.000000 COL_Image: 1224.000000 [0m
+[0m[INFO] [1782556733.451854072]: ROW_Event: 480.000000 COL_EVENT: 640.000000 [0m
+[0m[INFO] [1782556733.451903389]: give an T to the extrinsic of cam [0m
+[0m[INFO] [1782556733.451909611]: give an T to the extrinsic of event [0m
+[0m[INFO] [1782556733.451931977]: Extrinsic_R_event : 
  0.0112035  0.0218441   0.999699
   -0.99976 -0.0185542  0.0116097
  0.0188022  -0.999589   0.021631[0m
-[0m[INFO] [1782539234.426610364]: Extrinsic_T_event : 
+[0m[INFO] [1782556733.451942567]: Extrinsic_T_event : 
  0.129075 0.0793087 0.0250862[0m
-[0m[INFO] [1782539234.427821508]: parameters.cpp: gravity_norm: 1.000000[0m
+[0m[INFO] [1782556733.451957008]: Extrinsic_R_event : 
+ 0.0112035  0.0218441   0.999699
+  -0.99976 -0.0185542  0.0116097
+ 0.0188022  -0.999589   0.021631[0m
+[0m[INFO] [1782556733.451966329]: Extrinsic_T_event : 
+ 0.129075 0.0793087 0.0250862[0m
+[0m[INFO] [1782556733.453468378]: parameters.cpp: gravity_norm: 1.000000[0m
 parameters.cpp: Not use sampson model
 parameters.cpp: Yes use geometric correction
-[33m[WARN] [1782539234.429614308]: waiting for event, image and imu...[0m
-[33m[WARN] [1782539234.449640502]: into event point feature detection and tracking[0m
-[33m[WARN] [1782539234.454012664]: into stereo image feature detection and tracking[0m
+[33m[WARN] [1782556733.454423894]: waiting for event, image and imu...[0m
+[33m[WARN] [1782556733.474651268]: into event point feature detection and tracking[0m
+[33m[WARN] [1782556733.485696390]: into stereo image feature detection and tracking[0m
 vocabulary_file/catkin_ws_dvs/src/ESVIO/pose_graph/support_files/brief_k10L6.bin
 loop start load vocabulary
 BRIEF_PATTERN_FILE/catkin_ws_dvs/src/ESVIO/pose_graph/support_files/brief_pattern.yml
 Failed to create folder  
-[0m[INFO] [1782539234.452846352]: Loaded config_file: /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale/esvio.yaml[0m
-[0m[INFO] [1782539234.453783373]: Loaded esvio_folder: /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale/[0m
-[0m[INFO] [1782539234.453856098]: Rrl_event: 
+[0m[INFO] [1782556733.477882181]: Loaded config_file: /tmp/esvio_cfg/esvio.yaml[0m
+[0m[INFO] [1782556733.478650535]: Loaded esvio_folder: /tmp/esvio_cfg/[0m
+[0m[INFO] [1782556733.478723373]: Rrl_event: 
    0.99968  0.0200383  0.0154395
 -0.0200188   0.999799 -0.0014144
 -0.0154648 0.00110486    0.99988[0m
-[0m[INFO] [1782539234.453868257]: Trl_event: 
+[0m[INFO] [1782556733.478734858]: Trl_event: 
  -0.170177 0.00146904 0.00486952[0m
-[0m[INFO] [1782539234.453877748]: reading paramerter of camera /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale//event0_esvio.yaml[0m
-[0m[INFO] [1782539234.461691118]: reading paramerter of camera /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale//event1_esvio.yaml[0m
+[0m[INFO] [1782556733.478744435]: reading paramerter of camera /tmp/esvio_cfg//event0_esvio.yaml[0m
+[0m[INFO] [1782556733.486704966]: reading paramerter of camera /tmp/esvio_cfg//event1_esvio.yaml[0m
 327.485       0     320
       0 327.554     240
       0       0       1
-[33m[WARN] [1782539250.757226583]: gyroscope bias initial calibration -0.372368  0.393378  0.292716[0m
-[33m[WARN] [1782539250.758473606]: estimated scale: 0.011763[0m
-[33m[WARN] [1782539250.758492772]:  result g     10.1621 -2.54939 -7.47751 -6.39178[0m
-[33m[WARN] [1782539250.758592240]:  refine     9.80766 -2.43965 -7.13639 -6.26979[0m
-[33m[WARN] [1782539250.758601141]: estimated scale after RefineGravity: 0.008793[0m
-[0m[INFO] [1782539234.427854533]: Extrinsic_R2 : 
- 0.0144479  0.0110884   0.999834
- -0.999779  0.0154503  0.0142757
--0.0152894  -0.999819  0.0113092[0m
-[0m[INFO] [1782539234.427865871]: Extrinsic_T2 : 
-  0.142001 -0.0914988  -0.014918[0m
-[0m[INFO] [1782539234.427885649]: Rrl: 
-   0.999685    0.024912 -0.00309425
- -0.0249159    0.999689 -0.00124826
- 0.00306219  0.00132497    0.999994[0m
-[0m[INFO] [1782539234.427895299]: Trl: 
- -0.171154 0.00323261 0.00407665[0m
-[0m[INFO] [1782539234.428989129]: Loaded esvio_folder: /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale/[0m
-[0m[INFO] [1782539234.429018682]: Extrinsic_R2_event : 
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0627 10:39:09.918743   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:39:09.922034   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:39:09.922703   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:39:09.925962   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:39:09.926633   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:39:10.268699   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:39:10.270170   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:39:10.271618   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:39:10.273069   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:39:10.273542   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+[33m[WARN] [1782556750.274478382]: gyroscope bias initial calibration -0.276252   0.60123  0.254574[0m
+[33m[WARN] [1782556750.275675281]: estimated scale: -0.071781[0m
+[33m[WARN] [1782556750.275694386]:  result g     10.4276  -3.0578 -8.08834  -5.8278[0m
+[33m[WARN] [1782556751.058861590]: ---------------5points----------------[0m
+[33m[WARN] [1782556751.058925123]: input points 25 2D inliers 3D inliers 15[0m
+[0m[INFO] [1782556733.453502547]: Extrinsic_R2_event : 
   0.0270726   0.0202015    0.999429
   -0.999633   0.0014471   0.0270488
 -0.00089984   -0.999795   0.0202332[0m
-[0m[INFO] [1782539234.429029513]: Extrinsic_T2_event : 
+[0m[INFO] [1782556733.453513872]: Extrinsic_T2_event : 
   0.128785 -0.0909398  0.0263033[0m
-[0m[INFO] [1782539234.429048677]: Rrl_event: 
+[0m[INFO] [1782556733.453533075]: Rrl_event: 
    0.99968  0.0200383  0.0154395
 -0.0200188   0.999799 -0.0014144
 -0.0154648 0.00110486    0.99988[0m
-[0m[INFO] [1782539234.429063254]: Trl_event: 
+[0m[INFO] [1782556733.453542717]: Trl_event: 
  -0.170177 0.00146904 0.00486952[0m
-[0m[INFO] [1782539234.429288248]: Loaded esvio_folder: /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale/[0m
-[0m[INFO] [1782539234.429306481]: Unsynchronized sensors, online estimate time offset, initial td: 0.00839259[0m
-[0m[INFO] [1782539234.429319290]: estimator.cpp: reading paramerter of camera /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale/cam0_esvio.yaml[0m
-[0m[INFO] [1782539234.429451737]: estimator.cpp: reading paramerter of camera /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale/cam1_esvio.yaml[0m
-[0m[INFO] [1782539234.429509798]: estimator.cpp: reading paramerter of camera /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale/event0_esvio.yaml[0m
-[0m[INFO] [1782539234.429562729]: estimator.cpp: reading paramerter of camera /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale/event1_esvio.yaml[0m
-[0m[INFO] [1782539250.411804014]: esvio Not enough features or parallax; Move device around[0m
-[0m[INFO] [1782539250.423479366]: average_parallax 48.795886 choose l 8 and newest frame to triangulate the whole structure[0m
-[0m[INFO] [1782539250.516158363]: global SFM failed![0m
-[0m[INFO] [1782539250.686157883]: esvio Not enough features or parallax; Move device around[0m
-[0m[INFO] [1782539250.692152759]: average_parallax 53.133466 choose l 7 and newest frame to triangulate the whole structure[0m
-[0m[INFO] [1782539250.757163780]: global SFM success![0m
-[0m[INFO] [1782539250.825627239]: Initialization finish![0m
-[0m[INFO] [1782539251.508213305]:  big IMU acc bias estimation 2.764118[0m
-[0m[INFO] [1782539252.041199302]:  big IMU acc bias estimation 2.715311[0m
-[0m[INFO] [1782539252.069108512]:  big IMU acc bias estimation 2.929378[0m
-[0m[INFO] [1782539252.413823543]:  big IMU acc bias estimation 2.880459[0m
-[0m[INFO] [1782539252.585735562]:  big IMU acc bias estimation 2.639870[0m
-[0m[INFO] [1782539252.630572709]:  big IMU acc bias estimation 2.881419[0m
-[0m[INFO] [1782539252.940180613]:  big IMU acc bias estimation 2.807280[0m
-[0m[INFO] [1782539253.116751989]:  big IMU acc bias estimation 3.030177[0m
-[0m[INFO] [1782539253.300757471]:  big IMU acc bias estimation 2.701195[0m
-[0m[INFO] [1782539254.230549272]:  big IMU acc bias estimation 2.580481[0m
-[0m[INFO] [1782539254.274735424]:  big IMU acc bias estimation 2.767598[0m
-[0m[INFO] [1782539254.440006796]:  big IMU acc bias estimation 2.728616[0m
-[0m[INFO] [1782539254.659044394]:  big IMU acc bias estimation 2.552772[0m
-[0m[INFO] [1782539254.839177576]:  big IMU acc bias estimation 2.919472[0m
-[0m[INFO] [1782539255.483138924]:  big IMU acc bias estimation 2.785726[0m
-[0m[INFO] [1782539256.407000902]:  big IMU acc bias estimation 2.724682[0m
-[0m[INFO] [1782539257.070709485]:  big IMU acc bias estimation 2.674286[0m
-[0m[INFO] [1782539257.536447417]:  big IMU acc bias estimation 2.773846[0m
-[0m[INFO] [1782539257.619083841]:  big IMU acc bias estimation 2.764431[0m
-[0m[INFO] [1782539257.903455024]:  big IMU acc bias [33m[WARN] [1782539260.664458519]:  little feature 0[0m
-[33m[WARN] [1782539260.715418632]:  little feature 0[0m
-[33m[WARN] [1782539264.338264074]:  little feature 1[0m
-estimation 2.773579[0m
-[0m[INFO] [1782539258.564435399]:  big IMU acc bias estimation 2.615951[0m
-[0m[INFO] [1782539258.866291384]:  big IMU acc bias estimation 2.574081[0m
-[0m[INFO] [1782539260.447997634]:  big IMU acc bias estimation 2.670822[0m
-[0m[INFO] [1782539260.715477892]:  big IMU acc bias estimation 2.757407[0m
-[0m[INFO] [1782539261.306013235]:  big IMU acc bias estimation 2.906865[0m
-[0m[INFO] [1782539261.565028613]:  big IMU acc bias estimation 2.993876[0m
-[0m[INFO] [1782539261.952127360]:  big IMU acc bias estimation 2.922303[0m
-[0m[INFO] [1782539262.585972037]:  big IMU acc bias estimation 2.919219[0m
-[0m[INFO] [1782539263.137521268]:  big IMU acc bias estimation 2.871666[0m
-[0m[INFO] [1782539263.354363962]:  big IMU acc bias estimation 2.802481[0m
-[0m[INFO] [1782539264.338321836]:  big IMU acc bias estimation 2.811520[0m
-[0m[INFO] [1782539264.754510200]:  big IMU acc bias estimation 2.809489[0m
-[0m[INFO] [1782539264.903770163]:  big IMU acc bias estimation 2.852244[0m
-[0m[INFO] [1782539265.337870892]:  big IMU acc bias estimation 2.747067[0m
-[0m[INFO] [1782539265.862610422]:  big IMU acc bias estimation 2.829825[0m
-[0m[INFO] [1782539266.065965236]:  big IMU acc bias estimation 3.002388[0m
-[0m[INFO] [1782539266.410487676]:  big IMU acc bias estimation 2.534011[0m
-[0m[INFO] [1782539266.789716410]:  big IMU acc bias estimation 3.003057[0m
-[0m[INFO] [1782539266.842294340]:  big IMU acc bias estimation 2.737121[0m
-[0m[INFO] [1782539267.344887237]:  big IMU acc bias estimation 2.778766[0m
-[0m[INFO] [1782539267.439996563]:  big IMU acc bias estimation 2.667601[0m
-[0m[INFO] [1782539267.481732812]:  big IMU acc bias estimation 2.916696[0m
-[0m[INFO] [1782539267.749450499]:  big IMU acc bias estimation 3.323955[0m
-[0m[INFO] [1782539268.494066145]:  big IMU acc bias estimation 3.587477[0m
-[0m[INFO] [1782539268.867070574]:  big IMU acc bias estimation 4.023080[0m
-[0m[INFO] [1782539268.899426122]:  big IMU acc bias estimation 4.284766[0m
-[0m[INFO] [1782539269.454449473]:  big IMU acc bias estimation 4.478280[0m
-[0m[INFO] [1782539269.706237304]:  big IMU acc bias estimation 4.646750[0m
-[0m[INFO] [1782539270.102412126]:  big IMU acc bias estimation 4.802898[0m
-[0m[INFO] [1782539270.157845468]:  big IMU acc bias estimation 4.937835[0m
-[0m[INFO] [1782539270.258643787]:  big IMU acc bias estimation 4.782359[0m
-[0m[INFO] [1782539270.548618287]:  big IMU acc bias estimation 4.946554[0m
-[0m[INFO] [1782539271.114683114]:  big IMU acc bias estimation 4.650039[0m
-[0m[INFO] [1782539271.793000524]:  big IMU acc bias estimation 4.462388[0m
-[0m[INFO] [1782539271.854343394]:  big IMU acc bias estimation 5.169126[0m
-[0m[INFO] [1782539271.895846442]:  big IMU acc bias estimation 5.043734[0m
-[0m[INFO] [1782539271.957909026]:  big IMU acc bias estimation 4.953863[0m
-[0m[INFO] [1782539272.341624071]:  big IMU acc bias estimation 4.925437[0m
-[0m[INFO] [1782539272.566002813]:  big IMU acc bias estimation 4.969513[0m
-[0m[INFO] [1782539272.793875214]:  big IMU acc bias estimation 4.952865[0m
-[0m[INFO] [1782539273.220086215]:  big IMU acc bias estimation 4.276280[0m
-[0m[INFO] [1782539273.267600219]:  big IMU acc bias estimation 4.913827[0m
-[0m[INFO] [1782539273.516559247]:  big IMU acc bias estimation 4.972292[0m
-[0m[INFO] [1782539273.930599377]:  big IMU acc bias estimation 5.009875[0m
-[0m[INFO] [1782539274.383880664]:  big IMU acc bias estimation 4.778699[0m
-[0m[INFO] [1782539274.451934878]:  big IMU acc bias estimation 4.419662[0m
-[0m[INFO] [1782539274.656291896]:  big IMU acc bias estimation 4.902572[0m
-[0m[INFO] [1782539274.749529466]:  big IMU acc bias estimation 4.853950[0m
-[0m[INFO] [1782539274.964123089]:  big IMU acc bias estimation 5.010236[0m
-[0m[INFO] [1782539275.488423316]:  big IMU acc bias estimation 5.030294[0m
-[0m[INFO] [1782539275.734032904]:  big IMU acc bias estimation 5.021533[0m
-[0m[INFO] [1782539275.783647122]:  big IMU acc bias estimation 4.862519[0m
-[0m[INFO] [1782539276.455317780]:  big IMU acc bias estimation 4.83[33m[WARN] [1782539280.686483998]: event stream discontinue! reset the event feature tracker![0m
-[33m[WARN] [1782539282.545899182]:  little feature 0[0m
-7334[0m
-[0m[INFO] [1782539276.496678432]:  big IMU acc bias estimation 4.827181[0m
-[0m[INFO] [1782539276.535285523]:  big IMU acc bias estimation 4.885832[0m
-[0m[INFO] [1782539277.366363867]:  big IMU acc bias estimation 4.946306[0m
-[0m[INFO] [1782539277.407240669]:  big IMU acc bias estimation 4.846330[0m
-[0m[INFO] [1782539277.953394137]:  big IMU acc bias estimation 4.845643[0m
-[0m[INFO] [1782539278.204165239]:  big IMU acc bias estimation 4.911196[0m
-[0m[INFO] [1782539278.522890880]:  big IMU acc bias estimation 4.808576[0m
-[0m[INFO] [1782539278.565343541]:  big IMU acc bias estimation 4.627574[0m
-[0m[INFO] [1782539278.688130029]:  big IMU acc bias estimation 4.726129[0m
-[0m[INFO] [1782539279.548627027]:  big IMU acc bias estimation 4.734374[0m
-[0m[INFO] [1782539279.595747884]:  big IMU acc bias estimation 4.790934[0m
-[0m[INFO] [1782539279.805705722]:  big IMU acc bias estimation 4.756045[0m
-[0m[INFO] [1782539280.180930706]:  big IMU acc bias estimation 4.611442[0m
-[0m[INFO] [1782539280.222713301]:  big IMU acc bias estimation 4.575920[0m
-[0m[INFO] [1782539280.267538080]:  big IMU acc bias estimation 4.511648[0m
-[0m[INFO] [1782539280.694483287]:  big IMU acc bias estimation 4.381212[0m
-[0m[INFO] [1782539280.798101571]:  big IMU acc bias estimation 4.420010[0m
-[0m[INFO] [1782539280.895213394]:  big IMU acc bias estimation 4.287688[0m
-[0m[INFO] [1782539281.331804319]:  big IMU acc bias estimation 4.233582[0m
-[0m[INFO] [1782539281.370399042]:  big IMU acc bias estimation 4.259684[0m
-[0m[INFO] [1782539281.549409608]:  big IMU acc bias estimation 4.155553[0m
-[0m[INFO] [1782539281.730028309]:  big IMU acc bias estimation 4.165950[0m
-[0m[INFO] [1782539281.946568784]:  big IMU acc bias estimation 4.203432[0m
-[0m[INFO] [1782539282.545952218]:  big IMU acc bias estimation 4.285555[0m
-[0m[INFO] [1782539283.291030936]:  big IMU acc bias estimation 4.214510[0m
-[0m[INFO] [1782539283.334277251]:  big IMU acc bias estimation 4.182127[0m
-[0m[INFO] [1782539283.660125182]:  big IMU acc bias estimation 4.240725[0m
-[0m[INFO] [1782539283.897310963]:  big IMU acc bias estimation 4.351692[0m
-[0m[INFO] [1782539283.972178856]:  big IMU acc bias estimation 4.463112[0m
-[0m[INFO] [1782539284.075397858]:  big IMU acc bias estimation 4.321182[0m
-[0m[INFO] [1782539284.159924705]:  big IMU acc bias estimation 4.283982[0m
-[0m[INFO] [1782539284.284667760]:  big IMU acc bias estimation 4.259312[0m
-[0m[INFO] [1782539284.401303670]:  big IMU acc bias estimation 4.286494[0m
-[0m[INFO] [1782539284.754908868]:  big IMU acc bias estimation 4.283137[0m
-[0m[INFO] [1782539285.366031007]:  big IMU acc bias estimation 4.408791[0m
-[0m[INFO] [1782539285.412661395]:  big IMU acc bias estimation 4.329038[0m
-[0m[INFO] [1782539285.657601148]:  big IMU acc bias estimation 4.310244[0m
-[0m[INFO] [1782539285.741281425]:  big IMU acc bias estimation 4.333964[0m
-[0m[INFO] [1782539285.877971322]:  big IMU acc bias estimation 4.340200[0m
-[0m[INFO] [1782539286.213297047]:  big IMU acc bias estimation 4.567044[0m
-[0m[INFO] [1782539286.818791284]:  big IMU acc bias estimation 4.615192[0m
-[0m[INFO] [1782539287.104281019]:  big IMU acc bias estimation 4.798795[0m
-[0m[INFO] [1782539287.151465765]:  big IMU acc bias estimation 4.858415[0m
-[0m[INFO] [1782539287.198266606]:  big IMU acc bias estimation 4.859851[0m
-[0m[INFO] [1782539287.621554230]:  big IMU acc bias estimation 4.882110[0m
-[0m[INFO] [1782539287.969622590]:  big IMU acc bias estimation 4.801447[0m
-[0m[INFO] [1782539288.360832879]:  big IMU acc bias estimation 4.851617[0m
-[0m[INFO] [1782539288.658034090]:  big IMU acc bias estimation 4.917344[0m
-[0m[INFO] [1782539288.711197156]:  big IMU acc bias estimation 4.963005[0m
-[0m[INFO] [1782539288.927355389]:  big IMU acc bias estimation 4.971217[0m
-[0m[INFO] [1782539288.970233069]:  big IMU acc bias estimation 4.979798[0m
-[0m[INFO] [1782539289.359257871]:  big IMU acc bias estimation 4.982577[0m
-[0m[INFO] [1782539289.572616729]:  big IMU acc bias estimation 5.015069[0m
-[0m[I[33m[WARN] [1782539300.418455661]:  little feature 0[0m
-NFO] [1782539289.877761823]:  big IMU acc bias estimation 5.034707[0m
-[0m[INFO] [1782539290.191866704]:  big IMU acc bias estimation 5.030242[0m
-[0m[INFO] [1782539290.487208354]:  big IMU acc bias estimation 5.000567[0m
-[0m[INFO] [1782539290.535769496]:  big IMU acc bias estimation 5.073957[0m
-[0m[INFO] [1782539291.042770580]:  big IMU acc bias estimation 5.064094[0m
-[0m[INFO] [1782539291.096487418]:  big IMU acc bias estimation 5.058400[0m
-[0m[INFO] [1782539291.793713412]:  big IMU acc bias estimation 5.052681[0m
-[0m[INFO] [1782539292.138595536]:  big IMU acc bias estimation 5.096840[0m
-[0m[INFO] [1782539292.268034300]:  big IMU acc bias estimation 5.093856[0m
-[0m[INFO] [1782539292.334921526]:  big IMU acc bias estimation 5.076610[0m
-[0m[INFO] [1782539292.530495942]:  big IMU acc bias estimation 5.081576[0m
-[0m[INFO] [1782539292.621087859]:  big IMU acc bias estimation 5.069990[0m
-[0m[INFO] [1782539292.896740274]:  big IMU acc bias estimation 5.082842[0m
-[0m[INFO] [1782539293.400813734]:  big IMU acc bias estimation 5.031639[0m
-[0m[INFO] [1782539293.536412683]:  big IMU acc bias estimation 5.041663[0m
-[0m[INFO] [1782539293.758722831]:  big IMU acc bias estimation 5.048305[0m
-[0m[INFO] [1782539293.933986618]:  big IMU acc bias estimation 5.066873[0m
-[0m[INFO] [1782539294.201864423]:  big IMU acc bias estimation 5.088612[0m
-[0m[INFO] [1782539294.468954288]:  big IMU acc bias estimation 5.101118[0m
-[0m[INFO] [1782539294.741252593]:  big IMU acc bias estimation 5.093050[0m
-[0m[INFO] [1782539295.005868192]:  big IMU acc bias estimation 5.096960[0m
-[0m[INFO] [1782539295.271761051]:  big IMU acc bias estimation 5.078607[0m
-[0m[INFO] [1782539295.613122881]:  big IMU acc bias estimation 5.073825[0m
-[0m[INFO] [1782539296.052130031]:  big IMU acc bias estimation 5.105300[0m
-[0m[INFO] [1782539296.257811119]:  big IMU acc bias estimation 5.148782[0m
-[0m[INFO] [1782539296.320179150]:  big IMU acc bias estimation 5.148245[0m
-[0m[INFO] [1782539296.589357230]:  big IMU acc bias estimation 5.120998[0m
-[0m[INFO] [1782539296.905835687]:  big IMU acc bias estimation 5.114370[0m
-[0m[INFO] [1782539297.130458085]:  big IMU acc bias estimation 5.129135[0m
-[0m[INFO] [1782539297.392868733]:  big IMU acc bias estimation 5.161733[0m
-[0m[INFO] [1782539297.664924460]:  big IMU acc bias estimation 5.145466[0m
-[0m[INFO] [1782539298.159644419]:  big IMU acc bias estimation 5.160400[0m
-[0m[INFO] [1782539298.205374189]:  big IMU acc bias estimation 5.183220[0m
-[0m[INFO] [1782539298.479275611]:  big IMU acc bias estimation 5.203568[0m
-[0m[INFO] [1782539298.754511162]:  big IMU acc bias estimation 5.175148[0m
-[0m[INFO] [1782539299.262135173]:  big IMU acc bias estimation 5.165862[0m
-[0m[INFO] [1782539299.410124868]:  big IMU acc bias estimation 5.184890[0m
-[0m[INFO] [1782539299.534048077]:  big IMU acc bias estimation 5.230585[0m
-[0m[INFO] [1782539300.329002891]:  big IMU acc bias estimation 5.218798[0m
-[0m[INFO] [1782539300.418535317]:  big IMU acc bias estimation 5.193299[0m
-[0m[INFO] [1782539300.612181921]:  big IMU acc bias estimation 5.310436[0m
-[0m[INFO] [1782539300.665457723]:  big IMU acc bias estimation 5.280227[0m
-[0m[INFO] [1782539301.112385459]:  big IMU acc bias estimation 5.256576[0m
-[0m[INFO] [1782539301.258681859]:  big IMU acc bias estimation 5.231546[0m
-[0m[INFO] [1782539301.372695252]:  big IMU acc bias estimation 5.302762[0m
-[0m[INFO] [1782539301.587832448]:  big IMU acc bias estimation 5.293855[0m
-[0m[INFO] [1782539301.937627401]:  big IMU acc bias estimation 5.293865[0m
-[0m[INFO] [1782539302.294336316]:  big IMU acc bias estimation 5.288063[0m
-[0m[INFO] [1782539302.630299343]:  big IMU acc bias estimation 5.323796[0m
-[0m[INFO] [1782539302.762971715]:  big IMU acc bias estimation 5.328175[0m
-[0m[INFO] [1782539303.198451486]:  big IMU acc bias estimation 5.361280[0m
-[0m[INFO] [1782539303.410817562]:  big IMU acc bias estimation 5.377868[0m
-[0m[INFO] [1782539303.474110951]:  big IMU acc bias estimation 5.392776[0m
-[0m[INFO] [1782539303.697444405]:  big IMU acc bias estimation 5.400212[0m
-[0m[INFO] [1782539304.280846593]:  big IMU acc bias estimation 5.369166[0m
-[0m[INFO] [1782539304.346962838]:  big IMU acc bias estimation 5.361357[0m
-[0m[INFO] [1782539304.891678218]:  big IMU acc bias estimation 5.350026[0m
-[0m[INFO] [1782539305.244647789]:  big IMU acc bias estimation 5.399049[0m
-[0m[INFO] [1782539305.376318712]:  big IMU acc bias estimation 5.392462[0m
-[0m[INFO] [1782539305.509678442]:  big IMU acc bias estimation 5.395089[0m
-[0m[INFO] [1782539305.558546220]:  big IMU acc bias estimation 5.387241[0m
-[0m[INFO] [1782539306.253215607]:  big IMU acc bias estimation 5.393652[0m
-[0m[INFO] [1782539306.297650646]:  big IMU acc bias estimation 5.381913[0m
-[0m[INFO] [1782539306.543550157]:  big IMU acc bias estimation 5.391618[0m
-[0m[INFO] [1782539307.189839966]:  big IMU acc bias estimation 5.399871[0m
-[0m[INFO] [1782539307.238547581]:  big IMU acc bias estimation 5.396916[0m
-[0m[INFO] [1782539307.367614900]:  big IMU acc bias estimation 5.395830[0m
-[0m[INFO] [1782539307.648093811]:  big IMU acc bias estimation 5.376475[0m
-[0m[INFO] [1782539307.887744373]:  big IMU acc bias estimation 5.387781[0m
-[0m[INFO] [1782539308.310204744]:  big IMU acc bias estimation 5.400795[0m
-[0m[INFO] [1782539308.354263428]:  big IMU acc bias estimation 5.395425[0m
-[0m[INFO] [1782539309.042990577]:  big IMU acc bias estimation 5.411641[0m
-[0m[INFO] [1782539309.087068656]:  big IMU acc bias estimation 5.418344[0m
-[0m[INFO] [1782539309.259697887]:  big IMU acc bias estimation 5.421344[0m
-[0m[INFO] [1782539309.296829945]:  big IMU acc bias estimation 5.391050[0m
-[0m[INFO] [1782539309.510817351]:  big IMU acc bias estimation 5.349719[0m
-[0m[INFO] [1782539309.780205159]:  big IMU acc bias estimation 5.364863[0m
-[0m[INFO] [1782539309.935992946]:  big IMU acc bias estimation 5.346626[0m
-[0m[INFO] [1782539310.099429251]:  big IMU acc bias estimation 5.153558[0m
-[0m[INFO] [1782539310.396354375]:  big IMU acc bias estimation 5.297621[0m
-[0m[INFO] [1782539310.491135219]:  big IMU acc bias estimation 5.328101[0m
-[0m[INFO] [1782539311.022981026]:  big IMU acc bias estimation 5.306646[0m
-[0m[INFO] [1782539311.153981339]:  big IMU acc bias estimation 5.289169[0m
-[0m[INFO] [1782539311.548151618]:  big IMU acc bias estimation 5.301952[0m
-[0m[INFO] [1782539312.124159993]:  big IMU acc bias estimation 5.212185[0m
-[0m[INFO] [1782539312.162850971]:  big IMU acc bias estimation 5.279224[0m
-[0m[INFO] [1782539312.231454855]:  big IMU acc bias estimation 5.303964[0m
-[0m[INFO] [1782539312.458691829]:  big IMU acc bias estimation 5.329527[0m
-[0m[INFO] [1782539313.146481373]:  big IMU acc bias estimation 5.347317[0m
-[0m[INFO] [1782539313.423509628]:  big IMU acc bias estimation 5.357863[0m
-[0m[INFO] [1782539313.482192135]:  big IMU acc bias estimation 5.356258[0m
-[0m[INFO] [1782539313.558518467]:  big IMU acc bias estimation 5.322959[0m
-[0m[INFO] [1782539313.744248339]:  big IMU acc bias estimation 5.319640[0m
-[0m[INFO] [1782539314.010685383]:  big IMU acc bias estimation 5.320359[0m
-[0m[INFO] [1782539314.284424294]:  big IMU acc bias estimation 5.321429[0m
-[0m[INFO] [1782539314.596255297]:  big IMU acc bias estimation 5.313054[0m
-[0m[INFO] [1782539314.960896573]:  big IMU acc bias estimation 5.299946[0m
-[0m[INFO] [1782539315.204576624]:  big IMU acc bias estimation 5.337533[0m
-[0m[INFO] [1782539315.589257074]:  big IMU acc bias estimation 5.324216[0m
-[0m[INFO] [1782539315.655018045]:  big IMU acc bias estimation 5.384900[0m
-[0m[INFO] [1782539316.003870640]:  big IMU acc bias estimation 5.347211[0m
-[0m[INFO] [1782539316.228960987]:  big IMU acc bias estimation 5.348094[0m
-[0m[INFO] [1782539316.889576846]:  big IMU acc bias estimation 5.291378[0m
-[0m[INFO] [1782539316.956794155]:  big IMU acc bias estimation 5.364424[0m
-[0m[INFO] [1782539317.131083003]:  big IMU acc bias estimation 5.361525[0m
-[0m[INFO] [1782539317.256064647]:  big IMU acc bias estimation 5.349315[0m
-[0m[INFO] [1782539317.485972973]:  big IMU acc bias estimation 5.350143[0m
-[0m[INFO] [1782539317.846656655]:  big IMU acc bias estimation 5.338585[0m
-[0m[INFO] [1782539318.508824536]:  big IMU acc bias estimation 5.301210[0m
-[0m[INFO] [1782539318.598670742]:  big IMU acc bias estimation 5.352008[0m
-[0m[INFO] [1782539319.423434601]:  big IMU acc bias estimation 5.299858[0m
-[0m[INFO] [1782539319.477614180]:  big IMU acc bias estimation 5.158294[0m
-[0m[INFO] [1782539319.519886848]:  big IMU acc bias estimation 5.328382[0m
-[0m[INFO] [1782539319.853812599]:  big IMU acc bias estimation 5.324669[0m
-[0m[INFO] [1782539319.983803506]:  big IMU acc bias estimation 5.339188[0m
-[0m[INFO] [1782539320.068270028]:  big IMU acc bias estimation 5.318043[0m
-[0m[INFO] [1782539320.234348840]:  big IMU acc bias estimation 5.302731[0m
-[0m[INFO] [1782539320.360080038]:  big IMU acc bias estimation 5.301474[0m
-[0m[INFO] [1782539320.784510561]:  big IMU acc bias estimation 5.290424[0m
-[0m[INFO] [1782539320.936147530]:  big IMU acc bias estimation 5.280332[0m
-[0m[INFO] [1782539321.229854954]:  big IMU acc bias estimation 5.251433[0m
-[0m[INFO] [1782539321.452864164]:  big IMU acc bias estimation 5.288265[0m
-[0m[INFO] [1782539322.307548455]:  big IMU acc bias estimation 5.289506[0m
-[0m[INFO] [1782539322.363738173]:  big IMU acc bias estimation 5.321314[0m
-[0m[INFO] [1782539322.405002163]:  big IMU acc bias estimation 5.358362[0m
-[0m[INFO] [1782539322.779698693]:  big IMU acc bias estimation 5.386727[0m
-[0m[INFO] [1782539322.821782372]:  big IMU acc bias estimation 5.367024[0m
-[0m[INFO] [1782539323.004058311]:  big IMU acc bias estimation 5.369221[0m
-[0m[INFO] [1782539324.037365906]:  big IMU acc bias estimation 5.355446[0m
-[0m[INFO] [1782539324.419371796]:  big IMU acc bias estimation 5.350716[0m
-[0m[INFO] [1782539324.459657237]:  big IMU acc bias estimation 5.388134[0m
-[0m[INFO] [1782539325.038988281]:  big IMU acc bias estimation 5.387944[0m
-[0m[INFO] [1782539325.104643506]:  big IMU acc bias estimation 5.387822[0m
-[0m[INFO] [1782539325.534422940]:  big IMU acc bias estimation 5.397964[0m
-[0m[INFO] [1782539325.873867371]:  big IMU acc bias estimation 5.399867[0m
-[0m[INFO] [1782539325.923046978]:  big IMU acc bias estimation 5.403332[0m
-[0m[INFO] [1782539326.058056459]:  big IMU acc bias estimation 5.411711[0m
-[0m[INFO] [1782539326.231653012]:  big IMU acc bias estimation 5.418161[0m
-[0m[INFO] [1782539326.404325174]:  big IMU acc bias estimation 5.411285[0m
-[0m[INFO] [1782539326.456764868]:  big IMU acc bias estimation 5.400719[0m
-[0m[INFO] [1782539326.677471510]:  big IMU acc bias estimation 5.417725[0m
-[0m[INFO] [1782539326.717806236]:  big IMU acc bias estimation 5.397579[0m
-[0m[INFO] [1782539326.878915959]:  big IMU acc bias estimation 5.362470[0m
-[0m[INFO] [1782539326.924252098]:  big IMU acc bias estimation 5.350399[0m
-[0m[INFO] [1782539327.270695602]:  big IMU acc bias estimation 5.328512[0m
-[0m[INFO] [1782539327.559810431]:  big IMU acc bias estimation 5.328086[0m
-[0m[INFO] [1782539327.774349317]:  big IMU acc bias estimation 5.337165[0m
-[0m[INFO] [1782539328.246164792]:  big IMU acc bias estimation 5.344601[0m
-[0m[INFO] [1782539328.527333231]:  big IMU acc bias estimation 5.365121[0m
-[0m[INFO] [1782539328.701555502]:  big IMU acc bias estimation 5.372099[0m
-[0m[INFO] [1782539329.220187725]:  big IMU acc bias estimation 5.388562[0m
-[0m[INFO] [1782539329.937008902]:  big IMU acc bias estimation 5.456300[0m
-[0m[INFO] [1782539329.982819949]:  big IMU acc bias estimation 5.456161[0m
-[0m[INFO] [1782539330.247983070]:  big IMU acc bias estimation 5.424008[0m
-[0m[INFO] [1782539330.309597557]:  big IMU acc bias estimation 5.421684[0m
-[0m[INFO] [1782539330.699257798]:  big IMU acc bias estimation 5.455724[0m
-[0m[INFO] [1782539330.826955126]:  big IMU acc bias estimation 5.442157[0m
-[0m[INFO] [1782539331.089341205]:  big IMU acc bias estimation 5.469220[0m
-[0m[INFO] [1782539332.193325087]:  big IMU acc bias estimation 5.454174[0m
-[0m[INFO] [1782539332.248767703]:  big IMU acc bia[33m[WARN] [1782539339.291696393]:  little feature 0[0m
+[0m[INFO] [1782556733.453776621]: Loaded esvio_folder: /tmp/esvio_cfg/[0m
+[0m[INFO] [1782556733.453800615]: Extrinsic_R2_event : 
+  0.0270726   0.0202015    0.999429
+  -0.999633   0.0014471   0.0270488
+-0.00089984   -0.999795   0.0202332[0m
+[0m[INFO] [1782556733.453810158]: Extrinsic_T2_event : 
+  0.128785 -0.0909398  0.0263033[0m
+[0m[INFO] [1782556733.453828049]: Rrl_event: 
+   0.99968  0.0200383  0.0154395
+-0.0200188   0.999799 -0.0014144
+-0.0154648 0.00110486    0.99988[0m
+[0m[INFO] [1782556733.453837186]: Trl_event: 
+ -0.170177 0.00146904 0.00486952[0m
+[0m[INFO] [1782556733.454065278]: Loaded esvio_folder: /tmp/esvio_cfg/[0m
+[0m[INFO] [1782556733.454078651]: Synchronized sensors, fix time offset: 0.00839259[0m
+[0m[INFO] [1782556733.454091904]: estimator.cpp: reading paramerter of camera /tmp/esvio_cfg/event0_esvio.yaml[0m
+[0m[INFO] [1782556733.454228861]: estimator.cpp: reading paramerter of camera /tmp/esvio_cfg/event1_esvio.yaml[0m
+[0m[INFO] [1782556733.454296522]: estimator.cpp: reading paramerter of camera /tmp/esvio_cfg/event0_esvio.yaml[0m
+[0m[INFO] [1782556733.454361654]: estimator.cpp: reading paramerter of camera /tmp/esvio_cfg/event1_esvio.yaml[0m
+[0m[INFO] [1782556749.848235989]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556749.852290028]: average_parallax 34.124647 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556749.928242625]: global SFM failed![0m
+[0m[INFO] [1782556750.223527590]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556750.234227134]: average_parallax 32.480145 choose l 7 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556750.274431326]: global SFM success![0m
+[0m[INFO] [1782556750.275702242]: misalign visual structure with IMU[0m
+[0m[INFO] [1782556750.519138689]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556750.522161559]: evio Not enough features or parallax; Move device around[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556751.104770123]: average_parallax 71.215595 choose l 7 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556751.146554042]: global SFM failed![0m
+[0m[INFO] [1782556752.045941061]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556752.046982867]: average_parallax 101.453243 choose l 6 and newest frame to tri[33m[WARN] [1782556752.108369816]: gyroscope bias initial calibration  0.212294 -0.607619 -0.842518[0m
+[33m[WARN] [1782556752.109775148]: estimated scale: -0.006464[0m
+[33m[WARN] [1782556752.109798426]:  result g     7.70231 -2.16904 -6.90276 -2.64058[0m
+angulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556752.108322722]: global SFM success![0m
+[0m[INFO] [1782556752.109808839]: misalign visual structure with IMU[0m
+[0m[INFO] [1782556752.111008769]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556752.111168397]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556752.352971618]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556752.353165438]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556752.911078595]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556752.926092475]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556753.309893331]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556753.330197852]: average_parallax 37.236451 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556753.330768722]: global SFM failed![0m
+[0m[INFO] [1782556753.640919619]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556753.656327005]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556754.272402626]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556754.296608281]: average_parallax 82.443544 choose l 7 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556754.297679789]: global SFM failed![0m
+[0m[INFO] [1782556754.764364966]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556754.765470229]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556755.158200747]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556755.159333951]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556755.622025021]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556755.629291336]: average_parallax 48.989404 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556755.630005362]: global SFM failed![0m
+[0m[INFO] [1782556756.008123302]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556756.015480314]: average_parallax 38.678451 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556756.016088891]: global SFM failed![0m
+[0m[INFO] [1782556756.552613001]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556756.552837030]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556757.195696691]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556757.195840064]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556757.729835285]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556757.729936228]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556758.350410371]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556758.356587649]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556758.794549765]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556758.794705297]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556758[33m[WARN] [1782556765.854512567]: ---------------5points----------------[0m
+[33m[WARN] [1782556765.854547546]: input points 82 2D inliers 3D inliers 32[0m
+.955132266]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556758.962716154]: average_parallax 40.518966 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556758.963314694]: global SFM failed![0m
+[0m[INFO] [1782556759.662421474]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556759.662683924]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556760.565584883]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556760.565752359]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556760.951852434]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556760.953905478]: average_parallax 69.338552 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556760.954225613]: global SFM failed![0m
+[0m[INFO] [1782556761.385489107]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556761.385833777]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556761.438182965]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556761.438297370]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556761.942890406]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556761.942997284]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556762.679626686]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556762.687319167]: average_parallax 38.199716 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556762.687648355]: global SFM failed![0m
+[0m[INFO] [1782556762.817162982]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556762.817255766]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556763.408813513]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556763.409719541]: average_parallax 52.383370 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556763.410272110]: global SFM failed![0m
+[0m[INFO] [1782556763.991626360]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556763.992413910]: average_parallax 50.668858 choose l 7 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556763.993101374]: global SFM failed![0m
+[0m[INFO] [1782556764.483937159]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556764.491813205]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556765.163586353]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556765.172751066]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556765.260788982]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556765.269491065]: average_parallax 40.755268 choose l 6 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556765.318004567]: global SFM failed![0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556765.858037349]: average_parallax 39.996345 choose l 5 and newest frame to triangulate the whole structure[0m
+unstable features tracking, pleas[33m[WARN] [1782556766.129902053]: ---------------5points----------------[0m
+[33m[WARN] [1782556766.130082353]: input points 68 2D inliers 3D inliers 34[0m
+[33m[WARN] [1782556766.717401723]: ---------------5points----------------[0m
+[33m[WARN] [1782556766.717462690]: input points 52 2D inliers 3D inliers 21[0m
+[33m[WARN] [1782556767.563736188]: ---------------5points----------------[0m
+[33m[WARN] [1782556767.563777529]: input points 172 2D inliers 3D inliers 131[0m
+[33m[WARN] [1782556770.929551543]: ---------------5points----------------[0m
+[33m[WARN] [1782556770.929619669]: input points 67 2D inliers 3D inliers 37[0m
+[33m[WARN] [1782556771.298578468]: ---------------5points----------------[0m
+[33m[WARN] [1782556771.298649440]: input points 31 2D inliers 3D inliers 15[0m
+[33m[WARN] [1782556772.121618998]: ---------------5points----------------[0m
+[33m[WARN] [1782556772.121655154]: input points 64 2D inliers 3D inliers 24[0m
+e slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556765.907097474]: global SFM failed![0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556766.133730020]: average_parallax 42.494053 choose l 4 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556766.191628028]: global SFM failed![0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556766.731727633]: average_parallax 60.547244 choose l 5 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556766.733154625]: global SFM failed![0m
+[0m[INFO] [1782556766.793860797]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556766.800878962]: average_parallax 50.989543 choose l 4 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556766.802234195]: global SFM failed![0m
+[0m[INFO] [1782556767.226734249]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556767.236780647]: average_parallax 45.840036 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556767.309632286]: global SFM failed![0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556767.567010530]: average_parallax 78.781812 choose l 6 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782556767.651303323]: global SFM failed![0m
+[0m[INFO] [1782556768.302765008]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556768.304502874]: average_parallax 116.738608 choose l 5 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782556768.390873250]: global SFM failed![0m
+[0m[INFO] [1782556768.422746815]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556768.433315257]: average_parallax 106.849815 choose l 4 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556768.503281185]: global SFM failed![0m
+[0m[INFO] [1782556769.497961762]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556769.498142573]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556769.552164677]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556769.552691159]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556770.047652969]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556770.049156292]: average_parallax 35.655954 choose l 7 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556770.050315241]: global SFM failed![0m
+[0m[INFO] [1782556770.480444491]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556770.486263763]: average_parallax 39.620393 choose l 5 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556770.487185173]: global SFM failed![0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556770.957237185]: average_parallax 57.750228 choose l 6 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556770.959200659]: global SFM failed![0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556771.306725930]: average_parallax 67.912642 choose l 7 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556771.309326671]: global SFM failed![0m
+unstable features tracking, please slowly[33m[WARN] [1782556772.192801960]: gyroscope bias initial calibration   0.404858 -0.0828062   0.443423[0m
+[33m[WARN] [1782556772.193893551]: estimated scale: 0.004759[0m
+[33m[WARN] [1782556772.193912044]:  result g     10.3013 -0.530011  -8.08864  -6.35679[0m
+[33m[WARN] [1782556772.194025666]:  refine     9.80766 -0.587908  -7.80324  -5.91219[0m
+[33m[WARN] [1782556772.194036895]: estimated scale after RefineGravity: -0.002689[0m
+[33m[WARN] [1782556772.237610142]: ---------------5points----------------[0m
+[33m[WARN] [1782556772.237659877]: input points 47 2D inliers 3D inliers 21[0m
+W0627 10:39:33.968981   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:39:33.971472   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:39:33.972247   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:39:33.975800   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:39:33.976238   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:39:33.976663   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+[33m[WARN] [1782556773.977469234]: gyroscope bias initial calibration -0.112895 0.0330573  0.445729[0m
+[33m[WARN] [1782556773.978654002]: estimated scale: -0.020226[0m
+[33m[WARN] [1782556773.978671965]:  result g     10.0689 -0.0399186   -8.06385   -6.02963[0m
+[33m[WARN] [1782556775.955585951]: ---------------5points----------------[0m
+[33m[WARN] [1782556775.955630727]: input points 39 2D inliers 3D inliers 21[0m
+[33m[WARN] [1782556776.550521898]: ---------------5points----------------[0m
+[33m[WARN] [1782556776.550586590]: input points 24 2D inliers 3D inliers 13[0m
+ move you device!
+[0m[INFO] [1782556772.125000280]: average_parallax 127.454250 choose l 6 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782556772.192767871]: global SFM success![0m
+[0m[INFO] [1782556772.194044862]: misalign visual structure with IMU[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556772.239867607]: average_parallax 59.582304 choose l 6 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782556772.305178709]: global SFM failed![0m
+[0m[INFO] [1782556772.754780473]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556772.758707215]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556772.982767426]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556772.998971735]: average_parallax 33.614238 choose l 7 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556773.048697110]: global SFM failed![0m
+[0m[INFO] [1782556773.536321919]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556773.540204397]: average_parallax 38.098728 choose l 8 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782556773.594396729]: global SFM failed![0m
+[0m[INFO] [1782556773.932754516]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556773.933720177]: average_parallax 35.229836 choose l 5 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782556773.977435918]: global SFM success![0m
+[0m[INFO] [1782556773.978679842]: misalign visual structure with IMU[0m
+[0m[INFO] [1782556774.907868733]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556774.912895660]: average_parallax 44.428582 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556774.962253421]: global SFM failed![0m
+[0m[INFO] [1782556775.168104491]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556775.172024866]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556775.207534795]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556775.207644991]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556775.730415244]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556775.732010523]: average_parallax 30.366847 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556775.733230213]: global SFM failed![0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556775.960394651]: average_parallax 98.242532 choose l 6 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556776.001843658]: global SFM failed![0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556776.614116394]: average_parallax 99.914219 choose l 4 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782556776.656855305]: global SFM failed![0m
+[0m[INFO] [1782556776.762136990]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556776.778277760]: average_parallax 44.672387 choose l 6 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556776.824435286]: global SFM failed![0m
+[0m[INFO] [1782556777.217118775]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556777.224377678]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556777.773969096]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556777.774079814]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556778.405377216]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556778.405526536]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556778.721140283]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556778.728632295]: average_parallax 58.146434 choose l 7 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556778.729355110]: global SFM failed![0m
+[0m[INFO] [1782556779.288972537]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556779.289105004]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556779.596268191]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556779.596541535]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556780.194408190]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556780.198158870]: average_parallax 42.152728 choose l 7 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556780.199793412]: global SFM failed![0m
+[0m[INFO] [1782556780.280698328]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556780.280882921]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556780.869967925]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556780.870710266]: average_parallax 44.334803 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556780.871505132]: global SFM failed![0m
+[0m[INFO] [1782556781.404222314]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556781.418934664]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556781.692809519]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556781.701421874]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556782.045581511]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556782.047244858]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556782.562787976]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556782.564533363]: average_parallax 44.529500 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556782.565544044]: global SFM failed![0m
+[0m[INFO] [1782556783.286918319]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556783.289586919]: average_parallax 55.551086 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556783.290591809]: global SFM failed![0m
+[0m[INFO] [1782556783.331966384]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556783.332121769]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556783.588632996]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556783.588725897]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556784.269636133]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556784.270603414]: average_parallax 41.036379 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556784.270755845]: global SFM failed![0m
+[0m[INFO] [1782556784.394582614]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556784.394679638]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556784.886904421]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556784.887046821]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556785.195140442]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556785.204244729]: average_parallax 36.931921 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556785.204368556]: global SFM failed![0m
+[0m[INFO] [1782556785.558891289]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556785.565862500]: average_parallax 78.531968 choose l 7 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556785.566304774]: global SFM failed![0m
+[0m[INFO] [1782556785.887437322]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556785.899182040]: average_parallax 90.711891 choose l 7 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556785.900013801]: global SFM failed![0m
+[0m[INFO] [1782556786.553178057]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556786.560266379]: average_parallax 48.285214 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556786.561554870]: global SFM failed![0m
+[0m[INFO] [1782556787.447368521]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556787.456250016]: average_parallax 42.556385 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556787.456747686]: global SFM failed![0m
+[0m[INFO] [1782556787.529097114]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556787.529256688]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556788.009165797]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556788.009360601]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556789.039144507]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556789.039258449]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556789.382652322]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556789.383572090]: average_parallax 64.821920 choose l 7 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556789.384139938]: global SFM failed![0m
+[0m[INFO] [1782556790.136715737]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556790.137091998]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556790.269707397]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556790.270179285]: average_parallax 38.859241 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556790.270243604]: global SFM failed![0m
+[0m[INFO] [1782556790.929539972]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556790.929851609]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556791.569472198]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556791.571390808]: average_parallax 70.483592 choose l 6 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556791.572200785]: global SFM failed![0m
+[0m[INFO] [1782556792.248369720]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556792.248507124]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556792.694913701]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556792.695068665]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556793.233259128]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556793.240731979]: average_parallax 95.901004 choose l 7 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556793.241352679]: global SFM failed![0m
+[0m[INFO] [1782556793.363821450]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556793.385115736]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556793.941439357]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556793.942882291]: average_parallax 50.317320 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556793.944108646]: global SFM failed![0m
+[0m[INFO] [1782556794.528040319]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556794.528289200]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556794.926567975]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556794.926743393]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556795.531343772]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556795.531442968]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556796.515785394]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556796.515950053]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556796.861815389]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556796.861913097]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556796.913737774]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556796.913826719]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556797.255559622]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556797.255746811]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556797.858220737]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556797.861101178]: average_parallax 58.658768 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556797.861574722]: global SFM failed![0m
+[0m[INFO] [1782556798.381493983]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556798.391442030]: average_parallax 38.005456 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556798.391928291]: global SFM failed![0m
+[0m[INFO] [1782556798.976657392]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556798.976853511]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556799.887242254]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556799.887373842]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556800.082388988]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556800.082529977]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556800.657954476]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556800.658058333]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556800.998512921]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556800.998679028]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556801.720125416]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556801.720242037]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556802.222859406]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556802.223045779]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556802.937445480]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556802.937537405]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556803.030258353]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556803.030572409]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556803.612919649]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556803.619762756]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556804.304433300]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556804.308205296]: average_parallax 36.054845 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556804.309269464]: global SFM failed![0m
+[0m[INFO] [1782556804.558545604]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556804.559552165]: average_parallax 44.960169 choose l 7 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556804.560210346]: global SFM failed![0m
+[0m[INFO] [1782556805.200241976]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556805.200429825]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556805.815708233]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556805.825476244]: average_parallax 41.756819 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556805.825920506]: global SFM failed![0m
+[0m[INFO] [1782556806.180170763]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556806.180278084]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556806.631675392]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556806.632981959]: average_parallax 80.810089 choose l 6 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556806.635198710]: global SFM failed![0m
+[0m[INFO] [1782556806.852040058]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556806.852626172]: average_parallax 101.848782 choose l 5 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556806.854320550]: global SFM failed![0m
+[0m[INFO] [1782556807.492837036]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556807.494844905]: aver[33m[WARN] [1782556808.922662021]: gyroscope bias initial calibration -0.0116473   0.111585  -0.555094[0m
+[33m[WARN] [1782556808.924183775]: estimated scale: -0.047273[0m
+[33m[WARN] [1782556808.924237463]:  result g     10.2345  1.44856 -7.18925 -7.13875[0m
+age_parallax 103.813299 choose l 5 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556807.496098687]: global SFM failed![0m
+[0m[INFO] [1782556807.551960260]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556807.560598791]: average_parallax 99.177703 choose l 5 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556807.615261386]: global SFM failed![0m
+[0m[INFO] [1782556808.038266885]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556808.042747206]: average_parallax 72.406206 choose l 6 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556808.108924391]: global SFM failed![0m
+[0m[INFO] [1782556808.833615111]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556808.840903359]: average_parallax 53.889399 choose l 6 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782556808.922573047]: global SFM success![0m
+[0m[INFO] [1782556808.924250088]: misalign visual structure with IMU[0m
+[0m[INFO] [1782556808.984904412]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556808.993816742]: average_parallax 40.611355 choose l 6 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782556809.061332231]: global SFM failed![0m
+[0m[INFO] [1782556809.521398647]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556809.525696657]: average_parallax 38.692982 choose l 5 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782556809.588917400]: global SFM failed![0m
+[0m[INFO] [1782556809.875117649]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556809.876120250]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556810.229666826]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556810.229876532]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556810.749000637]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556810.750607524]: average_parallax 34.401884 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556810.750706075]: global SFM failed![0m
+[0m[INFO] [1782556810.969302078]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556810.969856736]: average_parallax 66.724867 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556810.970206738]: global SFM failed![0m
+[0m[INFO] [1782556811.277547554]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556811.278347880]: average_parallax 133.355167 choose l 7 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556811.279117742]: global SFM failed![0m
+[0m[INFO] [1782556811.917498765]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556811.918833515]: average_parallax 119.381208 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556811.920040846]: global SFM failed![0m
+[0m[INFO] [1782556811.967154209]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556811.969442237]: average_parallax 47.929475 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556811.970499095]: global SFM failed![0m
+[0m[INFO] [1782556812.630546300]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556812.630806197]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556812.676658052]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556812.676868582]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556813.088822312]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556813.090197088]: average_parallax 63.081897 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556813.090353306]: global SFM failed![0m
+[0m[INFO] [1782556813.656517674]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556813.660548466]: average_parallax 217.361560 choose l 7 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556813.661156805]: global SFM failed![0m
+[0m[INFO] [1782556813.840963887]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556813.843458095]: average_parallax 221.328897 choose l 6 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556813.844246569]: global SFM failed![0m
+[0m[INFO] [1782556814.319169291]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556814.319986315]: average_parallax 274.181843 choose l 4 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556814.320870291]: global SFM failed![0m
+[0m[INFO] [1782556815.076245117]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556815.076436332]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556815.601957457]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556815.602182279]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556815.812554832]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556815.818321736]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556816.293206636]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556816.300615638]: average_parallax 37.840416 choose l 7 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556816.301459828]: global SFM failed![0m
+[0m[INFO] [1782556816.855775518]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556816.866189188]: average_parallax 54.010657 choose l 4 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556816.867927937]: global SFM failed![0m
+[0m[INFO] [1782556817.321444598]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556817.364244872]: average_parallax 55.562152 choose l 7 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556817.366774154]: global SFM failed![0m
+[0m[INFO] [1782556817.606996110]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556817.615740956]: average_parallax 49.543201 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556817.617502332]: global SFM failed![0m
+[0m[INFO] [1782556818.31[33m[WARN] [1782556818.750718816]: ---------------5points----------------[0m
+[33m[WARN] [1782556818.750765905]: input points 31 2D inliers 3D inliers 16[0m
+[33m[WARN] [1782556820.707601898]: gyroscope bias initial calibration -0.0703417 -0.0391997   0.450753[0m
+[33m[WARN] [1782556820.709242845]: estimated scale: -0.009027[0m
+[33m[WARN] [1782556820.709287793]:  result g     10.1843 0.418495 -7.90488 -6.40762[0m
+[33m[WARN] [1782556822.408245931]: ---------------5points----------------[0m
+[33m[WARN] [1782556822.408301544]: input points 53 2D inliers 3D inliers 15[0m
+2340083]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556818.332808577]: average_parallax 44.746840 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556818.333794613]: global SFM failed![0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556818.763538580]: average_parallax 31.061120 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556818.764673577]: global SFM failed![0m
+[0m[INFO] [1782556818.996323097]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556818.999533902]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556819.580781854]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556819.580998347]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556819.998834071]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556820.009394372]: average_parallax 33.059560 choose l 5 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556820.057004660]: global SFM failed![0m
+[0m[INFO] [1782556820.646722262]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556820.648644761]: average_parallax 81.109322 choose l 4 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782556820.707549442]: global SFM success![0m
+[0m[INFO] [1782556820.709300877]: misalign visual structure with IMU[0m
+[0m[INFO] [1782556821.332335325]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556821.340924662]: average_parallax 33.648922 choose l 7 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782556821.408415165]: global SFM failed![0m
+[0m[INFO] [1782556821.431299218]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556821.452276875]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556822.294287645]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556822.301307377]: average_parallax 47.357311 choose l 5 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782556822.369780967]: global SFM failed![0m
+[0m[INFO] [1782556822.501969118]: average_parallax 51.662850 choose l 7 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782556822.554293969]: global SFM failed![0m
+[0m[INFO] [1782556822.816044946]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556822.843243986]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556823.117096504]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556823.130047714]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556823.800852182]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556823.801243553]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556824.029778026]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556824.030330179]: average_parallax 87.300707 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556824.031573180]: global SFM failed![0m
+[0m[INFO] [1782556825.055261741]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556825.068924625]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556825.464849588]: esvio Not enough features or parallax; Move device [33m[WARN] [1782556828.702874536]: ---------------5points----------------[0m
+[33m[WARN] [1782556828.702924156]: input points 131 2D inliers 3D inliers 84[0m
+[33m[WARN] [1782556828.775279110]: gyroscope bias initial calibration 0.0659726 -0.241952 -0.262924[0m
+[33m[WARN] [1782556828.776605519]: estimated scale: -0.062880[0m
+[33m[WARN] [1782556828.776649599]:  result g     9.86039 0.0991193  -7.25829  -6.67344[0m
+around[0m
+[0m[INFO] [1782556825.465128274]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556825.898952460]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556825.899161728]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556826.324093819]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556826.324263824]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556826.805451996]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556826.807982374]: average_parallax 42.420071 choose l 6 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556826.808867774]: global SFM failed![0m
+[0m[INFO] [1782556827.170477582]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556827.175422962]: average_parallax 62.405956 choose l 5 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556827.177170982]: global SFM failed![0m
+[0m[INFO] [1782556827.667631651]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556827.672573765]: average_parallax 175.631611 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556827.674258978]: global SFM failed![0m
+[0m[INFO] [1782556828.177862009]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556828.183656989]: average_parallax 165.061572 choose l 6 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782556828.243393872]: global SFM failed![0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556828.718135252]: average_parallax 151.307758 choose l 5 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556828.775215608]: global SFM success![0m
+[0m[INFO] [1782556828.776662166]: misalign visual structure with IMU[0m
+[0m[INFO] [1782556829.059463433]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556829.062847793]: average_parallax 217.471219 choose l 6 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556829.128522853]: global SFM failed![0m
+[0m[INFO] [1782556829.741463501]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556829.741590273]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556830.503292430]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556830.509401532]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556830.659409093]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556830.659578073]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556831.352297837]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556831.354331434]: average_parallax 35.049843 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556831.355403086]: global SFM failed![0m
+[0m[INFO] [1782556831.799803343]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556831.827942241]: average_parallax 30.692769 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556831.828940723]: global SFM failed![0m
+[0m[INFO] [1782556832.020537353]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556832.021455923]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556832.442240749]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556832.448739013]: average_parallax 37.425312 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556832.449438296]: global SFM failed![0m
+[0m[INFO] [1782556832.748171741]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556832.766379319]: average_parallax 41.289291 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556832.767012281]: global SFM failed![0m
+[0m[INFO] [1782556833.021378684]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556833.021544250]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556833.453197929]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556833.454760435]: average_parallax 46.310397 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556833.454842273]: global SFM failed![0m
+[0m[INFO] [1782556834.319511615]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556834.323173663]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556834.408859301]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556834.408981211]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556835.597160382]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556835.597341984]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556835.812759143]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556835.813033084]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556835.941541626]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556835.941728653]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556837.113043737]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556837.113380525]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556837.204904086]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556837.205007511]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556837.990428528]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556837.990628378]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556838.822283752]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556838.822586193]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556839.383077500]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556839.383242370]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556839.653769012]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556839.653876899]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556839.944354963]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556839.944560737]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556840.722907604]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556840.723113680]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556840.943137369]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556840.943315252]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556841.354990450]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556841.355177096]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556841.927548588]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556841.927699358]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556842.405066819]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556842.405346196]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556842.451159400]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556842.452214217]: average_parallax 30.782361 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556842.452593083]: global SFM failed![0m
+[0m[INFO] [1782556843.110791791]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556843.110902719]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556843.398573390]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556843.398683632]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556843.643305285]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556843.645570540]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556844.096464025]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556844.096586253]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556844.517318718]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556844.517473182]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556844.815099318]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556844.815251420]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556845.241897939]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556845.241989854]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556845.507897186]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556845.508313650]: average_parallax 37.442368 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556845.509204058]: global SFM failed![0m
+[0m[INFO] [1782556846.477529419]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556846.477626001]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556846.557834867]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556846.557928617]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556846.975951508]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556846.977955654]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556847.162175853]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556847.165905428]: average_parallax 34.133767 choose l 7 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556847.167062394]: global SFM failed![0m
+[0m[INFO] [1782556847.720473653]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782556847.724490475]: average_parallax 50.946322 choose l 6 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782556847.725539416]: global SFM failed![0m
+[0m[INFO] [1782556848.010562918]: esvio Not enough features or parallax; Move W0627 10:40:48.412508   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:40:48.414520   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:40:48.417796   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:40:48.418479   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:40:48.421761   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:40:48.422446   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:40:48.425724   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0627 10:40:48.426405   216 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+[33m[WARN] [1782556849.438083995]: gyroscope bias initial calibration  -0.0948819 -0.00195945  -0.0277368[0m
+[33m[WARN] [1782556849.439383829]: estimated scale: 0.079411[0m
+[33m[WARN] [1782556849.439400164]:  result g     9.52843 -0.523508  -8.36091  -4.54006[0m
+[33m[WARN] [1782556849.439509224]:  refine     9.80766 -0.536469  -8.60353  -4.67778[0m
+[33m[WARN] [1782556849.439517310]: estimated scale after RefineGravity: 0.080483[0m
+throw events2
+throw events2
+throw events2
+throw events2
+throw events2
+throw events2
+throw events2
+throw events2
+throw events2
+throw events2
+throw events2
+throw events1
+throw events1
+throw events1
 throw events1
 throw events1
 throw events1
@@ -388,6 +869,25 @@ throw events1
 throw events1
 throw events1
 throw events2
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
 throw events2
 throw events2
 throw events2
@@ -409,9 +909,6 @@ throw events2
 throw events2
 throw events2
 throw events2
-throw events1
-throw events1
-throw events1
 throw events2
 throw events2
 throw events2
@@ -436,75 +933,16 @@ throw events2
 throw events2
 throw events2
 throw events2
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
 throw events2
 throw events2
 throw events2
 throw events2
 throw events2
 throw events2
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
+throw events2
+throw events2
+throw events2
+throw events2
 throw events1
 throw events1
 throw events1
@@ -553,6 +991,8 @@ throw events2
 throw events2
 throw events2
 throw events2
+throw events1
+throw events1
 throw events1
 throw events1
 throw events1
@@ -561,6 +1001,7 @@ throw events1
 throw events1
 throw events1
 throw events1
+throw events1
 throw events2
 throw events2
 throw events2
@@ -578,15 +1019,6 @@ throw events2
 throw events2
 throw events2
 throw events2
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
-throw events1
 throw events2
 throw events2
 throw events2
@@ -594,8 +1026,6 @@ throw events2
 throw events2
 throw events2
 throw events2
-throw events1
-throw events1
 throw events2
 throw events2
 throw events2
@@ -620,6 +1050,23 @@ throw events2
 throw events2
 throw events2
 throw events2
+throw events2
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
 throw events1
 throw events1
 throw events1
@@ -637,6 +1084,26 @@ throw events1
 throw events1
 throw events1
 throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events1
+throw events2
+throw events2
+throw events2
+throw events2
+throw events2
+throw events2
+throw events2
+throw events2
+throw events2
+throw events2
+throw events2
+throw events2
+throw events2
+throw events2
 throw events2
 throw events2
 throw events2
@@ -668,65 +1135,13 @@ throw events2
 throw events2
 throw events2
 throw events2
-throw ev[33m[WARN] [1782539339.400140117]:  little feature 0[0m
-s estimation 5.449167[0m
-[0m[INFO] [1782539332.556160929]:  big IMU acc bias estimation 5.443317[0m
-[0m[INFO] [1782539332.911866435]:  big IMU acc bias estimation 5.468644[0m
-[0m[INFO] [1782539332.961846528]:  big IMU acc bias estimation 5.477598[0m
-[0m[INFO] [1782539333.047925021]:  big IMU acc bias estimation 5.458118[0m
-[0m[INFO] [1782539333.098572958]:  big IMU acc bias estimation 5.434273[0m
-[0m[INFO] [1782539333.357792023]:  big IMU acc bias estimation 5.440326[0m
-[0m[INFO] [1782539333.407863375]:  big IMU acc bias estimation 5.410738[0m
-[0m[INFO] [1782539333.808879592]:  big IMU acc bias estimation 5.426886[0m
-[0m[INFO] [1782539334.862626264]:  big IMU acc bias estimation 5.426994[0m
-[0m[INFO] [1782539334.942643384]:  big IMU acc bias estimation 5.416330[0m
-[0m[INFO] [1782539335.044816900]:  big IMU acc bias estimation 5.407687[0m
-[0m[INFO] [1782539335.350752225]:  big IMU acc bias estimation 5.416563[0m
-[0m[INFO] [1782539335.405723366]:  big IMU acc bias estimation 5.438524[0m
-[0m[INFO] [1782539335.740602887]:  big IMU acc bias estimation 5.472033[0m
-[0m[INFO] [1782539335.840181689]:  big IMU acc bias estimation 5.463398[0m
-[0m[INFO] [1782539336.024841947]:  big IMU acc bias estimation 5.454953[0m
-[0m[INFO] [1782539336.113737562]:  big IMU acc bias estimation 5.489757[0m
-[0m[INFO] [1782539336.205026961]:  big IMU acc bias estimation 5.492952[0m
-[0m[INFO] [1782539336.292807199]:  big IMU acc bias estimation 5.472089[0m
-[0m[INFO] [1782539336.757331495]:  big IMU acc bias estimation 5.434128[0m
-[0m[INFO] [1782539337.068453972]:  big IMU acc bias estimation 5.417462[0m
-[0m[INFO] [1782539337.163252677]:  big IMU acc bias estimation 5.408970[0m
-[0m[INFO] [1782539337.318356167]:  big IMU acc bias estimation 5.424256[0m
-[0m[INFO] [1782539337.603024957]:  big IMU acc bias estimation 5.450710[0m
-[0m[INFO] [1782539338.140357143]:  big IMU acc bias estimation 5.453560[0m
-[0m[INFO] [1782539338.195544511]:  big IMU acc bias estimation 5.480081[0m
-[0m[INFO] [1782539339.291761407]:  big IMU acc bias estimation 5.495170[0m
-[0m[INFO] [1782539339.400200465]:  big IMU acc bias estimation 5.494453[0m
-[0m[INFO] [1782539339.665482627]:  big IMU acc bias estimation 5.459274[0m
-[0m[INFO] [1782539339.894986195]:  big IMU acc bias estimation 5.522943[0m
-[0m[INFO] [1782539339.953075048]:  big IMU acc bias estimation 5.522089[0m
-[0m[INFO] [1782539340.045387046]:  big IMU acc bias estimation 5.508725[0m
-[0m[INFO] [1782539340.429718169]:  big IMU acc bias estimation 5.504066[0m
-[0m[INFO] [1782539340.478483660]:  big IMU acc bias estimation 5.507744[0m
-[0m[INFO] [1782539340.964357730]:  big IMU acc bias estimation 5.486557[0m
-[0m[INFO] [1782539341.270898490]:  big IMU acc bias estimation 5.475331[0m
-[0m[INFO] [1782539341.321063094]:  big IMU acc bias estimation 5.464419[0m
-[0m[INFO] [1782539341.545574659]:  big IMU acc bias estimation 5.393107[0m
-[0m[INFO] [1782539341.594790383]:  big IMU acc bias estimation 5.449231[0m
-[0m[INFO] [1782539341.899818381]:  big IMU acc bias estimation 5.463076[0m
-[0m[INFO] [1782539342.329836405]:  big IMU acc bias estimation 5.475538[0m
-[0m[INFO] [1782539342.384789073]:  big IMU acc bias estimation 5.433352[0m
-[0m[INFO] [1782539342.905154810]:  big IMU acc bias estimation 5.508985[0m
-[0m[INFO] [1782539343.041841953]:  big IMU acc bias estimation 5.458903[0m
-[0m[INFO] [1782539343.304631837]:  big IMU acc bias estimation 5.477623[0m
-[0m[INFO] [1782539343.516852036]:  big IMU acc bias estimation 5.467752[0m
-[0m[INFO] [1782539343.953619135]:  big IMU acc bias estimation 5.476926[0m
-[0m[INFO] [1782539344.127053729]:  big IMU acc bias estimation 5.504460[0m
-[0m[INFO] [1782539344.340254704]:  big IMU acc bias estimation 5.499970[0m
-[0m[INFO] [1782539344.470621514]:  big IMU acc bias estimation 5.500132[0m
-[0m[INFO] [1782539345.162441391]:  big IMU acc bias estimation 5.499293[0m
-[0m[INFO] [1782539345.413250851]:  big IMU acc bias estimation 5.507532[0m
-[0m[INFO] [1782539345.461927840]:  big IMU acc bias estimation 5.[33m[WARN] [1782539367.366253602]: Shutdown request received.[0m
-[33m[WARN] [1782539367.366837186]: Reason given for shutdown: [user request][0m
-[33m[WARN] [1782539367.367672541]: Shutdown request received.[0m
-[33m[WARN] [1782539367.367709764]: Reason given for shutdown: [user request][0m
-[33m[WARN] [1782539367.368060211]: Shutdown request received.[0m
-[33m[WARN] [1782539367.368089067]: Reason given for shutdown: [user request][0m
-[33m[WARN] [1782539367.368457260]: Shutdown request received.[0m
-[33m[WARN] [1782539367.368482862]: Reason given for shutdown: [user request][0m
+throw ev[33m[WARN] [1782556852.399946151]: event stream discontinue! reset the event feature tracker![0m
+[33m[WARN] [1782556864.702122907]: Shutdown request received.[0m
+[33m[WARN] [1782556864.702748570]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1782556864.703524853]: Shutdown request received.[0m
+[33m[WARN] [1782556864.703554268]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1782556864.703895209]: Shutdown request received.[0m
+[33m[WARN] [1782556864.703926323]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1782556864.704289126]: Shutdown request received.[0m
+[33m[WARN] [1782556864.704315706]: Reason given for shutdown: [user request][0m
+terminate called without an active exception

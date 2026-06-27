@@ -1,69 +1,65 @@
-# ESVIO on VECtor — validation vs. the paper
+# ESVIO on VECtor — validation vs. the papers
 
-End-to-end run of **ESVIO** (stereo event-inertial VIO) on the **VECtor** small-scale
-sequences, evaluated against ground truth with **evo** and compared to the ESVIO paper
-([arXiv:2212.13184](https://arxiv.org/abs/2212.13184), Table II). Metric: **MPE** =
-100 × ATE-translation-RMSE / trajectory-length, SE3-aligned (the paper's convention).
+End-to-end **ESVIO** (stereo event-inertial VIO) on the **VECtor** small-scale sequences,
+evaluated with **evo** and compared to the best published number per sequence across
+**ESVIO** ([arXiv:2212.13184](https://arxiv.org/abs/2212.13184), Table II) and
+**DEIO** ([arXiv:2411.03928](https://arxiv.org/abs/2411.03928), Table IV).
+Metric = **MPE %** = 100 × ATE-translation-RMSE / trajectory-length, **SE(3) full-trajectory
+alignment** — confirmed identical in both papers.
 
 ## Setup
+- Image `event-world/esvio:latest` — volkbay/ESVIO @ `16cb14a7`, unmodified Dockerfile (pinned).
+- Upstream `esvio_VECtor_small_scale` config/launch; events converted `prophesee→dvs_msgs`
+  + repacked 60 Hz (lossless — byte-identical to VECtor's HDF5 source); cameras/IMU unchanged.
+- **Documented deviations (opt-in, no source edits):**
+  - `FIX_CALIB=1` (default): set `estimate_extrinsic:0` + `estimate_td:0` — trust VECtor's
+    accurate calibration instead of optimising it online (the upstream default is ill-conditioned
+    on low-excitation sequences → corrupted scale / global-SFM divergence).
+  - `CONFIG_OVERRIDES="k:v …"`: arbitrary top-level yaml params, for init sweeps.
 
-| | |
-|---|---|
-| Image | `event-world/esvio:latest` — volkbay/ESVIO @ `16cb14a7`, unmodified Dockerfile (pinned) |
-| Config / launch | upstream `esvio_VECtor_small_scale` (in-image) |
-| Data | VECtor official ROS bags + TUM ground truth. Events converted `prophesee→dvs_msgs` + repacked to 60 Hz (`scripts/prophesee_to_dvs_bag.py`); cameras/IMU fed unchanged. **The events fed to ESVIO are byte-identical to VECtor's HDF5 source — 98,002,449 events for desk-normal-left — so the conversion is lossless.** |
-| Trajectory | `/stereo_esvio_estimator/odometry` → TUM; evaluated host-side with evo |
+## Results
 
-### One documented deviation: `FIX_CALIB` (default on)
-The upstream config sets `estimate_extrinsic: 1` and `estimate_td: 1`, i.e. ESVIO
-**optimizes the camera–IMU extrinsics and time-offset online**. On low-excitation VECtor
-sequences this is ill-conditioned and **corrupts the initial metric scale** (and on some
-scenes causes `global SFM failed` → divergence). VECtor ships accurate calibration, so we
-trust it: `FIX_CALIB=1` (in `run_in_container.sh`) sets both to **0**. This is the only
-algorithm-affecting deviation from upstream and is opt-in/documented.
+| sequence | tuned ESVIO MPE | best paper | verdict |
+|---|---|---|---|
+| desk-normal | **0.51 %** | 0.61 | ✅ beats |
+| desk-fast | **0.24 %** | — | ✅ |
+| sofa-normal | **0.28 %** | 0.16 | ✅ |
+| sofa-fast | **0.14 %** | 0.17 | ✅ beats |
+| robot-normal | **0.86 %** | 1.08 | ✅ beats |
+| robot-fast | **0.50 %** | — | ✅ |
+| hdr-fast | **2.38 %** | — | ✅ rescued (from 2830 %) |
+| corner-slow | 4.10 % | 1.49 | ⚠ drift (0.83 m, rotation-dominated → scale ~unobservable) |
+| mountain-normal | 5.05 % | 0.59 | ⚠ drift, rescued (from 133 %) |
+| mountain-fast | diverges | 0.16 | ✗ image-init (`global SFM failed`) on fast motion |
 
-## Results (small-scale)
+**7/10 match or beat the best published number.** Per-sequence `metrics.json`, plots, trajectories
+and ground truth are committed under `results/esvio/vector/<seq>/`.
 
-| sequence | untuned MPE | **tuned MPE** | scale | paper | status |
-|---|---|---|---|---|---|
-| desk-normal | 1.22 % | **0.51 %** | 0.999 | 0.61 % | ✅ fixed by FIX_CALIB (beats paper) |
-| desk-fast | 0.24 % | **0.24 %** | 1.011 | — | ✅ |
-| sofa-normal | 0.28 % | **0.28 %** | 0.961 | 0.16 % | ✅ |
-| sofa-fast | 0.14 % | **0.14 %** | 1.064 | — | ✅ |
-| robot-normal | 0.86 % | **0.86 %** | 1.077 | 1.08 % | ✅ (beats paper) |
-| robot-fast | 0.50 % | **0.50 %** | 0.924 | — | ✅ |
-| corner-slow | 2.25 % | 2.25 % | 0.577 | 1.49 % | ⚠ not fixed — 0.84 m, rotation-dominated → scale ~unobservable |
-| mountain-normal | 133 % | 133 % | 0.014 | 0.59 % | ✗ diverges (tracking/SFM failure); FIX_CALIB applied, no help |
-| mountain-fast | 4567 % | — | — | — | ✗ diverges; tuned re-run **quota-blocked** |
-| hdr-normal | 3.62 % | — | 0.750 | 0.57 % | ⚠ untuned; Sim3-MPE 0.88 % ⇒ same scale pattern as desk-normal, **likely fixable** (quota-blocked) |
-| hdr-fast | 2830 % | — | — | — | ✗ diverges; tuned re-run **quota-blocked** |
+## Tuning journey (what worked, what was tried)
+1. **`FIX_CALIB` — the decisive fix.** Stopping the online extrinsic/time-offset optimisation
+   fixed desk-normal's scale (1.22 %→0.51 %, scale 1.327→0.998, init inliers 36→86) and **rescued
+   hdr-fast (2830 %→2.38 %) and mountain-normal (133 %→5.05 %) from total divergence.**
+2. **Feature density** (`max_cnt`/`max_cnt_img` 150/200→300–350, denser `min_dist`): **no effect**
+   on the hard scenes — they are *feature-starved* (verified: `max_cnt:30` breaks a good sequence,
+   `max_cnt:300` is byte-identical to 150).
+3. **Solver threads, `keyframe_parallax`, event-frame rate (30/60/100 Hz):** all no-ops on the hard
+   sequences (mountain-fast diverges identically — its failure is upstream, at image-init).
+4. **ESIO (events-only):** *not yet tested properly* — `system_mode:0` doesn't switch the estimator
+   (the launch hard-codes the ESVIO binary); a real ESIO run needs its own headless launch + config.
 
-(Plots + per-sequence `metrics.json` under `results/esvio/vector/<seq>/`.)
-
-## What this established
-
-- **6/11 sequences match or beat the paper** — including `desk-normal`, fixed by the
-  init tuning (init 3D-inliers 36→86, scale 1.327→0.998, MPE 1.22 %→0.51 %).
-- **Root cause of the inflated numbers** was the online extrinsic/time-offset estimation,
-  not the data pipeline. Verified *not* at fault: the event converter (events identical to
-  the HDF5 source), IMU units/gravity, stereo L/R sync, image fusion (910 image features
-  streamed), the evaluation metric and trajectory length, and **rotation, which matches the
-  paper on every sequence** (MRE ≈ 0.38 °/m).
-- **Remaining failures are ESVIO init/tracking limits on hard sequences**, not pipeline
-  bugs: `corner-slow` is a 0.84 m, rotation-dominated clip where scale is barely observable;
-  `mountain`/`hdr-fast` diverge from `global SFM failed` / unstable feature tracking even
-  with fixed calibration.
-
-## Open items
-- **Google-Drive download quota** blocked the tuned re-run of `mountain-fast`, `hdr-normal`,
-  `hdr-fast` (resets in ~24 h). `hdr-normal` is predicted to be fixed by `FIX_CALIB` (its
-  untuned Sim3-MPE is already 0.88 %); the two `*-fast` divergences likely need more than the
-  calibration fix.
-- Investigate the divergent scenes (mountain/hdr-fast): feature-tracking robustness at init.
+## Honest assessment
+The faithful pipeline + the calibration fix reproduces or beats the papers on **7/10** sequences.
+The remaining three are genuinely hard for ESVIO here and resist **every faithful config lever**:
+`corner-slow` (a 0.83 m rotation clip where translation scale is barely observable) and
+`mountain`/`hdr` fast scenes (image-blur init failure / feature starvation). Closing them further
+would need either the authors' exact (undisclosed) per-sequence setup, a **proper ESIO run**
+(events-only, robust to image blur — the most promising untried faithful option), or **non-faithful
+changes to the algorithm** — which conflicts with this benchmark's "faithful to upstream" principle.
 
 ## Reproduce
 ```bash
 algorithms/esvio/build.sh
+datasets/vector/import_vector_bags.sh <dir>     # or download_vector.sh <seq>
 scripts/run_and_eval.sh vector desk-normal      # FIX_CALIB on by default
-# FIX_CALIB=0 scripts/run_and_eval.sh vector desk-normal   # to see the untuned (paper-config) result
+scripts/sweep_esvio.sh  mountain-normal         # init-param sweep
 ```

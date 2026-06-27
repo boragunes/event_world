@@ -3,41 +3,41 @@
   "algo": "esvio",
   "dataset": "vector",
   "sequence": "mountain-normal",
-  "generated_utc": "2026-06-27T08:46:35+00:00",
+  "generated_utc": "2026-06-27T10:44:04+00:00",
   "evo_version": "v1.36.5",
   "est_file": "results/esvio/vector/mountain-normal/stamped_traj.tum",
-  "gt_file": "results/esvio/vector/mountain-normal/gt.txt",
+  "gt_file": "data/vector/mountain-normal/mountain-normal_gt_txt.txt",
   "alignment": "se3",
-  "n_poses_matched": 554,
-  "n_poses_est_raw": 554,
-  "gt_trajectory_length_m": 7.7965,
-  "duration_s": 55.467,
+  "n_poses_matched": 570,
+  "n_poses_est_raw": 570,
+  "gt_trajectory_length_m": 7.8965,
+  "duration_s": 56.867,
   "ate_translation_m": {
-    "rmse": 10.370082,
-    "mean": 6.458308,
-    "median": 3.452121,
-    "std": 8.113499,
-    "min": 2.932382,
-    "max": 51.282619,
-    "sse": 59576.387615
+    "rmse": 0.398588,
+    "mean": 0.31655,
+    "median": 0.219643,
+    "std": 0.242215,
+    "min": 0.054025,
+    "max": 1.087832,
+    "sse": 90.557138
   },
   "rotation_deg": {
-    "body_frame_offset_deg": 133.9,
+    "body_frame_offset_deg": 110.384,
     "residual_after_offset": {
-      "rmse": 13.41213,
-      "mean": 12.430291,
-      "median": 12.122097,
-      "std": 5.037172,
-      "min": 1.879898,
-      "max": 26.826674,
-      "sse": 99656.4244
+      "rmse": 7.811107,
+      "mean": 6.877208,
+      "median": 6.179605,
+      "std": 3.703701,
+      "min": 0.332948,
+      "max": 18.961371,
+      "sse": 34777.632771
     },
     "note": "absolute orientation error AFTER removing the constant estimator-vs-GT body-frame offset"
   },
   "paper_metric": {
-    "MPE_percent_ate": 133.01,
-    "MPE_percent_rel_1m": 51.4274,
-    "MRE_deg_per_m_rel_1m": 12.11471,
+    "MPE_percent_ate": 5.0476,
+    "MPE_percent_rel_1m": 24.2069,
+    "MRE_deg_per_m_rel_1m": 8.19485,
     "note": "MPE_ate = 100*ATE_trans_RMSE/length (paper SE3 convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
   }
 }

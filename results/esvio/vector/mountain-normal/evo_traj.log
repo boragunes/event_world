@@ -1,7 +1,7 @@
 [93mInitialized new /root/.evo/settings.json[39m
 --------------------------------------------------------------------------------
 name:	/stereo_esvio_estimator/odometry
-infos:	575 poses, 8.734m path length, 57.067s duration
+infos:	567 poses, 6.620m path length, 56.567s duration
 --------------------------------------------------------------------------------
 [WARNING] stereo_esvio_estimator_odometry.tum exists, overwrite?
 enter 'y' to overwrite or any other key to cancel

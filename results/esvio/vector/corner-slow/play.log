@@ -1,11 +1,11 @@
-[0m[INFO] [1782549218.033635426]: Opening /data/corner-slow_left_event_dvs.bag[0m
-[0m[INFO] [1782549218.046346251]: Opening /data/corner-slow_right_event_dvs.bag[0m
-[0m[INFO] [1782549218.047804437]: Opening /data/corner-slow_imu.bag[0m
-[0m[INFO] [1782549218.049189674]: Opening /data/corner-slow_left_camera.bag[0m
-[0m[INFO] [1782549218.052843827]: Opening /data/corner-slow_right_camera.bag[0m
+[0m[INFO] [1782557200.122857969]: Opening /data/corner-slow_left_event_dvs.bag[0m
+[0m[INFO] [1782557200.135969596]: Opening /data/corner-slow_right_event_dvs.bag[0m
+[0m[INFO] [1782557200.137485228]: Opening /data/corner-slow_imu.bag[0m
+[0m[INFO] [1782557200.153266841]: Opening /data/corner-slow_left_camera.bag[0m
+[0m[INFO] [1782557200.240541951]: Opening /data/corner-slow_right_camera.bag[0m
 
 Waiting 0.2 seconds after advertising topics... done.
 
 Hit space to toggle paused, or 's' to step.
- [RUNNING]  Bag Time: 1642644846.995023   Duration: 0.000000 / 41.241113                [RUNNING]  Bag Time: 1642644846.995090   Duration: 0.000067 / 41.241113                [RUNNING]  Bag Time: 1642644847.000237   Duration: 0.005215 / 41.241113                [RUNNING]  Bag Time: 1642644847.005227   Duration: 0.010205 / 41.241113                [RUNNING]  Bag Time: 1642644847.010150   Duration: 0.015128 / 41.241113               
+ [RUNNING]  Bag Time: 1642644846.995023   Duration: 0.000000 / 41.241113                [RUNNING]  Bag Time: 1642644846.995091   Duration: 0.000068 / 41.241113                [RUNNING]  Bag Time: 1642644847.000125   Duration: 0.005103 / 41.241113                [RUNNING]  Bag Time: 1642644847.005149   Duration: 0.010126 / 41.241113                [RUNNING]  Bag Time: 1642644847.010124   Duration: 0.015102 / 41.241113                [RUNNING]  Bag Time: 1642644847.015202   Duration: 0.020179 / 41.241113                [RUNNING]  Bag Time: 1642644847.019030   Duration: 0.024007 / 41.241113                [RUNNING]  Bag Time: 1642644847.019529   Duration: 0.024506 / 41.241113                [RUNNING]  Bag Time: 1642644847.020082   Duration: 0.025059 / 41.241113                [RUNNING]  Bag Time: 1642644847.025220   Duration: 0.030198 / 41.241113                [RUNNING]  Bag Time: 1642644847.028425   Duration: 0.033402 / 41.241113                [RUNNING]  Bag Time: 1642644847.030225   Duration: 0.035203 / 41.241113                [RUNNING]  Bag Time: 1642644847.035221   Duration: 0.040199 / 41.241113                [RUNNING]  Bag Time: 1642644847.035625   Duration: 0.040602 / 41.241113                [RUNNING]  Bag Time: 1642644847.036334   Duration: 0.041312 / 41.241113                [RUNNING]  Bag Time: 1642644847.040219   Duration: 0.045196 / 41.241113                [RUNNING]  Bag Time: 1642644847.045274   Duration: 0.050251 / 41.241113               
 Done.
