@@ -1,0 +1,212 @@
+[0m[INFO] [1782548698.214400152]: init begins[0m
+[0m[INFO] [1782548698.217195895]: Loaded config_file: /tmp/esvio_cfg/esvio.yaml[0m
+result path /home/cpy/Datasets/output/esvio_result_no_loop.csv
+[33m[WARN] [1782548698.217893530]:  fix extrinsic param [0m
+[0m[INFO] [1782548698.217875579]: ROW_Image: 1024.000000 COL_Image: 1224.000000 [0m
+[0m[INFO] [1782548698.217886561]: ROW_Event: 480.000000 COL_EVENT: 640.000000 [0m
+[0m[INFO] [1782548698.217931739]: give an T to the extrinsic of cam [0m
+[0m[INFO] [1782548698.217937896]: give an T to the extrinsic of event [0m
+[0m[INFO] [1782548698.217961068]: Extrinsic_R : 
+  0.0172486   0.0128346    0.999769
+  -0.999804 -0.00952696   0.0173715
+ 0.00974772   -0.999872   0.0126678[0m
+[0m[INFO] [1782548698.217971176]: Extrinsic_T : 
+ 0.143665 0.0796728 -0.015555[0m
+[0m[INFO] [1782548698.217986370]: Extrinsic_R_event : 
+ 0.0112035  0.0218441   0.999699
+  -0.99976 -0.0185542  0.0116097
+ 0.0188022  -0.999589   0.021631[0m
+[0m[INFO] [1782548698.217995503]: Extrinsic_T_event : 
+ 0.129075 0.0793087 0.0250862[0m
+[0m[INFO] [1782548698.218937435]: parameters.cpp: gravity_norm: 1.000000[0m
+parameters.cpp: Not use sampson model
+parameters.cpp: Yes use geometric correction
+[33m[WARN] [1782548698.219724997]: waiting for event, image and imu...[0m
+[33m[WARN] [1782548698.241106713]: into event point feature detection and tracking[0m
+[33m[WARN] [1782548698.245571353]: into stereo image feature detection and tracking[0m
+vocabulary_file/catkin_ws_dvs/src/ESVIO/pose_graph/support_files/brief_k10L6.bin
+loop start load vocabulary
+BRIEF_PATTERN_FILE/catkin_ws_dvs/src/ESVIO/pose_graph/support_files/brief_pattern.yml
+Failed to create folder  
+[0m[INFO] [1782548698.244575748]: Loaded config_file: /tmp/esvio_cfg/esvio.yaml[0m
+[0m[INFO] [1782548698.245595280]: Loaded esvio_folder: /tmp/esvio_cfg/[0m
+[0m[INFO] [1782548698.245662033]: Rrl_event: 
+   0.99968  0.0200383  0.0154395
+-0.0200188   0.999799 -0.0014144
+-0.0154648 0.00110486    0.99988[0m
+[0m[INFO] [1782548698.245674144]: Trl_event: 
+ -0.170177 0.00146904 0.00486952[0m
+[0m[INFO] [1782548698.245683530]: reading paramerter of camera /tmp/esvio_cfg//event0_esvio.yaml[0m
+[0m[INFO] [1782548698.253503122]: reading paramerter of camera /tmp/esvio_cfg//event1_esvio.yaml[0m
+327.485       0     320
+      0 327.554     240
+      0       0       1
+[33m[WARN] [1782548714.395619579]: gyroscope bias initial calibration -0.00372412   0.0249241  0.00449497[0m
+[33m[WARN] [1782548714.396906321]: estimated scale: -0.013703[0m
+[33m[WARN] [1782548714.396925442]:  result g     9.78038 0.454973 -9.27282 -3.07629[0m
+[33m[WARN] [1782548714.731842975]: gyroscope bias initial calibration -0.000936299  0.000656047   0.00052499[0m
+[33m[WARN] [1782548714.733028675]: estimated scale: -0.009703[0m
+[33m[WARN] [1782548714.733047657]:  result g     9.72441 0.436001 -9.23261 -3.02206[0m
+[33m[WARN] [1782548715.178223164]: gyroscope bias initial calibration -0.00157719   0.0012335 -0.00914149[0m
+[33m[WARN] [1782548715.179594180]: estimated scale: -0.003101[0m
+[33m[WARN] [1782548715.179612993]:  result g     9.70174 0.400768 -9.13802 -3.23417[0m
+[33m[WARN] [1782548715.808433625]: gyroscope bias initial calibration 0.00111316 -0.0219542 0.00343087[0m
+[33m[WARN] [1782548715.809810864]: estimated scale: -0.007130[0m
+[33m[WARN] [1782548715.809829340]:  result g     9.68459 0.491017 -9.17646 -3.05659[0m
+[33m[WARN] [1782548715.963296784]: gyroscope bias initial calibration 0.000740744   -0.005878 -0.00326521[0m
+[33m[WARN] [1782548715.964681853]: estimated scale: -0.009321[0m
+[33m[WARN] [1782548715.964698028]:  result g     9.67861 0.565615 -9.18426 -3.00085[0m
+[0m[INFO] [1782548698.218969497]: Extrinsic_R2 : 
+ 0.0144479  0.0110884   0.999834
+ -0.999779  0.0154503  0.0142757
+-0.0152894  -0.999819  0.0113092[0m
+[0m[INFO] [1782548698.218980756]: Extrinsic_T2 : 
+  0.142001 -0.0914988  -0.014918[0m
+[0m[INFO] [1782548698.219000363]: Rrl: 
+   0.999685    0.024912 -0.00309425
+ -0.0249159    0.999689 -0.00124826
+ 0.00306219  0.00132497    0.999994[0m
+[0m[INFO] [1782548698.219009951]: Trl: 
+ -0.171154 0.00323261 0.00407665[0m
+[0m[INFO] [1782548698.219191527]: Loaded esvio_folder: /tmp/esvio_cfg/[0m
+[0m[INFO] [1782548698.219234715]: Extrinsic_R2_event : 
+  0.0270726   0.0202015    0.999429
+  -0.999633   0.0014471   0.0270488
+-0.00089984   -0.999795   0.0202332[0m
+[0m[INFO] [1782548698.219244623]: Extrinsic_T2_event : 
+  0.128785 -0.0909398  0.0263033[0m
+[0m[INFO] [1782548698.219263060]: Rrl_event: 
+   0.99968  0.0200383  0.0154395
+-0.0200188   0.999799 -0.0014144
+-0.0154648 0.00110486    0.99988[0m
+[0m[INFO] [1782548698.219272252]: Trl_event: 
+ -0.170177 0.00146904 0.00486952[0m
+[0m[INFO] [1782548698.219427060]: Loaded esvio_folder: /tmp/esvio_cfg/[0m
+[0m[INFO] [1782548698.219441354]: Synchronized sensors, fix time offset: 0.00839259[0m
+[0m[INFO] [1782548698.219470052]: estimator.cpp: reading paramerter of camera /tmp/esvio_cfg/cam0_esvio.yaml[0m
+[0m[INFO] [1782548698.219581704]: estimator.cpp: reading paramerter of camera /tmp/esvio_cfg/cam1_esvio.yaml[0m
+[0m[INFO] [1782548698.219632639]: estimator.cpp: reading paramerter of camera /tmp/esvio_cfg/event0_esvio.yaml[0m
+[0m[INFO] [1782548698.219678982]: estimator.cpp: reading paramerter of camera /tmp/esvio_cfg/event1_esvio.yaml[0m
+[0m[INFO] [1782548714.181590434]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782548714.184857929]: average_parallax 64.642262 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782548714.304094169]: global SFM failed![0m
+[0m[INFO] [1782548714.347432341]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782548714.351673799]: average_parallax 68.224960 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782548714.395573455]: global SFM success![0m
+[0m[INFO] [1782548714.396933465]: misalign visual structure with IMU[0m
+[0m[INFO] [1782548714.678110826]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782548714.683460590]: average_parallax 73.626416 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782548714.731379744]: global SFM success![0m
+[0m[INFO] [1782548714.733065517]: misalign visual structure with IMU[0m
+[0m[INFO] [1782548715.074233347]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1782548715.107924425]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782548715.107981010]: evio IMU excitation not enough![0m
+[0m[INFO] [1782548715.112718455]: average_parallax 85.542697 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782548715.177546653]: global SFM success![0m
+[0m[INFO] [1782548715.179619886]: misalign visual structure with IMU[0m
+[0m[INFO] [1782548715.687953658]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1782548715.729852773]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782548715.738373937]: average_parallax 90.341472 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782548715.807536031]: global SFM success![0m
+[0m[INFO] [1782548715.809836660]: misalign visual structure with IMU[0m
+[0m[INFO] [1782548715.849928552]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782548715.860136849]: average_parallax 93.682159 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782548715.962424367]: global SFM success![0m
+[0m[INFO] [1782548715.964704855]: misalign visual structure with IMU[0m
+[0m[INFO] [1782548716.322185633]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782548716.331754026]:[33m[WARN] [1782548716.428820951]: gyroscope bias initial calibration  0.00324138 -0.00533439 0.000774631[0m
+[33m[WARN] [1782548716.430523174]: estimated scale: -0.010914[0m
+[33m[WARN] [1782548716.430542327]:  result g     9.67421 0.551646 -9.21272 -2.90032[0m
+[33m[WARN] [1782548716.915695963]: gyroscope bias initial calibration -0.00282609   0.0119268  0.00305673[0m
+[33m[WARN] [1782548716.917526246]: estimated scale: -0.013128[0m
+[33m[WARN] [1782548716.917552853]:  result g     9.66904 0.563703 -9.17717 -2.99203[0m
+[33m[WARN] [1782548717.158359185]: gyroscope bias initial calibration -0.000185667  0.000368578  -0.00138429[0m
+[33m[WARN] [1782548717.160307734]: estimated scale: -0.011479[0m
+[33m[WARN] [1782548717.160325585]:  result g     9.66635 0.565216 -9.17886 -2.97782[0m
+[33m[WARN] [1782548717.409222002]: gyroscope bias initial calibration  0.00150739   -0.015667 -0.00242097[0m
+[33m[WARN] [1782548717.411100333]: estimated scale: -0.015310[0m
+[33m[WARN] [1782548717.411118868]:  result g     9.65227 0.572597 -9.23499 -2.74836[0m
+[33m[WARN] [1782548717.786969968]: gyroscope bias initial calibration -0.00102176  0.00430134 0.000906856[0m
+[33m[WARN] [1782548717.790309768]: estimated scale: -0.014810[0m
+[33m[WARN] [1782548717.790374629]:  result g     9.65472 0.560325 -9.23441 -2.76139[0m
+[33m[WARN] [1782548718.462604413]: gyroscope bias initial calibration -0.000523079   0.00726357  -0.00305599[0m
+[33m[WARN] [1782548718.464760165]: estimated scale: -0.016593[0m
+[33m[WARN] [1782548718.464777466]:  result g     9.6554 0.573115  -9.2219 -2.80264[0m
+[33m[WARN] [1782548718.538562321]: gyroscope bias initial calibration 0.000410034 -0.00208847 -0.00196576[0m
+[33m[WARN] [1782548718.540734766]: estimated scale: -0.018188[0m
+[33m[WARN] [1782548718.540752361]:  result g     9.66306 0.523631 -9.25322 -2.73467[0m
+[33m[WARN] [1782548718.761138181]: gyroscope bias initial calibration -0.00117285  0.00187681  0.00384888[0m
+[33m[WARN] [1782548718.763364572]: estimated scale: -0.020750[0m
+[33m[WARN] [1782548718.763381476]:  result g     9.66682  0.47699 -9.25937 -2.73566[0m
+[33m[WARN] [1782548719.138791557]: gyroscope bias initial calibration 0.000875018 0.000602597  0.00245726[0m
+[33m[WARN] [1782548719.140973630]: estimated scale: -0.012654[0m
+[33m[WARN] [1782548719.140994420]:  result g     9.65474  0.22773  -9.3566 -2.36985[0m
+[33m[WARN] [1782548719.594401398]: gyroscope bias initial calibration -0.000733166    0.0233633  -0.00980718[0m
+[33m[WARN] [1782548719.596646698]: estimated scale: -0.015167[0m
+[33m[WARN] [1782548719.596666807]:  result g     9.64624 0.378789 -9.22728 -2.78635[0m
+[33m[WARN] [1782548720.052894401]: gyroscope bias initial calibration -0.000204862   -0.0211286  -0.00631157[0m
+[33m[WARN] [1782548720.055110851]: estimated scale: -0.019445[0m
+[33m[WARN] [1782548720.055128167]:  result g     9.6368 0.265015 -9.31386 -2.45961[0m
+[33m[WARN] [1782548720.542407732]: ---------------5points----------------[0m
+[33m[WARN] [1782548720.542447763]: input points 181 2D inliers 3D inliers 139[0m
+[33m[WARN] [1782548720.780109395]: gyroscope bias initial calibration  0.00169606 -0.00102217  0.00057968[0m
+[33m[WARN] [1782548720.782755545]: estimated scale: -0.015825[0m
+[33m[WARN] [1782548720.782785637]:  result g     9.61132 0.234032 -9.30994  -2.3765[0m
+[33m[WARN] [1782548720.844955954]: ---------------5points----------------[0m
+[33m[WARN] [1782548720.844985017]: input points 184 2D inliers 3D inliers 142[0m
+[33m[WARN] [1782548720.873640780]: gyroscope bias initial calibration 0.00438549  -0.003389  0.0139545[0m
+ average_parallax 98.763963 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782548716.426873504]: global SFM success![0m
+[0m[INFO] [1782548716.430549530]: misalign visual structure with IMU[0m
+[0m[INFO] [1782548716.803471055]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782548716.812577069]: average_parallax 101.142503 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782548716.914191093]: global SFM success![0m
+[0m[INFO] [1782548716.917560326]: misalign visual structure with IMU[0m
+[0m[INFO] [1782548717.053704179]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782548717.062920438]: average_parallax 100.822551 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782548717.156684522]: global SFM success![0m
+[0m[INFO] [1782548717.160333522]: misalign visual structure with IMU[0m
+[0m[INFO] [1782548717.375753585]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782548717.388666629]: average_parallax 83.759435 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782548717.407305803]: global SFM success![0m
+[0m[INFO] [1782548717.411126967]: misalign visual structure with IMU[0m
+[0m[INFO] [1782548717.752874016]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782548717.761944824]: average_parallax 70.441296 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782548717.784013110]: global SFM success![0m
+[0m[INFO] [1782548717.790391919]: misalign visual structure with IMU[0m
+[0m[INFO] [1782548718.433568181]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782548718.442671178]: average_parallax 63.923410 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782548718.460360126]: global SFM success![0m
+[0m[INFO] [1782548718.464784781]: misalign visual structure with IMU[0m
+[0m[INFO] [1782548718.505432608]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782548718.515918478]: average_parallax 55.571842 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782548718.536140539]: global SFM success![0m
+[0m[INFO] [1782548718.540759637]: misalign visual structure with IMU[0m
+[0m[INFO] [1782548718.721144311]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782548718.730009249]: average_parallax 41.144702 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782548718.758706035]: global SFM success![0m
+[0m[INFO] [1782548718.763388686]: misalign visual structure with IMU[0m
+[0m[INFO] [1782548719.101264401]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782548719.109986154]: average_parallax 41.790483 choose l 3 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782548719.136120333]: global SFM success![0m
+[0m[INFO] [1782548719.141002773]: misalign visual structure with IMU[0m
+[0m[INFO] [1782548719.493509643]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782548719.502366874]: average_parallax 37.483465 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782548719.591040005]: global SFM success![0m
+[0m[INFO] [1782548719.596674639]: misalign visual structure with IMU[0m
+[0m[INFO] [1782548720.001968842]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782548720.010667085]: average_parallax 51.465814 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782548720.050298043]: global SFM success![0m
+[0m[INFO] [1782548720.055136315]: misalign visual structure with IMU[0m
+[0m[INFO] [1782548720.671258643]: average_parallax 82.447192 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782548720.777483810]: global SFM success![0m
+[0m[INFO] [1782548720.782793422]: misalign visual structure with IMU[0m
+[0m[INFO] [17[33m[WARN] [1782548815.748737207]: Shutdown request received.[0m
+[33m[WARN] [1782548815.749428396]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1782548815.750398518]: Shutdown request received.[0m
+[33m[WARN] [1782548815.750427225]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1782548815.750816263]: Shutdown request received.[0m
+[33m[WARN] [1782548815.750861279]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1782548815.751365606]: Shutdown request received.[0m
+[33m[WARN] [1782548815.751391754]: Reason given for shutdown: [user request][0m
+terminate called without an active exception

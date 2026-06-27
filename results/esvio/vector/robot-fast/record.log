@@ -1,0 +1,4 @@
+[33m[WARN] [1782549066.529467076]: Shutdown request received.[0m
+[33m[WARN] [1782549066.529509551]: Reason given for shutdown: [user request][0m
+[0m[INFO] [1782548982.996294927]: Subscribing to /stereo_esvio_estimator/odometry[0m
+[0m[INFO] [1782548982.998038315]: Recording to '/home/cpy/Datasets/output/odom.bag'.[0m

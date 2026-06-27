@@ -1,0 +1,11 @@
+[0m[INFO] [1782540267.694398079]: Opening /data/hdr-fast_left_event_dvs.bag[0m
+[0m[INFO] [1782540267.814756262]: Opening /data/hdr-fast_right_event_dvs.bag[0m
+[0m[INFO] [1782540267.821968393]: Opening /data/hdr-fast_imu.bag[0m
+[0m[INFO] [1782540267.824176271]: Opening /data/hdr-fast_left_camera.bag[0m
+[0m[INFO] [1782540267.907988451]: Opening /data/hdr-fast_right_camera.bag[0m
+
+Waiting 0.2 seconds after advertising topics... done.
+
+Hit space to toggle paused, or 's' to step.
+ [RUNNING]  Bag Time: 1642689802.849168   Duration: 0.000000 / 40.622366                [RUNNING]  Bag Time: 1642689802.849233   Duration: 0.000065 / 40.622366                [RUNNING]  Bag Time: 1642689802.854244   Duration: 0.005077 / 40.622366                [RUNNING]  Bag Time: 1642689802.859235   Duration: 0.010068 / 40.622366                [RUNNING]  Bag Time: 1642689802.864372   Duration: 0.015204 / 40.622366                [RUNNING]  Bag Time: 1642689802.869241   Duration: 0.020073 / 40.622366                [RUNNING]  Bag Time: 1642689802.870713   Duration: 0.021546 / 40.622366                [RUNNING]  Bag Time: 1642689802.871701   Duration: 0.022533 / 40.622366                [RUNNING]  Bag Time: 1642689802.874244   Duration: 0.025076 / 40.622366                [RUNNING]  Bag Time: 1642689802.879373   Duration: 0.030205 / 40.622366                [RUNNING]  Bag Time: 1642689802.882707   Duration: 0.033539 / 40.622366                [RUNNING]  Bag Time: 1642689802.884236   Duration: 0.035068 / 40.622366                [RUNNING]  Bag Time: 1642689802.887279   Duration: 0.038111 / 40.622366                [RUNNING]  Bag Time: 1642689802.888292   Duration: 0.039124 / 40.622366                [RUNNING]  Bag Time: 1642689802.899453   Duration: 0.050285 / 40.622366                [RUNNING]  Bag Time: 1642689802.904491   Duration: 0.055323 / 40.622366                [RUNNING]  Bag Time: 1642689802.906101   Duration: 0.056934 / 40.622366                [RUNNING]  Bag Time: 1642689802.909506   Duration: 0.060339 / 40.622366               
+Done.

@@ -66,6 +66,7 @@ docker run --rm \
   -e CONFIG_PATH="$CFG" -e ESVIO_PATH="$CFGDIR" \
   -e ODOM_TOPIC="$ODOM" -e OUT_DIR=/home/cpy/Datasets/output \
   -e INIT_WAIT="${INIT_WAIT:-10}" -e PLAY_RATE="${PLAY_RATE:-1.0}" \
+  -e FIX_CALIB="${FIX_CALIB:-1}" \
   "$IMAGE" /work/run_in_container.sh "${cbags[@]}"
 
 echo ">> ESVIO run complete. Trajectory: $OUT/stamped_traj.tum"

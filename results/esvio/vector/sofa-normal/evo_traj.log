@@ -1,0 +1,22 @@
+[93mInitialized new /root/.evo/settings.json[39m
+--------------------------------------------------------------------------------
+name:	/stereo_esvio_estimator/odometry
+infos:	879 poses, 28.109m path length, 87.900s duration
+--------------------------------------------------------------------------------
+[WARNING] stereo_esvio_estimator_odometry.tum exists, overwrite?
+enter 'y' to overwrite or any other key to cancel
+[ERROR] Unhandled error in evo.main_traj
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/evo/entry_points.py", line 95, in launch
+    main_module.run(args)
+  File "/usr/local/lib/python3.8/dist-packages/evo/main_traj.py", line 452, in run
+    file_interface.write_tum_trajectory_file(
+  File "/usr/local/lib/python3.8/dist-packages/evo/tools/file_interface.py", line 132, in write_tum_trajectory_file
+    if not user.check_and_confirm_overwrite(file_path):
+  File "/usr/local/lib/python3.8/dist-packages/evo/tools/user.py", line 44, in check_and_confirm_overwrite
+    return confirm("enter 'y' to overwrite or any other key to cancel")
+  File "/usr/local/lib/python3.8/dist-packages/evo/tools/user.py", line 35, in confirm
+    if input(msg + "\n") != key:
+EOFError: EOF when reading a line
+
+[ERROR] evo module evo.main_traj crashed - no logfile written (disabled)

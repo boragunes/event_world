@@ -1,0 +1,11 @@
+[0m[INFO] [1782539640.808019250]: Opening /data/hdr-normal_left_event_dvs.bag[0m
+[0m[INFO] [1782539640.824414531]: Opening /data/hdr-normal_right_event_dvs.bag[0m
+[0m[INFO] [1782539640.829079422]: Opening /data/hdr-normal_imu.bag[0m
+[0m[INFO] [1782539640.830981223]: Opening /data/hdr-normal_left_camera.bag[0m
+[0m[INFO] [1782539640.836144137]: Opening /data/hdr-normal_right_camera.bag[0m
+
+Waiting 0.2 seconds after advertising topics... done.
+
+Hit space to toggle paused, or 's' to step.
+ [RUNNING]  Bag Time: 1642689268.899930   Duration: 0.000000 / 60.272043                [RUNNING]  Bag Time: 1642689268.899997   Duration: 0.000067 / 60.272043                [RUNNING]  Bag Time: 1642689268.905003   Duration: 0.005072 / 60.272043                [RUNNING]  Bag Time: 1642689268.909998   Duration: 0.010068 / 60.272043                [RUNNING]  Bag Time: 1642689268.915042   Duration: 0.015112 / 60.272043                [RUNNING]  Bag Time: 1642689268.920029   Duration: 0.020099 / 60.272043                [RUNNING]  Bag Time: 1642689268.921700   Duration: 0.021770 / 60.272043                [RUNNING]  Bag Time: 1642689268.922032   Duration: 0.022101 / 60.272043                [RUNNING]  Bag Time: 1642689268.934171   Duration: 0.034241 / 60.272043                [RUNNING]  Bag Time: 1642689268.935004   Duration: 0.035074 / 60.272043                [RUNNING]  Bag Time: 1642689268.938608   Duration: 0.038678 / 60.272043                [RUNNING]  Bag Time: 1642689268.939099   Duration: 0.039168 / 60.272043                [RUNNING]  Bag Time: 1642689268.944227   Duration: 0.044296 / 60.272043                [RUNNING]  Bag Time: 1642689268.945003   Duration: 0.045073 / 60.272043                [RUNNING]  Bag Time: 1642689268.954280   Duration: 0.054349 / 60.272043                [RUNNING]  Bag Time: 1642689268.955028   Duration: 0.055098 / 60.272043                [RUNNING]  Bag Time: 1642689268.955374   Duration: 0.055444 / 60.272043                [RUNNING]  Bag Time: 1642689268.964337   Duration: 0.064406 / 60.272043               
+Done.

@@ -1,0 +1,11 @@
+[0m[INFO] [1782548584.163722094]: Opening /data/sofa-fast_left_event_dvs.bag[0m
+[0m[INFO] [1782548584.180193903]: Opening /data/sofa-fast_right_event_dvs.bag[0m
+[0m[INFO] [1782548584.185072182]: Opening /data/sofa-fast_imu.bag[0m
+[0m[INFO] [1782548584.186422207]: Opening /data/sofa-fast_left_camera.bag[0m
+[0m[INFO] [1782548584.190227403]: Opening /data/sofa-fast_right_camera.bag[0m
+
+Waiting 0.2 seconds after advertising topics... done.
+
+Hit space to toggle paused, or 's' to step.
+ [RUNNING]  Bag Time: 1642516754.925902   Duration: 0.000000 / 40.322664                [RUNNING]  Bag Time: 1642516754.926068   Duration: 0.000166 / 40.322664                [RUNNING]  Bag Time: 1642516754.931115   Duration: 0.005214 / 40.322664                [RUNNING]  Bag Time: 1642516754.936099   Duration: 0.010198 / 40.322664                [RUNNING]  Bag Time: 1642516754.940971   Duration: 0.015069 / 40.322664               
+Done.

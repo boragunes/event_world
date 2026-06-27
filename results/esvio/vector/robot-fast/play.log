@@ -1,0 +1,11 @@
+[0m[INFO] [1782548984.988772070]: Opening /data/robot-fast_left_event_dvs.bag[0m
+[0m[INFO] [1782548985.002700697]: Opening /data/robot-fast_right_event_dvs.bag[0m
+[0m[INFO] [1782548985.005584758]: Opening /data/robot-fast_imu.bag[0m
+[0m[INFO] [1782548985.006650563]: Opening /data/robot-fast_left_camera.bag[0m
+[0m[INFO] [1782548985.009425278]: Opening /data/robot-fast_right_camera.bag[0m
+
+Waiting 0.2 seconds after advertising topics... done.
+
+Hit space to toggle paused, or 's' to step.
+ [RUNNING]  Bag Time: 1642661812.831115   Duration: 0.000000 / 30.807017                [RUNNING]  Bag Time: 1642661812.831185   Duration: 0.000070 / 30.807017                [RUNNING]  Bag Time: 1642661812.836239   Duration: 0.005124 / 30.807017                [RUNNING]  Bag Time: 1642661812.841238   Duration: 0.010123 / 30.807017                [RUNNING]  Bag Time: 1642661812.846173   Duration: 0.015058 / 30.807017               
+Done.

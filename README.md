@@ -22,7 +22,7 @@ scripts**, and the **estimated trajectories** — not just a table of numbers.
 
 | Algorithm | Modality | Datasets | State |
 |-----------|----------|----------|-------|
-| [ESVIO](algorithms/esvio/) | stereo events + IMU (+ frames) | VECtor `desk-normal` ✅ — [report](docs/validation/esvio_vector.md) | runs + validated |
+| [ESVIO](algorithms/esvio/) | stereo events + IMU (+ frames) | VECtor small-scale — [report](docs/validation/esvio_vector.md) | 6/11 match/beat paper; init-sensitive on hard seqs |
 | DEIO, ESVO2, SuperEvent, … | — | DSEC, M3ED, … | planned |
 
 ## Layout

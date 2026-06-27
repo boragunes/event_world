@@ -1,0 +1,121 @@
+[0m[INFO] [1782540255.825603397]: init begins[0m
+[0m[INFO] [1782540255.828213941]: Loaded config_file: /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale/esvio.yaml[0m
+result path /home/cpy/Datasets/output/esvio_result_no_loop.csv
+[33m[WARN] [1782540255.828863390]:  Optimize extrinsic param around initial guess![0m
+[0m[INFO] [1782540255.828846526]: ROW_Image: 1024.000000 COL_Image: 1224.000000 [0m
+[0m[INFO] [1782540255.828856912]: ROW_Event: 480.000000 COL_EVENT: 640.000000 [0m
+[0m[INFO] [1782540255.828899152]: give an T to the extrinsic of cam [0m
+[0m[INFO] [1782540255.828905237]: give an T to the extrinsic of event [0m
+[0m[INFO] [1782540255.828927525]: Extrinsic_R : 
+  0.0172486   0.0128346    0.999769
+  -0.999804 -0.00952696   0.0173715
+ 0.00974772   -0.999872   0.0126678[0m
+[0m[INFO] [1782540255.828937527]: Extrinsic_T : 
+ 0.143665 0.0796728 -0.015555[0m
+[0m[INFO] [1782540255.828952704]: Extrinsic_R_event : 
+ 0.0112035  0.0218441   0.999699
+  -0.99976 -0.0185542  0.0116097
+ 0.0188022  -0.999589   0.021631[0m
+[0m[INFO] [1782540255.828961638]: Extrinsic_T_event : 
+ 0.129075 0.0793087 0.0250862[0m
+[0m[INFO] [1782540255.829938209]: parameters.cpp: gravity_norm: 1.000000[0m
+parameters.cpp: Not use sampson model
+parameters.cpp: Yes use geometric correction
+[33m[WARN] [1782540255.830720569]: waiting for event, image and imu...[0m
+[33m[WARN] [1782540255.852134287]: into event point feature detection and tracking[0m
+[33m[WARN] [1782540255.856451014]: into stereo image feature detection and tracking[0m
+vocabulary_file/catkin_ws_dvs/src/ESVIO/pose_graph/support_files/brief_k10L6.bin
+loop start load vocabulary
+BRIEF_PATTERN_FILE/catkin_ws_dvs/src/ESVIO/pose_graph/support_files/brief_pattern.yml
+Failed to create folder  
+[0m[INFO] [1782540255.855447453]: Loaded config_file: /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale/esvio.yaml[0m
+[0m[INFO] [1782540255.856503423]: Loaded esvio_folder: /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale/[0m
+[0m[INFO] [1782540255.856577919]: Rrl_event: 
+   0.99968  0.0200383  0.0154395
+-0.0200188   0.999799 -0.0014144
+-0.0154648 0.00110486    0.99988[0m
+[0m[INFO] [1782540255.856595265]: Trl_event: 
+ -0.170177 0.00146904 0.00486952[0m
+[0m[INFO] [1782540255.856608835]: reading paramerter of camera /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale//event0_esvio.yaml[0m
+[0m[INFO] [1782540255.864948628]: reading paramerter of camera /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale//event1_esvio.yaml[0m
+327.485       0     320
+      0 327.554     240
+      0       0       1
+[33m[WARN] [1782540273.907525322]: ---------------5points----------------[0m
+[33m[WARN] [1782540273.907571503]: input points 90 2D inliers 3D inliers 26[0m
+[33m[WARN] [1782540273.969459638]: gyroscope bias initial calibration -0.597882    0.5795 -0.191664[0m
+[0m[INFO] [1782540255.829970576]: Extrinsic_R2 : 
+ 0.0144479  0.0110884   0.999834
+ -0.999779  0.0154503  0.0142757
+-0.0152894  -0.999819  0.0113092[0m
+[0m[INFO] [1782540255.829981990]: Extrinsic_T2 : 
+  0.142001 -0.0914988  -0.014918[0m
+[0m[INFO] [1782540255.830001387]: Rrl: 
+   0.999685    0.024912 -0.00309425
+ -0.0249159    0.999689 -0.00124826
+ 0.00306219  0.00132497    0.999994[0m
+[0m[INFO] [1782540255.830011054]: Trl: 
+ -0.171154 0.00323261 0.00407665[0m
+[0m[INFO] [1782540255.830183806]: Loaded esvio_folder: /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale/[0m
+[0m[INFO] [1782540255.830225982]: Extrinsic_R2_event : 
+  0.0270726   0.0202015    0.999429
+  -0.999633   0.0014471   0.0270488
+-0.00089984   -0.999795   0.0202332[0m
+[0m[INFO] [1782540255.830235647]: Extrinsic_T2_event : 
+  0.128785 -0.0909398  0.0263033[0m
+[0m[INFO] [1782540255.830253797]: Rrl_event: 
+   0.99968  0.0200383  0.0154395
+-0.0200188   0.999799 -0.0014144
+-0.0154648 0.00110486    0.99988[0m
+[0m[INFO] [1782540255.830262989]: Trl_event: 
+ -0.170177 0.00146904 0.00486952[0m
+[0m[INFO] [1782540255.830411514]: Loaded esvio_folder: /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale/[0m
+[0m[INFO] [1782540255.830424952]: Unsynchronized sensors, online estimate time offset, initial td: 0.00839259[0m
+[0m[INFO] [1782540255.830436669]: estimator.cpp: reading paramerter of camera /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale/cam0_esvio.yaml[0m
+[0m[INFO] [1782540255.830562110]: estimator.cpp: reading paramerter of camera /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale/cam1_esvio.yaml[0m
+[0m[INFO] [1782540255.830618920]: estimator.cpp: reading paramerter of camera /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale/event0_esvio.yaml[0m
+[0m[INFO] [1782540255.830669862]: estimator.cpp: reading paramerter of camera /catkin_ws_dvs/src/ESVIO/config/esvio_VECtor_small_scale/event1_esvio.yaml[0m
+[0m[INFO] [1782540273.049131243]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782540273.074268088]: average_parallax 51.094327 choose l 8 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782540273.168526625]: global SFM failed![0m
+[0m[INFO] [1782540273.186930714]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782540273.204293046]: average_parallax 30.588406 choose l 9 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782540273.293865635]: global SFM failed![0m
+[0m[INFO] [1782540273.548148493]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782540273.555234536]: evio Not enough features or parallax; Move device around[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782540273.970867361]: misalign visual structure with IMU[0m
+[0m[INFO] [1782540273.978921488]: average_parallax 61.005558 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782540274.041433976]: global SFM failed![0m
+[0m[INFO] [1782540275.019616397]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782540275.034801402]: average_parallax 36.770807 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable featu[33m[WARN] [1782540275.635424872]: gyroscope bias initial calibration 0.0582553 -0.317088  0.586129[0m
+[33m[WARN] [1782540275.636544663]: estimated scale: 0.011739[0m
+[33m[WARN] [1782540275.636564688]:  result g     9.42839 -0.584271  -7.77544  -5.30053[0m
+[33m[WARN] [1782540275.636673866]:  refine     9.80766 -0.604051  -8.08326  -5.52144[0m
+[33m[WARN] [1782540275.636686055]: estimated scale after RefineGravity: 0.012199[0m
+[33m[WARN] [1782540313.350109933]:  little feature 0[0m
+[33m[WARN] [1782540313.452511378]:  little feature 0[0m
+[33m[WARN] [1782540393.541913833]: Shutdown request received.[0m
+[33m[WARN] [1782540393.542525111]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1782540393.543353846]: Shutdown request received.[0m
+[33m[WARN] [1782540393.543381548]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1782540393.543701336]: Shutdown request received.[0m
+[33m[WARN] [1782540393.543727885]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1782540393.544086253]: Shutdown request received.[0m
+[33m[WARN] [1782540393.544127584]: Reason given for shutdown: [user request][0m
+terminate called without an active exception

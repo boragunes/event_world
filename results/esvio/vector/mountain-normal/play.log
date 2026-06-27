@@ -1,0 +1,11 @@
+[0m[INFO] [1782549348.471316359]: Opening /data/mountain-normal_left_event_dvs.bag[0m
+[0m[INFO] [1782549348.504082354]: Opening /data/mountain-normal_right_event_dvs.bag[0m
+[0m[INFO] [1782549348.512144734]: Opening /data/mountain-normal_imu.bag[0m
+[0m[INFO] [1782549348.514720240]: Opening /data/mountain-normal_left_camera.bag[0m
+[0m[INFO] [1782549348.564247938]: Opening /data/mountain-normal_right_camera.bag[0m
+
+Waiting 0.2 seconds after advertising topics... done.
+
+Hit space to toggle paused, or 's' to step.
+ [RUNNING]  Bag Time: 1642668753.104252   Duration: 0.000000 / 60.538799                [RUNNING]  Bag Time: 1642668753.104316   Duration: 0.000064 / 60.538799                [RUNNING]  Bag Time: 1642668753.109329   Duration: 0.005077 / 60.538799                [RUNNING]  Bag Time: 1642668753.114345   Duration: 0.010093 / 60.538799                [RUNNING]  Bag Time: 1642668753.119317   Duration: 0.015065 / 60.538799               
+Done.
