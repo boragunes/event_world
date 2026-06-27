@@ -26,18 +26,23 @@ PLAY_RATE="${PLAY_RATE:-1.0}"; INIT_WAIT="${INIT_WAIT:-10}"; DRAIN_WAIT="${DRAIN
 BAGS=("$@")
 mkdir -p "$OUT_DIR"
 
-# Minimal, documented init tuning (FIX_CALIB=1): VECtor ships accurate calibration,
-# so trust it instead of optimising the camera-IMU extrinsics / time-offset online.
-# With estimate_extrinsic:1 + estimate_td:1 that online optimisation is ill-conditioned
-# on low-excitation sequences and corrupts the initial metric scale (and triggers
-# global-SFM failures / divergence). Setting both to 0 stabilises initialisation.
-if [ "${FIX_CALIB:-0}" = "1" ] && [ -n "$CONFIG_PATH" ]; then
+# Documented init tuning. FIX_CALIB=1: trust VECtor's accurate calibration instead of
+# optimising the camera-IMU extrinsics/time-offset online (estimate_extrinsic:1 +
+# estimate_td:1 is ill-conditioned on low-excitation sequences -> corrupts the initial
+# scale / global-SFM divergence). CONFIG_OVERRIDES="k:v k:v" applies extra top-level yaml
+# params (e.g. "max_cnt:250 keyframe_parallax:5") for tuning the initialisation.
+if { [ "${FIX_CALIB:-0}" = "1" ] || [ -n "${CONFIG_OVERRIDES:-}" ]; } && [ -n "$CONFIG_PATH" ]; then
   tcfg=/tmp/esvio_cfg; rm -rf "$tcfg"; mkdir -p "$tcfg"
   cp -r "$(dirname "$CONFIG_PATH")"/. "$tcfg"/
-  sed -i 's/^estimate_extrinsic: 1/estimate_extrinsic: 0/; s/^estimate_td: 1/estimate_td: 0/' \
-    "$tcfg/$(basename "$CONFIG_PATH")"
-  CONFIG_PATH="$tcfg/$(basename "$CONFIG_PATH")"; ESVIO_PATH="$tcfg/"
-  echo ">> FIX_CALIB: fixed extrinsics + td (estimate_extrinsic:0, estimate_td:0)"
+  cf="$tcfg/$(basename "$CONFIG_PATH")"
+  if [ "${FIX_CALIB:-0}" = "1" ]; then
+    sed -i 's/^estimate_extrinsic: 1/estimate_extrinsic: 0/; s/^estimate_td: 1/estimate_td: 0/' "$cf"
+    echo ">> FIX_CALIB: estimate_extrinsic:0, estimate_td:0"
+  fi
+  for kv in ${CONFIG_OVERRIDES:-}; do
+    sed -i "s/^${kv%%:*}:.*/${kv%%:*}: ${kv#*:}/" "$cf"; echo ">> override: ${kv%%:*} = ${kv#*:}"
+  done
+  CONFIG_PATH="$cf"; ESVIO_PATH="$tcfg/"
 fi
 
 echo ">> [1/5] roscore"
