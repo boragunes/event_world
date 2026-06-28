@@ -1,43 +1,43 @@
 {
-  "label": "deio/vector/desk-fast (Sim3)",
+  "label": null,
   "algo": "deio",
   "dataset": null,
   "sequence": null,
-  "generated_utc": "2026-06-27T17:39:52+00:00",
+  "generated_utc": "2026-06-28T11:06:41+00:00",
   "evo_version": "v1.36.5",
-  "est_file": "deio/vector/desk-fast/stamped_traj.tum",
-  "gt_file": "deio/vector/desk-fast/desk-fast_gt.txt",
-  "alignment": "sim3",
+  "est_file": "deio/vector_ourrun/desk-fast/stamped_traj.tum",
+  "gt_file": "deio/vector_ourrun/desk-fast/desk-fast_gt.txt",
+  "alignment": "se3",
   "n_poses_matched": 1355,
   "n_poses_est_raw": 1355,
-  "gt_trajectory_length_m": 34.3347,
+  "gt_trajectory_length_m": 34.3349,
   "duration_s": 45.133,
   "ate_translation_m": {
-    "rmse": 0.051882,
-    "mean": 0.046756,
-    "median": 0.046814,
-    "std": 0.022485,
-    "min": 0.005502,
-    "max": 0.148848,
-    "sse": 3.647257
+    "rmse": 0.037235,
+    "mean": 0.034299,
+    "median": 0.033406,
+    "std": 0.014492,
+    "min": 0.00487,
+    "max": 0.087199,
+    "sse": 1.878644
   },
   "rotation_deg": {
-    "body_frame_offset_deg": 178.199,
+    "body_frame_offset_deg": 179.34,
     "residual_after_offset": {
-      "rmse": 2.770214,
-      "mean": 2.566036,
-      "median": 2.488983,
-      "std": 1.043813,
-      "min": 0.272576,
-      "max": 5.818859,
-      "sse": 10398.385867
+      "rmse": 1.95786,
+      "mean": 1.79196,
+      "median": 1.696973,
+      "std": 0.788729,
+      "min": 0.198846,
+      "max": 4.359441,
+      "sse": 5194.004952
     },
     "note": "absolute orientation error AFTER removing the constant estimator-vs-GT body-frame offset"
   },
   "paper_metric": {
-    "MPE_percent_ate": 0.1511,
-    "MPE_percent_rel_1m": 5.903,
-    "MRE_deg_per_m_rel_1m": 3.71004,
+    "MPE_percent_ate": 0.1084,
+    "MPE_percent_rel_1m": 5.0197,
+    "MRE_deg_per_m_rel_1m": 3.01588,
     "note": "MPE_ate = 100*ATE_trans_RMSE/length (paper SE3 convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
   }
 }

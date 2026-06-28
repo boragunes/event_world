@@ -1,43 +1,43 @@
 {
-  "label": "deio/vector/sofa-normal (Sim3)",
+  "label": null,
   "algo": "deio",
   "dataset": null,
   "sequence": null,
-  "generated_utc": "2026-06-27T17:39:55+00:00",
+  "generated_utc": "2026-06-28T11:06:46+00:00",
   "evo_version": "v1.36.5",
-  "est_file": "deio/vector/sofa-normal/stamped_traj.tum",
-  "gt_file": "deio/vector/sofa-normal/sofa-normal_gt.txt",
-  "alignment": "sim3",
+  "est_file": "deio/vector_ourrun/sofa-normal/stamped_traj.tum",
+  "gt_file": "deio/vector_ourrun/sofa-normal/sofa-normal_gt.txt",
+  "alignment": "se3",
   "n_poses_matched": 2580,
   "n_poses_est_raw": 2580,
-  "gt_trajectory_length_m": 30.7466,
+  "gt_trajectory_length_m": 30.7472,
   "duration_s": 85.967,
   "ate_translation_m": {
-    "rmse": 0.057224,
-    "mean": 0.050172,
-    "median": 0.044373,
-    "std": 0.027522,
-    "min": 0.011027,
-    "max": 0.287243,
-    "sse": 8.448554
+    "rmse": 0.096729,
+    "mean": 0.085214,
+    "median": 0.074042,
+    "std": 0.045773,
+    "min": 0.001386,
+    "max": 0.222159,
+    "sse": 24.139733
   },
   "rotation_deg": {
-    "body_frame_offset_deg": 178.736,
+    "body_frame_offset_deg": 179.347,
     "residual_after_offset": {
-      "rmse": 1.464099,
-      "mean": 1.332254,
-      "median": 1.31914,
-      "std": 0.607194,
-      "min": 0.068117,
-      "max": 5.435928,
-      "sse": 5530.448569
+      "rmse": 1.083592,
+      "mean": 0.98916,
+      "median": 0.976381,
+      "std": 0.442418,
+      "min": 0.077251,
+      "max": 2.916443,
+      "sse": 3029.363441
     },
     "note": "absolute orientation error AFTER removing the constant estimator-vs-GT body-frame offset"
   },
   "paper_metric": {
-    "MPE_percent_ate": 0.1861,
-    "MPE_percent_rel_1m": 5.5132,
-    "MRE_deg_per_m_rel_1m": 1.93007,
+    "MPE_percent_ate": 0.3146,
+    "MPE_percent_rel_1m": 10.3928,
+    "MRE_deg_per_m_rel_1m": 1.38697,
     "note": "MPE_ate = 100*ATE_trans_RMSE/length (paper SE3 convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
   }
 }

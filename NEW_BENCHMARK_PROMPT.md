@@ -44,8 +44,17 @@ the Dockerfile, run scripts, estimated trajectories, ground truth, metrics and p
 3. **Transparent evaluation.** Report evo **ATE RMSE** *and* the paper's exact metric. For
    event-VIO papers this is almost always **MPE % = 100 × ATE-translation-RMSE / trajectory-length,
    with full-trajectory SE(3) alignment** — confirm the definition in the paper.
-4. **Honest results.** If a sequence diverges or differs from the paper, say so and investigate
-   before tuning. Never cherry-pick.
+4. **Honest, faithful results.** Reproduce what the **authors intended** — do not tune to beat the
+   paper. Legitimate config (calibration, IMU noise, keyframe policy) only to *match* it, documented;
+   knobs that add capacity/compute (e.g. DEIO `PATCHES_PER_FRAME`) are **cheating**. If a sequence
+   diverges or differs, say so and investigate before tuning. Never cherry-pick.
+5. **Our own trajectories only.** Never use the authors' released trajectory files (uncertain
+   provenance / possibly a different method variant). Produce and own every estimated trajectory,
+   under one uniform methodology across all sequences — no per-sequence setups, never drop a sensor.
+6. **SE3 (metric) for any method with metric info (IMU and/or stereo) — always.** Sim3 /
+   scale-correction only for pure monocular-vision with no metric source; for inertial/stereo
+   methods Sim3 hides scale failures (a free pass on the very thing the IMU/stereo provides).
+   Always verify trajectory coverage (≥~97% of GT span) and raw scale before trusting a number.
 
 ### Folder structure to create/populate
 Each algorithm is a self-contained top-level folder: the container + run scripts **and** its

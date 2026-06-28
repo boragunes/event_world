@@ -15,44 +15,39 @@ deio/build.sh                       # -> event-world/deio:latest (~30-60 min)
 DEVO_WEIGHTS=/path/DEVO.pth DATA=/path/UZH-FPV deio/run_deio.sh uzhfpv
 ```
 
-## Results on VECtor — DEIO's published trajectories
-**Important provenance:** DEIO's public code has **no VECtor eval script / config** (only
-`davis240c.py` and `uzh-fpv.py` are runnable). It *does* publish the authors' own VECtor
-**trajectories**. So `deio/vector/<seq>/` holds **DEIO's published trajectories**, evaluated
-against our VECtor ground truth with the **same evo pipeline** — using **Sim3 (scale-corrected)
-alignment**, which is DEIO's own convention (`correct_scale=True` in their eval notebook). These
-are *not* our run. We **also ran DEIO on VECtor ourselves** by reconstructing the missing eval
-path (`deio/prepare_vector.py` + `deio/vector_eval.py` + `deio/vector_config.yaml`) — results in
-`deio/vector_ourrun/` and **[the full report](../docs/validation/deio_vector.md)**: our run
-averages **0.65% MPE** vs published 0.50% on the 9 sequences with event data, and a 2×
-IMU-covariance study (`deio/vector_ourrun_imu2x/`) found inflating it net-negative (0.65→1.02%).
+## Results on VECtor — our run, SE3 (metric)
+DEIO ships no VECtor eval script/config, so we reconstruct the run (`deio/prepare_vector.py` +
+`deio/vector_config.yaml` + `deio/vector_eval.py`; **no DEIO source edits**) and produce **our own
+trajectories** — we **never use the authors' released `.txt` files** (mixed DEVO/DEIO provenance,
+scale-ambiguous). We evaluate with **SE3 (metric)**: DEIO fuses an IMU, so it must be metric, and
+Sim3 would mask scale failures.
 
-### DEIO (Sim3) vs our ESVIO (SE3) on VECtor — MPE %
-| sequence | ESVIO (SE3, our run) | DEIO (Sim3, published) |
+| sequence | DEIO ours (SE3) | ESVIO ours (SE3) |
 |---|---|---|
-| desk-normal | 0.43 | **0.34** |
-| desk-fast | 0.24 | **0.15** |
-| sofa-normal | 0.24 | **0.19** |
-| sofa-fast | 2.54 | **0.50** |
-| robot-normal | 0.87 | **0.38** |
-| robot-fast | *init fails* | **0.17** |
-| corner-slow | 1.95 | **1.02** |
-| mountain-normal | **0.72** | 1.36 |
-| mountain-fast | *init fails* | **0.26** |
-| hdr-normal | 3.62 | **0.71** |
-| hdr-fast | 1.26 | **0.30** |
+| desk-normal | 0.46 | 0.43 |
+| desk-fast | 0.11 | 1.67 |
+| sofa-normal | 0.31 | 0.24 |
+| sofa-fast | 0.12 | 2.54 |
+| robot-normal | 0.75 | 0.87 |
+| robot-fast | 0.16 | *init fails* |
+| corner-slow | 2.63 | 1.95 |
+| mountain-normal | 1.80 | 0.72 |
+| mountain-fast | 0.61 | *init fails* |
+| hdr-normal | 12.67 † | 0.61 |
+| hdr-fast | 0.74 | 1.26 |
 
-DEIO wins **10/11** (ESVIO only on mountain-normal), and crucially handles the **fast** sequences
-where ESVIO's classical init diverges. Note the alignment differs (DEIO Sim3 / scale-corrected vs
-ESVIO SE3 / metric) because each paper reports its own convention — see
-[the report](../docs/validation/deio_vector.md).
+DEIO recovers metric scale on every excited sequence and runs robot-fast/mountain-fast where
+ESVIO's init diverges. **† hdr-normal** is near-static (GT 3.1 m) → monocular scale unobservable
+(raw 9.3×); **SE3 exposes it (12.67) where Sim3 would hide it (1.39)** — stereo ESVIO recovers
+metric scale (0.61). Full analysis + faithful-tuning study:
+**[the report](../docs/validation/deio_vector.md)**.
 
 ## Layout
 ```
 deio/
-  Dockerfile  build.sh  run_deio.sh  README.md
-  vector/<seq>/    DEIO published trajectory + our GT + Sim3 metrics + PDF/PNG plots
-  uzhfpv/<seq>/    our faithful container run (validates reproduction vs the paper)
+  Dockerfile  build.sh  run_deio.sh  prepare_vector.py  vector_eval.py  vector_config.yaml  README.md
+  vector/<seq>/        our DEIO run: trajectory + GT + SE3 metrics + PDF/PNG plots
+  vector_imu2x/<seq>/  our IMU-covariance study
 ```
-DEIO is the original authors' work under its own license; this folder only adds containerization
-and evaluation glue.
+DEIO is the original authors' work under its own license; this folder only adds containerization,
+the reconstructed run harness, and evaluation glue. **No authors' trajectories are used.**

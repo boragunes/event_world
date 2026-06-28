@@ -1,43 +1,43 @@
 {
-  "label": "deio/vector/mountain-normal (Sim3)",
+  "label": null,
   "algo": "deio",
   "dataset": null,
   "sequence": null,
-  "generated_utc": "2026-06-27T17:40:04+00:00",
+  "generated_utc": "2026-06-28T11:07:10+00:00",
   "evo_version": "v1.36.5",
-  "est_file": "deio/vector/mountain-normal/stamped_traj.tum",
-  "gt_file": "deio/vector/mountain-normal/mountain-normal_gt.txt",
-  "alignment": "sim3",
-  "n_poses_matched": 1774,
-  "n_poses_est_raw": 1774,
-  "gt_trajectory_length_m": 8.1275,
-  "duration_s": 59.1,
+  "est_file": "deio/vector_ourrun/mountain-normal/stamped_traj.tum",
+  "gt_file": "deio/vector_ourrun/mountain-normal/mountain-normal_gt.txt",
+  "alignment": "se3",
+  "n_poses_matched": 1775,
+  "n_poses_est_raw": 1775,
+  "gt_trajectory_length_m": 8.1283,
+  "duration_s": 59.133,
   "ate_translation_m": {
-    "rmse": 0.110759,
-    "mean": 0.062212,
-    "median": 0.041573,
-    "std": 0.091637,
-    "min": 0.011072,
-    "max": 0.722662,
-    "sse": 21.762696
+    "rmse": 0.146341,
+    "mean": 0.134842,
+    "median": 0.129214,
+    "std": 0.056862,
+    "min": 0.057184,
+    "max": 0.787914,
+    "sse": 38.012825
   },
   "rotation_deg": {
-    "body_frame_offset_deg": 179.114,
+    "body_frame_offset_deg": 179.856,
     "residual_after_offset": {
-      "rmse": 0.440269,
-      "mean": 0.398022,
-      "median": 0.377713,
-      "std": 0.188189,
-      "min": 0.009997,
-      "max": 1.452426,
-      "sse": 343.865916
+      "rmse": 0.753279,
+      "mean": 0.658396,
+      "median": 0.567516,
+      "std": 0.365983,
+      "min": 0.057481,
+      "max": 1.82633,
+      "sse": 1007.186719
     },
     "note": "absolute orientation error AFTER removing the constant estimator-vs-GT body-frame offset"
   },
   "paper_metric": {
-    "MPE_percent_ate": 1.3628,
-    "MPE_percent_rel_1m": 7.7654,
-    "MRE_deg_per_m_rel_1m": 0.56648,
+    "MPE_percent_ate": 1.8004,
+    "MPE_percent_rel_1m": 15.333,
+    "MRE_deg_per_m_rel_1m": 0.83572,
     "note": "MPE_ate = 100*ATE_trans_RMSE/length (paper SE3 convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
   }
 }
