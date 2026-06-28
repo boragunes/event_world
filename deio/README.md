@@ -15,32 +15,31 @@ deio/build.sh                       # -> event-world/deio:latest (~30-60 min)
 DEVO_WEIGHTS=/path/DEVO.pth DATA=/path/UZH-FPV deio/run_deio.sh uzhfpv
 ```
 
-## Results on VECtor — our run, SE3 (metric)
+## Results on VECtor — our run vs the DEIO paper (Table IV)
 DEIO ships no VECtor eval script/config, so we reconstruct the run (`deio/prepare_vector.py` +
 `deio/vector_config.yaml` + `deio/vector_eval.py`; **no DEIO source edits**) and produce **our own
-trajectories** — we **never use the authors' released `.txt` files** (mixed DEVO/DEIO provenance,
-scale-ambiguous). We evaluate with **SE3 (metric)**: DEIO fuses an IMU, so it must be metric, and
-Sim3 would mask scale failures.
+trajectories** — we **never use the authors' released `.txt` files** (mixed DEVO/DEIO provenance).
+We evaluate with **SE3 (metric)** (DEIO has an IMU) and compare **only to the DEIO paper**.
 
-| sequence | DEIO ours (SE3) | ESVIO ours (SE3) |
+| sequence | DEIO ours (SE3) | DEIO paper (Table IV) |
 |---|---|---|
-| desk-normal | 0.46 | 0.43 |
-| desk-fast | 0.11 | 1.67 |
-| sofa-normal | 0.31 | 0.24 |
-| sofa-fast | 0.12 | 2.54 |
-| robot-normal | 0.75 | 0.87 |
-| robot-fast | 0.16 | *init fails* |
-| corner-slow | 2.63 | 1.95 |
-| mountain-normal | 1.80 | 0.72 |
-| mountain-fast | 0.61 | *init fails* |
-| hdr-normal | 12.67 † | 0.61 |
-| hdr-fast | 0.74 | 1.26 |
+| corner-slow | 2.63 | **0.50** |
+| desk-normal | 0.46 | **0.13** |
+| sofa-fast | 0.12 | **0.44** |
+| mountain-fast | 0.61 | **0.24** |
+| desk-fast | 0.11 | *not in paper* |
+| sofa-normal | 0.31 | *not in paper* |
+| robot-normal | 0.75 | *not in paper* |
+| robot-fast | 0.16 | *not in paper* |
+| mountain-normal | 1.80 | *not in paper* |
+| hdr-normal | 12.67 † | *not in paper* |
+| hdr-fast | 0.74 | *not in paper* |
 
-DEIO recovers metric scale on every excited sequence and runs robot-fast/mountain-fast where
-ESVIO's init diverges. **† hdr-normal** is near-static (GT 3.1 m) → monocular scale unobservable
-(raw 9.3×); **SE3 exposes it (12.67) where Sim3 would hide it (1.39)** — stereo ESVIO recovers
-metric scale (0.61). Full analysis + faithful-tuning study:
-**[the report](../docs/validation/deio_vector.md)**.
+The paper reports only those four small-scale sequences (paper avg 0.44%). We match/beat on
+sofa-fast but are 2–5× higher on the others — the **reconstruction gap** (our event/rectification
+pipeline ≠ the authors' exact one), which holds under Sim3 too. **† hdr-normal** (not in paper) is
+near-static → mono scale unobservable (raw 9.3×); SE3 exposes it (12.67) where Sim3 hides it (1.39).
+Full analysis + faithful-tuning study: **[the report](../docs/validation/deio_vector.md)**.
 
 ## Layout
 ```

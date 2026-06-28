@@ -1,11 +1,10 @@
-# ESVIO on VECtor — validation vs. the papers
+# ESVIO on VECtor — validation vs. the ESVIO paper
 
-End-to-end **ESVIO** (stereo event-inertial VIO) on the **VECtor** small-scale sequences,
-evaluated with **evo**, compared to the best published MPE per sequence across **ESVIO**
-([arXiv:2212.13184](https://arxiv.org/abs/2212.13184) Table II) and **DEIO**
-([arXiv:2411.03928](https://arxiv.org/abs/2411.03928) Table IV).
-Metric = **MPE %** = 100 × ATE-translation-RMSE / length, SE(3) full-trajectory alignment
-(identical convention in both papers).
+End-to-end **ESVIO** (stereo event-inertial VIO) on the **VECtor** small-scale sequences — our own
+runs, evaluated with **evo**, compared **only to the ESVIO paper's own published numbers**
+([arXiv:2212.13184](https://arxiv.org/abs/2212.13184) Table II).
+Metric = **MPE %** = 100 × ATE-translation-RMSE / length, **SE(3)** (metric) full-trajectory
+alignment — ESVIO is stereo + IMU, so it is metric (no scale correction).
 
 ## Setup
 - Image `event-world/esvio:latest` — volkbay/ESVIO @ `16cb14a7`, unmodified Dockerfile (pinned).
@@ -19,27 +18,28 @@ Metric = **MPE %** = 100 × ATE-translation-RMSE / length, SE(3) full-trajectory
 
 ## Results
 
-| sequence | ESVIO MPE | best paper | status |
+| sequence | ESVIO ours (SE3) | ESVIO paper (Table II) | status |
 |---|---|---|---|
-| desk-normal | **0.43 %** | 0.61 | ✅ beats |
-| sofa-normal | **0.24 %** | 0.16 | ✅ |
-| hdr-normal | **0.61 %** | 0.57 | ✅ |
-| mountain-normal | **0.72 %** | 0.59 | ✅ |
-| robot-normal | **0.87 %** | 1.08 | ✅ beats |
-| hdr-fast | **1.26 %** | — | ✅ |
-| desk-fast | **1.67 %** | — | ✅ |
-| corner-slow | **1.95 %** | 1.49 | ✅ |
-| sofa-fast | 2.54 % | 0.17 | ◑ tracks, drifts |
-| robot-fast | **init fails** | — | ✗ |
-| mountain-fast | **init fails** | 0.16 | ✗ |
+| desk-normal | **0.43 %** | 0.61 | ✅ beats paper |
+| sofa-normal | **0.24 %** | 0.16 | ✅ ≈ paper |
+| hdr-normal | **0.61 %** | 0.57 | ✅ ≈ paper |
+| mountain-normal | **0.72 %** | 0.59 | ✅ ≈ paper |
+| robot-normal | **0.87 %** | 1.08 | ✅ beats paper |
+| corner-slow | **1.95 %** | 1.49 | ✅ near paper |
+| desk-fast | **1.67 %** | *not in paper* | — |
+| sofa-fast | 2.54 % | *not in paper* | — |
+| hdr-fast | **1.26 %** | *not in paper* | — |
+| robot-fast | **init fails** | *not in paper* | ✗ |
+| mountain-fast | **init fails** | *not in paper* | ✗ |
 
-**9/11 good (<3 %); matches or beats the paper on desk-normal, robot-normal, hdr-normal,
-mountain-normal.** Every sequence uses the **identical setup** — imported full-stereo data
-(left+right event + left+right camera + IMU), `FIX_CALIB` + VECtor IMU model, SE3 metric — *no
-per-sequence methodology differences*. `desk-fast` (1.67) and `hdr-normal` (0.61) were re-run on
-newly-downloaded full data; hdr-normal is a near-static short sequence (GT path 3.1 m), so its
-metric is sensitive, but coverage is ≥97% (verified). Trajectories, GT, metrics, and plots are
-committed under [`esvio/vector/<seq>/`](../../esvio/vector/).
+**On the 6 sequences the ESVIO paper reports, we match or beat it on 5** — desk-normal and
+robot-normal beat it; sofa-normal / hdr-normal / mountain-normal are within ~0.1; corner-slow
+(1.95 vs 1.49) is near. The other 5 (the fast sequences) are **not in the ESVIO paper**, so we
+report our own SE3 numbers with no comparison; robot-fast and mountain-fast fail initialisation.
+Every sequence uses the **identical setup** — imported full-stereo data (left+right event +
+left+right camera + IMU), `FIX_CALIB` + VECtor IMU model, SE3 metric — *no per-sequence differences*.
+hdr-normal is a near-static short sequence (GT path 3.1 m), so its metric is sensitive, but coverage
+is ≥97% (verified). Trajectories/GT/metrics/plots: [`esvio/vector/<seq>/`](../../esvio/vector/).
 
 ## Tuning journey (config-only)
 - **`FIX_CALIB`** — the decisive fix; rescued the upstream config's divergences (e.g. hdr-fast
