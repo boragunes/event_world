@@ -1,0 +1,30 @@
+### DEIO config for VECtor — IMU covariances inflated 2x (sigmas x2 => covariance x4)
+### vs deio/vector_config.yaml. Trusts the IMU less; lets the DEVO visual front-end dominate.
+PATCHES_PER_FRAME: 96
+REMOVAL_WINDOW: 22
+OPTIMIZATION_WINDOW: 10
+PATCH_LIFETIME: 13
+KEYFRAME_THRESH: 5.0
+MOTION_MODEL: 'DAMPED_LINEAR'
+MOTION_DAMPING: 0.5
+MIXED_PRECISION: True
+PATCH_SELECTOR: 'scorer'
+NORM: 'std'
+SCORER_EVAL_MODE: 'multi'
+SCORER_EVAL_USE_GRID: True
+
+LOOP_CLOSURE: True
+BACKEND_THRESH: 64.0
+MAX_EDGE_AGE: 1000
+GLOBAL_OPT_FREQ: 15
+
+ENALBE_IMU: True
+Ti1c: [0.01120354, -0.99976045,  0.01880224,  0.07737190,
+       0.02184410, -0.01855423, -0.99958920,  0.02372785,
+       0.99969861,  0.01160966,  0.02163100, -0.13049913,
+       0.0,         0.0,         0.0,          1.0]
+ENALBE_INV: True
+accel_noise_sigma: 0.4
+gyro_noise_sigma: 0.1
+accel_bias_sigma: 0.004
+gyro_bias_sigma: 8.0e-5

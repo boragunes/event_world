@@ -1,0 +1,43 @@
+{
+  "label": "corner-slow DEIO(our run)",
+  "algo": "deio",
+  "dataset": null,
+  "sequence": null,
+  "generated_utc": "2026-06-27T20:41:48+00:00",
+  "evo_version": "v1.36.5",
+  "est_file": "deio/vector_ourrun/corner-slow/stamped_traj.tum",
+  "gt_file": "deio/vector_ourrun/corner-slow/corner-slow_gt.txt",
+  "alignment": "sim3",
+  "n_poses_matched": 1150,
+  "n_poses_est_raw": 1150,
+  "gt_trajectory_length_m": 0.8517,
+  "duration_s": 38.3,
+  "ate_translation_m": {
+    "rmse": 0.019482,
+    "mean": 0.01738,
+    "median": 0.015705,
+    "std": 0.008803,
+    "min": 0.001299,
+    "max": 0.05113,
+    "sse": 0.436475
+  },
+  "rotation_deg": {
+    "body_frame_offset_deg": 159.791,
+    "residual_after_offset": {
+      "rmse": 7.06376,
+      "mean": 6.540996,
+      "median": 6.347705,
+      "std": 2.666848,
+      "min": 0.545559,
+      "max": 13.094608,
+      "sse": 57381.212223
+    },
+    "note": "absolute orientation error AFTER removing the constant estimator-vs-GT body-frame offset"
+  },
+  "paper_metric": {
+    "MPE_percent_ate": 2.2875,
+    "MPE_percent_rel_1m": NaN,
+    "MRE_deg_per_m_rel_1m": NaN,
+    "note": "MPE_ate = 100*ATE_trans_RMSE/length (paper SE3 convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
+  }
+}

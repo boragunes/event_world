@@ -1,0 +1,43 @@
+{
+  "label": "robot-fast DEIO(our run)",
+  "algo": "deio",
+  "dataset": null,
+  "sequence": null,
+  "generated_utc": "2026-06-27T20:39:25+00:00",
+  "evo_version": "v1.36.5",
+  "est_file": "deio/vector_ourrun/robot-fast/stamped_traj.tum",
+  "gt_file": "deio/vector_ourrun/robot-fast/robot-fast_gt.txt",
+  "alignment": "sim3",
+  "n_poses_matched": 871,
+  "n_poses_est_raw": 871,
+  "gt_trajectory_length_m": 22.882,
+  "duration_s": 29.0,
+  "ate_translation_m": {
+    "rmse": 0.032879,
+    "mean": 0.029867,
+    "median": 0.027841,
+    "std": 0.013748,
+    "min": 0.002574,
+    "max": 0.080583,
+    "sse": 0.941564
+  },
+  "rotation_deg": {
+    "body_frame_offset_deg": 177.541,
+    "residual_after_offset": {
+      "rmse": 2.529641,
+      "mean": 2.298477,
+      "median": 2.221128,
+      "std": 1.056452,
+      "min": 0.291914,
+      "max": 5.399218,
+      "sse": 5573.603397
+    },
+    "note": "absolute orientation error AFTER removing the constant estimator-vs-GT body-frame offset"
+  },
+  "paper_metric": {
+    "MPE_percent_ate": 0.1437,
+    "MPE_percent_rel_1m": 3.9079,
+    "MRE_deg_per_m_rel_1m": 3.00738,
+    "note": "MPE_ate = 100*ATE_trans_RMSE/length (paper SE3 convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
+  }
+}

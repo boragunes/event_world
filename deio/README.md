@@ -21,29 +21,30 @@ DEVO_WEIGHTS=/path/DEVO.pth DATA=/path/UZH-FPV deio/run_deio.sh uzhfpv
 **trajectories**. So `deio/vector/<seq>/` holds **DEIO's published trajectories**, evaluated
 against our VECtor ground truth with the **same evo pipeline** — using **Sim3 (scale-corrected)
 alignment**, which is DEIO's own convention (`correct_scale=True` in their eval notebook). These
-are *not* our run. The `uzhfpv/` folder (our actual container run) is the faithful reproduction.
+are *not* our run. We **also ran DEIO on VECtor ourselves** by reconstructing the missing eval
+path (`deio/prepare_vector.py` + `deio/vector_eval.py` + `deio/vector_config.yaml`) — results in
+`deio/vector_ourrun/` and **[the full report](../docs/validation/deio_vector.md)**: our run
+averages **0.65% MPE** vs published 0.50% on the 9 sequences with event data, and a 2×
+IMU-covariance study (`deio/vector_ourrun_imu2x/`) found inflating it net-negative (0.65→1.02%).
 
-### ESVIO vs DEIO on VECtor — MPE %, **both under DEIO's exact logic**
-Sim3 align + MPE = mean(APE)/length, `max_diff=1` (`scripts/compare_deio_logic.py`).
-`FAIL` = ESVIO estimate collapsed (Sim3 would otherwise mask the divergence).
-
-| sequence | ESVIO (our run) | DEIO (published) |
+### DEIO (Sim3) vs our ESVIO (SE3) on VECtor — MPE %
+| sequence | ESVIO (SE3, our run) | DEIO (Sim3, published) |
 |---|---|---|
-| desk-normal | 0.38 | **0.30** |
-| desk-fast | 0.22 | **0.14** |
-| sofa-normal | 0.22 | **0.16** |
-| sofa-fast | 0.87 | **0.46** |
-| robot-normal | 0.39 | **0.34** |
-| robot-fast | **FAIL** | **0.15** |
-| corner-slow | 1.56 | **0.83** |
-| mountain-normal | **0.52** | 0.76 |
-| mountain-fast | **FAIL** | **0.23** |
-| hdr-normal | 0.76 | **0.61** |
-| hdr-fast | 0.69 | **0.24** |
+| desk-normal | 0.43 | **0.34** |
+| desk-fast | 0.24 | **0.15** |
+| sofa-normal | 0.24 | **0.19** |
+| sofa-fast | 2.54 | **0.50** |
+| robot-normal | 0.87 | **0.38** |
+| robot-fast | *init fails* | **0.17** |
+| corner-slow | 1.95 | **1.02** |
+| mountain-normal | **0.72** | 1.36 |
+| mountain-fast | *init fails* | **0.26** |
+| hdr-normal | 3.62 | **0.71** |
+| hdr-fast | 1.26 | **0.30** |
 
-DEIO wins **10/11** (ESVIO only on mountain-normal). On the 9 it tracks, ESVIO is close to DEIO;
-on robot-fast/mountain-fast ESVIO genuinely fails (DEIO's deep front-end handles the fast motion
-that breaks ESVIO's classical init). Full methodology + the collapse caveat:
+DEIO wins **10/11** (ESVIO only on mountain-normal), and crucially handles the **fast** sequences
+where ESVIO's classical init diverges. Note the alignment differs (DEIO Sim3 / scale-corrected vs
+ESVIO SE3 / metric) because each paper reports its own convention — see
 [the report](../docs/validation/deio_vector.md).
 
 ## Layout

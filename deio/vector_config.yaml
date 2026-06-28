@@ -1,0 +1,32 @@
+### DEIO config for VECtor (reconstruction) — DEVO VO params copied from config/uzhfpv.yaml,
+### IMU + event<->IMU extrinsic from VECtor's esvio_VECtor_small_scale calibration.
+PATCHES_PER_FRAME: 96
+REMOVAL_WINDOW: 22
+OPTIMIZATION_WINDOW: 10
+PATCH_LIFETIME: 13
+KEYFRAME_THRESH: 5.0
+MOTION_MODEL: 'DAMPED_LINEAR'
+MOTION_DAMPING: 0.5
+MIXED_PRECISION: True
+PATCH_SELECTOR: 'scorer'
+NORM: 'std'
+SCORER_EVAL_MODE: 'multi'
+SCORER_EVAL_USE_GRID: True
+
+LOOP_CLOSURE: True
+BACKEND_THRESH: 64.0
+MAX_EDGE_AGE: 1000
+GLOBAL_OPT_FREQ: 15
+
+# IMU — VECtor event0 <-> IMU extrinsic (esvio_VECtor_small_scale: extrinsic*_event).
+# The VECtor flag T_event_imu=1 marks the stored matrix as imu->cam, so invert to get Ti1c=Tbc.
+ENALBE_IMU: True
+Ti1c: [0.01120354, -0.99976045,  0.01880224,  0.07737190,
+       0.02184410, -0.01855423, -0.99958920,  0.02372785,
+       0.99969861,  0.01160966,  0.02163100, -0.13049913,
+       0.0,         0.0,         0.0,          1.0]
+ENALBE_INV: True
+accel_noise_sigma: 0.2
+gyro_noise_sigma: 0.05
+accel_bias_sigma: 0.002
+gyro_bias_sigma: 4.0e-5
