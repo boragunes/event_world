@@ -1,142 +1,101 @@
-[0m[INFO] [1782547962.072080117]: init begins[0m
-[0m[INFO] [1782547962.074767734]: Loaded config_file: /tmp/esvio_cfg/esvio.yaml[0m
+[0m[INFO] [1782638552.657508679]: init begins[0m
+[0m[INFO] [1782638552.660314246]: Loaded config_file: /tmp/esvio_cfg/esvio.yaml[0m
 result path /home/cpy/Datasets/output/esvio_result_no_loop.csv
-[33m[WARN] [1782547962.075443475]:  fix extrinsic param [0m
-[0m[INFO] [1782547962.075427107]: ROW_Image: 1024.000000 COL_Image: 1224.000000 [0m
-[0m[INFO] [1782547962.075437861]: ROW_Event: 480.000000 COL_EVENT: 640.000000 [0m
-[0m[INFO] [1782547962.075481053]: give an T to the extrinsic of cam [0m
-[0m[INFO] [1782547962.075486970]: give an T to the extrinsic of event [0m
-[0m[INFO] [1782547962.075507968]: Extrinsic_R : 
+[33m[WARN] [1782638552.661043515]:  fix extrinsic param [0m
+[0m[INFO] [1782638552.661026123]: ROW_Image: 1024.000000 COL_Image: 1224.000000 [0m
+[0m[INFO] [1782638552.661036829]: ROW_Event: 480.000000 COL_EVENT: 640.000000 [0m
+[0m[INFO] [1782638552.661088702]: give an T to the extrinsic of cam [0m
+[0m[INFO] [1782638552.661094866]: give an T to the extrinsic of event [0m
+[0m[INFO] [1782638552.661118498]: Extrinsic_R : 
   0.0172486   0.0128346    0.999769
   -0.999804 -0.00952696   0.0173715
  0.00974772   -0.999872   0.0126678[0m
-[0m[INFO] [1782547962.075518182]: Extrinsic_T : 
+[0m[INFO] [1782638552.661128443]: Extrinsic_T : 
  0.143665 0.0796728 -0.015555[0m
-[0m[INFO] [1782547962.075533243]: Extrinsic_R_event : 
+[0m[INFO] [1782638552.661143174]: Extrinsic_R_event : 
  0.0112035  0.0218441   0.999699
   -0.99976 -0.0185542  0.0116097
  0.0188022  -0.999589   0.021631[0m
-[0m[INFO] [1782547962.075542132]: Extrinsic_T_event : 
+[0m[INFO] [1782638552.661151921]: Extrinsic_T_event : 
  0.129075 0.0793087 0.0250862[0m
-[0m[INFO] [1782547962.076513902]: parameters.cpp: gravity_norm: 1.000000[0m
+[0m[INFO] [1782638552.662038765]: parameters.cpp: gravity_norm: 1.000000[0m
 parameters.cpp: Not use sampson model
 parameters.cpp: Yes use geometric correction
-[33m[WARN] [1782547962.077247199]: waiting for event, image and imu...[0m
-[33m[WARN] [1782547962.099755284]: into event point feature detection and tracking[0m
-[33m[WARN] [1782547962.104144970]: into stereo image feature detection and tracking[0m
+[33m[WARN] [1782638552.663141309]: waiting for event, image and imu...[0m
+[33m[WARN] [1782638552.728797414]: into event point feature detection and tracking[0m
+[33m[WARN] [1782638552.737649807]: into stereo image feature detection and tracking[0m
 vocabulary_file/catkin_ws_dvs/src/ESVIO/pose_graph/support_files/brief_k10L6.bin
 loop start load vocabulary
 BRIEF_PATTERN_FILE/catkin_ws_dvs/src/ESVIO/pose_graph/support_files/brief_pattern.yml
 Failed to create folder  
-[0m[INFO] [1782547962.103255316]: Loaded config_file: /tmp/esvio_cfg/esvio.yaml[0m
-[0m[INFO] [1782547962.104203314]: Loaded esvio_folder: /tmp/esvio_cfg/[0m
-[0m[INFO] [1782547962.104271222]: Rrl_event: 
+[0m[INFO] [1782638552.736516122]: Loaded config_file: /tmp/esvio_cfg/esvio.yaml[0m
+[0m[INFO] [1782638552.738240131]: Loaded esvio_folder: /tmp/esvio_cfg/[0m
+[0m[INFO] [1782638552.738311388]: Rrl_event: 
    0.99968  0.0200383  0.0154395
 -0.0200188   0.999799 -0.0014144
 -0.0154648 0.00110486    0.99988[0m
-[0m[INFO] [1782547962.104283128]: Trl_event: 
+[0m[INFO] [1782638552.738323147]: Trl_event: 
  -0.170177 0.00146904 0.00486952[0m
-[0m[INFO] [1782547962.104292705]: reading paramerter of camera /tmp/esvio_cfg//event0_esvio.yaml[0m
-[0m[INFO] [1782547962.112283615]: reading paramerter of camera /tmp/esvio_cfg//event1_esvio.yaml[0m
+[0m[INFO] [1782638552.738332471]: reading paramerter of camera /tmp/esvio_cfg//event0_esvio.yaml[0m
+[0m[INFO] [1782638552.746701845]: reading paramerter of camera /tmp/esvio_cfg//event1_esvio.yaml[0m
 327.485       0     320
       0 327.554     240
       0       0       1
-[33m[WARN] [1782547977.435093494]: ---------------5points----------------[0m
-[33m[WARN] [1782547977.435146021]: input points 156 2D inliers 3D inliers 95[0m
-[33m[WARN] [1782547977.544370046]: gyroscope bias initial calibration -0.00263197  0.00154617 0.000165023[0m
-[33m[WARN] [1782547981.642780473]:  little feature 0[0m
-[33m[WARN] [1782547983.114614975]:  little feature 0[0m
-[33m[WARN] [1782547983.632515430]:  little feature 0[0m
-[33m[WARN] [1782547987.277871260]:  little feature 0[0m
-[33m[WARN] [1782547987.491161801]:  little feature 1[0m
-[33m[WARN] [1782547988.470715126]:  little feature 1[0m
-[33m[WARN] [1782547988.664129636]:  little feature 1[0m
-[33m[WARN] [1782547989.464553054]:  little feature 1[0m
-[33m[WARN] [1782547989.722443806]:  little feature 0[0m
-[33m[WARN] [1782547989.967178462]:  little feature 0[0m
-[33m[WARN] [1782547990.000446391]:  little feature 0[0m
-[33m[WARN] [1782547992.510834857]:  little feature 1[0m
-[33m[WARN] [1782547992.562743720]:  little feature 1[0m
-[33m[WARN] [1782547995.213832420]:  little feature 1[0m
-[33m[WARN] [1782547996.917465256]:  little feature 0[0m
-[33m[WARN] [1782547996.960221806]:  little feature 0[0m
-[33m[WARN] [1782547997.741257184]:  little feature 1[0m
-[33m[WARN] [1782547999.099294883]:  little feature 0[0m
-[33m[WARN] [1782547999.264547162]:  little feature 0[0m
-[33m[WARN] [1782547999.969760859]:  little feature 0[0m
-[33m[WARN] [1782548000.100028209]:  little feature 0[0m
-[33m[WARN] [1782548000.515391998]:  little feature 0[0m
-[33m[WARN] [1782548000.550999509]:  little feature 1[0m
-[33m[WARN] [1782548002.011385473]:  little feature 0[0m
-[33m[WARN] [1782548002.046082611]:  little feature 0[0m
-[33m[WARN] [1782548005.320169662]:  little feature 0[0m
-[33m[WARN] [1782548005.356933593]:  little feature 0[0m
-[33m[WARN] [1782548011.777952785]:  little feature 0[0m
-[33m[WARN] [1782548011.810655523]:  little feature 0[0m
-[33m[WARN] [1782548016.589099178]:  little feature 0[0m
-[33m[WARN] [1782548016.711587670]:  little feature 0[0m
-[33m[WARN] [1782548018.932599116]:  little feature 1[0m
-[33m[WARN] [1782548019.083985662]:  little feature 1[0m
-[33m[WARN] [1782548023.075990788]:  little feature 0[0m
-[33m[WARN] [1782548023.111952252]:  little feature 0[0m
-[33m[WARN] [1782548023.700334126]:  little feature 1[0m
-[33m[WARN] [1782548025.234543202]:  little feature 0[0m
-[33m[WARN] [1782548025.721322630]:  little feature 0[0m
-[33m[WARN] [1782548025.905353209]:  little feature 0[0m
-[33m[WARN] [1782548026.927450865]:  little feature 1[0m
-[33m[WARN] [1782548034.161756604]:  little feature 1[0m
-[33m[WARN] [1782548035.470679009]:  little feature 1[0m
-[33m[WARN] [1782548038.543070982]:  little feature 1[0m
-[33m[WARN] [1782548039.368144865]:  little feature 1[0m
-[33m[WARN] [1782548039.710391309]:  little feature 1[0m
-[33m[WARN] [1782548040.523764775]:  little feature 0[0m
-[33m[WARN] [1782548042.571835769]:  little feature 1[0m
-[33m[WARN] [1782548043.193780265]:  little feature 0[0m
-[33m[WARN] [1782548043.345612990]:  little feature 1[0m
-[33m[WARN] [1782548045.786167597]:  little feature 1[0m
-[33m[WARN] [1782548045.894616118]:  little feature 1[0m
-[33m[WARN] [1782548046.391573065]:  little feature 0[0m
-[33m[WARN] [1782548048.220767000]:  little feature 0[0m
-[33m[WARN] [1782548048.424959809]:  little feature 0[0m
-[33m[WARN] [1782548048.520321072]:  little feature 0[0m
-[33m[WARN] [1782548048.883418973]:  little feature 1[0m
-[33m[WARN] [1782548049.990473551]:  little feature 0[0m
-[33m[WARN] [1782548050.772355860]:  little feature 0[0m
-[33m[WARN] [1782548050.985117935]:  little feature 0[0m
-[33m[WARN] [1782548052.280342807]:  little feature 0[0m
-[33m[WARN] [1782548060.927029215]:  little feature 0[0m
-[33m[WARN] [1782548060.962654545]:  little feature 0[0m
-[33m[WARN] [1782548061.115302305]:  little feature 0[0m
-[33m[WARN] [1782548062.342423041]:  little feature 0[0m
-[33m[WARN] [1782548062.510225130]:  little feature 0[0m
-[33m[WARN] [1782548062.701040896]:  little feature 1[0m
-[33m[WARN] [1782548064.721917841]:  little feature 0[0m
-[33m[WARN] [1782548064.930284951]:  little feature 0[0m
-[33m[WARN] [1782548067.197307261]:  little feature 0[0m
-[33m[WARN] [1782548067.233157733]:  little feature 0[0m
-[33m[WARN] [1782548067.337707427]:  little feature 0[0m
-[33m[WARN] [1782548067.725098667]:  little feature 0[0m
-[33m[WARN] [1782548067.815397485]:  little feature 0[0m
-[33m[WARN] [1782548068.571920573]:  little feature 0[0m
-[33m[WARN] [1782548070.076703382]:  little feature 0[0m
-[33m[WARN] [1782548070.327158606]:  little feature 0[0m
-[33m[WARN] [1782548071.744839182]:  little feature 0[0m
-[33m[WARN] [1782548071.818184455]:  little feature 0[0m
-[33m[WARN] [1782548076.451117501]:  little feature 1[0m
-[33m[WARN] [1782548077.090666482]:  little feature 1[0m
-[33m[WARN] [1782548078.277732873]:  little feature 0[0m
-[33m[WARN] [1782548078.342928107]:  little feature 0[0m
-[33m[WARN] [1782548078.399374251]:  little feature 0[0m
-[33m[WARN] [1782548079.233214458]:  little feature 0[0m
-[33m[WARN] [1782548079.475990064]:  little feature 0[0m
-[33m[WARN] [1782548079.846772249]:  little feature 0[0m
-[33m[WARN] [1782548079.978424311]:  little feature 1[0m
-[33m[WARN] [1782548091.702528406]: Shutdown request received.[0m
-[33m[WARN] [1782548091.703046969]: Reason given for shutdown: [user request][0m
-[33m[WARN] [1782548091.703863618]: Shutdown request received.[0m
-[33m[WARN] [1782548091.703895257]: Reason given for shutdown: [user request][0m
-[33m[WARN] [1782548091.704238442]: Shutdown request received.[0m
-[33m[WARN] [1782548091.704270849]: Reason given for shutdown: [user request][0m
-[33m[WARN] [1782548091.704629350]: Shutdown request received.[0m
-[33m[WARN] [1782548091.704660313]: Reason given for shutdown: [user request][0m
-terminate called without an active exception
+[33m[WARN] [1782638567.994368751]: ---------------5points----------------[0m
+[33m[WARN] [1782638567.994407447]: input points 150 2D inliers 3D inliers 92[0m
+[33m[WARN] [1782638568.127972556]: gyroscope bias initial calibration  -0.00318129   0.00152374 -0.000702962[0m
+[33m[WARN] [1782638570.617605750]:  little feature 1[0m
+[33m[WARN] [1782638570.661053573]:  little feature 1[0m
+[33m[WARN] [1782638571.427846450]:  little feature 0[0m
+[33m[WARN] [1782638571.481570184]:  little feature 0[0m
+[33m[WARN] [1782638573.066678343]:  little feature 0[0m
+[33m[WARN] [1782638573.111118352]:  little feature 0[0m
+[33m[WARN] [1782638574.585877578]:  little feature 0[0m
+[33m[WARN] [1782638574.852004340]:  little feature 1[0m
+[33m[WARN] [1782638575.243928771]:  little feature 1[0m
+[33m[WARN] [1782638577.442843448]:  little feature 0[0m
+[33m[WARN] [1782638577.724242292]:  little feature 0[0m
+[33m[WARN] [1782638577.900642350]:  little feature 1[0m
+[33m[WARN] [1782638578.330604320]:  little feature 0[0m
+[33m[WARN] [1782638578.569222240]:  little feature 0[0m
+[33m[WARN] [1782638578.952012532]:  little feature 1[0m
+[33m[WARN] [1782638580.113025573]:  little feature 0[0m
+[33m[WARN] [1782638580.769607681]:  little feature 0[0m
+[33m[WARN] [1782638581.085014238]:  little feature 0[0m
+[33m[WARN] [1782638582.565261824]:  little feature 1[0m
+[33m[WARN] [1782638587.426677152]:  little feature 0[0m
+[33m[WARN] [1782638587.939148072]:  little feature 0[0m
+[33m[WARN] [1782638587.983899499]:  little feature 1[0m
+[33m[WARN] [1782638590.655624812]:  little feature 0[0m
+[33m[WARN] [1782638590.710525320]:  little feature 0[0m
+[33m[WARN] [1782638591.053283136]:  little feature 0[0m
+[33m[WARN] [1782638592.685166608]:  little feature 1[0m
+[33m[WARN] [1782638592.959921640]:  little feature 1[0m
+[33m[WARN] [1782638604.641404070]:  little feature 0[0m
+[33m[WARN] [1782638609.802574419]:  little feature 0[0m
+[33m[WARN] [1782638609.959235719]:  little feature 0[0m
+[33m[WARN] [1782638615.952406739]:  little feature 1[0m
+[33m[WARN] [1782638616.012294234]:  little feature 0[0m
+[33m[WARN] [1782638623.096819046]:  little feature 1[0m
+[33m[WARN] [1782638632.031398465]:  little feature 1[0m
+[33m[WARN] [1782638632.346738583]:  little feature 0[0m
+[33m[WARN] [1782638632.516272685]:  little feature 1[0m
+[33m[WARN] [1782638633.087578935]:  little feature 1[0m
+[33m[WARN] [1782638633.182361022]:  little feature 0[0m
+[33m[WARN] [1782638642.648311519]:  little feature 1[0m
+[33m[WARN] [1782638644.493851847]:  little feature 0[0m
+[33m[WARN] [1782638644.572191578]:  little feature 0[0m
+[33m[WARN] [1782638669.666080721]:  little feature 0[0m
+[33m[WARN] [1782638669.840620256]:  little feature 0[0m
+[33m[WARN] [1782638672.571406041]:  little feature 0[0m
+[33m[WARN] [1782638672.714763690]:  little feature 1[0m
+[33m[WARN] [1782638675.788562627]:  little feature 0[0m
+[33m[WARN] [1782638676.010416510]:  little feature 0[0m
+[33m[WARN] [1782638687.802112888]: Shutdown request received.[0m
+[33m[WARN] [1782638687.802710326]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1782638687.803507239]: Shutdown request received.[0m
+[33m[WARN] [1782638687.803543246]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1782638687.803878825]: Shutdown request received.[0m
+[33m[WARN] [1782638687.803905739]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1782638687.804250719]: Shutdown request received.[0m
+[33m[WARN] [1782638687.804282567]: Reason given for shutdown: [user request][0m

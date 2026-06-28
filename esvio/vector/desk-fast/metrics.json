@@ -1,43 +1,43 @@
 {
   "label": "esvio/vector/desk-fast",
   "algo": "esvio",
-  "dataset": null,
-  "sequence": null,
-  "generated_utc": "2026-06-27T14:19:48+00:00",
+  "dataset": "vector",
+  "sequence": "desk-fast",
+  "generated_utc": "2026-06-28T09:24:49+00:00",
   "evo_version": "v1.36.5",
   "est_file": "esvio/vector/desk-fast/stamped_traj.tum",
-  "gt_file": "esvio/vector/desk-fast/desk-fast_gt.txt",
+  "gt_file": "data/vector/desk-fast/desk-fast_gt_txt.txt",
   "alignment": "se3",
-  "n_poses_matched": 449,
-  "n_poses_est_raw": 449,
-  "gt_trajectory_length_m": 33.5484,
-  "duration_s": 44.667,
+  "n_poses_matched": 448,
+  "n_poses_est_raw": 448,
+  "gt_trajectory_length_m": 33.9033,
+  "duration_s": 44.7,
   "ate_translation_m": {
-    "rmse": 0.082079,
-    "mean": 0.07539,
-    "median": 0.06876,
-    "std": 0.032453,
-    "min": 0.005592,
-    "max": 0.179239,
-    "sse": 3.024864
+    "rmse": 0.566039,
+    "mean": 0.507237,
+    "median": 0.462849,
+    "std": 0.251218,
+    "min": 0.102233,
+    "max": 1.16068,
+    "sse": 143.539121
   },
   "rotation_deg": {
-    "body_frame_offset_deg": 136.598,
+    "body_frame_offset_deg": 119.537,
     "residual_after_offset": {
-      "rmse": 2.099481,
-      "mean": 1.868355,
-      "median": 1.678493,
-      "std": 0.957638,
-      "min": 0.294951,
-      "max": 7.176788,
-      "sse": 1979.111421
+      "rmse": 8.739433,
+      "mean": 7.545649,
+      "median": 6.38967,
+      "std": 4.40918,
+      "min": 0.899774,
+      "max": 22.583545,
+      "sse": 34217.203695
     },
     "note": "absolute orientation error AFTER removing the constant estimator-vs-GT body-frame offset"
   },
   "paper_metric": {
-    "MPE_percent_ate": 0.2447,
-    "MPE_percent_rel_1m": 6.8991,
-    "MRE_deg_per_m_rel_1m": 2.24535,
+    "MPE_percent_ate": 1.6696,
+    "MPE_percent_rel_1m": 19.0092,
+    "MRE_deg_per_m_rel_1m": 11.24214,
     "note": "MPE_ate = 100*ATE_trans_RMSE/length (paper SE3 convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
   }
 }

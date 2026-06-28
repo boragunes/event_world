@@ -22,8 +22,8 @@ scripts**, and the **estimated trajectories** — not just a table of numbers.
 
 | Algorithm | Modality | Datasets | State |
 |-----------|----------|----------|-------|
-| [ESVIO](esvio/) | stereo events + IMU (+ frames) | VECtor small-scale — [report](docs/validation/esvio_vector.md) | 8/11 good (6 beat paper); 2 fast seqs fail init |
-| [DEIO](deio/) | monocular events + IMU (deep) | VECtor — [report](docs/validation/deio_vector.md) | our run avg 0.65% MPE / 9 seqs (published 0.50%); beats ESVIO + runs the fast seqs it can't init |
+| [ESVIO](esvio/) | stereo events + IMU (+ frames) | VECtor small-scale — [report](docs/validation/esvio_vector.md) | 9/11 good, uniform full-stereo setup; 2 fast seqs fail init |
+| [DEIO](deio/) | monocular events + IMU (deep) | VECtor — [report](docs/validation/deio_vector.md) | our run avg 0.67% MPE / 11 seqs (published 0.49%); authors' default config, no finicky tuning |
 | ESVO2, SuperEvent, … | — | DSEC, M3ED, … | planned |
 
 ## Layout

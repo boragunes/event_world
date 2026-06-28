@@ -22,6 +22,7 @@ if __name__ == '__main__':
     p.add_argument('--val_split', type=str, default="splits")
     p.add_argument('--config', default="config/vector.yaml")
     p.add_argument('--stride', type=int, default=1)
+    p.add_argument('--dt_ms', type=float, default=None, help="voxel-grid time window (ms); None = auto (img dt x2 / x0.5)")
     p.add_argument('--viz', action="store_true")
     p.add_argument('--enable_event', action="store_true")
     p.add_argument('--trials', type=int, default=1)
@@ -82,7 +83,7 @@ if __name__ == '__main__':
 
             traj_est, tstamps, flowdata, _ = run_DEIO2(
                 datapath_val, cfg, args.network, viz=args.viz,
-                iterator=vector_evs_iterator(datapath_val, stride=args.stride, timing=False, H=H, W=W),
+                iterator=vector_evs_iterator(datapath_val, stride=args.stride, dT_ms=args.dt_ms, timing=False, H=H, W=W),
                 _all_imu=all_imu, _all_gt=all_gt, _all_gt_keys=all_gt_keys,
                 timing=False, H=H, W=W, viz_flow=False)
 

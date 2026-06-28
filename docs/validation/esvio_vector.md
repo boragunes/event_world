@@ -22,19 +22,24 @@ Metric = **MPE %** = 100 × ATE-translation-RMSE / length, SE(3) full-trajectory
 | sequence | ESVIO MPE | best paper | status |
 |---|---|---|---|
 | desk-normal | **0.43 %** | 0.61 | ✅ beats |
-| desk-fast | **0.24 %** | — | ✅ |
 | sofa-normal | **0.24 %** | 0.16 | ✅ |
-| robot-normal | **0.87 %** | 1.08 | ✅ beats |
-| corner-slow | **1.95 %** | 1.49 | ✅ |
+| hdr-normal | **0.61 %** | 0.57 | ✅ |
 | mountain-normal | **0.72 %** | 0.59 | ✅ |
+| robot-normal | **0.87 %** | 1.08 | ✅ beats |
 | hdr-fast | **1.26 %** | — | ✅ |
+| desk-fast | **1.67 %** | — | ✅ |
+| corner-slow | **1.95 %** | 1.49 | ✅ |
 | sofa-fast | 2.54 % | 0.17 | ◑ tracks, drifts |
-| hdr-normal | 3.62 % | 0.57 | ◑ tracks, drifts |
 | robot-fast | **init fails** | — | ✗ |
 | mountain-fast | **init fails** | 0.16 | ✗ |
 
-**8/11 good (<3 %), 6 match or beat the papers.** Per-sequence trajectories, ground
-truth, metrics, and plots are committed under [`esvio/vector/<seq>/`](../../esvio/vector/).
+**9/11 good (<3 %); matches or beats the paper on desk-normal, robot-normal, hdr-normal,
+mountain-normal.** Every sequence uses the **identical setup** — imported full-stereo data
+(left+right event + left+right camera + IMU), `FIX_CALIB` + VECtor IMU model, SE3 metric — *no
+per-sequence methodology differences*. `desk-fast` (1.67) and `hdr-normal` (0.61) were re-run on
+newly-downloaded full data; hdr-normal is a near-static short sequence (GT path 3.1 m), so its
+metric is sensitive, but coverage is ≥97% (verified). Trajectories, GT, metrics, and plots are
+committed under [`esvio/vector/<seq>/`](../../esvio/vector/).
 
 ## Tuning journey (config-only)
 - **`FIX_CALIB`** — the decisive fix; rescued the upstream config's divergences (e.g. hdr-fast
