@@ -28,6 +28,10 @@ from pathlib import Path
 # VECtor left event camera (from esvio_VECtor_small_scale/event0_esvio.yaml) — PINHOLE + radtan
 K = np.array([[327.32749, 0, 304.97749], [0, 327.46184, 235.37621], [0, 0, 1]], np.float64)
 DIST = np.array([-0.031982, 0.041966, -0.000507, -0.001031], np.float64)  # k1 k2 p1 p2
+# Official VECtor rectified intrinsics = projection_matrix P from
+# left_event_camera_intrinsic_results.yaml (star-datasets.github.io/vector). Rectification maps raw
+# pixels into THIS frame, not K — using K (the raw matrix) as the new projection is wrong.
+PMAT = np.array([[339.69174, 0, 305.8753], [0, 340.96127, 235.33929], [0, 0, 1]], np.float64)
 W, H = 640, 480
 
 _3U32 = struct.Struct("<III")
@@ -78,11 +82,11 @@ def write_event_h5(path, x, y, p, t_us):
 
 def write_rectify(outdir):
     grid = np.stack(np.meshgrid(np.arange(W), np.arange(H)), -1).reshape(-1, 1, 2).astype(np.float32)
-    und = cv2.undistortPoints(grid, K, DIST, R=np.eye(3), P=K).reshape(H, W, 2).astype(np.float32)
+    und = cv2.undistortPoints(grid, K, DIST, R=np.eye(3), P=PMAT).reshape(H, W, 2).astype(np.float32)
     with h5py.File(os.path.join(outdir, "rectify_map_left.h5"), "w") as f:
         f.create_dataset("rectify_map", data=und)
     np.savetxt(os.path.join(outdir, "calib_undist_evs_left.txt"),
-               np.array([K[0, 0], K[1, 1], K[0, 2], K[1, 2]])[None], fmt="%.6f")
+               np.array([PMAT[0, 0], PMAT[1, 1], PMAT[0, 2], PMAT[1, 2]])[None], fmt="%.6f")
 
 
 def read_image_tss_us(bag):

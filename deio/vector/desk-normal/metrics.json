@@ -1,43 +1,44 @@
 {
-  "label": null,
+  "label": "deio/vector/desk-normal",
   "algo": "deio",
   "dataset": null,
   "sequence": null,
-  "generated_utc": "2026-06-28T11:06:36+00:00",
+  "generated_utc": "2026-06-29T08:05:54+00:00",
   "evo_version": "v1.36.5",
-  "est_file": "deio/vector_ourrun/desk-normal/stamped_traj.tum",
-  "gt_file": "deio/vector_ourrun/desk-normal/desk-normal_gt.txt",
+  "est_file": "deio/vector/desk-normal/stamped_traj.tum",
+  "gt_file": "deio/vector/desk-normal/desk-normal_gt.txt",
   "alignment": "se3",
   "n_poses_matched": 2670,
   "n_poses_est_raw": 2670,
-  "gt_trajectory_length_m": 8.5603,
+  "gt_trajectory_length_m": 9.2574,
   "duration_s": 88.967,
   "ate_translation_m": {
-    "rmse": 0.039484,
-    "mean": 0.033773,
-    "median": 0.029746,
-    "std": 0.020453,
-    "min": 0.002297,
-    "max": 0.145563,
-    "sse": 4.162417
+    "rmse": 0.035414,
+    "mean": 0.030914,
+    "median": 0.027109,
+    "std": 0.017276,
+    "min": 0.002565,
+    "max": 0.120202,
+    "sse": 3.348578
   },
   "rotation_deg": {
-    "body_frame_offset_deg": 178.848,
+    "body_frame_offset_deg": 135.538,
     "residual_after_offset": {
-      "rmse": 0.554739,
-      "mean": 0.522194,
-      "median": 0.514999,
-      "std": 0.187213,
-      "min": 0.047509,
-      "max": 1.296219,
-      "sse": 821.653166
+      "rmse": 0.872346,
+      "mean": 0.817549,
+      "median": 0.786667,
+      "std": 0.304302,
+      "min": 0.101824,
+      "max": 1.866189,
+      "sse": 2031.834613
     },
     "note": "absolute orientation error AFTER removing the constant estimator-vs-GT body-frame offset"
   },
   "paper_metric": {
-    "MPE_percent_ate": 0.4612,
-    "MPE_percent_rel_1m": 4.6456,
-    "MRE_deg_per_m_rel_1m": 0.75537,
-    "note": "MPE_ate = 100*ATE_trans_RMSE/length (paper SE3 convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
+    "MPE_percent_ate": 0.3825,
+    "MPE_percent_ate_mean": 0.3339,
+    "MPE_percent_rel_1m": 4.0431,
+    "MRE_deg_per_m_rel_1m": 1.14716,
+    "note": "MPE_ate = 100*ATE_trans_RMSE/length; MPE_ate_mean = 100*mean(ATE_trans)/length (DEIO/authors' convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
   }
 }

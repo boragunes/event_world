@@ -23,3 +23,7 @@ __pycache__/
 .idea/
 .DS_Store
 *.swp
+
+# DEVO model weights (get from shadymeowy/dpvo-clean weights/devo.pth)
+devo/weights/*.pth
+**/__pycache__/

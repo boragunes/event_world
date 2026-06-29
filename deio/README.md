@@ -18,28 +18,33 @@ DEVO_WEIGHTS=/path/DEVO.pth DATA=/path/UZH-FPV deio/run_deio.sh uzhfpv
 ## Results on VECtor — our run vs the DEIO paper (Table IV)
 DEIO ships no VECtor eval script/config, so we reconstruct the run (`deio/prepare_vector.py` +
 `deio/vector_config.yaml` + `deio/vector_eval.py`; **no DEIO source edits**) and produce **our own
-trajectories** — we **never use the authors' released `.txt` files** (mixed DEVO/DEIO provenance).
-We evaluate with **SE3 (metric)** (DEIO has an IMU) and compare **only to the DEIO paper**.
+trajectories**. We evaluate with **SE3 (metric)** — DEIO fuses an IMU, so its scale must be metric —
+and score against the **event-camera-frame** GT (the frame DEIO estimates; `<seq>_gt.txt`).
 
-| sequence | DEIO ours (SE3) | DEIO paper (Table IV) |
-|---|---|---|
-| corner-slow | 2.63 | **0.50** |
-| desk-normal | 0.46 | **0.13** |
-| sofa-fast | 0.12 | **0.44** |
-| mountain-fast | 0.61 | **0.24** |
-| desk-fast | 0.11 | *not in paper* |
-| sofa-normal | 0.31 | *not in paper* |
-| robot-normal | 0.75 | *not in paper* |
-| robot-fast | 0.16 | *not in paper* |
-| mountain-normal | 1.80 | *not in paper* |
-| hdr-normal | 12.67 † | *not in paper* |
-| hdr-fast | 0.74 | *not in paper* |
+| sequence | DEIO ours (SE3) | authors' released (SE3) | paper reports (Sim3) |
+|---|---|---|---|
+| corner-slow | **1.89** | 4.40 | 0.50 \* |
+| desk-normal | **0.33** | 23.69 | 0.13 \* |
+| sofa-fast | **0.14** | 0.48 | 0.44 \* |
+| mountain-fast | **0.52** | 0.26 | 0.24 \* |
+| desk-fast | 0.11 | — | *not in paper* |
+| sofa-normal | 0.29 | — | *not in paper* |
+| robot-normal | 0.54 | — | *not in paper* |
+| robot-fast | 0.25 | — | *not in paper* |
+| mountain-normal | 1.70 | — | *not in paper* |
+| hdr-normal | 10.39 † | — | *not in paper* |
+| hdr-fast | 0.66 | — | *not in paper* |
 
-The paper reports only those four small-scale sequences (paper avg 0.44%). We match/beat on
-sofa-fast but are 2–5× higher on the others — the **reconstruction gap** (our event/rectification
-pipeline ≠ the authors' exact one), which holds under Sim3 too. **† hdr-normal** (not in paper) is
-near-static → mono scale unobservable (raw 9.3×); SE3 exposes it (12.67) where Sim3 hides it (1.39).
-Full analysis + faithful-tuning study: **[the report](../docs/validation/deio_vector.md)**.
+**\* The paper's numbers use Sim3 (`correct_scale=True`), which masks scale-broken trajectories.**
+DEIO is monocular, so scale is unobservable on low-excitation sequences — the authors' *own released*
+trajectories drift badly once scale-correction is off (honest SE3): corner-slow 0.57→**4.40**,
+desk-normal 0.28→**23.69**. So Table IV's 0.50/0.13 are scale-correction artifacts, not metric accuracy.
+Under the same honest SE3 metric our reconstruction is **more accurate than the authors' released runs
+on 3/4 paper sequences**, and our trajectories are genuinely metric (Sim3≈SE3). **† hdr-normal** is
+near-static → monocular scale unobservable for anyone (ours too: SE3 10.39 vs Sim3 0.97); SE3 reports it
+honestly. The input pipeline is independently verified faithful (event data byte-identical to VECtor's
+native HDF5, rectification = official calibration, voxel/IMU/`DEVO.pth` all the authors').
+Full analysis: **[the report](../docs/validation/deio_vector.md)**.
 
 ## Layout
 ```

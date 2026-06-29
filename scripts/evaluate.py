@@ -143,6 +143,8 @@ def main():
 
     ate_rmse = float(st["rmse"])
     mpe_abs_pct = 100.0 * ate_rmse / length if length > 0 else float("nan")
+    # DEIO/authors' convention: MPE = 100 * mean(APE_trans) / GT-length (mean, not RMSE)
+    mpe_mean_pct = 100.0 * float(st["mean"]) / length if length > 0 else float("nan")
 
     metrics_out = {
         "label": a.label,
@@ -164,10 +166,11 @@ def main():
         },
         "paper_metric": {
             "MPE_percent_ate": round(mpe_abs_pct, 4),
+            "MPE_percent_ate_mean": round(mpe_mean_pct, 4),
             "MPE_percent_rel_1m": round(rel_trans_pct, 4),
             "MRE_deg_per_m_rel_1m": round(rel_rot_dpm, 5),
-            "note": ("MPE_ate = 100*ATE_trans_RMSE/length (paper SE3 convention); "
-                     "*_rel_1m = mean drift over 1 m segments after body-frame correction"),
+            "note": ("MPE_ate = 100*ATE_trans_RMSE/length; MPE_ate_mean = 100*mean(ATE_trans)/length "
+                     "(DEIO/authors' convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"),
         },
     }
     with open(os.path.join(a.out_dir, "metrics.json"), "w") as f:

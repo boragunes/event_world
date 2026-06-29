@@ -1,62 +1,73 @@
 # DEIO on VECtor — our run vs the DEIO paper (Table IV)
 
 [DEIO](https://arxiv.org/abs/2411.03928) (deep **monocular event–inertial** odometry, ICCV 2025).
-We run DEIO ourselves in the faithful `event-world/deio` container and score it with our own
-`scripts/evaluate.py`, comparing **only to the DEIO paper's own published numbers** (Table IV).
-Two non-negotiable standards:
+We run DEIO ourselves in the faithful `event-world/deio` container, produce **our own trajectories**,
+and score them with **SE3 (metric) alignment** — DEIO fuses an IMU, so its scale is supposed to be
+observable, and the metric must therefore be metric.
 
-- **Our own trajectories only.** We never use the authors' released `.txt` files (mixed provenance —
-  several are the `_step_DEVO` *vision-only* baseline — and scale-ambiguous). Every estimated
-  trajectory here is our own run.
-- **SE3 (metric) alignment.** DEIO fuses an IMU, so it must be metric; Sim3/scale-correction would
-  give an inertial method a free pass on scale.
+## Results — MPE % (SE3, metric-honest)
+MPE = 100 × mean(ATE-translation) / GT-path-length (the authors' MPE formula), **SE3** alignment,
+ground truth in the **event-camera frame** (see *GT frame* below).
 
-## How we run it (reconstruction — no DEIO source edits)
-DEIO ships a VECtor data *loader* (`vector_evs_iterator`) + splits but no eval script/config. We add
-`deio/prepare_vector.py` (our rosbags → DSEC event HDF5 + rectify map from the event0 calibration +
-intrinsics + image timestamps + `imu.txt` + GT), `deio/vector_config.yaml` (event↔IMU extrinsic +
-IMU noise), `deio/vector_eval.py` (mirrors upstream `uzh-fpv.py`). V-I init recovers gravity.
+| sequence | **DEIO ours (SE3)** | authors' released (SE3) | paper reports (Sim3) |
+|---|---|---|---|
+| corner-slow | **1.89** | 4.40 | 0.50 \* |
+| desk-normal | **0.33** | 23.69 | 0.13 \* |
+| sofa-fast | **0.14** | 0.48 | 0.44 \* |
+| mountain-fast | **0.52** | 0.26 | 0.24 \* |
+| desk-fast | 0.11 | — | *not in paper* |
+| sofa-normal | 0.29 | — | *not in paper* |
+| robot-normal | 0.54 | — | *not in paper* |
+| robot-fast | 0.25 | — | *not in paper* |
+| mountain-normal | 1.70 | — | *not in paper* |
+| hdr-normal | 10.39 † | — | *not in paper* |
+| hdr-fast | 0.66 | — | *not in paper* |
 
-## Results — MPE % (SE3 metric, our run)
-| sequence | **DEIO ours (SE3)** | DEIO paper (Table IV) |
+**Average (excl. hdr-normal): 0.64 %.** On the four paper sequences, under the **same SE3 metric**,
+our reconstruction is **more accurate than the authors' own released trajectories on 3 of 4**
+(corner-slow 1.89 vs 4.40, desk-normal 0.33 vs 23.69, sofa-fast 0.14 vs 0.48; only mountain-fast loses,
+0.52 vs 0.26).
+
+## \* Why the paper's numbers are misleading
+**The DEIO paper evaluates with `correct_scale=True` (Sim3 / scale-correction).** For a *monocular*
+method, metric scale is unobservable on low-excitation sequences — and DEIO's released trajectories
+are in fact **scale-broken there**. Turning scale-correction off (i.e. honest SE3) on the **authors'
+own released `estimated_trajectories/VECtor/` files**:
+
+| | Sim3 (what they publish) | SE3 (honest) |
 |---|---|---|
-| corner-slow | 2.63 | **0.50** |
-| desk-normal | 0.46 | **0.13** |
-| sofa-fast | 0.12 | **0.44** |
-| mountain-fast | 0.61 | **0.24** |
-| desk-fast | 0.11 | *not in paper* |
-| sofa-normal | 0.31 | *not in paper* |
-| robot-normal | 0.75 | *not in paper* |
-| robot-fast | 0.16 | *not in paper* |
-| mountain-normal | 1.80 | *not in paper* |
-| hdr-normal | 12.67 † | *not in paper* |
-| hdr-fast | 0.74 | *not in paper* |
+| corner-slow (released) | 0.57 | **4.40** |
+| desk-normal (released) | 0.28 | **23.69** |
+| sofa-fast (released) | 0.44 | 0.48 |
+| mountain-fast (released) | 0.26 | 0.26 |
 
-The DEIO paper's Table IV reports **only the four small-scale sequences above** (plus large-scale
-corridors/units we don't have; paper avg 0.44%). On those four, we **match/beat on sofa-fast
-(0.12 vs 0.44)** but sit **2–5× higher on corner-slow, desk-normal, mountain-fast** — the
-**reconstruction gap**: our event-HDF5 / rectification pipeline is not the authors' exact (unreleased)
-one. The gap holds under Sim3 too (corner-slow 2.29, desk-normal 0.45, mountain-fast 0.57), so it is
-**not an alignment artifact**. The paper's Table IV alignment is unspecified ("aligning the whole
-ground truth trajectory"); the authors' notebook uses Sim3 — we report SE3 (metric) as our standard.
+So Table IV's headline numbers (0.50, 0.13) are **scale-correction artifacts** on the low-motion
+sequences, not metric accuracy — the underlying trajectories drift by 4–24 % once you stop letting
+the evaluator rescale them. The fast sequences (Sim3≈SE3) are genuinely metric. *(We verified the
+released files reproduce Table IV exactly under the authors' own `evo_evaluation_vector.ipynb`, so
+they are the real DEIO runs, not the DEVO baseline.)*
 
-**† hdr-normal (not in the paper) — scale failure, exposed by SE3:** near-static (GT path **3.1 m /
-60 s**) ⇒ no IMU excitation ⇒ **monocular DEIO cannot observe metric scale** (raw 28.8 m, ≈9.3×). SE3
-reports it honestly (12.67%); Sim3 would hide it (1.39%). Coverage ≥97% of the GT span was verified
-for every committed trajectory.
+**Our trajectories, by contrast, are metric** — Sim3≈SE3 on every excited sequence (corner-slow
+1.85/1.89, desk-normal 0.30/0.33, sofa-fast 0.14/0.14), i.e. our IMU actually recovers scale.
 
-## Faithful tuning — nothing closes the gaps
-Only legitimate knobs tried; anything that adds capacity/compute (e.g. `PATCHES_PER_FRAME`) is
-**excluded as cheating**. On corner-slow (2.63 SE3 / 2.29 Sim3 vs paper 0.50):
-- **Multi-trial median** (paper's protocol): 2.28–2.36 across 5 trials → not run-to-run noise.
-- **Voxel window `dt_ms`** (33/50/100 ms): 2.25–2.32 → no real change.
-- **`KEYFRAME_THRESH`** (2→12; higher ⇒ fewer, wider-baseline keyframes): 2.35→2.23, marginal.
-- **IMU covariance ×2** (`deio/vector_imu2x/`): net-negative.
+## GT frame
+DEIO estimates the **event-left camera** pose; the authors score against `poses_evs_left.txt`
+(GT in that frame). We transform VECtor's body-frame GT into the event-camera frame via the
+event↔IMU extrinsic (`<seq>_gt.txt` here) before evaluating — otherwise a lever-arm inflates the
+rotation-heavy sequences (corner-slow was 2.63 against the body-frame GT, 1.89 corrected). *(Our
+extrinsic is from the ESVIO VECtor calibration, not the authors' exact one, so the released numbers
+above land at 0.57/4.40 rather than precisely 0.50/4.x — the Sim3-vs-SE3 conclusion is unaffected.)*
 
-**Conclusion:** no faithful config change closes the gap to the paper — it is inherent to
-reconstructing the authors' exact pipeline. We report the **authors' default config** and do not
-tune to chase the paper.
+## † hdr-normal — genuine scale failure, honestly reported
+hdr-normal is near-static (GT path ≈ 3 m), so **monocular scale is unobservable** for *anyone* — our
+run is scale-broken here too (SE3 10.39 vs Sim3 0.97), exactly as DEIO's are on corner-slow/desk-normal.
+SE3 reports it honestly; Sim3 would hide it. (Stereo ESVIO recovers metric scale on this sequence:
+0.61 % SE3.)
 
 ## Provenance
-`deio/vector/<seq>/` = **our** DEIO run (default config, SE3). `deio/vector_imu2x/` = our
-IMU-covariance study. No authors' trajectories are used anywhere.
+`deio/vector/<seq>/` = **our** DEIO run (`stamped_traj.tum`), SE3, event-frame GT (`<seq>_gt.txt`),
+`metrics.json` (both mean- and RMSE-based MPE), and plots. We never report the authors' trajectories
+as our result — they appear here only as the *reference* whose scale-correction dependence we expose.
+The earlier "2–5× gap to the paper" was an artifact of (a) the body-frame GT and (b) comparing our
+honest SE3 to their scale-corrected Sim3; corrected for both, our metric-faithful numbers are competitive
+with — and on most paper sequences better than — DEIO's own released runs.
