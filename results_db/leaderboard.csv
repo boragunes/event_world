@@ -1,0 +1,314 @@
+dataset,sequence,metric,unit,best_method,best_value,best_modality,best_metric_type,best_paper,best_table,n_methods
+DSEC,average,ATE,cm,DEIO,164.5,E+I,metric,DEIO,IX,6
+DSEC,city04_a,ARE,deg,ES-PTAM,3.17,Stereo E,metric,ESVO2,VI,6
+DSEC,city04_a,ATE,cm,ESVO2,56.17,Stereo E+I,metric,ESVO2,VI,9
+DSEC,city04_a,RPE_R,deg/s,ES-PTAM,0.53,Stereo E,metric,ESVO2,VII,6
+DSEC,city04_a,RPE_t,cm/s,ESVO2,16.98,Stereo E+I,metric,ESVO2,VII,8
+DSEC,city04_b,ARE,deg,ESVIO,1.38,Stereo E+F+I,metric,ESVO2,VI,6
+DSEC,city04_b,ATE,cm,Stereo-DEVO,17.65,Stereo E,metric,Stereo-DEVO,II,9
+DSEC,city04_b,RPE_R,deg/s,ESVO2,0.43,Stereo E+I,metric,ESVO2,VII,6
+DSEC,city04_b,RPE_t,cm/s,Stereo-DEVO,13.56,Stereo E,metric,Stereo-DEVO,II,8
+DSEC,city04_c,ARE,deg,ES-PTAM,6.02,Stereo E,metric,ESVO2,VI,6
+DSEC,city04_c,ATE,cm,DEIO,413.8,E+I,metric,DEIO,IX,9
+DSEC,city04_c,RPE_R,deg/s,ESVO2,0.55,Stereo E+I,metric,ESVO2,VII,6
+DSEC,city04_c,RPE_t,cm/s,Stereo-DEVO,34.39,Stereo E,metric,Stereo-DEVO,II,8
+DSEC,city04_d,ARE,deg,ESIO,3.63,Stereo E+I,metric,ESVO2,VI,5
+DSEC,city04_d,ATE,cm,DEIO,207.6,E+I,metric,DEIO,IX,9
+DSEC,city04_d,RPE_R,deg/s,ESVO2,0.41,Stereo E+I,metric,ESVO2,VII,5
+DSEC,city04_d,RPE_t,cm/s,ESVO2,18.0,Stereo E+I,metric,ESVO2,VII,8
+DSEC,city04_e,ARE,deg,ESVO2,3.54,Stereo E+I,metric,ESVO2,VI,6
+DSEC,city04_e,ATE,cm,ESVO2,52.94,Stereo E+I,metric,ESVO2,VI,8
+DSEC,city04_e,RPE_R,deg/s,ES-PTAM,0.25,Stereo E,metric,ESVO2,VII,6
+DSEC,city04_e,RPE_t,cm/s,ES-PTAM,14.05,Stereo E,metric,ESVO2,VII,6
+DSEC,city04_f,ARE,deg,ESVO2,5.0,Stereo E+I,metric,ESVO2,VI,6
+DSEC,city04_f,ATE,cm,ESVO2,257.75,Stereo E+I,metric,ESVO2,VI,6
+DSEC,city04_f,RPE_R,deg/s,ESVO2,0.38,Stereo E+I,metric,ESVO2,VII,6
+DSEC,city04_f,RPE_t,cm/s,ESVO2,20.05,Stereo E+I,metric,ESVO2,VII,6
+DSEC,city09_a,ATE,cm,Stereo-DEVO,196.97,Stereo E,metric,Stereo-DEVO,II,4
+DSEC,city09_a,RPE_t,cm/s,Stereo-DEVO,15.73,Stereo E,metric,Stereo-DEVO,II,4
+DSEC,city09_b,ARE,deg,ES-PTAM,1.75,Stereo E,metric,ESVO2,VI,4
+DSEC,city09_b,ATE,cm,ESVO2,87.83,Stereo E+I,metric,ESVO2,VI,7
+DSEC,city09_b,RPE_R,deg/s,ES-PTAM,0.17,Stereo E,metric,ESVO2,VII,4
+DSEC,city09_b,RPE_t,cm/s,ESVO2,17.84,Stereo E+I,metric,ESVO2,VII,7
+DSEC,city09_c,ATE,cm,Stereo-DEVO,931.15,Stereo E,metric,Stereo-DEVO,II,5
+DSEC,city09_c,RPE_t,cm/s,Stereo-DEVO,273.98,Stereo E,metric,Stereo-DEVO,II,5
+DSEC,city09_d,ATE,cm,Stereo-DEVO,564.33,Stereo E,metric,Stereo-DEVO,III,5
+DSEC,city09_d,RPE_t,cm/s,Stereo-DEVO,39.38,Stereo E,metric,Stereo-DEVO,II,5
+DSEC,city09_e,ATE,cm,Stereo-DEVO,246.26,Stereo E,metric,Stereo-DEVO,II,6
+DSEC,city09_e,RPE_t,cm/s,Stereo-DEVO,36.49,Stereo E,metric,Stereo-DEVO,III,6
+DSEC,city11_a,ARE,deg,ESVO2,1.85,Stereo E+I,metric,ESVO2,VI,5
+DSEC,city11_a,ATE,cm,Stereo-DEVO,47.56,Stereo E,metric,Stereo-DEVO,II,7
+DSEC,city11_a,RPE_R,deg/s,ESVO2,0.3,Stereo E+I,metric,ESVO2,VII,5
+DSEC,city11_a,RPE_t,cm/s,Stereo-DEVO,10.32,Stereo E,metric,Stereo-DEVO,II,7
+DSEC,city11_b,ARE,deg,ESIO,3.13,Stereo E+I,metric,ESVO2,VI,4
+DSEC,city11_b,ATE,cm,Stereo-DEVO,282.06,Stereo E,metric,Stereo-DEVO,II,5
+DSEC,city11_b,RPE_R,deg/s,ESVO2,0.45,Stereo E+I,metric,ESVO2,VII,4
+DSEC,city11_b,RPE_t,cm/s,ESVO2,14.83,Stereo E+I,metric,ESVO2,VII,5
+ECD (DAVIS240C),average,MPE,%,DEIO,0.06,E+I,metric,DEIO,I,19
+ECD (DAVIS240C),boxes_6dof,MPE,%,DEIO,0.05,E+I,metric,DEIO,I,24
+ECD (DAVIS240C),boxes_6dof,MRE,deg/m,KLT-VIO,0.03,F+I,metric,EVIO (Zhu),1,6
+ECD (DAVIS240C),boxes_translation,MPE,%,DPVO,0.02,F,up-to-scale,DEIO,I,24
+ECD (DAVIS240C),boxes_translation,MRE,deg/m,KLT-VIO,0.01,F+I,metric,EVIO (Zhu),1,6
+ECD (DAVIS240C),dynamic_6dof,MPE,%,DEIO,0.04,E+I,metric,DEIO,I,24
+ECD (DAVIS240C),dynamic_6dof,MRE,deg/m,KLT-VIO,0.05,F+I,metric,EVIO (Zhu),1,6
+ECD (DAVIS240C),dynamic_translation,MPE,%,DEIO,0.06,E+I,metric,DEIO,I,24
+ECD (DAVIS240C),dynamic_translation,MRE,deg/m,EVIO (Zhu),0.02,E+I,metric,EVIO (Zhu),1,6
+ECD (DAVIS240C),hdr_boxes,MPE,%,DEVO,0.06,E,up-to-scale,DEIO,I,24
+ECD (DAVIS240C),hdr_boxes,MRE,deg/m,Ultimate-SLAM (Fr+E+I),0.03,E+F+I,metric,Ultimate SLAM,I,6
+ECD (DAVIS240C),hdr_poster,MPE,%,DEIO,0.06,E+I,metric,DEIO,I,24
+ECD (DAVIS240C),hdr_poster,MRE,deg/m,Ultimate-SLAM (E+I),0.04,E+I,metric,Ultimate SLAM,I,6
+ECD (DAVIS240C),poster_6dof,MPE,%,DEIO,0.08,E+I,metric,DEIO,I,24
+ECD (DAVIS240C),poster_6dof,MRE,deg/m,Ultimate-SLAM (Fr+E+I),0.07,E+F+I,metric,Ultimate SLAM,I,6
+ECD (DAVIS240C),poster_translation,MPE,%,DEIO,0.04,E+I,metric,DEIO,I,24
+ECD (DAVIS240C),poster_translation,MRE,deg/m,KLT-VIO,0.01,F+I,metric,EVIO (Zhu),1,6
+ECD (DAVIS240C),shapes_6dof,MPE,%,Ultimate-SLAM (Fr+E+I),0.1,E+F+I,metric,Ultimate SLAM,I,6
+ECD (DAVIS240C),shapes_6dof,MRE,deg/m,Ultimate-SLAM (Fr+E+I),0.04,E+F+I,metric,Ultimate SLAM,I,6
+ECD (DAVIS240C),shapes_translation,MPE,%,Ultimate-SLAM (Fr+E+I),0.26,E+F+I,metric,Ultimate SLAM,I,6
+ECD (DAVIS240C),shapes_translation,MRE,deg/m,KLT-VIO,0.04,F+I,metric,EVIO (Zhu),1,6
+ECD (keypoint pose),@10deg,AUC,%,SuperEvent,35.8,E (keypoints),up-to-scale,SuperEvent,2,4
+ECD (keypoint pose),@20deg,AUC,%,SuperEvent,46.7,E (keypoints),up-to-scale,SuperEvent,2,4
+ECD (keypoint pose),@5deg,AUC,%,SuperEvent,22.7,E (keypoints),up-to-scale,SuperEvent,2,4
+EDS,all_chars,ATE,cm,DEVO,10.76,E,up-to-scale,DEIO,VI,7
+EDS,all_chars,MPE,%,DEVO,0.16,E,up-to-scale,DEVO,4,4
+EDS,average,ATE,cm,RAMP-VO,14.55,E+F,up-to-scale,DEIO,VI,6
+EDS,peanuts_dark,ATE,cm,RAMP-VO,1.2,E+F,up-to-scale,DEIO,VI,7
+EDS,peanuts_dark,MPE,%,DPVO,0.12,F,up-to-scale,DEVO,4,4
+EDS,peanuts_light,ATE,cm,RAMP-VO,9.03,E+F,up-to-scale,DEIO,VI,7
+EDS,peanuts_light,MPE,%,DPVO,0.44,F,up-to-scale,DEVO,4,4
+EDS,peanuts_run,ATE,cm,RAMP-VO,13.19,E+F,up-to-scale,DEIO,VI,7
+EDS,peanuts_run,MPE,%,ORB-SLAM3,0.19,F,up-to-scale,DEVO,4,4
+EDS,rocket_dark,ATE,cm,RAMP-VO,7.2,E+F,up-to-scale,DEIO,VI,7
+EDS,rocket_dark,MPE,%,DEVO,0.32,E,up-to-scale,DEVO,4,4
+EDS,rocket_light,ATE,cm,DEIO,15.41,E+I,metric,DEIO,VI,7
+EDS,rocket_light,MPE,%,ORB-SLAM3,1.79,F,up-to-scale,DEVO,4,4
+EDS,ziggy,ATE,cm,DEIO,10.39,E+I,metric,DEIO,VI,7
+EDS,ziggy,MPE,%,DEVO,0.15,E,up-to-scale,DEVO,4,4
+EDS,ziggy_flying,ATE,cm,DEIO,3.84,E+I,metric,DEIO,VI,7
+EDS,ziggy_flying,MPE,%,DEVO,0.71,E,up-to-scale,DEVO,4,4
+EDS,ziggy_hdr,ATE,cm,DEVO,22.82,E,up-to-scale,DEIO,VI,7
+EDS,ziggy_hdr,MPE,%,DEVO,0.36,E,up-to-scale,DEVO,4,4
+EDS (keypoint pose),@10deg,AUC,%,SuperEvent,26.4,E (keypoints),up-to-scale,SuperEvent,3,4
+EDS (keypoint pose),@20deg,AUC,%,SuperEvent,40.1,E (keypoints),up-to-scale,SuperEvent,3,4
+EDS (keypoint pose),@5deg,AUC,%,SuperEvent,15.2,E (keypoints),up-to-scale,SuperEvent,3,4
+HKU (stereo),agg_flip,ATE,cm,ORB-SLAM3,14.0,Stereo F+I,metric,DEVO,3,7
+HKU (stereo),agg_flip,MPE,%,DEIO,0.2,E+I,metric,DEIO,III,16
+HKU (stereo),agg_flip,MRE,deg/m,ESVIO,0.12,Stereo E+F+I,metric,ESVIO,I,8
+HKU (stereo),agg_rotation,ATE,cm,DEVO,3.58,E,up-to-scale,DEVO,3,7
+HKU (stereo),agg_rotation,MPE,%,DPVO,0.04,F,up-to-scale,DEIO,III,16
+HKU (stereo),agg_rotation,MRE,deg/m,ESVIO,0.015,Stereo E+F+I,metric,ESVIO,I,7
+HKU (stereo),agg_translation,ATE,cm,DEVO,4.03,E,up-to-scale,DEVO,3,7
+HKU (stereo),agg_translation,MPE,%,DEVO,0.06,E,up-to-scale,DEIO,III,15
+HKU (stereo),agg_translation,MRE,deg/m,ESVIO,0.016,Stereo E+F+I,metric,ESVIO,I,8
+HKU (stereo),agg_walk,ATE,cm,ESVIO,27.0,Stereo E+F+I,metric,DEVO,3,4
+HKU (stereo),agg_walk,MPE,%,EVI-SAM,0.26,E+F+I,metric,DEIO,III,12
+HKU (stereo),agg_walk,MRE,deg/m,ESVIO,0.026,Stereo E+F+I,metric,ESVIO,I,5
+HKU (stereo),average,MPE,%,ESVIO,0.14,Stereo E+F+I,metric,ESVIO,I,16
+HKU (stereo),average,MRE,deg/m,ESVIO,0.033,Stereo E+F+I,metric,ESVIO,I,8
+HKU (stereo),dark_normal,MPE,%,DEVO,0.06,E,up-to-scale,DEIO,III,11
+HKU (stereo),dark_normal,MRE,deg/m,ESVIO,0.015,Stereo E+F+I,metric,ESVIO,I,6
+HKU (stereo),hdr_agg,ATE,cm,ESVIO,10.0,Stereo E+F+I,metric,DEVO,3,7
+HKU (stereo),hdr_agg,MPE,%,DEIO,0.06,E+I,metric,DEIO,III,15
+HKU (stereo),hdr_agg,MRE,deg/m,ESVIO,0.021,Stereo E+F+I,metric,ESVIO,I,7
+HKU (stereo),hdr_circle,ATE,cm,PL-EVIO,6.8,E+F+I,metric,DEVO,3,7
+HKU (stereo),hdr_circle,MPE,%,EVI-SAM,0.13,E+F+I,metric,DEIO,III,16
+HKU (stereo),hdr_circle,MRE,deg/m,ESVIO,0.035,Stereo E+F+I,metric,ESVIO,I,8
+HKU (stereo),hdr_dark_normal,ATE,cm,DEVO,6.19,E,up-to-scale,DEVO,3,5
+HKU (stereo),hdr_dark_normal,MPE,%,DEVO,0.06,E,up-to-scale,DEVO,3,5
+HKU (stereo),hdr_slow,ATE,cm,DEVO,4.95,E,up-to-scale,DEVO,3,7
+HKU (stereo),hdr_slow,MPE,%,DEIO,0.07,E+I,metric,DEIO,III,14
+HKU (stereo),hdr_slow,MRE,deg/m,VINS-Fusion,0.026,Stereo F+I,metric,ESVIO,I,7
+HKU (stereo),hdr_tran_rota,ATE,cm,DEVO,5.91,E,up-to-scale,DEVO,3,7
+HKU (stereo),hdr_tran_rota,MPE,%,DEVO,0.08,E,up-to-scale,DEIO,III,14
+HKU (stereo),hdr_tran_rota,MRE,deg/m,ESVIO,0.018,Stereo E+F+I,metric,ESVIO,I,7
+MVSEC,average,MPE,%,DEIO,0.34,E+I,metric,DEIO,VII,10
+MVSEC,indoor_flying1,ARE,deg,ESVO2,1.69,Stereo E+I,metric,ESVO2,VI,6
+MVSEC,indoor_flying1,ATE,cm,Stereo-DEVO,3.76,Stereo E,metric,Stereo-DEVO,II,14
+MVSEC,indoor_flying1,MPE,%,DPVO,0.16,F,up-to-scale,DEVO,7,10
+MVSEC,indoor_flying1,MRE,deg/m,PL-EVIO,0.11,E+F+I,metric,ESVIO,II,6
+MVSEC,indoor_flying1,RPE_R,deg/s,ESVO2,0.98,Stereo E+I,metric,ESVO2,VII,6
+MVSEC,indoor_flying1,RPE_t,cm/s,Stereo-DEVO,3.73,Stereo E,metric,Stereo-DEVO,II,8
+MVSEC,indoor_flying2,ARE,deg,ESVO2,4.53,Stereo E+I,metric,ESVO2,VI,4
+MVSEC,indoor_flying2,ATE,cm,DPVO,6.3,F,up-to-scale,DEVO,7,12
+MVSEC,indoor_flying2,MPE,%,DPVO,0.15,F,up-to-scale,DEVO,7,8
+MVSEC,indoor_flying2,MRE,deg/m,ESVIO,0.11,Stereo E+F+I,metric,ESVIO,II,5
+MVSEC,indoor_flying2,RPE_R,deg/s,ESVO2,1.42,Stereo E+I,metric,ESVO2,VII,4
+MVSEC,indoor_flying2,RPE_t,cm/s,Stereo-DEVO,5.73,Stereo E,metric,Stereo-DEVO,II,6
+MVSEC,indoor_flying3,ARE,deg,ESVO2,2.63,Stereo E+I,metric,ESVO2,VI,4
+MVSEC,indoor_flying3,ATE,cm,DPVO,4.6,F,up-to-scale,DEVO,7,12
+MVSEC,indoor_flying3,MPE,%,DPVO,0.08,F,up-to-scale,DEVO,7,9
+MVSEC,indoor_flying3,MRE,deg/m,ESVIO,0.043,Stereo E+F+I,metric,ESVIO,II,6
+MVSEC,indoor_flying3,RPE_R,deg/s,ESVO2,0.77,Stereo E+I,metric,ESVO2,VII,4
+MVSEC,indoor_flying3,RPE_t,cm/s,ESVO2,4.75,Stereo E+I,metric,ESVO2,VII,6
+MVSEC,indoor_flying4,ARE,deg,ESVO2,10.96,Stereo E+I,metric,ESVO2,VI,2
+MVSEC,indoor_flying4,ATE,cm,DPVO,3.2,F,up-to-scale,DEVO,7,11
+MVSEC,indoor_flying4,MPE,%,DPVO,0.3,F,up-to-scale,DEVO,7,8
+MVSEC,indoor_flying4,MRE,deg/m,Ultimate-SLAM,0.14,E+F+I,metric,ESVIO,II,5
+MVSEC,indoor_flying4,RPE_R,deg/s,ESVO2,3.84,Stereo E+I,metric,ESVO2,VII,2
+MVSEC,indoor_flying4,RPE_t,cm/s,ESVO2,10.36,Stereo E+I,metric,ESVO2,VII,4
+MVSEC,upenn_flying1,RPE_R,deg/s,ESVO,1.0,Stereo E,metric,ESVO,V,4
+MVSEC,upenn_flying1,RPE_t,cm/s,ESVO,6.5,Stereo E,metric,ESVO,V,4
+MVSEC,upenn_flying3,RPE_R,deg/s,ESVO,1.2,Stereo E,metric,ESVO,V,4
+MVSEC,upenn_flying3,RPE_t,cm/s,ESVO,7.1,Stereo E,metric,ESVO,V,4
+Mono-HKU (arclab vicon),average,MPE,%,DEIO,0.1,E+I,metric,DEIO,II,10
+Mono-HKU (arclab vicon),vicon_dark1,MPE,%,DEIO,0.05,E+I,metric,DEIO,II,9
+Mono-HKU (arclab vicon),vicon_dark2,MPE,%,DEVO,0.07,E,up-to-scale,DEIO,II,9
+Mono-HKU (arclab vicon),vicon_darktolight1,MPE,%,DEIO,0.11,E+I,metric,DEIO,II,10
+Mono-HKU (arclab vicon),vicon_darktolight2,MPE,%,DEIO,0.1,E+I,metric,DEIO,II,10
+Mono-HKU (arclab vicon),vicon_hdr1,MPE,%,DEVO,0.11,E,up-to-scale,DEIO,II,10
+Mono-HKU (arclab vicon),vicon_hdr2,MPE,%,DEVO,0.07,E,up-to-scale,DEIO,II,10
+Mono-HKU (arclab vicon),vicon_hdr3,MPE,%,DEVO,0.12,E,up-to-scale,DEIO,II,9
+Mono-HKU (arclab vicon),vicon_hdr4,MPE,%,DEVO,0.07,E,up-to-scale,DEIO,II,9
+Mono-HKU (arclab vicon),vicon_lighttodark1,MPE,%,DEIO,0.11,E+I,metric,DEIO,II,9
+Mono-HKU (arclab vicon),vicon_lighttodark2,MPE,%,DEVO,0.12,E,up-to-scale,DEIO,II,10
+Mono-HKU vicon (DAVIS346),vicon_aggressive_hdr,MPE,%,PL-EIO+,0.5,E+I,metric,PL-EVIO,I,6
+Mono-HKU vicon (DAVIS346),vicon_dark1,MPE,%,PL-EIO+,0.35,E+I,metric,PL-EVIO,I,8
+Mono-HKU vicon (DAVIS346),vicon_dark2,MPE,%,PL-EIO,0.3,E+I,metric,PL-EVIO,I,8
+Mono-HKU vicon (DAVIS346),vicon_darktolight1,MPE,%,PL-EVIO,0.14,E+F+I,metric,PL-EVIO,I,9
+Mono-HKU vicon (DAVIS346),vicon_darktolight2,MPE,%,PL-EVIO,0.12,E+F+I,metric,PL-EVIO,I,9
+Mono-HKU vicon (DAVIS346),vicon_hdr1,MPE,%,PL-EVIO,0.17,E+F+I,metric,PL-EVIO,I,9
+Mono-HKU vicon (DAVIS346),vicon_hdr2,MPE,%,PL-EVIO,0.12,E+F+I,metric,PL-EVIO,I,9
+Mono-HKU vicon (DAVIS346),vicon_hdr3,MPE,%,PL-EVIO,0.19,E+F+I,metric,PL-EVIO,I,9
+Mono-HKU vicon (DAVIS346),vicon_hdr4,MPE,%,PL-EVIO,0.11,E+F+I,metric,PL-EVIO,I,9
+Mono-HKU vicon (DAVIS346),vicon_lighttodark1,MPE,%,PL-EVIO,0.13,E+F+I,metric,PL-EVIO,I,9
+Mono-HKU vicon (DAVIS346),vicon_lighttodark2,MPE,%,PL-EVIO,0.16,E+F+I,metric,PL-EVIO,I,9
+Mono-HKU vicon (DVXplorer),average,MPE,%,PL-EIO+,0.45,E+I,metric,PL-EVIO,I,4
+Mono-HKU vicon (DVXplorer),vicon_aggressive_hdr,MPE,%,PL-EIO+,0.5,E+I,metric,PL-EVIO,I,3
+Mono-HKU vicon (DVXplorer),vicon_dark1,MPE,%,Mono-EIO,0.35,E+I,metric,PL-EVIO,I,4
+Mono-HKU vicon (DVXplorer),vicon_dark2,MPE,%,PL-EIO,0.38,E+I,metric,PL-EVIO,I,4
+Mono-HKU vicon (DVXplorer),vicon_darktolight1,MPE,%,PL-EIO,0.71,E+I,metric,PL-EVIO,I,4
+Mono-HKU vicon (DVXplorer),vicon_darktolight2,MPE,%,PL-EIO+,0.47,E+I,metric,PL-EVIO,I,4
+Mono-HKU vicon (DVXplorer),vicon_hdr1,MPE,%,Mono-EIO,0.3,E+I,metric,PL-EVIO,I,4
+Mono-HKU vicon (DVXplorer),vicon_hdr2,MPE,%,PL-EIO+,0.21,E+I,metric,PL-EVIO,I,4
+Mono-HKU vicon (DVXplorer),vicon_hdr3,MPE,%,PL-EIO+,0.36,E+I,metric,PL-EVIO,I,4
+Mono-HKU vicon (DVXplorer),vicon_hdr4,MPE,%,PL-EIO+,0.25,E+I,metric,PL-EVIO,I,4
+Mono-HKU vicon (DVXplorer),vicon_lighttodark1,MPE,%,PL-EIO,0.43,E+I,metric,PL-EVIO,I,4
+Mono-HKU vicon (DVXplorer),vicon_lighttodark2,MPE,%,PL-EIO+,0.6,E+I,metric,PL-EVIO,I,4
+Other,drone_fast,ATE,cm,Stereo-DEVO,13.29,Stereo E,metric,Stereo-DEVO,II,2
+Other,hnu_campus,ATE,cm,Stereo-DEVO,151.81,Stereo E,metric,Stereo-DEVO,II,4
+RPG,rpg_bin,ARE,deg,EDS,0.99,E+F,up-to-scale,EDS,2,9
+RPG,rpg_bin,ATE,cm,ORB-SLAM2 (stereo),0.7,Stereo F,metric,DEVO,6,21
+RPG,rpg_bin,RPE_R,deg/s,ORB-SLAM2 (stereo+BA),0.5,Stereo F,metric,ESVO,V,9
+RPG,rpg_bin,RPE_t,cm/s,ORB-SLAM2 (stereo+BA),1.2,Stereo F,metric,ESVO,V,10
+RPG,rpg_box,ARE,deg,EDS,1.83,E+F,up-to-scale,EDS,2,9
+RPG,rpg_box,ATE,cm,DEVO,0.92,E,up-to-scale,DEVO,6,21
+RPG,rpg_box,RPE_R,deg/s,ORB-SLAM2 (stereo+BA),1.7,Stereo F,metric,ESVO,V,9
+RPG,rpg_box,RPE_t,cm/s,ORB-SLAM2 (stereo+BA),2.7,Stereo F,metric,ESVO,V,10
+RPG,rpg_desk,ARE,deg,EDS,1.87,E+F,up-to-scale,EDS,2,9
+RPG,rpg_desk,ATE,cm,DEVO,1.21,E,up-to-scale,DEVO,6,22
+RPG,rpg_desk,RPE_R,deg/s,ORB-SLAM2 (stereo+BA),1.7,Stereo F,metric,ESVO,V,9
+RPG,rpg_desk,RPE_t,cm/s,ORB-SLAM2 (stereo+BA),2.8,Stereo F,metric,ESVO,V,10
+RPG,rpg_monitor,ARE,deg,EDS,0.6,E+F,up-to-scale,EDS,2,9
+RPG,rpg_monitor,ATE,cm,DEVO,0.71,E,up-to-scale,DEVO,6,22
+RPG,rpg_monitor,RPE_R,deg/s,ORB-SLAM2 (stereo+BA),0.6,Stereo F,metric,ESVO,V,9
+RPG,rpg_monitor,RPE_t,cm/s,ORB-SLAM2 (stereo+BA),1.0,Stereo F,metric,ESVO,V,10
+RPG,rpg_reader,ARE,deg,ESVO2,1.54,Stereo E+I,metric,ESVO2,VI,3
+RPG,rpg_reader,ATE,cm,ESVO2,2.68,Stereo E+I,metric,ESVO2,VI,4
+RPG,rpg_reader,RPE_R,deg/s,ESVO2,1.32,Stereo E+I,metric,ESVO2,VII,3
+RPG,rpg_reader,RPE_t,cm/s,ESVO2,2.12,Stereo E+I,metric,ESVO2,VII,4
+TUM-VIE,average,ATE,cm,OKVIS2+SuperEvent,0.55,Stereo E+I,metric,SuperEvent,4,15
+TUM-VIE,tumvie_1d_trans,ARE,deg,ES-PTAM,6.02,Stereo E,metric,ESVO2,VI,4
+TUM-VIE,tumvie_1d_trans,ATE,cm,BASALT,0.3,Stereo F+I,metric,DEVO,5,21
+TUM-VIE,tumvie_1d_trans,RPE_R,deg/s,ES-PTAM,0.23,Stereo E,metric,ESVO2,VII,4
+TUM-VIE,tumvie_1d_trans,RPE_t,cm/s,ES-PTAM,0.71,Stereo E,metric,ESVO2,VII,6
+TUM-VIE,tumvie_3d_trans,ARE,deg,ESVO2,6.61,Stereo E+I,metric,ESVO2,VI,4
+TUM-VIE,tumvie_3d_trans,ATE,cm,DH-PTAM,0.7,Stereo E+F,metric,DEIO,V,21
+TUM-VIE,tumvie_3d_trans,RPE_R,deg/s,ESVO2,0.83,Stereo E+I,metric,ESVO2,VII,4
+TUM-VIE,tumvie_3d_trans,RPE_t,cm/s,Stereo-DEVO,1.73,Stereo E,metric,Stereo-DEVO,II,6
+TUM-VIE,tumvie_6dof,ARE,deg,ESVO2,4.17,Stereo E+I,metric,ESVO2,VI,3
+TUM-VIE,tumvie_6dof,ATE,cm,OKVIS2+SuperEvent,0.43,Stereo E+I,metric,SuperEvent,4,19
+TUM-VIE,tumvie_6dof,RPE_R,deg/s,ESVO2,1.16,Stereo E+I,metric,ESVO2,VII,3
+TUM-VIE,tumvie_6dof,RPE_t,cm/s,ESVO2,2.49,Stereo E+I,metric,ESVO2,VII,5
+TUM-VIE,tumvie_desk,ARE,deg,ESVO2,2.4,Stereo E+I,metric,ESVO2,VI,4
+TUM-VIE,tumvie_desk,ATE,cm,OKVIS2+SuperEvent,0.58,Stereo E+I,metric,SuperEvent,4,21
+TUM-VIE,tumvie_desk,RPE_R,deg/s,ESVO2,0.98,Stereo E+I,metric,ESVO2,VII,4
+TUM-VIE,tumvie_desk,RPE_t,cm/s,Stereo-DEVO,2.24,Stereo E,metric,Stereo-DEVO,II,6
+TUM-VIE,tumvie_desk2,ARE,deg,ESVO2,3.88,Stereo E+I,metric,ESVO2,VI,4
+TUM-VIE,tumvie_desk2,ATE,cm,OKVIS2+SuperEvent (no loop),0.4,Stereo E+I,metric,SuperEvent,4,21
+TUM-VIE,tumvie_desk2,RPE_R,deg/s,ESVO2,0.91,Stereo E+I,metric,ESVO2,VII,4
+TUM-VIE,tumvie_desk2,RPE_t,cm/s,Stereo-DEVO,2.35,Stereo E,metric,Stereo-DEVO,II,6
+TUM-VIE (loop-floor),loop_floor0,ATE,cm,OKVIS2+SuperEvent (loop),4.96,Stereo E+I,metric,SuperEvent,6,2
+TUM-VIE (loop-floor),loop_floor1,ATE,cm,OKVIS2+SuperEvent (loop),4.64,Stereo E+I,metric,SuperEvent,6,2
+TUM-VIE (loop-floor),loop_floor2,ATE,cm,OKVIS2+SuperEvent (loop),8.92,Stereo E+I,metric,SuperEvent,6,2
+TUM-VIE (loop-floor),loop_floor3,ATE,cm,OKVIS2+SuperEvent (loop),4.74,Stereo E+I,metric,SuperEvent,6,2
+UZH-FPV,average,MPE,%,DEIO,0.42,E+I,metric,DEIO,VIII,7
+UZH-FPV,uzhfpv_45_2,MPE,%,VINS-Mono,0.53,F+I,metric,DEVO,1,5
+UZH-FPV,uzhfpv_45_4,MPE,%,DEVO,0.45,E,up-to-scale,DEVO,1,7
+UZH-FPV,uzhfpv_45_9,MPE,%,ORB-SLAM3,0.49,Stereo F+I,metric,DEVO,1,6
+UZH-FPV,uzhfpv_if10,MPE,%,DEVO,0.52,E,up-to-scale,DEIO,VIII,8
+UZH-FPV,uzhfpv_if3,MPE,%,DEVO,0.37,E,up-to-scale,DEIO,VIII,8
+UZH-FPV,uzhfpv_if5,MPE,%,DEIO,0.36,E+I,metric,DEIO,VIII,7
+UZH-FPV,uzhfpv_if6,MPE,%,VINS-MONO,0.25,F+I,metric,DEIO,VIII,7
+UZH-FPV,uzhfpv_if7,MPE,%,DEIO,0.32,E+I,metric,DEIO,VIII,7
+UZH-FPV,uzhfpv_if9,MPE,%,PL-EVIO,0.44,E+F+I,metric,DEIO,VIII,8
+VECtor,average,MPE,%,DEIO,0.44,E+I,metric,DEIO,IV,12
+VECtor,corner_slow,ARE,deg,ESVO2,2.96,Stereo E+I,metric,ESVO2,VI,4
+VECtor,corner_slow,ATE,cm,DPVO,0.4,F,up-to-scale,DEVO,2,13
+VECtor,corner_slow,MPE,%,DPVO,0.3,F,up-to-scale,DEIO,IV,12
+VECtor,corner_slow,MRE,deg/m,ESVIO,14.03,Stereo E+F+I,metric,ESVIO,II,7
+VECtor,corner_slow,RPE_R,deg/s,ESVO2,1.34,Stereo E+I,metric,ESVO2,VII,4
+VECtor,corner_slow,RPE_t,cm/s,Stereo-DEVO,1.49,Stereo E,metric,Stereo-DEVO,II,7
+VECtor,corridors_dolly,ATE,cm,OKVIS2+SuperEvent,33.13,Stereo E+I,metric,SuperEvent,5,9
+VECtor,corridors_dolly,MPE,%,DEVO,0.51,E,up-to-scale,DEIO,IV,9
+VECtor,corridors_dolly,MRE,deg/m,ESVIO,1.33,Stereo E+F+I,metric,ESVIO,II,4
+VECtor,corridors_dolly,RPE_t,cm/s,Stereo-DEVO,16.87,Stereo E,metric,Stereo-DEVO,II,3
+VECtor,corridors_walk,ATE,cm,ESVIO,34,Stereo E+F+I,metric,DEVO,2,8
+VECtor,corridors_walk,MPE,%,ESVIO,0.43,Stereo E+F+I,metric,DEIO,IV,9
+VECtor,corridors_walk,MRE,deg/m,ORB-SLAM3,1.31,Stereo F+I,metric,ESVIO,II,4
+VECtor,desk_fast,ATE,cm,DPVO,1.9,F,up-to-scale,DEVO,2,7
+VECtor,desk_fast,MPE,%,DPVO,0.05,F,up-to-scale,DEVO,2,8
+VECtor,desk_fast,MRE,deg/m,ESVIO,0.32,Stereo E+F+I,metric,ESVIO,II,5
+VECtor,desk_normal,ARE,deg,ESVO2,6.82,Stereo E+I,metric,ESVO2,VI,3
+VECtor,desk_normal,ATE,cm,DPVO,1.0,F,up-to-scale,DEVO,2,12
+VECtor,desk_normal,MPE,%,DPVO,0.09,F,up-to-scale,DEIO,IV,11
+VECtor,desk_normal,MRE,deg/m,VINS-Fusion,0.36,Stereo F+I,metric,ESVIO,II,5
+VECtor,desk_normal,RPE_R,deg/s,ESVO2,1.68,Stereo E+I,metric,ESVO2,VII,3
+VECtor,desk_normal,RPE_t,cm/s,Stereo-DEVO,2.0,Stereo E,metric,Stereo-DEVO,II,6
+VECtor,hdr_fast,ATE,cm,DPVO,1.2,F,up-to-scale,DEVO,2,7
+VECtor,hdr_fast,MPE,%,DPVO,0.06,F,up-to-scale,DEVO,2,8
+VECtor,hdr_fast,MRE,deg/m,ESVIO,0.33,Stereo E+F+I,metric,ESVIO,II,5
+VECtor,hdr_normal,ARE,deg,ESVO2,7.82,Stereo E+I,metric,ESVO2,VI,4
+VECtor,hdr_normal,ATE,cm,DPVO,0.5,F,up-to-scale,DEVO,2,12
+VECtor,hdr_normal,MPE,%,DPVO,0.13,F,up-to-scale,DEVO,2,8
+VECtor,hdr_normal,MRE,deg/m,ESVIO,1.06,Stereo E+F+I,metric,ESVIO,II,5
+VECtor,hdr_normal,RPE_R,deg/s,ESVO2,1.53,Stereo E+I,metric,ESVO2,VII,4
+VECtor,hdr_normal,RPE_t,cm/s,ESVIO,0.9,Stereo E+F+I,metric,Stereo-DEVO,III,6
+VECtor,mountain_fast,ATE,cm,PL-EVIO,3.1,E+F+I,metric,DEVO,2,6
+VECtor,mountain_fast,MPE,%,DPVO,0.11,F,up-to-scale,DEIO,IV,9
+VECtor,mountain_fast,MRE,deg/m,ESVIO,0.45,Stereo E+F+I,metric,ESVIO,II,4
+VECtor,mountain_normal,ATE,cm,DPVO,0.7,F,up-to-scale,DEVO,2,7
+VECtor,mountain_normal,MPE,%,DPVO,0.08,F,up-to-scale,DEVO,2,8
+VECtor,mountain_normal,MRE,deg/m,PL-EVIO,0.76,E+F+I,metric,ESVIO,II,5
+VECtor,robot_fast,ARE,deg,ESVO2,16.29,Stereo E+I,metric,ESVO2,VI,1
+VECtor,robot_fast,ATE,cm,DPVO,1.7,F,up-to-scale,DEVO,2,7
+VECtor,robot_fast,MPE,%,DPVO,0.07,F,up-to-scale,DEVO,2,7
+VECtor,robot_fast,MRE,deg/m,Ultimate-SLAM,0.56,E+F+I,metric,ESVIO,II,4
+VECtor,robot_fast,RPE_R,deg/s,ESVO2,5.05,Stereo E+I,metric,ESVO2,VII,1
+VECtor,robot_fast,RPE_t,cm/s,ESVO2,8.22,Stereo E+I,metric,ESVO2,VII,1
+VECtor,robot_normal,ARE,deg,ESVO2,5.03,Stereo E+I,metric,ESVO2,VI,4
+VECtor,robot_normal,ATE,cm,DPVO,0.7,F,up-to-scale,DEVO,2,13
+VECtor,robot_normal,MPE,%,DPVO,0.15,F,up-to-scale,DEVO,2,9
+VECtor,robot_normal,MRE,deg/m,Ultimate-SLAM,1.11,E+F+I,metric,ESVIO,II,6
+VECtor,robot_normal,RPE_R,deg/s,ESIO,2.08,Stereo E+I,metric,ESVO2,VII,4
+VECtor,robot_normal,RPE_t,cm/s,Stereo-DEVO,1.84,Stereo E,metric,Stereo-DEVO,II,6
+VECtor,school_dolly,ATE,cm,DPVO,16,F,up-to-scale,DEVO,2,9
+VECtor,school_dolly,MPE,%,DPVO,0.11,F,up-to-scale,DEVO,2,8
+VECtor,school_dolly,MRE,deg/m,ESVIO,0.73,Stereo E+F+I,metric,ESVIO,II,5
+VECtor,school_scooter,ATE,cm,OKVIS2+SuperEvent,39.07,Stereo E+I,metric,SuperEvent,5,9
+VECtor,school_scooter,MPE,%,DPVO,0.4,F,up-to-scale,DEVO,2,9
+VECtor,school_scooter,MRE,deg/m,ORB-SLAM3,0.49,Stereo F+I,metric,ESVIO,II,6
+VECtor,sofa_fast,ATE,cm,DPVO,2.2,F,up-to-scale,DEVO,2,7
+VECtor,sofa_fast,MPE,%,DPVO,0.07,F,up-to-scale,DEIO,IV,11
+VECtor,sofa_fast,MRE,deg/m,VINS-Fusion,0.34,Stereo F+I,metric,ESVIO,II,5
+VECtor,sofa_normal,ARE,deg,ESIO,12.11,Stereo E+I,metric,ESVO2,VI,2
+VECtor,sofa_normal,ATE,cm,DPVO,2.1,F,up-to-scale,DEVO,2,11
+VECtor,sofa_normal,MPE,%,DPVO,0.06,F,up-to-scale,DEVO,2,9
+VECtor,sofa_normal,MRE,deg/m,Ultimate-SLAM,0.39,E+F+I,metric,ESVIO,II,6
+VECtor,sofa_normal,RPE_R,deg/s,ESIO,2.03,Stereo E+I,metric,ESVO2,VII,2
+VECtor,sofa_normal,RPE_t,cm/s,Stereo-DEVO,4.44,Stereo E,metric,Stereo-DEVO,II,4
+VECtor,units_dolly,ATE,cm,OKVIS2+SuperEvent,122.61,Stereo E+I,metric,SuperEvent,5,9
+VECtor,units_dolly,MPE,%,DEIO,0.35,E+I,metric,DEIO,IV,9
+VECtor,units_dolly,MRE,deg/m,ESVIO,0.022,Stereo E+F+I,metric,ESVIO,II,4
+VECtor,units_dolly,RPE_t,cm/s,Stereo-DEVO,32.43,Stereo E,metric,Stereo-DEVO,II,3
+VECtor,units_scooter,ATE,cm,OKVIS2+SuperEvent,59.05,Stereo E+I,metric,SuperEvent,5,9
+VECtor,units_scooter,MPE,%,DEIO,0.35,E+I,metric,DEIO,IV,10
+VECtor,units_scooter,MRE,deg/m,ORB-SLAM3,0.22,Stereo F+I,metric,ESVIO,II,4

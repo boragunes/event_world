@@ -1,3 +1,6 @@
+# --- Source paper PDFs (copyrighted, large): kept local, not committed. ---
+/papers/
+
 # --- Raw datasets (large): never committed. Fetch via datasets/*/download_*.sh ---
 /data/
 *.bag

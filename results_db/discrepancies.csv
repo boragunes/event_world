@@ -1,0 +1,106 @@
+max/min_ratio,dataset,sequence,method,metric,unit,values(source)
+52.8,DSEC,city04_d,DEIO,ATE,cm,207.6 (DEIO T.IX) | 10970.03 (Stereo-DEVO T.II)
+22.1,DSEC,city04_c,DEIO,ATE,cm,413.8 (DEIO T.IX) | 9128.73 (Stereo-DEVO T.II)
+13.9,TUM-VIE,tumvie_1d_trans,ESVO,ATE,cm,"12.3 (DEIO T.V) | 0.9 (DEVO T.5) | 12.54 (ESVO2 T.VI,Stereo-DEVO T.II,SuperEvent T.4)"
+9.2,DSEC,city04_b,ESVIO,ATE,cm,445.8 (DEIO T.IX) | 48.33 (ESVO2 T.VI) | 129.7 (Stereo-DEVO T.III)
+9.1,MVSEC,indoor_flying3,ESVO,ATE,cm,"91.0 (DEVO T.7) | 10.03 (ESVO2 T.VI,Stereo-DEVO T.II)"
+7.4,MVSEC,indoor_flying2,ESVO,ATE,cm,"110.0 (DEVO T.7) | 14.94 (ESVO2 T.VI,Stereo-DEVO T.II)"
+6.4,MVSEC,indoor_flying1,ESVO,ATE,cm,"107.0 (DEVO T.7) | 16.59 (ESVO2 T.VI,Stereo-DEVO T.II)"
+6.1,TUM-VIE,tumvie_3d_trans,ESVO,ATE,cm,"17.2 (DEIO T.V) | 2.8 (DEVO T.5) | 17.19 (ESVO2 T.VI,Stereo-DEVO T.II,SuperEvent T.4)"
+6.0,DSEC,city04_b,ESVIO,RPE_t,cm/s,43.07 (ESVO2 T.VII) | 260.02 (Stereo-DEVO T.III)
+4.6,TUM-VIE,tumvie_1d_trans,DEIO,ATE,cm,0.4 (DEIO T.V) | 1.85 (Stereo-DEVO T.II)
+4.3,RPG,rpg_desk,ORB-SLAM2 (stereo),ATE,cm,1.8 (DEVO T.6) | 7.7 (ESVO T.VI)
+3.9,TUM-VIE,tumvie_desk,ESVO,ATE,cm,"12.4 (DEIO T.V) | 3.3 (DEVO T.5) | 12.92 (ESVO2 T.VI,Stereo-DEVO T.II,SuperEvent T.4)"
+3.8,RPG,rpg_bin,ESVO,ARE,deg,7.61 (EDS T.2) | 1.98 (ESVO2 T.VI)
+3.6,DSEC,city09_b,ESVO,RPE_t,cm/s,38.52 (ESVO2 T.VII) | 138.33 (Stereo-DEVO T.II)
+3.5,VECtor,corner_slow,ESVO,ATE,cm,"3.9 (DEVO T.2) | 13.7 (ESVO2 T.VI,Stereo-DEVO T.II)"
+3.3,DSEC,city04_b,DEIO,ATE,cm,35.4 (DEIO T.IX) | 116.44 (Stereo-DEVO T.II)
+3.1,RPG,rpg_monitor,ORB-SLAM2 (stereo),ATE,cm,0.8 (DEVO T.6) | 2.5 (ESVO T.VI)
+3.1,RPG,rpg_monitor,ESIO,RPE_t,cm/s,4.27 (ESVO2 T.VII) | 13.17 (Stereo-DEVO T.II)
+3.1,MVSEC,indoor_flying3,ESVIO,ATE,cm,25.0 (DEVO T.7) | 8.06 (ESVO2 T.VI)
+3.1,DSEC,city09_b,ES-PTAM,RPE_t,cm/s,22.44 (ESVO2 T.VII) | 68.92 (Stereo-DEVO T.II)
+3.0,HKU (stereo),hdr_circle,ESIO,MPE,%,0.46 (DEIO T.III) | 1.38 (ESVIO T.I)
+2.7,UZH-FPV,average,ORB-SLAM3,MPE,%,0.78 (DEIO T.VIII) | 2.1 (PL-EVIO T.II)
+2.6,RPG,rpg_box,ESIO,RPE_t,cm/s,7.87 (ESVO2 T.VII) | 20.39 (Stereo-DEVO T.II)
+2.6,MVSEC,indoor_flying1,ESVIO,ATE,cm,25.0 (DEVO T.7) | 9.63 (ESVO2 T.VI)
+2.6,DSEC,city04_c,ESVIO,RPE_t,cm/s,105.87 (ESVO2 T.VII) | 279.17 (Stereo-DEVO T.III)
+2.5,RPG,rpg_monitor,ESVO,ATE,cm,"3.3 (DEVO T.6,EDS T.2,ESVO2 T.VI,Stereo-DEVO T.II) | 1.3 (ESVO T.VI)"
+2.5,DSEC,city04_a,ESVIO,ATE,cm,371.2 (DEIO T.IX) | 201.53 (ESVO2 T.VI) | 508.17 (Stereo-DEVO T.III)
+2.4,DSEC,city04_d,ESVIO,ATE,cm,921.7 (DEIO T.IX) | 2217.39 (Stereo-DEVO T.III)
+2.3,TUM-VIE,tumvie_6dof,ESVO,ATE,cm,"13.0 (DEIO T.V) | 5.8 (DEVO T.5) | 13.46 (ESVO2 T.VI,Stereo-DEVO T.II,SuperEvent T.4)"
+2.3,RPG,rpg_monitor,ESVO,ARE,deg,2.74 (EDS T.2) | 6.21 (ESVO2 T.VI)
+2.3,DSEC,city04_d,ESIO,ATE,cm,"2977.0 (DEIO T.IX) | 6822.53 (ESVO2 T.VI,Stereo-DEVO T.II)"
+2.3,DSEC,city04_a,DEIO,ATE,cm,80.6 (DEIO T.IX) | 184.51 (Stereo-DEVO T.II)
+2.2,DSEC,city04_e,ESIO,ATE,cm,2326.4 (DEIO T.IX) | 1036.23 (ESVO2 T.VI)
+2.1,UZH-FPV,average,VINS-Fusion,MPE,%,2.45 (DEIO T.VIII) | 5.26 (PL-EVIO T.II)
+2.1,TUM-VIE,tumvie_desk2,DEIO,ATE,cm,0.7 (DEIO T.V) | 1.45 (Stereo-DEVO T.II)
+2.1,DSEC,city04_c,ESVIO,ATE,cm,1892.7 (DEIO T.IX) | 1400.76 (ESVO2 T.VI) | 2938.09 (Stereo-DEVO T.III)
+2.1,DSEC,city04_a,ESVIO,RPE_t,cm/s,62.85 (ESVO2 T.VII) | 130.73 (Stereo-DEVO T.III)
+2.0,ECD (DAVIS240C),poster_6dof,Rebecq EVIO,MPE,%,"0.82 (DEIO T.I,PL-EVIO T.III) | 0.4 (Ultimate SLAM T.II)"
+1.9,ECD (DAVIS240C),poster_translation,Rebecq EVIO,MPE,%,"0.89 (DEIO T.I,PL-EVIO T.III) | 0.46 (Ultimate SLAM T.II)"
+1.9,ECD (DAVIS240C),boxes_6dof,Rebecq EVIO,MPE,%,"0.69 (DEIO T.I,PL-EVIO T.III) | 0.36 (Ultimate SLAM T.II)"
+1.8,RPG,rpg_box,ORB-SLAM2 (stereo),ATE,cm,1.6 (DEVO T.6) | 2.9 (ESVO T.VI)
+1.8,RPG,rpg_bin,ESIO,RPE_t,cm/s,6.78 (ESVO2 T.VII) | 12.1 (Stereo-DEVO T.II)
+1.8,ECD (DAVIS240C),hdr_poster,Rebecq EVIO,MPE,%,"0.59 (DEIO T.I,PL-EVIO T.III) | 0.33 (Ultimate SLAM T.II)"
+1.8,ECD (DAVIS240C),boxes_translation,Rebecq EVIO,MPE,%,"0.57 (DEIO T.I,PL-EVIO T.III) | 0.31 (Ultimate SLAM T.II)"
+1.8,DSEC,city09_b,ESVO2,RPE_t,cm/s,17.84 (ESVO2 T.VII) | 32.1 (Stereo-DEVO T.II)
+1.7,HKU (stereo),hdr_agg,ESIO,MPE,%,1.41 (DEIO T.III) | 2.33 (ESVIO T.I)
+1.7,HKU (stereo),agg_rotation,ESIO,MPE,%,0.78 (DEIO T.III) | 1.33 (ESVIO T.I)
+1.7,DSEC,city04_a,ESIO,ATE,cm,"543.5 (DEIO T.IX) | 940.8 (ESVO2 T.VI,Stereo-DEVO T.II)"
+1.6,RPG,rpg_desk,ESIO,RPE_t,cm/s,3.79 (ESVO2 T.VII) | 6.18 (Stereo-DEVO T.II)
+1.6,RPG,rpg_box,ESVO,ARE,deg,9.46 (EDS T.2) | 5.95 (ESVO2 T.VI)
+1.6,HKU (stereo),average,VINS-Fusion,MPE,%,1.24 (DEIO T.III) | 0.76 (ESVIO T.I)
+1.6,HKU (stereo),average,ORB-SLAM3,MPE,%,0.25 (DEIO T.III) | 0.16 (ESVIO T.I)
+1.6,ECD (DAVIS240C),hdr_boxes,Rebecq EVIO,MPE,%,"0.92 (DEIO T.I,PL-EVIO T.III) | 0.59 (Ultimate SLAM T.II)"
+1.5,DSEC,city04_c,ESVO,ATE,cm,"1357.1 (DEIO T.IX) | 932.84 (ESVO2 T.VI,Stereo-DEVO T.II)"
+1.5,DSEC,city04_b,ESIO,ATE,cm,"295.1 (DEIO T.IX) | 434.87 (ESVO2 T.VI,Stereo-DEVO T.II)"
+1.4,TUM-VIE,tumvie_desk2,ESVO,ATE,cm,"4.6 (DEIO T.V) | 3.2 (DEVO T.5) | 4.42 (ESVO2 T.VI,Stereo-DEVO T.II,SuperEvent T.4)"
+1.4,RPG,rpg_desk,ESVO,ARE,deg,7.25 (EDS T.2) | 10.49 (ESVO2 T.VI)
+1.4,HKU (stereo),average,ESVIO,MPE,%,0.2 (DEIO T.III) | 0.14 (ESVIO T.I)
+1.3,UZH-FPV,average,VINS-MONO,MPE,%,0.63 (DEIO T.VIII) | 0.81 (PL-EVIO T.II)
+1.3,RPG,rpg_bin,ORB-SLAM2 (stereo),ATE,cm,0.7 (DEVO T.6) | 0.9 (ESVO T.VI)
+1.3,HKU (stereo),average,PL-EVIO,MPE,%,0.33 (DEIO T.III) | 0.26 (ESVIO T.I)
+1.3,DSEC,city04_c,ESIO,ATE,cm,"896.2 (DEIO T.IX) | 1153.69 (ESVO2 T.VI,Stereo-DEVO T.II)"
+1.2,VECtor,robot_normal,ESVIO,ATE,cm,4.3 (DEVO T.2) | 4.95 (Stereo-DEVO T.III)
+1.2,VECtor,hdr_normal,ESVIO,ATE,cm,1.7 (DEVO T.2) | 1.96 (Stereo-DEVO T.III)
+1.2,VECtor,desk_normal,ESVIO,ATE,cm,5.2 (DEVO T.2) | 6.0 (Stereo-DEVO T.III)
+1.2,VECtor,corner_slow,ESVIO,ATE,cm,1.2 (DEVO T.2) | 1.43 (Stereo-DEVO T.III)
+1.2,UZH-FPV,average,PL-EVIO,MPE,%,0.6 (DEIO T.VIII) | 0.7 (PL-EVIO T.II)
+1.2,TUM-VIE,tumvie_3d_trans,DEIO,ATE,cm,1.1 (DEIO T.V) | 1.28 (Stereo-DEVO T.II)
+1.2,HKU (stereo),dark_normal,ESIO,MPE,%,0.35 (DEIO T.III) | 0.3 (ESVIO T.I)
+1.2,HKU (stereo),average,ESIO,MPE,%,1.03 (DEIO T.III) | 0.89 (ESVIO T.I)
+1.2,HKU (stereo),agg_flip,ESIO,MPE,%,3.17 (DEIO T.III) | 3.79 (ESVIO T.I)
+1.2,ECD (DAVIS240C),dynamic_translation,Rebecq EVIO,MPE,%,"0.47 (DEIO T.I,PL-EVIO T.III) | 0.39 (Ultimate SLAM T.II)"
+1.2,DSEC,city09_b,ESVO2,ATE,cm,87.83 (ESVO2 T.VI) | 107.48 (Stereo-DEVO T.II)
+1.2,DSEC,city09_b,ESVO,ATE,cm,606.09 (ESVO2 T.VI) | 742.19 (Stereo-DEVO T.II)
+1.1,VECtor,units_dolly,ESVIO,ATE,cm,812 (DEVO T.2) | 872.07 (Stereo-DEVO T.III)
+1.1,VECtor,sofa_normal,ESVIO,ATE,cm,4.7 (DEVO T.2) | 5.06 (Stereo-DEVO T.III)
+1.1,TUM-VIE,tumvie_desk,DEIO,ATE,cm,1.4 (DEIO T.V) | 1.49 (Stereo-DEVO T.II)
+1.1,HKU (stereo),hdr_tran_rota,ESIO,MPE,%,0.91 (DEIO T.III) | 0.84 (ESVIO T.I)
+1.1,HKU (stereo),hdr_slow,ESIO,MPE,%,0.31 (DEIO T.III) | 0.29 (ESVIO T.I)
+1.1,HKU (stereo),agg_walk,ESIO,MPE,%,1.3 (DEIO T.III) | 1.49 (ESVIO T.I)
+1.1,HKU (stereo),agg_translation,ESIO,MPE,%,0.55 (DEIO T.III) | 0.59 (ESVIO T.I)
+1.1,DSEC,city09_e,Stereo-DEVO,RPE_t,cm/s,38.56 (Stereo-DEVO T.II) | 36.49 (Stereo-DEVO T.III)
+1.1,DSEC,city09_d,Stereo-DEVO,ATE,cm,625.81 (Stereo-DEVO T.II) | 564.33 (Stereo-DEVO T.III)
+1.1,DSEC,city09_b,ES-PTAM,ATE,cm,195.14 (ESVO2 T.VI) | 221.35 (Stereo-DEVO T.II)
+1.1,DSEC,city04_e,ESVIO,ATE,cm,352.0 (DEIO T.IX) | 331.7 (ESVO2 T.VI)
+1.0,VECtor,units_dolly,DEIO,ATE,cm,826.73 (Stereo-DEVO T.II) | 826.38 (SuperEvent T.5)
+1.0,VECtor,school_dolly,ESVO,MPE,%,10.9 (DEVO T.2) | 10.87 (ESVIO T.II)
+1.0,VECtor,corridors_dolly,ESVIO,ATE,cm,88 (DEVO T.2) | 92.04 (Stereo-DEVO T.III)
+1.0,VECtor,corridors_dolly,DEIO,ATE,cm,516.08 (Stereo-DEVO T.II) | 492.65 (SuperEvent T.5)
+1.0,TUM-VIE,tumvie_desk2,ESVO2,ATE,cm,"4.0 (DEIO T.V) | 4.02 (ESVO2 T.VI,Stereo-DEVO T.II,SuperEvent T.4)"
+1.0,TUM-VIE,tumvie_desk,ESVO2,ATE,cm,"6.2 (DEIO T.V) | 6.16 (ESVO2 T.VI,Stereo-DEVO T.II,SuperEvent T.4)"
+1.0,TUM-VIE,tumvie_6dof,ESVO2,ATE,cm,"3.2 (DEIO T.V) | 3.21 (ESVO2 T.VI,Stereo-DEVO T.II,SuperEvent T.4)"
+1.0,TUM-VIE,tumvie_6dof,DEIO,ATE,cm,1.4 (DEIO T.V) | 1.45 (Stereo-DEVO T.II)
+1.0,TUM-VIE,tumvie_3d_trans,ESVO2,ATE,cm,"7.3 (DEIO T.V) | 7.26 (ESVO2 T.VI,Stereo-DEVO T.II,SuperEvent T.4)"
+1.0,TUM-VIE,tumvie_1d_trans,ICRA'24 (ESVIO-AA),ATE,cm,3.86 (ESVO2 T.VI) | 3.85 (SuperEvent T.4)
+1.0,TUM-VIE,tumvie_1d_trans,ESVO2,ATE,cm,"3.3 (DEIO T.V) | 3.33 (ESVO2 T.VI,Stereo-DEVO T.II,SuperEvent T.4)"
+1.0,TUM-VIE,average,ESVO2,ATE,cm,4.8 (DEIO T.V) | 4.78 (SuperEvent T.4)
+1.0,TUM-VIE,average,ESVO,ATE,cm,11.9 (DEIO T.V) | 12.11 (SuperEvent T.4)
+1.0,TUM-VIE,average,ES-PTAM,ATE,cm,5.9 (DEIO T.V) | 5.91 (SuperEvent T.4)
+1.0,ECD (DAVIS240C),dynamic_6dof,Rebecq EVIO,MPE,%,"0.54 (DEIO T.I,PL-EVIO T.III) | 0.56 (Ultimate SLAM T.II)"
+1.0,DSEC,city09_d,Stereo-DEVO,RPE_t,cm/s,39.38 (Stereo-DEVO T.II) | 39.39 (Stereo-DEVO T.III)
+1.0,DSEC,city04_e,ESVO,ATE,cm,794.9 (DEIO T.IX) | 792.93 (ESVO2 T.VI)
+1.0,DSEC,city04_d,ESVO,ATE,cm,"2676.6 (DEIO T.IX) | 2676.11 (ESVO2 T.VI,Stereo-DEVO T.II)"
+1.0,DSEC,city04_b,ESVO,ATE,cm,"116.6 (DEIO T.IX) | 115.56 (ESVO2 T.VI,Stereo-DEVO T.II)"
+1.0,DSEC,city04_a,ESVO,ATE,cm,"371.1 (DEIO T.IX) | 370.32 (ESVO2 T.VI,Stereo-DEVO T.II)"
