@@ -1,0 +1,9 @@
+{
+  "variant": "ESIO (event-only: stereo events + IMU, no images)",
+  "sequence": "sofa-normal",
+  "status": "ok",
+  "n_poses": 863,
+  "MPE_percent_ate": 0.8944,
+  "reason": "",
+  "config": "uniform ESVIO VECtor config (FIX_CALIB=1, IMU-noise override), same as run_esvio.sh"
+}

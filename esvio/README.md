@@ -38,3 +38,21 @@ Config/launch files are upstream's, selected per dataset, e.g.
 `esvio_VECtor_small_scale.launch` + `config/esvio_VECtor_small_scale/esvio.yaml`.
 The container's hardcoded `output_path` (`/home/cpy/Datasets/output`) is satisfied
 by bind-mounting our results directory there, so the upstream YAML is never edited.
+
+## ESIO (event-only variant) on VECtor
+
+`run_esio.sh` / `run_and_eval_esio.sh` run the **ESIO** variant (stereo events + IMU, **no
+images**) — same image, same VECtor config, only the launch (`launch/esio_VECtor_headless.launch`:
+`stereo_event_tracker` + `stereo_esio_estimator`, no image tracker) and the played bags differ.
+The authors don't report ESIO on VECtor, so it's new coverage. Results land in
+`esvio/vector-esio/<seq>/` (trajectory + `metrics.json` + `status.json`).
+
+```bash
+esvio/run_and_eval_esio.sh desk-normal
+python3 esvio/compare_esio_esvio.py          # ESIO vs ESVIO table
+```
+
+**Finding:** dropping images costs ESIO ~1.4–18× accuracy on the normal sequences, and ESIO **fails
+to initialise on every fast sequence** (the classical event front-end can't hold tracks under fast
+motion → SFM init collapses). It does not rescue the fast sequences where ESVIO diverges. Full
+write-up: [../docs/validation/esio_vector.md](../docs/validation/esio_vector.md).

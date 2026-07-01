@@ -1,0 +1,576 @@
+[0m[INFO] [1782894667.488136592]: init begins[0m
+[0m[INFO] [1782894667.491146873]: Loaded config_file: /tmp/esvio_cfg/esvio.yaml[0m
+result path /home/cpy/Datasets/output/esvio_result_no_loop.csv
+[33m[WARN] [1782894667.491869656]:  fix extrinsic param [0m
+[0m[INFO] [1782894667.491852115]: ROW_Image: 1024.000000 COL_Image: 1224.000000 [0m
+[0m[INFO] [1782894667.491863163]: ROW_Event: 480.000000 COL_EVENT: 640.000000 [0m
+[0m[INFO] [1782894667.491905867]: give an T to the extrinsic of cam [0m
+[0m[INFO] [1782894667.491911996]: give an T to the extrinsic of event [0m
+[0m[INFO] [1782894667.491934918]: Extrinsic_R : 
+  0.0172486   0.0128346    0.999769
+  -0.999804 -0.00952696   0.0173715
+ 0.00974772   -0.999872   0.0126678[0m
+[0m[INFO] [1782894667.491944825]: Extrinsic_T : 
+ 0.143665 0.0796728 -0.015555[0m
+[0m[INFO] [1782894667.491959702]: Extrinsic_R_event : 
+ 0.0112035  0.0218441   0.999699
+  -0.99976 -0.0185542  0.0116097
+ 0.0188022  -0.999589   0.021631[0m
+[0m[INFO] [1782894667.491968535]: Extrinsic_T_event : 
+ 0.129075 0.0793087 0.0250862[0m
+[0m[INFO] [1782894667.492929080]: parameters.cpp: gravity_norm: 1.000000[0m
+parameters.cpp: Not use sampson model
+parameters.cpp: Yes use geometric correction
+[33m[WARN] [1782894667.493681066]: waiting for event and imu...[0m
+[33m[WARN] [1782894667.519861483]: into event point feature detection and tracking[0m
+vocabulary_file/catkin_ws_dvs/src/ESVIO/pose_graph/support_files/brief_k10L6.bin
+loop start load vocabulary
+BRIEF_PATTERN_FILE/catkin_ws_dvs/src/ESVIO/pose_graph/support_files/brief_pattern.yml
+Failed to create folder  
+[0m[INFO] [1782894667.522638143]: Loaded config_file: /tmp/esvio_cfg/esvio.yaml[0m
+[0m[INFO] [1782894667.523371694]: Loaded esvio_folder: /tmp/esvio_cfg/[0m
+[0m[INFO] [1782894667.523461500]: Rrl_event: 
+   0.99968  0.0200383  0.0154395
+-0.0200188   0.999799 -0.0014144
+-0.0154648 0.00110486    0.99988[0m
+[0m[INFO] [1782894667.523473181]: Trl_event: 
+ -0.170177 0.00146904 0.00486952[0m
+[0m[INFO] [1782894667.523482862]: reading paramerter of camera /tmp/esvio_cfg//event0_esvio.yaml[0m
+[0m[INFO] [1782894667.531276639]: reading paramerter of camera /tmp/esvio_cfg//event1_esvio.yaml[0m
+327.485       0     320
+      0 327.554     240
+      0       0       1
+[0m[INFO] [1782894667.492966055]: Extrinsic_R2 : 
+ 0.0144479  0.0110884   0.999834
+ -0.999779  0.0154503  0.0142757
+-0.0152894  -0.999819  0.0113092[0m
+[0m[INFO] [1782894667.492977912]: Extrinsic_T2 : 
+  0.142001 -0.0914988  -0.014918[0m
+[0m[INFO] [1782894667.492997225]: Rrl: 
+   0.999685    0.024912 -0.00309425
+ -0.0249159    0.999689 -0.00124826
+ 0.00306219  0.00132497    0.999994[0m
+[0m[INFO] [1782894667.493006852]: Trl: 
+ -0.171154 0.00323261 0.00407665[0m
+[0m[INFO] [1782894667.493174468]: Loaded esvio_folder: /tmp/esvio_cfg/[0m
+[0m[INFO] [1782894667.493198661]: Extrinsic_R2_event : 
+  0.0270726   0.0202015    0.999429
+  -0.999633   0.0014471   0.0270488
+-0.00089984   -0.999795   0.0202332[0m
+[0m[INFO] [1782894667.493208198]: Extrinsic_T2_event : 
+  0.128785 -0.0909398  0.0263033[0m
+[0m[INFO] [1782894667.493226159]: Rrl_event: 
+   0.99968  0.0200383  0.0154395
+-0.0200188   0.999799 -0.0014144
+-0.0154648 0.00110486    0.99988[0m
+[0m[INFO] [1782894667.493235112]: Trl_event: 
+ -0.170177 0.00146904 0.00486952[0m
+[0m[INFO] [1782894667.493386235]: Loaded esvio_folder: /tmp/esvio_cfg/[0m
+[0m[INFO] [1782894667.493399604]: Synchronized sensors, fix time offset: 0.00839259[0m
+[0m[INFO] [1782894667.493411701]: estimator.cpp: reading paramerter of camera /tmp/esvio_cfg/cam0_esvio.yaml[0m
+[0m[INFO] [1782894667.493535859]: estimator.cpp: reading paramerter of camera /tmp/esvio_cfg/cam1_esvio.yaml[0m
+[0m[INFO] [1782894667.493587439]: estimator.cpp: reading paramerter of camera /tmp/esvio_cfg/event0_esvio.yaml[0m
+[0m[INFO] [1782894667.493634504]: estimator.cpp: reading paramerter of camera /tmp/esvio_cfg/event1_esvio.yaml[0m
+[0m[INFO] [1782894681.327188944]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894681.330612490]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894681.417434611]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894681.421785072]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894681.544583217]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894681.547077790]: average_parallax 51.955985 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782894681.547430631]: global SFM failed![0m
+[0m[INFO] [1782894681.751038430]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894681.758863788]: average_parallax 57.446986 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782894681.759185872]: global SFM failed![0m
+[0m[INFO] [1782894681.952771279]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894681.956098978]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894682.148112913]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894682.155438427]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894682.320867316]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894682.333030257]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894682.412145453]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894682.422404521]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894682.591263239]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894682.591341658]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894682.799173071]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894682.799253999]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894682.992241716]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894682.992316308]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894683.176782113]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894683.179510464]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894683.367352973]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894683.368463963]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894683.556670666]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894683.556747245]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894683.750357918]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894683.753217879]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894683.928091568]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894683.928163670]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894684.137014492]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894684.137129603]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894684.310223889]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894684.311752659]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894684.490139791]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894684.492376423]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894684.595598847]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894684.595670368]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894684.695800541]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894684.695880100]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894684.804119456]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894684.804196165]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894684.975631041]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894684.975699096]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894685.098604119]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894685.098674021]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894685.256229192]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894685.256292063]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894685.363181160]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894685.363245092]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894685.557018728]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894685.557088777]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894685.747286264]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894685.747347301]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894685.923270500]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894685.923338903]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894686.041037784]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894686.041110863]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894686.227998398]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894686.230563415]: average_parallax 60.531909 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782894686.230634205]: global SFM failed![0m
+[0m[INFO] [1782894686.415349856]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894686.415430215]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894686.595662284]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894686.603226832]: average_parallax 50.910089 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782894686.603624806]: global SFM failed![0m
+[0m[INFO] [1782894686.712393761]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894686.714418284]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894686.881435467]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894686.883512011]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894686.980453668]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894686.980517857]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894687.156747791]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894687.156817712]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894687.258670993]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894687.258738102]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894687.465163592]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894687.465230859]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894687.565523737]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894687.565588758]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894687.770446172]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894687.770538179]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894687.946662240]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894687.946737081]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894688.045911077]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894688.045975658]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894688.211133478]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894688.211202825]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894688.297962718]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894688.298026546]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894688.497769786]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894688.499630087]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894688.697176220]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894688.699686316]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894688.822371415]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894688.822443823]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894688.998399240]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894688.998473319]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894689.180816203]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894689.180927346]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894689.264198006]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894689.264259595]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894689.462327383]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894689.462380453]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894689.657587635]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894689.657665133]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894689.841063966]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894689.841123422]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894689.940602424]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894689.940655342]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894690.136802127]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894690.136868031]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894690.235938596]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894690.235999083]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894690.407217377]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894690.407268623]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894690.578717940]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894690.578769708]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894690.694804364]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894690.694857170]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894690.890220027]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894690.890267870]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894691.074328438]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894691.074382081]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894691.256921292]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894691.256981834]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894691.445573316]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894691.445629434]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894691.652240157]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894691.652316339]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894691.811860036]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894691.811921617]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894691.928597530]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894691.928648987]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894692.044082129]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894692.044169229]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894692.157590860]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894692.157663454]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894692.316504940]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894692.316555904]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894692.508764606]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894692.508813631]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894692.713607514]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894692.713680151]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894692.878581017]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894692.878651951]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894692.990963440]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894692.991016971]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894693.171389229]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894693.171463131]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894693.365294306]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894693.365347256]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894693.557509188]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894693.557563176]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894693.749146995]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894693.749201284]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894693.940974724]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894693.941029626]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894694.138855825]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894694.138906790]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894694.294862528]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894694.294914935]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894694.409265439]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894694.409311788]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894694.591772621]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894694.591825516]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894694.709141553]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894694.709191442]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894694.897747872]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894694.897819365]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894695.099649589]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894695.099700710]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894695.250886008]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894695.250955321]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894695.351984391]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894695.352046558]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894695.553669709]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894695.553760272]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894695.662698388]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894695.662751209]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894695.841194062]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894695.841247470]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894696.025794571]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894696.025847267]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894696.138725325]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894696.138780354]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894696.301433440]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894696.301504613]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894696.504253483]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894696.504329423]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894696.695787915]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894696.695839594]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894696.784206781]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894696.784262280]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894696.962065272]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894696.962133260]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894697.058346506]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894697.058408709]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894697.255624651]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894697.255681433]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894697.355970256]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894697.356034572]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894697.545072907]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894697.545130338]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894697.749219932]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894697.749276517]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894697.842562357]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894697.842617832]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894698.027800947]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894698.027855353]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894698.123079401]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894698.123130655]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894698.301594027]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894698.301643485]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894698.485601849]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894698.485657266]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894698.582658389]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894698.582707985]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894698.802733407]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894698.802795608]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894698.991109322]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894698.991899591]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894699.165008497]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894699.165066718]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894699.250402756]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894699.253338081]: average_parallax 40.083033 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782894699.253622267]: global SFM failed![0m
+[0m[INFO] [1782894699.454795236]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894699.454891885]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894699.649399367]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894699.649461037]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894699.752294875]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894699.752372797]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894699.909908869]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894699.909980860]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894700.030605240]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894700.030665703]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894700.229123245]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894700.229178227]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894700.425704060]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894700.425756311]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894700.612299449]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894700.612353859]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894700.707337664]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894700.707394028]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894700.896040241]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894700.896092913]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894701.010138817]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894701.010214917]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894701.184343439]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894701.184405426]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894701.276713119]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894701.276755723]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894701.460321318]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894701.460361747]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894701.649828195]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894701.649891358]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894701.747751068]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894701.747801865]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894701.943677975]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894701.943718082]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894702.148692663]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894702.148735774]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894702.322874847]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894702.322913130]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894702.506900704]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894702.506950258]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894702.713925457]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894702.713974680]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894702.889550395]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894702.889637662]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894702.983935965]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894702.983991815]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894703.182080577]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894703.182126220]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894703.372989581]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894703.373043428]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894703.540661176]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894703.540713514]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894703.664632435]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894703.664679723]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894703.829965428]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894703.830011925]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894703.939959251]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894703.940006385]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894704.132927848]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894704.132979471]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894704.221736387]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894704.221786211]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894704.415773901]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894704.415832116]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894704.606590691]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894704.609203048]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894704.811159272]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894704.811220328]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894704.974953055]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894704.975021567]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894705.096042888]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894705.096121983]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894705.245072030]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894705.245142527]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894705.363975786]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894705.364046442]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894705.548033587]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894705.548109085]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894705.666874745]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894705.666938466]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894705.845637790]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894705.845715491]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894706.021821073]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894706.021888122]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894706.139607806]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894706.139667073]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894706.294485330]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894706.294539343]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894706.416771102]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894706.416825133]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894706.606098186]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894706.606157903]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894706.784015948]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894706.784106260]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894706.970277185]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894706.970359665]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894707.067200757]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894707.067276906]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894707.246068704]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894707.246138527]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894707.354569533]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894707.354649354]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894707.537312528]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894707.537388366]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894707.659081039]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894707.661905123]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894707.806091661]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894707.806167969]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894708.023862264]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894708.023950394]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894708.146930511]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894708.146996983]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894708.299718477]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894708.299795785]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894708.489535269]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894708.489701106]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894708.615070444]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894708.615136665]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894708.802340537]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894708.802415230]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894708.989758200]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894708.989812376]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894709.181016970]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894709.181078416]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894709.271225350]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894709.271286623]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894709.457295534]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894709.457350137]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894709.645886153]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894709.645941068]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894709.830794818]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894709.830878970]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894709.935353979]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894709.935420546]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894710.112464917]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894710.112528090]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894710.294759871]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894710.294827902]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894710.474354683]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894710.474408956]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894710.609834383]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894710.609894915]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894710.795867376]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894710.795925234]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894710.982111302]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894710.982161361]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894711.059986931]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894711.060085800]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894711.256385601]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894711.256433217]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894711.461676758]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894711.461727133]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894711.562978125]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894711.563107879]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894711.756330050]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894711.756381804]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894711.932733904]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894711.932820086]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894712.131030676]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894712.131102293]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894712.227946962]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894712.227997033]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894712.405959728]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894712.406002627]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894712.612349291]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894712.612391364]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894712.699510829]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894712.699560335]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894712.852770013]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894712.852814958]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894712.968318047]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894712.968423117]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894713.091332558]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894713.091381458]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894713.261320352]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894713.268952964]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894713.370504592]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894713.373315635]: average_parallax 87.922779 choose l 8 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782894713.373602790]: global SFM failed![0m
+[0m[INFO] [1782894713.466203068]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894713.466264177]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894713.667268114]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894713.667398789]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894713.792021966]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894713.792125906]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894713.932293273]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894713.932379808]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894714.145375490]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894714.145437850]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894714.319454333]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894714.319560652]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894714.496535405]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894714.496588370]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894714.689158567]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894714.689210651]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894714.808139091]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894714.808205638]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894714.998113125]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894714.998167580]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894715.165303446]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894715.166999532]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894715.362147514]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894715.364560572]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894715.459289424]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894715.459347238]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894715.654224003]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894715.654295974]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894715.824979019]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894715.826500430]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894715.940104966]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894715.940219096]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894716.147692531]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894716.147752959]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894716.309997270]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894716.310076349]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894716.413620732]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894716.413673578]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894716.598952044]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894716.599005237]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894716.705700288]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894716.705748192]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894716.877360149]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894716.879894060]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894717.070413908]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894717.075919239]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894717.165854974]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894717.165910273]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894717.356251756]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894717.360952217]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894717.464761067]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894717.466208312]: average_parallax 72.366033 choose l 9 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782894717.466424907]: global SFM failed![0m
+[0m[INFO] [1782894717.646921513]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894717.646995108]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894717.763905148]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894717.763967184]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894717.943113543]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894717.943213761]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894718.051576296]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894718.051718092]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894718.150922233]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894718.150995479]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894718.315202684]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894718.315297439]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894718.421812663]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894718.421880089]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894718.609268973]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894718.609330416]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894718.790994143]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894718.791060986]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894718.978516142]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894718.980412065]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894719.077087889]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894719.080388414]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO[33m[WARN] [1782894728.975238334]: Shutdown request received.[0m
+[33m[WARN] [1782894728.975923249]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1782894728.977024650]: Shutdown request received.[0m
+[33m[WARN] [1782894728.977123737]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1782894728.977760617]: Shutdown request received.[0m
+[33m[WARN] [1782894728.977803929]: Reason given for shutdown: [user request][0m

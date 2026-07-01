@@ -1,0 +1,9 @@
+{
+  "variant": "ESIO (event-only: stereo events + IMU, no images)",
+  "sequence": "robot-normal",
+  "status": "diverged",
+  "n_poses": 379,
+  "MPE_percent_ate": 111.5391,
+  "reason": "ran but diverged (MPE 111.5%)",
+  "config": "uniform ESVIO VECtor config (FIX_CALIB=1, IMU-noise override), same as run_esvio.sh"
+}

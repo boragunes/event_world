@@ -1,0 +1,44 @@
+{
+  "label": "esio/vector/robot-normal",
+  "algo": "esvio",
+  "dataset": null,
+  "sequence": null,
+  "generated_utc": "2026-07-01T08:37:00+00:00",
+  "evo_version": "v1.36.5",
+  "est_file": "esvio/vector-esio/robot-normal/stamped_traj.tum",
+  "gt_file": "data/vector/robot-normal/robot-normal_gt_txt.txt",
+  "alignment": "se3",
+  "n_poses_matched": 379,
+  "n_poses_est_raw": 379,
+  "gt_trajectory_length_m": 4.127,
+  "duration_s": 37.8,
+  "ate_translation_m": {
+    "rmse": 4.603176,
+    "mean": 3.424311,
+    "median": 2.322268,
+    "std": 3.076252,
+    "min": 0.507898,
+    "max": 13.73981,
+    "sse": 8030.718809
+  },
+  "rotation_deg": {
+    "body_frame_offset_deg": 126.73,
+    "residual_after_offset": {
+      "rmse": 31.430746,
+      "mean": 26.775616,
+      "median": 23.095443,
+      "std": 16.460807,
+      "min": 2.694789,
+      "max": 70.53039,
+      "sse": 374410.992853
+    },
+    "note": "absolute orientation error AFTER removing the constant estimator-vs-GT body-frame offset"
+  },
+  "paper_metric": {
+    "MPE_percent_ate": 111.5391,
+    "MPE_percent_ate_mean": 82.9741,
+    "MPE_percent_rel_1m": 58.3441,
+    "MRE_deg_per_m_rel_1m": 29.54359,
+    "note": "MPE_ate = 100*ATE_trans_RMSE/length; MPE_ate_mean = 100*mean(ATE_trans)/length (DEIO/authors' convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
+  }
+}

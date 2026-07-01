@@ -14,6 +14,15 @@
 # --- evo raw result archives (keep metrics.json + plots instead) ---
 *.zip
 
+# --- ESVIO/ESIO run intermediates (keep stamped_traj.tum + metrics.json + status.json + plots + esvio_nodes.log) ---
+play.log
+roscore.log
+record.log
+evo_traj.log
+*_odometry.tum
+esvio_result_*.csv
+esvio_result_*.txt
+
 # --- Python / virtualenv ---
 .venv/
 venv/

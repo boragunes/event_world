@@ -1,0 +1,181 @@
+[0m[INFO] [1782894134.426580619]: init begins[0m
+[0m[INFO] [1782894134.429484234]: Loaded config_file: /tmp/esvio_cfg/esvio.yaml[0m
+result path /home/cpy/Datasets/output/esvio_result_no_loop.csv
+[33m[WARN] [1782894134.430119121]:  fix extrinsic param [0m
+[0m[INFO] [1782894134.430103336]: ROW_Image: 1024.000000 COL_Image: 1224.000000 [0m
+[0m[INFO] [1782894134.430113547]: ROW_Event: 480.000000 COL_EVENT: 640.000000 [0m
+[0m[INFO] [1782894134.430159270]: give an T to the extrinsic of cam [0m
+[0m[INFO] [1782894134.430165290]: give an T to the extrinsic of event [0m
+[0m[INFO] [1782894134.430186696]: Extrinsic_R : 
+  0.0172486   0.0128346    0.999769
+  -0.999804 -0.00952696   0.0173715
+ 0.00974772   -0.999872   0.0126678[0m
+[0m[INFO] [1782894134.430195658]: Extrinsic_T : 
+ 0.143665 0.0796728 -0.015555[0m
+[0m[INFO] [1782894134.430211296]: Extrinsic_R_event : 
+ 0.0112035  0.0218441   0.999699
+  -0.99976 -0.0185542  0.0116097
+ 0.0188022  -0.999589   0.021631[0m
+[0m[INFO] [1782894134.430220222]: Extrinsic_T_event : 
+ 0.129075 0.0793087 0.0250862[0m
+[0m[INFO] [1782894134.431101852]: parameters.cpp: gravity_norm: 1.000000[0m
+parameters.cpp: Not use sampson model
+parameters.cpp: Yes use geometric correction
+[33m[WARN] [1782894134.431926349]: waiting for event and imu...[0m
+[33m[WARN] [1782894134.474393463]: into event point feature detection and tracking[0m
+vocabulary_file/catkin_ws_dvs/src/ESVIO/pose_graph/support_files/brief_k10L6.bin
+loop start load vocabulary
+BRIEF_PATTERN_FILE/catkin_ws_dvs/src/ESVIO/pose_graph/support_files/brief_pattern.yml
+Failed to create folder  
+[0m[INFO] [1782894134.477696448]: Loaded config_file: /tmp/esvio_cfg/esvio.yaml[0m
+[0m[INFO] [1782894134.478766196]: Loaded esvio_folder: /tmp/esvio_cfg/[0m
+[0m[INFO] [1782894134.478840141]: Rrl_event: 
+   0.99968  0.0200383  0.0154395
+-0.0200188   0.999799 -0.0014144
+-0.0154648 0.00110486    0.99988[0m
+[0m[INFO] [1782894134.478851956]: Trl_event: 
+ -0.170177 0.00146904 0.00486952[0m
+[0m[INFO] [1782894134.478861831]: reading paramerter of camera /tmp/esvio_cfg//event0_esvio.yaml[0m
+[0m[INFO] [1782894134.486608327]: reading paramerter of camera /tmp/esvio_cfg//event1_esvio.yaml[0m
+327.485       0     320
+      0 327.554     240
+      0       0       1
+[0m[INFO] [1782894134.431129423]: Extrinsic_R2 : 
+ 0.0144479  0.0110884   0.999834
+ -0.999779  0.0154503  0.0142757
+-0.0152894  -0.999819  0.0113092[0m
+[0m[INFO] [1782894134.431138266]: Extrinsic_T2 : 
+  0.142001 -0.0914988  -0.014918[0m
+[0m[INFO] [1782894134.431155574]: Rrl: 
+   0.999685    0.024912 -0.00309425
+ -0.0249159    0.999689 -0.00124826
+ 0.00306219  0.00132497    0.999994[0m
+[0m[INFO] [1782894134.431164967]: Trl: 
+ -0.171154 0.00323261 0.00407665[0m
+[0m[INFO] [1782894134.431339883]: Loaded esvio_folder: /tmp/esvio_cfg/[0m
+[0m[INFO] [1782894134.431364093]: Extrinsic_R2_event : 
+  0.0270726   0.0202015    0.999429
+  -0.999633   0.0014471   0.0270488
+-0.00089984   -0.999795   0.0202332[0m
+[0m[INFO] [1782894134.431373838]: Extrinsic_T2_event : 
+  0.128785 -0.0909398  0.0263033[0m
+[0m[INFO] [1782894134.431391815]: Rrl_event: 
+   0.99968  0.0200383  0.0154395
+-0.0200188   0.999799 -0.0014144
+-0.0154648 0.00110486    0.99988[0m
+[0m[INFO] [1782894134.431401043]: Trl_event: 
+ -0.170177 0.00146904 0.00486952[0m
+[0m[INFO] [1782894134.431555167]: Loaded esvio_folder: /tmp/esvio_cfg/[0m
+[0m[INFO] [1782894134.431568621]: Synchronized sensors, fix time offset: 0.00839259[0m
+[0m[INFO] [1782894134.431579737]: estimator.cpp: reading paramerter of camera /tmp/esvio_cfg/cam0_esvio.yaml[0m
+[0m[INFO] [1782894134.431778526]: estimator.cpp: reading paramerter of camera /tmp/esvio_cfg/cam1_esvio.yaml[0m
+[0m[INFO] [1782894134.431832861]: estimator.cpp: reading paramerter of camera /tmp/esvio_cfg/event0_esvio.yaml[0m
+[0m[INFO] [1782894134.431880023]: estimator.cpp: reading paramerter of camera /tmp/esvio_cfg/event1_esvio.yaml[0m
+[0m[INFO] [1782894148.087780424]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1782894148.087830837]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894148.088001186]: evio IMU excitation not enough![0m
+[0m[INFO] [1782894148.088011283]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894148.273844932]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1782894148.273864538]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894148.273883323]: evio IMU excitation not enough![0m
+[0m[INFO] [1782894148.273889346]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894148.373848069]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1782894148.373867978]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894148.373874439]: evio IMU excitation not enough![0m
+[0m[INFO] [1782894148.373879943]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894148.573859953]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1782894148.573879117]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894148.573885637]: evio IMU excitation not enough![0m
+[0m[INFO] [1782894148.573892178]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894148.778473532]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894148.778505997]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894148.874139130]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894148.874170114]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894149.074818852]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894149.074856773]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894149.275262650]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894149.275306702]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894149.374384193]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1782894149.374491872]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894149.374509796]: evio IMU excitation not enough![0m
+[0m[INFO] [1782894149.374562457]: evio Not enough features or parall[33m[WARN] [1782894150.828471449]: gyroscope bias initial calibration -0.000770201   -0.0037333   -0.0321989[0m
+[33m[WARN] [1782894150.830270199]: estimated scale: -0.002706[0m
+[33m[WARN] [1782894150.830316011]:  result g     9.69431 0.700015 -8.17825 -5.15808[0m
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+W0701 08:22:30.975584   218 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0701 08:22:30.978101   218 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0701 08:22:30.980340   218 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0701 08:22:30.983089   218 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0701 08:22:30.983917   218 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0701 08:22:30.987824   218 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0701 08:22:30.988809   218 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0701 08:22:30.991815   218 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0701 08:22:30.994454   218 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0701 08:22:31.280572   218 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+[33m[WARN] [1782894151.283277191]: gyroscope bias initial calibration 0.00212078 -0.0043915 0.00152829[0m
+[33m[WARN] [1782894151.284986655]: estimated scale: -0.000747[0m
+[33m[WARN] [1782894151.285007780]:  result g     9.68714 0.605923 -8.29746 -4.96243[0m
+ax; Move device around[0m
+[0m[INFO] [1782894149.587398155]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894149.595969543]: average_parallax 41.342323 choose l 6 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782894149.598483990]: global SFM failed![0m
+[0m[INFO] [1782894149.793569673]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894149.810488026]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894150.010218982]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894150.044608415]: average_parallax 36.592878 choose l 7 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782894150.045918490]: global SFM failed![0m
+[0m[INFO] [1782894150.077830792]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1782894150.122359293]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894150.122420465]: evio IMU excitation not enough![0m
+[0m[INFO] [1782894150.147987156]: average_parallax 53.428445 choose l 5 and newest frame to triangulate the whole structure[0m
+unstable features tracking, please slowly move you device!
+[0m[INFO] [1782894150.150356760]: global SFM failed![0m
+[0m[INFO] [1782894150.326567570]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894150.375917355]: evio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894150.546620737]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894150.607019228]: average_parallax 48.387390 choose l 6 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782894150.692093300]: global SFM failed![0m
+[0m[INFO] [1782894150.692806345]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1782894150.753003560]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894150.753062239]: evio IMU excitation not enough![0m
+[0m[INFO] [1782894150.761649754]: average_parallax 114.212011 choose l 0 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782894150.826744864]: global SFM success![0m
+[0m[INFO] [1782894150.830328373]: misalign visual structure with IMU[0m
+[0m[INFO] [1782894150.831366672]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1782894150.900979920]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894150.901033894]: evio IMU excitation not enough![0m
+[0m[INFO] [1782894150.917338290]: average_parallax 104.872832 choose l 1 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782894150.994992310]: global SFM failed![0m
+[0m[INFO] [1782894150.996251642]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1782894151.055854567]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894151.055926164]: evio IMU excitation not enough![0m
+[0m[INFO] [1782894151.072578909]: average_parallax 102.187262 choose l 1 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782894151.155395848]: global SFM failed![0m
+[0m[INFO] [1782894151.156241678]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1782894151.205692699]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894151.205741444]: evio IMU excitation not enough![0m
+[0m[INFO] [1782894151.221792258]: average_parallax 93.465146 choose l 1 and newest frame to triangulate the whole structure[0m
+[0m[INFO] [1782894151.281743646]: global SFM success![0m
+[0m[INFO] [1782894151.285015713]: misalign visual structure with IMU[0m
+[0m[INFO] [1782894151.286114897]: esvio IMU excitation not enouth![0m
+[0m[INFO] [1782894151.344557838]: esvio Not enough features or parallax; Move device around[0m
+[0m[INFO] [1782894151.344602066]: evio IMU excitation not enough![0m
+[0m[INFO] [1782894151.376671884]: average_parallax 68.866028 choose l 3 and newest frame to triangulate the whole structure[W0701 08:22:31.634938   218 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0701 08:22:31.801072   218 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0701 08:22:31.803460   218 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0701 08:22:31.804297   218 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0701 08:22:31.809247   218 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+W0701 08:22:31.812268   218 levenberg_marquardt_strategy.cc:114] Linear solver failure. Failed to compute a step: Eigen failure. Unable to perform dense Cholesky factorization.
+[33m[WARN] [1782894151.863917515]: ---------------5points----------------[0m
+[33m[WARN] [1782894151.863945865]: input points 88 2D inliers 3D inliers 13[0m
+[33m[WARN] [1782894151.942207899]: gyroscope bias initial calibration -0.00848051   0.0119071    0.012469[0m
+[33m[WARN] [1782894246.554146316]: Shutdown request received.[0m
+[33m[WARN] [1782894246.554779547]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1782894246.555699091]: Shutdown request received.[0m
+[33m[WARN] [1782894246.555727933]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1782894246.556115688]: Shutdown request received.[0m
+[33m[WARN] [1782894246.556144015]: Reason given for shutdown: [user request][0m
+terminate called without an active exception
+terminate called without an active exception

@@ -1,0 +1,9 @@
+{
+  "variant": "ESIO (event-only: stereo events + IMU, no images)",
+  "sequence": "robot-fast",
+  "status": "failed",
+  "n_poses": 0,
+  "MPE_percent_ate": null,
+  "reason": "event front-end init failed under fast motion (global SFM failed; only 0 odometry poses)",
+  "config": "uniform ESVIO VECtor config (FIX_CALIB=1, IMU-noise override), same as run_esvio.sh"
+}

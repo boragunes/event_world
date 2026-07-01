@@ -1,0 +1,44 @@
+{
+  "label": "esio/vector/desk-normal",
+  "algo": "esvio",
+  "dataset": null,
+  "sequence": null,
+  "generated_utc": "2026-07-01T08:24:26+00:00",
+  "evo_version": "v1.36.5",
+  "est_file": "esvio/vector-esio/desk-normal/stamped_traj.tum",
+  "gt_file": "data/vector/desk-normal/desk-normal_gt_txt.txt",
+  "alignment": "se3",
+  "n_poses_matched": 862,
+  "n_poses_est_raw": 862,
+  "gt_trajectory_length_m": 8.4452,
+  "duration_s": 86.1,
+  "ate_translation_m": {
+    "rmse": 0.356812,
+    "mean": 0.313325,
+    "median": 0.281439,
+    "std": 0.170712,
+    "min": 0.054326,
+    "max": 0.813372,
+    "sse": 109.745538
+  },
+  "rotation_deg": {
+    "body_frame_offset_deg": 155.231,
+    "residual_after_offset": {
+      "rmse": 22.357101,
+      "mean": 20.168772,
+      "median": 19.497899,
+      "std": 9.646793,
+      "min": 0.780662,
+      "max": 42.396412,
+      "sse": 430862.043789
+    },
+    "note": "absolute orientation error AFTER removing the constant estimator-vs-GT body-frame offset"
+  },
+  "paper_metric": {
+    "MPE_percent_ate": 4.225,
+    "MPE_percent_ate_mean": 3.7101,
+    "MPE_percent_rel_1m": 32.8783,
+    "MRE_deg_per_m_rel_1m": 21.43621,
+    "note": "MPE_ate = 100*ATE_trans_RMSE/length; MPE_ate_mean = 100*mean(ATE_trans)/length (DEIO/authors' convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
+  }
+}
