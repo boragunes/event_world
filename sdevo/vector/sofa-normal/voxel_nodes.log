@@ -1,0 +1,50 @@
+... logging to /root/.ros/log/1ab3f04a-7eee-11f1-8511-3e66533ab36f/roslaunch-625e26601771-126.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/work/voxel_vector_nodes.launch
+[1mstarted roslaunch server http://localhost:39077/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /calibInfoDirStr: /catkin_ws/src/SD...
+ * /configFileStr: /catkin_ws/src/SD...
+ * /image_representation_left/calibInfoDir: /catkin_ws/src/SD...
+ * /image_representation_left/duration_ms: 50
+ * /image_representation_left/generation_rate_hz: 10
+ * /image_representation_left/is_left: True
+ * /image_representation_left/representation_mode: 0
+ * /image_representation_left/use_sim_time: True
+ * /image_representation_left/use_stereo_cam: True
+ * /image_representation_right/calibInfoDir: /catkin_ws/src/SD...
+ * /image_representation_right/duration_ms: 50
+ * /image_representation_right/generation_rate_hz: 10
+ * /image_representation_right/is_left: False
+ * /image_representation_right/representation_mode: 0
+ * /image_representation_right/use_sim_time: True
+ * /image_representation_right/use_stereo_cam: True
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /sdevoDirStr: /catkin_ws/src/SD...
+ * /use_sim_time: True
+ * /weightsFileStr: /catkin_ws/src/SD...
+
+NODES
+  /
+    image_representation_left (image_representation/image_representation)
+    image_representation_right (image_representation/image_representation)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/work/voxel_vector_nodes.launch http://localhost:11311
+[1mprocess[image_representation_left-1]: started with pid [142][0m
+[1mprocess[image_representation_right-2]: started with pid [143][0m
+[1m[image_representation_left-1] process has finished cleanly
+log file: /root/.ros/log/1ab3f04a-7eee-11f1-8511-3e66533ab36f/image_representation_left-1*.log[0m
+[1m[image_representation_right-2] process has finished cleanly
+log file: /root/.ros/log/1ab3f04a-7eee-11f1-8511-3e66533ab36f/image_representation_right-2*.log[0m
+all processes on machine have died, roslaunch will exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

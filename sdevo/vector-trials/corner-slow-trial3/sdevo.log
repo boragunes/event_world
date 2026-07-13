@@ -1,0 +1,1767 @@
+[93mInitialized new /root/.evo/settings.json[39m
+Calibration information directory: /catkin_ws/src/SDEVO/image_representation/calib/vector
+Configuration file directory: /catkin_ws/src/SDEVO/DEVO/config/evaluation/eval_vector.yaml
+Weights file directory: /catkin_ws/src/SDEVO/DEVO/DEVO.pth
+Base line: 0.17000000000000004
+Intrinsics: tensor([347.0000, 347.0000, 312.5000, 233.5000], device='cuda:0',
+       dtype=torch.float16)
+BUFFER_SIZE: 4096
+GRADIENT_BIAS: False
+KEYFRAME_INDEX: 4
+KEYFRAME_THRESH: 15.0
+MAX_DEPTH: 1000.0
+MIN_DEPTH: 0.1
+MIXED_PRECISION: True
+MOTION_DAMPING: 0.5
+MOTION_MODEL: DAMPED_LINEAR
+NORM: std
+OPTIMIZATION_WINDOW: 10
+PATCHES_PER_FRAME: 96
+PATCH_LIFETIME: 10
+PATCH_SELECTOR: scorer
+REMOVAL_WINDOW: 10
+SCORER_EVAL_MODE: multi
+SCORER_EVAL_USE_GRID: True
+SEARCH_RANGE: 100
+baseline: 0.17000000000000004
+save_traj_dir: /catkin_ws/src/SDEVO/DEVO/output/poses_tum_format.txt
+Loading from /catkin_ws/src/SDEVO/DEVO/DEVO.pth
+DEVO initialized
+get new voxel pair -------------------------------
+last callback time:  1783971840074575185
+n:  0
+skip voxel at 1642644847047132.8 due to lack of events!
+used time of callback:  0.0312349796295166
+get new voxel pair -------------------------------
+last callback time:  1783971840579884529
+n:  0
+skip voxel at 1642644847148580.5 due to lack of events!
+used time of callback:  0.030635356903076172
+get new voxel pair -------------------------------
+last callback time:  1783971841075116395
+n:  0
+skip voxel at 1642644847247298.8 due to lack of events!
+used time of callback:  0.030449628829956055
+Current time:  1783971841307644605
+get new voxel pair -------------------------------
+last callback time:  1783971841572804927
+n:  0
+skip voxel at 1642644847348256.5 due to lack of events!
+used time of callback:  0.03013443946838379
+get new voxel pair -------------------------------
+last callback time:  1783971842075208425
+n:  0
+skip voxel at 1642644847448795.5 due to lack of events!
+used time of callback:  0.03096938133239746
+get new voxel pair -------------------------------
+last callback time:  1783971842575292348
+n:  0
+skip voxel at 1642644847550300.5 due to lack of events!
+used time of callback:  0.03074049949645996
+get new voxel pair -------------------------------
+last callback time:  1783971843078068971
+n:  0
+skip voxel at 1642644847647281.8 due to lack of events!
+used time of callback:  0.03054189682006836
+get new voxel pair -------------------------------
+last callback time:  1783971843571015119
+n:  0
+skip voxel at 1642644847747228.5 due to lack of events!
+used time of callback:  0.03131723403930664
+get new voxel pair -------------------------------
+last callback time:  1783971844073904037
+n:  0
+skip voxel at 1642644847847160.5 due to lack of events!
+used time of callback:  0.031069517135620117
+Current time:  1783971844307256937
+get new voxel pair -------------------------------
+last callback time:  1783971844569575786
+n:  0
+skip voxel at 1642644847947132.5 due to lack of events!
+used time of callback:  0.03024005889892578
+get new voxel pair -------------------------------
+last callback time:  1783971845073359012
+n:  0
+used time of callback:  1.5931849479675293
+get new voxel pair -------------------------------
+last callback time:  1783971847291274547
+Current time:  1783971847320261001
+n:  1
+used time of callback:  0.0415196418762207
+get new voxel pair -------------------------------
+last callback time:  1783971847377434015
+n:  1
+used time of callback:  0.04306197166442871
+get new voxel pair -------------------------------
+last callback time:  1783971847460558891
+n:  2
+used time of callback:  0.0649564266204834
+get new voxel pair -------------------------------
+last callback time:  1783971847569587707
+n:  3
+used time of callback:  0.044708251953125
+get new voxel pair -------------------------------
+last callback time:  1783971847658914804
+n:  4
+used time of callback:  0.04217219352722168
+get new voxel pair -------------------------------
+last callback time:  1783971848069374322
+n:  4
+used time of callback:  0.04580426216125488
+get new voxel pair -------------------------------
+last callback time:  1783971848565978527
+n:  5
+used time of callback:  0.045928955078125
+get new voxel pair -------------------------------
+last callback time:  1783971849069243192
+n:  6
+used time of callback:  0.04569125175476074
+get new voxel pair -------------------------------
+last callback time:  1783971849565493583
+n:  7
+used time of callback:  0.26671934127807617
+get new voxel pair -------------------------------
+last callback time:  1783971850077131509
+n:  8
+used time of callback:  0.06514883041381836
+Current time:  1783971850307629346
+get new voxel pair -------------------------------
+last callback time:  1783971850561759471
+n:  8
+used time of callback:  0.06520938873291016
+get new voxel pair -------------------------------
+last callback time:  1783971851067727565
+n:  8
+used time of callback:  0.06561923027038574
+get new voxel pair -------------------------------
+last callback time:  1783971851559632539
+n:  8
+used time of callback:  0.06428790092468262
+get new voxel pair -------------------------------
+last callback time:  1783971852073349714
+n:  8
+used time of callback:  0.06345009803771973
+get new voxel pair -------------------------------
+last callback time:  1783971852565229654
+n:  8
+used time of callback:  0.06453466415405273
+get new voxel pair -------------------------------
+last callback time:  1783971853067690134
+n:  8
+used time of callback:  0.0638422966003418
+Current time:  1783971853307387828
+get new voxel pair -------------------------------
+last callback time:  1783971853566792488
+n:  8
+used time of callback:  0.06415629386901855
+get new voxel pair -------------------------------
+last callback time:  1783971854066660881
+n:  8
+used time of callback:  0.06382060050964355
+get new voxel pair -------------------------------
+last callback time:  1783971854563861131
+n:  8
+used time of callback:  0.06399035453796387
+get new voxel pair -------------------------------
+last callback time:  1783971855070434808
+n:  8
+used time of callback:  0.06424736976623535
+get new voxel pair -------------------------------
+last callback time:  1783971855562728166
+n:  8
+used time of callback:  0.06394147872924805
+get new voxel pair -------------------------------
+last callback time:  1783971856071731805
+n:  8
+used time of callback:  0.06565594673156738
+Current time:  1783971856307641744
+get new voxel pair -------------------------------
+last callback time:  1783971856564226388
+n:  8
+used time of callback:  0.06497406959533691
+get new voxel pair -------------------------------
+last callback time:  1783971857078233957
+n:  8
+used time of callback:  0.06594991683959961
+get new voxel pair -------------------------------
+last callback time:  1783971857563642024
+n:  8
+used time of callback:  0.0643000602722168
+get new voxel pair -------------------------------
+last callback time:  1783971858064661264
+n:  8
+used time of callback:  0.0679783821105957
+get new voxel pair -------------------------------
+last callback time:  1783971858565206050
+n:  8
+used time of callback:  0.06384563446044922
+get new voxel pair -------------------------------
+last callback time:  1783971859066550731
+n:  8
+used time of callback:  0.06366586685180664
+Current time:  1783971859307147979
+get new voxel pair -------------------------------
+last callback time:  1783971859556851863
+n:  8
+used time of callback:  0.06441998481750488
+get new voxel pair -------------------------------
+last callback time:  1783971860068273067
+n:  8
+used time of callback:  0.06467294692993164
+get new voxel pair -------------------------------
+last callback time:  1783971860560658693
+n:  8
+used time of callback:  0.06467056274414062
+get new voxel pair -------------------------------
+last callback time:  1783971861060754776
+n:  8
+used time of callback:  0.0648651123046875
+get new voxel pair -------------------------------
+last callback time:  1783971861563655853
+n:  8
+used time of callback:  0.06450963020324707
+get new voxel pair -------------------------------
+last callback time:  1783971862062628269
+n:  9
+used time of callback:  0.06607341766357422
+Current time:  1783971862307259798
+get new voxel pair -------------------------------
+last callback time:  1783971862554092645
+n:  9
+used time of callback:  0.06569314002990723
+get new voxel pair -------------------------------
+last callback time:  1783971863065845489
+n:  9
+used time of callback:  0.06578993797302246
+get new voxel pair -------------------------------
+last callback time:  1783971863564987897
+n:  9
+used time of callback:  0.0661158561706543
+get new voxel pair -------------------------------
+last callback time:  1783971864060450077
+n:  9
+used time of callback:  0.06544375419616699
+get new voxel pair -------------------------------
+last callback time:  1783971864563385963
+n:  9
+used time of callback:  0.0661935806274414
+get new voxel pair -------------------------------
+last callback time:  1783971865064825534
+n:  9
+used time of callback:  0.06635761260986328
+Current time:  1783971865307260513
+get new voxel pair -------------------------------
+last callback time:  1783971865551542282
+n:  9
+used time of callback:  0.06646013259887695
+get new voxel pair -------------------------------
+last callback time:  1783971866065726041
+n:  9
+used time of callback:  0.06550908088684082
+get new voxel pair -------------------------------
+last callback time:  1783971866558318376
+n:  9
+used time of callback:  0.06596660614013672
+get new voxel pair -------------------------------
+last callback time:  1783971867056634902
+n:  9
+used time of callback:  0.06510090827941895
+get new voxel pair -------------------------------
+last callback time:  1783971867560426712
+n:  9
+used time of callback:  0.06602692604064941
+get new voxel pair -------------------------------
+last callback time:  1783971868057562351
+n:  9
+used time of callback:  0.06489014625549316
+Current time:  1783971868307153701
+get new voxel pair -------------------------------
+last callback time:  1783971868554219961
+n:  9
+used time of callback:  0.06642842292785645
+get new voxel pair -------------------------------
+last callback time:  1783971869062766551
+n:  9
+used time of callback:  0.06710004806518555
+get new voxel pair -------------------------------
+last callback time:  1783971869549777984
+n:  9
+used time of callback:  0.06783509254455566
+get new voxel pair -------------------------------
+last callback time:  1783971870058042526
+n:  9
+used time of callback:  0.06475424766540527
+get new voxel pair -------------------------------
+last callback time:  1783971870560133934
+n:  9
+used time of callback:  0.06496500968933105
+get new voxel pair -------------------------------
+last callback time:  1783971871065427303
+n:  9
+used time of callback:  0.06552672386169434
+Current time:  1783971871307277917
+get new voxel pair -------------------------------
+last callback time:  1783971871563092470
+n:  9
+used time of callback:  0.06738781929016113
+get new voxel pair -------------------------------
+last callback time:  1783971872052021265
+n:  9
+used time of callback:  0.06793642044067383
+get new voxel pair -------------------------------
+last callback time:  1783971872554045200
+n:  9
+used time of callback:  0.0673837661743164
+get new voxel pair -------------------------------
+last callback time:  1783971873063190221
+n:  9
+used time of callback:  0.06544351577758789
+get new voxel pair -------------------------------
+last callback time:  1783971873558401823
+n:  9
+used time of callback:  0.06852436065673828
+get new voxel pair -------------------------------
+last callback time:  1783971874052021026
+n:  9
+used time of callback:  0.06622862815856934
+Current time:  1783971874307262182
+get new voxel pair -------------------------------
+last callback time:  1783971874554017543
+n:  9
+used time of callback:  0.06785082817077637
+get new voxel pair -------------------------------
+last callback time:  1783971875063741683
+n:  9
+used time of callback:  0.06618261337280273
+get new voxel pair -------------------------------
+last callback time:  1783971875545595407
+n:  9
+used time of callback:  0.06592249870300293
+get new voxel pair -------------------------------
+last callback time:  1783971876059484481
+n:  9
+used time of callback:  0.06535840034484863
+get new voxel pair -------------------------------
+last callback time:  1783971876555746316
+n:  9
+used time of callback:  0.06523513793945312
+get new voxel pair -------------------------------
+last callback time:  1783971877050553321
+n:  9
+used time of callback:  0.0649404525756836
+Current time:  1783971877307163953
+get new voxel pair -------------------------------
+last callback time:  1783971877554680109
+n:  9
+used time of callback:  0.06403088569641113
+get new voxel pair -------------------------------
+last callback time:  1783971878061735630
+n:  10
+used time of callback:  0.06718254089355469
+get new voxel pair -------------------------------
+last callback time:  1783971878554993391
+n:  10
+used time of callback:  0.06924581527709961
+get new voxel pair -------------------------------
+last callback time:  1783971879052015781
+n:  10
+used time of callback:  0.06793951988220215
+get new voxel pair -------------------------------
+last callback time:  1783971879553994894
+n:  10
+used time of callback:  0.0693502426147461
+get new voxel pair -------------------------------
+last callback time:  1783971880051181316
+n:  10
+used time of callback:  0.06738829612731934
+Current time:  1783971880307256221
+get new voxel pair -------------------------------
+last callback time:  1783971880551697254
+n:  10
+used time of callback:  0.06786537170410156
+get new voxel pair -------------------------------
+last callback time:  1783971881057659149
+n:  10
+used time of callback:  0.06727385520935059
+get new voxel pair -------------------------------
+last callback time:  1783971881553356170
+n:  10
+used time of callback:  0.06731152534484863
+get new voxel pair -------------------------------
+last callback time:  1783971882061619997
+n:  10
+used time of callback:  0.06700325012207031
+get new voxel pair -------------------------------
+last callback time:  1783971882554493904
+n:  10
+used time of callback:  0.06840896606445312
+get new voxel pair -------------------------------
+last callback time:  1783971883048998832
+n:  10
+used time of callback:  0.06845498085021973
+Current time:  1783971883307257175
+get new voxel pair -------------------------------
+last callback time:  1783971883550914049
+n:  10
+used time of callback:  0.06778860092163086
+get new voxel pair -------------------------------
+last callback time:  1783971884057645559
+n:  10
+used time of callback:  0.0671854019165039
+get new voxel pair -------------------------------
+last callback time:  1783971884546917200
+n:  10
+used time of callback:  0.06837606430053711
+get new voxel pair -------------------------------
+last callback time:  1783971885059984922
+n:  10
+used time of callback:  0.06809711456298828
+get new voxel pair -------------------------------
+last callback time:  1783971885546373844
+n:  10
+used time of callback:  0.06721258163452148
+get new voxel pair -------------------------------
+last callback time:  1783971886058762073
+n:  10
+used time of callback:  0.06787276268005371
+Current time:  1783971886307268619
+get new voxel pair -------------------------------
+last callback time:  1783971886544767379
+n:  10
+used time of callback:  0.06937146186828613
+get new voxel pair -------------------------------
+last callback time:  1783971887067168951
+n:  10
+used time of callback:  0.06699252128601074
+get new voxel pair -------------------------------
+last callback time:  1783971887554673433
+n:  10
+used time of callback:  0.06588530540466309
+get new voxel pair -------------------------------
+last callback time:  1783971888063039541
+n:  10
+used time of callback:  0.06733894348144531
+get new voxel pair -------------------------------
+last callback time:  1783971888551933526
+n:  10
+used time of callback:  0.06666779518127441
+get new voxel pair -------------------------------
+last callback time:  1783971889055676937
+n:  10
+used time of callback:  0.06603646278381348
+Current time:  1783971889307262897
+get new voxel pair -------------------------------
+last callback time:  1783971889558378696
+n:  10
+used time of callback:  0.06644463539123535
+get new voxel pair -------------------------------
+last callback time:  1783971890058115243
+n:  10
+used time of callback:  0.06800389289855957
+get new voxel pair -------------------------------
+last callback time:  1783971890549960851
+n:  10
+used time of callback:  0.06773924827575684
+get new voxel pair -------------------------------
+last callback time:  1783971891059528589
+n:  10
+used time of callback:  0.06766986846923828
+get new voxel pair -------------------------------
+last callback time:  1783971891550539970
+n:  10
+used time of callback:  0.06791353225708008
+get new voxel pair -------------------------------
+last callback time:  1783971892063128948
+n:  10
+used time of callback:  0.06774306297302246
+Current time:  1783971892307647228
+get new voxel pair -------------------------------
+last callback time:  1783971892550850391
+n:  10
+used time of callback:  0.06940269470214844
+get new voxel pair -------------------------------
+last callback time:  1783971893057776212
+n:  10
+used time of callback:  0.0705876350402832
+get new voxel pair -------------------------------
+last callback time:  1783971893549705266
+n:  10
+used time of callback:  0.0662376880645752
+get new voxel pair -------------------------------
+last callback time:  1783971894067688941
+n:  10
+used time of callback:  0.06530237197875977
+get new voxel pair -------------------------------
+last callback time:  1783971894551377296
+n:  10
+used time of callback:  0.0691835880279541
+get new voxel pair -------------------------------
+last callback time:  1783971895059170246
+n:  10
+used time of callback:  0.06786370277404785
+Current time:  1783971895307576417
+get new voxel pair -------------------------------
+last callback time:  1783971895549595117
+n:  10
+used time of callback:  0.0685415267944336
+get new voxel pair -------------------------------
+last callback time:  1783971896054413557
+n:  10
+used time of callback:  0.0656425952911377
+get new voxel pair -------------------------------
+last callback time:  1783971896548329114
+n:  10
+used time of callback:  0.06977343559265137
+get new voxel pair -------------------------------
+last callback time:  1783971897053315639
+n:  10
+used time of callback:  0.06564164161682129
+get new voxel pair -------------------------------
+last callback time:  1783971897561746120
+n:  10
+used time of callback:  0.09301877021789551
+get new voxel pair -------------------------------
+last callback time:  1783971898056362152
+n:  10
+used time of callback:  0.06553983688354492
+Current time:  1783971898307573556
+get new voxel pair -------------------------------
+last callback time:  1783971898548269748
+n:  10
+used time of callback:  0.06662225723266602
+get new voxel pair -------------------------------
+last callback time:  1783971899059236526
+n:  10
+used time of callback:  0.0671839714050293
+get new voxel pair -------------------------------
+last callback time:  1783971899562822580
+n:  10
+used time of callback:  0.06635379791259766
+get new voxel pair -------------------------------
+last callback time:  1783971900058666467
+n:  10
+used time of callback:  0.06736922264099121
+get new voxel pair -------------------------------
+last callback time:  1783971900559381246
+n:  10
+used time of callback:  0.06992387771606445
+get new voxel pair -------------------------------
+last callback time:  1783971901051452875
+n:  10
+used time of callback:  0.06751108169555664
+Current time:  1783971901307152748
+get new voxel pair -------------------------------
+last callback time:  1783971901564644336
+n:  10
+used time of callback:  0.06574726104736328
+get new voxel pair -------------------------------
+last callback time:  1783971902052757263
+n:  10
+used time of callback:  0.0673527717590332
+get new voxel pair -------------------------------
+last callback time:  1783971902565498113
+n:  10
+used time of callback:  0.06741690635681152
+get new voxel pair -------------------------------
+last callback time:  1783971903053941011
+n:  10
+used time of callback:  0.06737852096557617
+get new voxel pair -------------------------------
+last callback time:  1783971903550873517
+n:  10
+used time of callback:  0.06785249710083008
+get new voxel pair -------------------------------
+last callback time:  1783971904051147460
+n:  10
+used time of callback:  0.06760525703430176
+Current time:  1783971904307631731
+get new voxel pair -------------------------------
+last callback time:  1783971904550136089
+n:  10
+used time of callback:  0.06732702255249023
+get new voxel pair -------------------------------
+last callback time:  1783971905062037706
+n:  10
+used time of callback:  0.06756806373596191
+get new voxel pair -------------------------------
+last callback time:  1783971905553951978
+n:  10
+used time of callback:  0.06659793853759766
+get new voxel pair -------------------------------
+last callback time:  1783971906058620929
+n:  11
+used time of callback:  0.06796908378601074
+get new voxel pair -------------------------------
+last callback time:  1783971906553203344
+n:  11
+used time of callback:  0.06888937950134277
+get new voxel pair -------------------------------
+last callback time:  1783971907052124738
+n:  11
+used time of callback:  0.06917190551757812
+Current time:  1783971907307261228
+get new voxel pair -------------------------------
+last callback time:  1783971907564530849
+n:  11
+used time of callback:  0.06783914566040039
+get new voxel pair -------------------------------
+last callback time:  1783971908055406093
+n:  11
+used time of callback:  0.06782698631286621
+get new voxel pair -------------------------------
+last callback time:  1783971908565603494
+n:  11
+used time of callback:  0.06860876083374023
+get new voxel pair -------------------------------
+last callback time:  1783971909053938627
+n:  11
+used time of callback:  0.06780385971069336
+get new voxel pair -------------------------------
+last callback time:  1783971909549090385
+n:  11
+used time of callback:  0.06946969032287598
+get new voxel pair -------------------------------
+last callback time:  1783971910050907611
+n:  11
+used time of callback:  0.06845450401306152
+Current time:  1783971910307158946
+get new voxel pair -------------------------------
+last callback time:  1783971910549058914
+n:  11
+used time of callback:  0.06675457954406738
+get new voxel pair -------------------------------
+last callback time:  1783971911054486751
+n:  11
+used time of callback:  0.06756997108459473
+get new voxel pair -------------------------------
+last callback time:  1783971911555119276
+n:  11
+used time of callback:  0.06695723533630371
+get new voxel pair -------------------------------
+last callback time:  1783971912060842990
+n:  11
+used time of callback:  0.0675046443939209
+get new voxel pair -------------------------------
+last callback time:  1783971912551177024
+n:  11
+used time of callback:  0.06744217872619629
+get new voxel pair -------------------------------
+last callback time:  1783971913053081274
+n:  11
+used time of callback:  0.06769680976867676
+Current time:  1783971913307523012
+get new voxel pair -------------------------------
+last callback time:  1783971913550596952
+n:  11
+used time of callback:  0.06761431694030762
+get new voxel pair -------------------------------
+last callback time:  1783971914057501077
+n:  11
+used time of callback:  0.06817460060119629
+get new voxel pair -------------------------------
+last callback time:  1783971914544510364
+n:  11
+used time of callback:  0.06784939765930176
+get new voxel pair -------------------------------
+last callback time:  1783971915054164409
+n:  11
+used time of callback:  0.06648898124694824
+get new voxel pair -------------------------------
+last callback time:  1783971915548729181
+n:  11
+used time of callback:  0.06708645820617676
+get new voxel pair -------------------------------
+last callback time:  1783971916051501750
+n:  11
+used time of callback:  0.06711959838867188
+Current time:  1783971916307272911
+get new voxel pair -------------------------------
+last callback time:  1783971916548257112
+n:  11
+used time of callback:  0.06666755676269531
+get new voxel pair -------------------------------
+last callback time:  1783971917055553674
+n:  11
+used time of callback:  0.06554770469665527
+get new voxel pair -------------------------------
+last callback time:  1783971917544373512
+n:  11
+used time of callback:  0.06726765632629395
+get new voxel pair -------------------------------
+last callback time:  1783971918066092491
+n:  11
+used time of callback:  0.06785106658935547
+get new voxel pair -------------------------------
+last callback time:  1783971918546003341
+n:  11
+used time of callback:  0.06669783592224121
+get new voxel pair -------------------------------
+last callback time:  1783971919052434444
+n:  11
+used time of callback:  0.06683993339538574
+Current time:  1783971919307396888
+get new voxel pair -------------------------------
+last callback time:  1783971919548158884
+n:  11
+used time of callback:  0.06707215309143066
+get new voxel pair -------------------------------
+last callback time:  1783971920054349422
+n:  11
+used time of callback:  0.06859493255615234
+get new voxel pair -------------------------------
+last callback time:  1783971920549206495
+n:  11
+used time of callback:  0.06819605827331543
+get new voxel pair -------------------------------
+last callback time:  1783971921053421974
+n:  11
+used time of callback:  0.06886816024780273
+get new voxel pair -------------------------------
+last callback time:  1783971921545011758
+n:  11
+used time of callback:  0.06997013092041016
+get new voxel pair -------------------------------
+last callback time:  1783971922051859855
+n:  11
+used time of callback:  0.067657470703125
+Current time:  1783971922307265520
+get new voxel pair -------------------------------
+last callback time:  1783971922546177387
+n:  11
+used time of callback:  0.06721901893615723
+get new voxel pair -------------------------------
+last callback time:  1783971923048473119
+n:  11
+used time of callback:  0.06709432601928711
+get new voxel pair -------------------------------
+last callback time:  1783971923558219671
+n:  11
+used time of callback:  0.06861472129821777
+get new voxel pair -------------------------------
+last callback time:  1783971924052067995
+n:  11
+used time of callback:  0.0672757625579834
+get new voxel pair -------------------------------
+last callback time:  1783971924561304330
+n:  11
+used time of callback:  0.06914281845092773
+get new voxel pair -------------------------------
+last callback time:  1783971925054149389
+n:  11
+used time of callback:  0.06670188903808594
+Current time:  1783971925307262897
+get new voxel pair -------------------------------
+last callback time:  1783971925545421361
+n:  11
+used time of callback:  0.06751823425292969
+get new voxel pair -------------------------------
+last callback time:  1783971926052556276
+n:  11
+used time of callback:  0.06824398040771484
+get new voxel pair -------------------------------
+last callback time:  1783971926545780181
+n:  11
+used time of callback:  0.06833362579345703
+get new voxel pair -------------------------------
+last callback time:  1783971927053697109
+n:  11
+used time of callback:  0.06707000732421875
+get new voxel pair -------------------------------
+last callback time:  1783971927547338724
+n:  11
+used time of callback:  0.0654759407043457
+get new voxel pair -------------------------------
+last callback time:  1783971928063796997
+n:  12
+used time of callback:  0.06708359718322754
+Current time:  1783971928307261466
+get new voxel pair -------------------------------
+last callback time:  1783971928546438455
+n:  12
+used time of callback:  0.06827783584594727
+get new voxel pair -------------------------------
+last callback time:  1783971929063798189
+n:  12
+used time of callback:  0.06714057922363281
+get new voxel pair -------------------------------
+last callback time:  1783971929546236753
+n:  12
+used time of callback:  0.0681147575378418
+get new voxel pair -------------------------------
+last callback time:  1783971930051371574
+n:  12
+used time of callback:  0.06803178787231445
+get new voxel pair -------------------------------
+last callback time:  1783971930544120073
+n:  12
+used time of callback:  0.06696271896362305
+get new voxel pair -------------------------------
+last callback time:  1783971931049236536
+n:  12
+used time of callback:  0.06704020500183105
+Current time:  1783971931307168483
+get new voxel pair -------------------------------
+last callback time:  1783971931557613849
+n:  12
+used time of callback:  0.07638287544250488
+get new voxel pair -------------------------------
+last callback time:  1783971932049811601
+n:  12
+used time of callback:  0.0686497688293457
+get new voxel pair -------------------------------
+last callback time:  1783971932543793439
+n:  12
+used time of callback:  0.06811261177062988
+get new voxel pair -------------------------------
+last callback time:  1783971933048427343
+n:  12
+used time of callback:  0.06779766082763672
+get new voxel pair -------------------------------
+last callback time:  1783971933543728351
+n:  12
+used time of callback:  0.0686652660369873
+get new voxel pair -------------------------------
+last callback time:  1783971934049331188
+n:  12
+used time of callback:  0.06729459762573242
+Current time:  1783971934307253360
+get new voxel pair -------------------------------
+last callback time:  1783971934560520887
+n:  12
+used time of callback:  0.06850051879882812
+get new voxel pair -------------------------------
+last callback time:  1783971935053872823
+n:  12
+used time of callback:  0.06983113288879395
+get new voxel pair -------------------------------
+last callback time:  1783971935544221162
+n:  12
+used time of callback:  0.0703744888305664
+get new voxel pair -------------------------------
+last callback time:  1783971936050944805
+n:  12
+used time of callback:  0.06842303276062012
+get new voxel pair -------------------------------
+last callback time:  1783971936544954299
+n:  12
+used time of callback:  0.06768655776977539
+get new voxel pair -------------------------------
+last callback time:  1783971937048022747
+n:  12
+used time of callback:  0.06738948822021484
+Current time:  1783971937307245492
+get new voxel pair -------------------------------
+last callback time:  1783971937555119752
+n:  12
+used time of callback:  0.06796646118164062
+get new voxel pair -------------------------------
+last callback time:  1783971938051445960
+n:  12
+used time of callback:  0.06636881828308105
+get new voxel pair -------------------------------
+last callback time:  1783971938554140329
+n:  13
+used time of callback:  0.06725478172302246
+get new voxel pair -------------------------------
+last callback time:  1783971939052301883
+n:  13
+used time of callback:  0.06885194778442383
+get new voxel pair -------------------------------
+last callback time:  1783971939543663978
+n:  13
+used time of callback:  0.0692911148071289
+get new voxel pair -------------------------------
+last callback time:  1783971940049912929
+n:  13
+used time of callback:  0.06721663475036621
+Current time:  1783971940307262897
+get new voxel pair -------------------------------
+last callback time:  1783971940544199466
+n:  13
+used time of callback:  0.06906628608703613
+get new voxel pair -------------------------------
+last callback time:  1783971941048375606
+n:  13
+used time of callback:  0.06729650497436523
+get new voxel pair -------------------------------
+last callback time:  1783971941545527696
+n:  13
+used time of callback:  0.06800127029418945
+get new voxel pair -------------------------------
+last callback time:  1783971942052622556
+n:  13
+used time of callback:  0.09023141860961914
+get new voxel pair -------------------------------
+last callback time:  1783971942543848037
+n:  13
+used time of callback:  0.06937241554260254
+get new voxel pair -------------------------------
+last callback time:  1783971943048441648
+n:  13
+used time of callback:  0.06737518310546875
+Current time:  1783971943307525157
+get new voxel pair -------------------------------
+last callback time:  1783971943556703090
+n:  13
+used time of callback:  0.06733298301696777
+get new voxel pair -------------------------------
+last callback time:  1783971944051829338
+n:  13
+used time of callback:  0.06734919548034668
+get new voxel pair -------------------------------
+last callback time:  1783971944545344352
+n:  13
+used time of callback:  0.06830668449401855
+get new voxel pair -------------------------------
+last callback time:  1783971945061399459
+n:  13
+used time of callback:  0.06805014610290527
+get new voxel pair -------------------------------
+last callback time:  1783971945548012971
+n:  13
+used time of callback:  0.06688499450683594
+get new voxel pair -------------------------------
+last callback time:  1783971946048996925
+n:  13
+used time of callback:  0.06814956665039062
+Current time:  1783971946307254076
+get new voxel pair -------------------------------
+last callback time:  1783971946543559074
+n:  13
+used time of callback:  0.0686943531036377
+get new voxel pair -------------------------------
+last callback time:  1783971947048330307
+n:  13
+used time of callback:  0.06760406494140625
+get new voxel pair -------------------------------
+last callback time:  1783971947543287515
+n:  13
+used time of callback:  0.06815004348754883
+get new voxel pair -------------------------------
+last callback time:  1783971948049567222
+n:  13
+used time of callback:  0.06897425651550293
+get new voxel pair -------------------------------
+last callback time:  1783971948545410871
+n:  13
+used time of callback:  0.0678703784942627
+get new voxel pair -------------------------------
+last callback time:  1783971949053140640
+n:  13
+used time of callback:  0.06742978096008301
+Current time:  1783971949307268142
+get new voxel pair -------------------------------
+last callback time:  1783971949543256282
+n:  13
+used time of callback:  0.06901144981384277
+get new voxel pair -------------------------------
+last callback time:  1783971950050147056
+n:  13
+used time of callback:  0.0657033920288086
+get new voxel pair -------------------------------
+last callback time:  1783971950545093297
+n:  14
+used time of callback:  0.06901693344116211
+get new voxel pair -------------------------------
+last callback time:  1783971951049456834
+n:  14
+used time of callback:  0.06646156311035156
+get new voxel pair -------------------------------
+last callback time:  1783971951556699991
+n:  14
+used time of callback:  0.06859016418457031
+get new voxel pair -------------------------------
+last callback time:  1783971952054401874
+n:  14
+used time of callback:  0.06862211227416992
+Current time:  1783971952307277679
+get new voxel pair -------------------------------
+last callback time:  1783971952545021772
+n:  14
+used time of callback:  0.0682687759399414
+get new voxel pair -------------------------------
+last callback time:  1783971953051588535
+n:  14
+used time of callback:  0.06725025177001953
+get new voxel pair -------------------------------
+last callback time:  1783971953544466495
+n:  14
+used time of callback:  0.06769919395446777
+get new voxel pair -------------------------------
+last callback time:  1783971954061995744
+n:  14
+used time of callback:  0.0672607421875
+get new voxel pair -------------------------------
+last callback time:  1783971954546343088
+n:  14
+used time of callback:  0.06790304183959961
+get new voxel pair -------------------------------
+last callback time:  1783971955048242092
+n:  14
+used time of callback:  0.06636738777160645
+Current time:  1783971955307257652
+get new voxel pair -------------------------------
+last callback time:  1783971955545176267
+n:  14
+used time of callback:  0.06888818740844727
+get new voxel pair -------------------------------
+last callback time:  1783971956053976058
+n:  14
+used time of callback:  0.06733250617980957
+get new voxel pair -------------------------------
+last callback time:  1783971956555914640
+n:  14
+used time of callback:  0.06917190551757812
+get new voxel pair -------------------------------
+last callback time:  1783971957052204847
+n:  14
+used time of callback:  0.06879162788391113
+get new voxel pair -------------------------------
+last callback time:  1783971957543229579
+n:  14
+used time of callback:  0.06703972816467285
+get new voxel pair -------------------------------
+last callback time:  1783971958048040628
+n:  14
+used time of callback:  0.06813883781433105
+Current time:  1783971958307621002
+get new voxel pair -------------------------------
+last callback time:  1783971958544916391
+n:  14
+used time of callback:  0.06621575355529785
+get new voxel pair -------------------------------
+last callback time:  1783971959050482273
+n:  15
+used time of callback:  0.06821942329406738
+get new voxel pair -------------------------------
+last callback time:  1783971959544287681
+n:  15
+used time of callback:  0.06804680824279785
+get new voxel pair -------------------------------
+last callback time:  1783971960051996946
+n:  15
+used time of callback:  0.06728696823120117
+get new voxel pair -------------------------------
+last callback time:  1783971960544634580
+n:  15
+used time of callback:  0.06873941421508789
+get new voxel pair -------------------------------
+last callback time:  1783971961048536300
+n:  15
+used time of callback:  0.06627774238586426
+Current time:  1783971961307641267
+get new voxel pair -------------------------------
+last callback time:  1783971961543425083
+n:  15
+used time of callback:  0.06764984130859375
+get new voxel pair -------------------------------
+last callback time:  1783971962059365749
+n:  15
+used time of callback:  0.06906580924987793
+get new voxel pair -------------------------------
+last callback time:  1783971962546598434
+n:  15
+used time of callback:  0.06715106964111328
+get new voxel pair -------------------------------
+last callback time:  1783971963053446769
+n:  15
+used time of callback:  0.06626367568969727
+get new voxel pair -------------------------------
+last callback time:  1783971963556229352
+n:  16
+used time of callback:  0.06868934631347656
+get new voxel pair -------------------------------
+last callback time:  1783971964053383827
+n:  16
+used time of callback:  0.06899166107177734
+Current time:  1783971964307263135
+get new voxel pair -------------------------------
+last callback time:  1783971964555347919
+n:  16
+used time of callback:  0.06709098815917969
+get new voxel pair -------------------------------
+last callback time:  1783971965051543474
+n:  16
+used time of callback:  0.0677955150604248
+get new voxel pair -------------------------------
+last callback time:  1783971965544252872
+n:  16
+used time of callback:  0.06724047660827637
+get new voxel pair -------------------------------
+last callback time:  1783971966048792362
+n:  16
+used time of callback:  0.06709814071655273
+get new voxel pair -------------------------------
+last callback time:  1783971966557241916
+n:  16
+used time of callback:  0.0687112808227539
+get new voxel pair -------------------------------
+last callback time:  1783971967051973342
+n:  16
+used time of callback:  0.06749582290649414
+Current time:  1783971967307265758
+get new voxel pair -------------------------------
+last callback time:  1783971967544651746
+n:  16
+used time of callback:  0.06788444519042969
+get new voxel pair -------------------------------
+last callback time:  1783971968049978971
+n:  16
+used time of callback:  0.06885194778442383
+get new voxel pair -------------------------------
+last callback time:  1783971968544697284
+n:  16
+used time of callback:  0.0672307014465332
+get new voxel pair -------------------------------
+last callback time:  1783971969060843944
+n:  17
+used time of callback:  0.06873488426208496
+get new voxel pair -------------------------------
+last callback time:  1783971969548018455
+n:  17
+used time of callback:  0.06740093231201172
+get new voxel pair -------------------------------
+last callback time:  1783971970053055524
+n:  17
+used time of callback:  0.06746888160705566
+Current time:  1783971970307611227
+get new voxel pair -------------------------------
+last callback time:  1783971970544163942
+n:  17
+used time of callback:  0.06941819190979004
+get new voxel pair -------------------------------
+last callback time:  1783971971049465179
+n:  17
+used time of callback:  0.06841325759887695
+get new voxel pair -------------------------------
+last callback time:  1783971971543909788
+n:  17
+used time of callback:  0.06700444221496582
+get new voxel pair -------------------------------
+last callback time:  1783971972050183534
+n:  17
+used time of callback:  0.06595587730407715
+get new voxel pair -------------------------------
+last callback time:  1783971972543829202
+n:  17
+used time of callback:  0.0670320987701416
+get new voxel pair -------------------------------
+last callback time:  1783971973049781084
+n:  17
+used time of callback:  0.06774759292602539
+Current time:  1783971973304711341
+get new voxel pair -------------------------------
+last callback time:  1783971973544811487
+n:  17
+used time of callback:  0.06689739227294922
+get new voxel pair -------------------------------
+last callback time:  1783971974052449703
+n:  17
+used time of callback:  0.06842994689941406
+get new voxel pair -------------------------------
+last callback time:  1783971974554659605
+n:  17
+used time of callback:  0.0681009292602539
+get new voxel pair -------------------------------
+last callback time:  1783971975050940513
+n:  18
+used time of callback:  0.06799745559692383
+get new voxel pair -------------------------------
+last callback time:  1783971975543520450
+n:  18
+used time of callback:  0.06810545921325684
+get new voxel pair -------------------------------
+last callback time:  1783971976048286676
+n:  18
+used time of callback:  0.06767511367797852
+Current time:  1783971976307311058
+get new voxel pair -------------------------------
+last callback time:  1783971976556367635
+n:  18
+used time of callback:  0.06813287734985352
+get new voxel pair -------------------------------
+last callback time:  1783971977056919574
+n:  18
+used time of callback:  0.06815099716186523
+get new voxel pair -------------------------------
+last callback time:  1783971977544378519
+n:  18
+used time of callback:  0.06876158714294434
+get new voxel pair -------------------------------
+last callback time:  1783971978059370517
+n:  18
+used time of callback:  0.06978082656860352
+get new voxel pair -------------------------------
+last callback time:  1783971978547345638
+n:  18
+used time of callback:  0.06701278686523438
+get new voxel pair -------------------------------
+last callback time:  1783971979051945924
+n:  18
+used time of callback:  0.06905770301818848
+Current time:  1783971979307257890
+get new voxel pair -------------------------------
+last callback time:  1783971979544258832
+n:  18
+used time of callback:  0.06884074211120605
+get new voxel pair -------------------------------
+last callback time:  1783971980050024509
+n:  18
+used time of callback:  0.06829571723937988
+get new voxel pair -------------------------------
+last callback time:  1783971980545062065
+n:  18
+used time of callback:  0.06937813758850098
+get new voxel pair -------------------------------
+last callback time:  1783971981049518823
+n:  18
+used time of callback:  0.0682668685913086
+get new voxel pair -------------------------------
+last callback time:  1783971981544226408
+n:  18
+used time of callback:  0.0678701400756836
+get new voxel pair -------------------------------
+last callback time:  1783971982059568643
+n:  18
+used time of callback:  0.06920742988586426
+Current time:  1783971982307516098
+get new voxel pair -------------------------------
+last callback time:  1783971982546501636
+n:  18
+used time of callback:  0.06929731369018555
+get new voxel pair -------------------------------
+last callback time:  1783971983048993587
+n:  18
+used time of callback:  0.06578993797302246
+get new voxel pair -------------------------------
+last callback time:  1783971983544991493
+n:  19
+used time of callback:  0.06886625289916992
+get new voxel pair -------------------------------
+last callback time:  1783971984052681684
+n:  19
+used time of callback:  0.06850576400756836
+get new voxel pair -------------------------------
+last callback time:  1783971984544780731
+n:  19
+used time of callback:  0.07210850715637207
+get new voxel pair -------------------------------
+last callback time:  1783971985049764156
+n:  19
+used time of callback:  0.06984639167785645
+Current time:  1783971985307263374
+get new voxel pair -------------------------------
+last callback time:  1783971985543952941
+n:  19
+used time of callback:  0.06855416297912598
+get new voxel pair -------------------------------
+last callback time:  1783971986051686048
+n:  19
+used time of callback:  0.06802248954772949
+get new voxel pair -------------------------------
+last callback time:  1783971986544330358
+n:  19
+used time of callback:  0.06904363632202148
+get new voxel pair -------------------------------
+last callback time:  1783971987048876762
+n:  19
+used time of callback:  0.0684359073638916
+get new voxel pair -------------------------------
+last callback time:  1783971987544512987
+n:  19
+used time of callback:  0.09289073944091797
+get new voxel pair -------------------------------
+last callback time:  1783971988061744689
+n:  19
+used time of callback:  0.06877565383911133
+Current time:  1783971988307265758
+get new voxel pair -------------------------------
+last callback time:  1783971988546666145
+n:  19
+used time of callback:  0.06936407089233398
+get new voxel pair -------------------------------
+last callback time:  1783971989058762550
+n:  19
+used time of callback:  0.0684659481048584
+get new voxel pair -------------------------------
+last callback time:  1783971989545536041
+n:  19
+used time of callback:  0.06777143478393555
+get new voxel pair -------------------------------
+last callback time:  1783971990047761201
+n:  19
+used time of callback:  0.0675821304321289
+get new voxel pair -------------------------------
+last callback time:  1783971990545619487
+n:  19
+used time of callback:  0.06651782989501953
+get new voxel pair -------------------------------
+last callback time:  1783971991062757492
+n:  20
+used time of callback:  0.06842708587646484
+Current time:  1783971991307263374
+get new voxel pair -------------------------------
+last callback time:  1783971991547996520
+n:  20
+used time of callback:  0.06914305686950684
+get new voxel pair -------------------------------
+last callback time:  1783971992051645278
+n:  20
+used time of callback:  0.06956362724304199
+get new voxel pair -------------------------------
+last callback time:  1783971992545115232
+n:  20
+used time of callback:  0.06804156303405762
+get new voxel pair -------------------------------
+last callback time:  1783971993049995422
+n:  20
+used time of callback:  0.06783771514892578
+get new voxel pair -------------------------------
+last callback time:  1783971993544990062
+n:  20
+used time of callback:  0.06783699989318848
+get new voxel pair -------------------------------
+last callback time:  1783971994048970460
+n:  20
+used time of callback:  0.0679931640625
+Current time:  1783971994307164192
+get new voxel pair -------------------------------
+last callback time:  1783971994544759988
+n:  20
+used time of callback:  0.06854534149169922
+get new voxel pair -------------------------------
+last callback time:  1783971995060431957
+n:  20
+used time of callback:  0.06836295127868652
+get new voxel pair -------------------------------
+last callback time:  1783971995545605897
+n:  20
+used time of callback:  0.06707048416137695
+get new voxel pair -------------------------------
+last callback time:  1783971996058910369
+n:  20
+used time of callback:  0.06792235374450684
+get new voxel pair -------------------------------
+last callback time:  1783971996545376539
+n:  20
+used time of callback:  0.06786823272705078
+get new voxel pair -------------------------------
+last callback time:  1783971997049394369
+n:  20
+used time of callback:  0.06901741027832031
+Current time:  1783971997307278633
+get new voxel pair -------------------------------
+last callback time:  1783971997545305490
+n:  20
+used time of callback:  0.06804800033569336
+get new voxel pair -------------------------------
+last callback time:  1783971998059918165
+n:  20
+used time of callback:  0.06753182411193848
+get new voxel pair -------------------------------
+last callback time:  1783971998544297456
+n:  20
+used time of callback:  0.06943345069885254
+get new voxel pair -------------------------------
+last callback time:  1783971999048638820
+n:  20
+used time of callback:  0.06804776191711426
+get new voxel pair -------------------------------
+last callback time:  1783971999543652772
+n:  20
+used time of callback:  0.0682675838470459
+get new voxel pair -------------------------------
+last callback time:  1783972000058495998
+n:  20
+used time of callback:  0.06847429275512695
+Current time:  1783972000307253837
+get new voxel pair -------------------------------
+last callback time:  1783972000545443773
+n:  20
+used time of callback:  0.06807661056518555
+get new voxel pair -------------------------------
+last callback time:  1783972001059948205
+n:  20
+used time of callback:  0.06823134422302246
+get new voxel pair -------------------------------
+last callback time:  1783972001546617746
+n:  20
+used time of callback:  0.06800413131713867
+get new voxel pair -------------------------------
+last callback time:  1783972002049188852
+n:  20
+used time of callback:  0.06907463073730469
+get new voxel pair -------------------------------
+last callback time:  1783972002544897556
+n:  20
+used time of callback:  0.06741476058959961
+get new voxel pair -------------------------------
+last callback time:  1783972003050756931
+n:  20
+used time of callback:  0.06811141967773438
+Current time:  1783972003307266473
+get new voxel pair -------------------------------
+last callback time:  1783972003557165861
+n:  20
+used time of callback:  0.06726932525634766
+get new voxel pair -------------------------------
+last callback time:  1783972004051138162
+n:  20
+used time of callback:  0.0678703784942627
+get new voxel pair -------------------------------
+last callback time:  1783972004544483184
+n:  20
+used time of callback:  0.0683751106262207
+get new voxel pair -------------------------------
+last callback time:  1783972005053653955
+n:  20
+used time of callback:  0.06674838066101074
+get new voxel pair -------------------------------
+last callback time:  1783972005544734716
+n:  20
+used time of callback:  0.06838774681091309
+get new voxel pair -------------------------------
+last callback time:  1783972006057386159
+n:  20
+used time of callback:  0.0690765380859375
+Current time:  1783972006307267189
+get new voxel pair -------------------------------
+last callback time:  1783972006546951055
+n:  20
+used time of callback:  0.06857585906982422
+get new voxel pair -------------------------------
+last callback time:  1783972007051249504
+n:  20
+used time of callback:  0.06713390350341797
+get new voxel pair -------------------------------
+last callback time:  1783972007545003890
+n:  20
+used time of callback:  0.06768393516540527
+get new voxel pair -------------------------------
+last callback time:  1783972008048650979
+n:  20
+used time of callback:  0.06726741790771484
+get new voxel pair -------------------------------
+last callback time:  1783972008543543815
+n:  20
+used time of callback:  0.06741738319396973
+get new voxel pair -------------------------------
+last callback time:  1783972009048963546
+n:  20
+used time of callback:  0.06893777847290039
+Current time:  1783972009307646036
+get new voxel pair -------------------------------
+last callback time:  1783972009543556213
+n:  20
+used time of callback:  0.0679464340209961
+get new voxel pair -------------------------------
+last callback time:  1783972010050427913
+n:  20
+used time of callback:  0.06625485420227051
+get new voxel pair -------------------------------
+last callback time:  1783972010544094800
+n:  21
+used time of callback:  0.06786751747131348
+get new voxel pair -------------------------------
+last callback time:  1783972011058542251
+n:  21
+used time of callback:  0.0671837329864502
+get new voxel pair -------------------------------
+last callback time:  1783972011548147916
+n:  21
+used time of callback:  0.07021331787109375
+get new voxel pair -------------------------------
+last callback time:  1783972012055410146
+n:  21
+used time of callback:  0.0676114559173584
+Current time:  1783972012307269811
+get new voxel pair -------------------------------
+last callback time:  1783972012545491933
+n:  21
+used time of callback:  0.06813788414001465
+get new voxel pair -------------------------------
+last callback time:  1783972013048979759
+n:  21
+used time of callback:  0.06856894493103027
+get new voxel pair -------------------------------
+last callback time:  1783972013545020103
+n:  21
+used time of callback:  0.06784749031066895
+get new voxel pair -------------------------------
+last callback time:  1783972014048710346
+n:  21
+used time of callback:  0.06770801544189453
+get new voxel pair -------------------------------
+last callback time:  1783972014543811559
+n:  21
+used time of callback:  0.06804323196411133
+get new voxel pair -------------------------------
+last callback time:  1783972015050184011
+n:  21
+used time of callback:  0.06746459007263184
+Current time:  1783972015306008100
+get new voxel pair -------------------------------
+last callback time:  1783972015544417381
+n:  21
+used time of callback:  0.06813549995422363
+get new voxel pair -------------------------------
+last callback time:  1783972016051288366
+n:  21
+used time of callback:  0.06831622123718262
+get new voxel pair -------------------------------
+last callback time:  1783972016543874502
+n:  21
+used time of callback:  0.06763839721679688
+get new voxel pair -------------------------------
+last callback time:  1783972017049036741
+n:  21
+used time of callback:  0.06733942031860352
+get new voxel pair -------------------------------
+last callback time:  1783972017543957710
+n:  21
+used time of callback:  0.06699085235595703
+get new voxel pair -------------------------------
+last callback time:  1783972018057736873
+n:  21
+used time of callback:  0.06955742835998535
+Current time:  1783972018307264089
+get new voxel pair -------------------------------
+last callback time:  1783972018547305107
+n:  21
+used time of callback:  0.06784987449645996
+get new voxel pair -------------------------------
+last callback time:  1783972019053427696
+n:  21
+used time of callback:  0.06978702545166016
+get new voxel pair -------------------------------
+last callback time:  1783972019545743465
+n:  21
+used time of callback:  0.06838107109069824
+get new voxel pair -------------------------------
+last callback time:  1783972020051164627
+n:  21
+used time of callback:  0.06832361221313477
+get new voxel pair -------------------------------
+last callback time:  1783972020543725490
+n:  21
+used time of callback:  0.06725764274597168
+get new voxel pair -------------------------------
+last callback time:  1783972021047774314
+n:  21
+used time of callback:  0.06713485717773438
+Current time:  1783972021307632923
+get new voxel pair -------------------------------
+last callback time:  1783972021544248580
+n:  21
+used time of callback:  0.06781339645385742
+get new voxel pair -------------------------------
+last callback time:  1783972022049272775
+n:  21
+used time of callback:  0.06835484504699707
+get new voxel pair -------------------------------
+last callback time:  1783972022544028043
+n:  21
+used time of callback:  0.06842780113220215
+get new voxel pair -------------------------------
+last callback time:  1783972023058250188
+n:  21
+used time of callback:  0.06955194473266602
+get new voxel pair -------------------------------
+last callback time:  1783972023546138525
+n:  21
+used time of callback:  0.06922006607055664
+get new voxel pair -------------------------------
+last callback time:  1783972024048757553
+n:  21
+used time of callback:  0.06769371032714844
+Current time:  1783972024307285070
+get new voxel pair -------------------------------
+last callback time:  1783972024544187307
+n:  22
+used time of callback:  0.06947779655456543
+get new voxel pair -------------------------------
+last callback time:  1783972025049007177
+n:  22
+used time of callback:  0.0689094066619873
+get new voxel pair -------------------------------
+last callback time:  1783972025544652938
+n:  22
+used time of callback:  0.06889462471008301
+get new voxel pair -------------------------------
+last callback time:  1783972026052863597
+n:  22
+used time of callback:  0.06942105293273926
+get new voxel pair -------------------------------
+last callback time:  1783972026555554866
+n:  22
+used time of callback:  0.06990218162536621
+get new voxel pair -------------------------------
+last callback time:  1783972027052328586
+n:  22
+used time of callback:  0.07019519805908203
+Current time:  1783972027307262420
+get new voxel pair -------------------------------
+last callback time:  1783972027543023109
+n:  22
+used time of callback:  0.0685877799987793
+get new voxel pair -------------------------------
+last callback time:  1783972028049289703
+n:  22
+used time of callback:  0.06746864318847656
+get new voxel pair -------------------------------
+last callback time:  1783972028552249431
+n:  22
+used time of callback:  0.06888961791992188
+get new voxel pair -------------------------------
+last callback time:  1783972029052413702
+n:  22
+used time of callback:  0.06845307350158691
+get new voxel pair -------------------------------
+last callback time:  1783972029545209646
+n:  22
+used time of callback:  0.06950759887695312
+get new voxel pair -------------------------------
+last callback time:  1783972030050101280
+n:  22
+used time of callback:  0.0692129135131836
+Current time:  1783972030307174921
+get new voxel pair -------------------------------
+last callback time:  1783972030543774366
+n:  22
+used time of callback:  0.06795597076416016
+get new voxel pair -------------------------------
+last callback time:  1783972031048396348
+n:  22
+used time of callback:  0.06919002532958984
+get new voxel pair -------------------------------
+last callback time:  1783972031544502258
+n:  22
+used time of callback:  0.06940102577209473
+get new voxel pair -------------------------------
+last callback time:  1783972032048367500
+n:  22
+used time of callback:  0.09304523468017578
+get new voxel pair -------------------------------
+last callback time:  1783972032544444322
+n:  22
+used time of callback:  0.06921625137329102
+get new voxel pair -------------------------------
+last callback time:  1783972033052099943
+n:  22
+used time of callback:  0.06918740272521973
+Current time:  1783972033307270288
+get new voxel pair -------------------------------
+last callback time:  1783972033545873641
+n:  22
+used time of callback:  0.0697469711303711
+get new voxel pair -------------------------------
+last callback time:  1783972034050842046
+n:  22
+used time of callback:  0.06978559494018555
+get new voxel pair -------------------------------
+last callback time:  1783972034544156789
+n:  22
+used time of callback:  0.06798815727233887
+get new voxel pair -------------------------------
+last callback time:  1783972035050453186
+n:  22
+used time of callback:  0.06745791435241699
+get new voxel pair -------------------------------
+last callback time:  1783972035551778793
+n:  22
+used time of callback:  0.06881499290466309
+get new voxel pair -------------------------------
+last callback time:  1783972036052199840
+n:  22
+used time of callback:  0.06914710998535156
+Current time:  1783972036307254076
+get new voxel pair -------------------------------
+last callback time:  1783972036551774024
+n:  22
+used time of callback:  0.06876039505004883
+get new voxel pair -------------------------------
+last callback time:  1783972037049447536
+n:  22
+used time of callback:  0.06986522674560547
+get new voxel pair -------------------------------
+last callback time:  1783972037543434858
+n:  22
+used time of callback:  0.06983590126037598
+get new voxel pair -------------------------------
+last callback time:  1783972038054832935
+n:  22
+used time of callback:  0.06661176681518555
+get new voxel pair -------------------------------
+last callback time:  1783972038543952226
+n:  22
+used time of callback:  0.0674736499786377
+get new voxel pair -------------------------------
+last callback time:  1783972039053836822
+n:  22
+used time of callback:  0.06750273704528809
+Current time:  1783972039307285308
+get new voxel pair -------------------------------
+last callback time:  1783972039544354200
+n:  22
+used time of callback:  0.06702923774719238
+get new voxel pair -------------------------------
+last callback time:  1783972040049577713
+n:  22
+used time of callback:  0.0691220760345459
+get new voxel pair -------------------------------
+last callback time:  1783972040545657634
+n:  22
+used time of callback:  0.06663298606872559
+get new voxel pair -------------------------------
+last callback time:  1783972041049820899
+n:  23
+used time of callback:  0.07159662246704102
+get new voxel pair -------------------------------
+last callback time:  1783972041544033050
+n:  23
+used time of callback:  0.07023215293884277
+get new voxel pair -------------------------------
+last callback time:  1783972042049227714
+n:  23
+used time of callback:  0.06985282897949219
+Current time:  1783972042307164430
+get new voxel pair -------------------------------
+last callback time:  1783972042543786764
+n:  23
+used time of callback:  0.06812691688537598
+get new voxel pair -------------------------------
+last callback time:  1783972043050485134
+n:  23
+used time of callback:  0.06743383407592773
+get new voxel pair -------------------------------
+last callback time:  1783972043543862819
+n:  24
+used time of callback:  0.0698096752166748
+get new voxel pair -------------------------------
+last callback time:  1783972044054561376
+n:  24
+used time of callback:  0.06801843643188477
+get new voxel pair -------------------------------
+last callback time:  1783972044544907331
+n:  24
+used time of callback:  0.06635808944702148
+get new voxel pair -------------------------------
+last callback time:  1783972045047792196
+n:  25
+used time of callback:  0.06715035438537598
+Current time:  1783972045307192087
+get new voxel pair -------------------------------
+last callback time:  1783972045548004150
+n:  25
+used time of callback:  0.06561136245727539
+Current time:  1783972048307264328
+Current time:  1783972051307170152
+[INFO] [1783972051.307309]: 5 seconds without messages, executing the next steps...
+Current time:  1783972054307259559
+[INFO] [1783972054.307390]: 5 seconds without messages, executing the next steps...
+Current time:  1783972057307605981
+[INFO] [1783972057.307736]: 5 seconds without messages, executing the next steps...
+Current time:  1783972060307260513
+[INFO] [1783972060.307389]: 5 seconds without messages, executing the next steps...
+Current time:  1783972063307617187
+[INFO] [1783972063.307747]: 5 seconds without messages, executing the next steps...

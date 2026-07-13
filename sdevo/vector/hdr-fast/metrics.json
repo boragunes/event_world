@@ -1,0 +1,44 @@
+{
+  "label": "sdevo/vector/hdr-fast",
+  "algo": "sdevo",
+  "dataset": null,
+  "sequence": null,
+  "generated_utc": "2026-07-13T19:39:00+00:00",
+  "evo_version": "v1.36.5",
+  "est_file": "sdevo/vector/hdr-fast/stamped_traj.tum",
+  "gt_file": "data/deio_vector/hdr_fast1/poses_evs_left.txt",
+  "alignment": "se3",
+  "n_poses_matched": 396,
+  "n_poses_est_raw": 396,
+  "gt_trajectory_length_m": 20.0063,
+  "duration_s": 39.5,
+  "ate_translation_m": {
+    "rmse": 0.228885,
+    "mean": 0.197058,
+    "median": 0.158978,
+    "std": 0.116433,
+    "min": 0.022831,
+    "max": 0.501427,
+    "sse": 20.7458
+  },
+  "rotation_deg": {
+    "body_frame_offset_deg": 60.804,
+    "residual_after_offset": {
+      "rmse": 17.829087,
+      "mean": 16.025137,
+      "median": 14.773495,
+      "std": 7.814815,
+      "min": 2.763308,
+      "max": 40.46825,
+      "sse": 125879.034634
+    },
+    "note": "absolute orientation error AFTER removing the constant estimator-vs-GT body-frame offset"
+  },
+  "paper_metric": {
+    "MPE_percent_ate": 1.1441,
+    "MPE_percent_ate_mean": 0.985,
+    "MPE_percent_rel_1m": 17.2781,
+    "MRE_deg_per_m_rel_1m": 19.91134,
+    "note": "MPE_ate = 100*ATE_trans_RMSE/length; MPE_ate_mean = 100*mean(ATE_trans)/length (DEIO/authors' convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
+  }
+}

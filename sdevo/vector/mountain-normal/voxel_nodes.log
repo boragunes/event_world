@@ -1,0 +1,24 @@
+isTUMDataset: 0
+isTUMDataset: 0
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0713 19:19:41.381709   141 ImageRepresentation.cpp:60] [32mLeft event representation node is up [0m
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0713 19:19:41.382951   142 ImageRepresentation.cpp:62] [32mRight event representation node is up [0m
+[0m[INFO] [1783970381.352691419]: Camera information is loaded (Distortion model plumb_bob).[0m
+[0m[INFO] [1783970381.380635185]: Undistorted-Rectified Look-Up Table with Distortion model: plumb_bob[0m
+[0m[INFO] [1783970381.382625790]: Undistorted-Rectified Look-Up Table has been computed.[0m
+[0m[INFO] [1783970390.924339559, 1642668753.141572179]: Sensor size: (640 x 480)[0m
+===========================
+Before update - first_event_time_: -1.000000  = 1642668753.125606
+After update - first_event_time_: 1642668753.125606  = 1642668753.125606
+[0m[INFO] [1783970381.351332380]: Camera information is loaded (Distortion model plumb_bob).[0m
+[0m[INFO] [1783970381.379094335]: Undistorted-Rectified Look-Up Table with Distortion model: plumb_bob[0m
+[0m[INFO] [1783970381.381211389]: Undistorted-Rectified Look-Up Table has been computed.[0m
+[0m[INFO] [1783970390.928409270, 1642668753.141572179]: Sensor size: (640 x 480)[0m
+===========================
+Before update - first_event_time_: -1.000000  = 1642668753.126605
+After update - first_event_time_: 1642668753.126605  = 1642668753.126605
+[33m[WARN] [1783970713.952299072, 1642668813.642433981]: Shutdown request received.[0m
+[33m[WARN] [1783970713.952334753, 1642668813.642433981]: Reason given for shutdown: [user request][0m
+[33m[WARN] [1783970713.952752542, 1642668813.642433981]: Shutdown request received.[0m
+[33m[WARN] [1783970713.952777356, 1642668813.642433981]: Reason given for shutdown: [user request][0m

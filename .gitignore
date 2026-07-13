@@ -14,11 +14,14 @@
 # --- evo raw result archives (keep metrics.json + plots instead) ---
 *.zip
 
-# --- ESVIO/ESIO run intermediates (keep stamped_traj.tum + metrics.json + status.json + plots + esvio_nodes.log) ---
+# --- ESVIO/ESIO/SDEVO run intermediates (keep stamped_traj.tum + metrics.json + plots + node logs) ---
 play.log
 roscore.log
 record.log
 evo_traj.log
+timer.log
+poses_tum_format.txt
+poses_interpolated.txt
 *_odometry.tum
 esvio_result_*.csv
 esvio_result_*.txt

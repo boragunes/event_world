@@ -1,0 +1,20 @@
+isTUMDataset: 0
+isTUMDataset: 0
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0713 19:39:49.629558   142 ImageRepresentation.cpp:60] [32mLeft event representation node is up [0m
+WARNING: Logging before InitGoogleLogging() is written to STDERR
+I0713 19:39:49.632288   143 ImageRepresentation.cpp:62] [32mRight event representation node is up [0m
+[0m[INFO] [1783971589.604588041]: Camera information is loaded (Distortion model plumb_bob).[0m
+[0m[INFO] [1783971589.627697806]: Undistorted-Rectified Look-Up Table with Distortion model: plumb_bob[0m
+[0m[INFO] [1783971589.629210427]: Undistorted-Rectified Look-Up Table has been computed.[0m
+[0m[INFO] [1783971598.864151870, 1642644847.035136832]: Sensor size: (640 x 480)[0m
+===========================
+[0m[INFO] [1783971589.607231315]: Camera information is loaded (Distortion model plumb_bob).[0m
+[0m[INFO] [1783971589.630053005]: Undistorted-Rectified Look-Up Table with Distortion model: plumb_bob[0m
+[0m[INFO] [1783971589.631746733]: Undistorted-Rectified Look-Up Table has been computed.[0m
+[0m[INFO] [1783971598.866204426, 1642644847.035136832]: Sensor size: (640 x 480)[0m
+===========================
+Before update - first_event_time_: -1.000000  = 1642644847.023270
+Before update - first_event_time_: -1.000000  = 1642644847.022133
+After update - first_event_time_: 1642644847.023270  = 1642644847.023270
+After update - first_event_time_: 1642644847.022133  = 1642644847.022133

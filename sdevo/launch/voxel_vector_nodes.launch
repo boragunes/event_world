@@ -1,0 +1,33 @@
+<launch>
+    <!-- upstream image_representation/launch/voxel_vector.launch with two deviations for a
+         deterministic headless run (no algorithm/param changes):
+           * the sdevo python node is started separately via sdevo_spin.py (upstream's
+             main constructs VoxelListener but never spins; the wrapper calls the
+             upstream run() method), so it is removed here.
+           * the /sync global_timer is started separately AFTER /use_sim_time is False,
+             so its 2 Hz rate is deterministically wall-clock (upstream reaches the same
+             state via a start-order race: sdevo.py's main sets /use_sim_time False).
+         Voxel nodes, remaps, cfg yamls, calib dir and the sdevo rosparams are identical. -->
+  <rosparam param="/use_sim_time">true</rosparam>
+
+  <arg name="calibInfoDirStr" default="$(find image_representation)/calib/vector"/>
+
+  <node name="image_representation_left" pkg="image_representation" type="image_representation" output="screen" >
+    <remap from="events" to="/davis/left/events" />
+    <remap from="voxel_grid" to="/davis/left/voxel_grid" />
+    <rosparam command="load" file="$(find image_representation)/cfg/image_representation_voxel_l.yaml" />
+    <rosparam param="calibInfoDir" subst_value="true">$(arg calibInfoDirStr)</rosparam>
+  </node>
+
+  <node name="image_representation_right" pkg="image_representation" type="image_representation" output="screen" >
+    <remap from="events" to="/davis/right/events" />
+    <remap from="voxel_grid" to="/davis/right/voxel_grid" />
+    <rosparam command="load" file="$(find image_representation)/cfg/image_representation_voxel_r.yaml" />
+    <rosparam param="calibInfoDir" subst_value="true">$(arg calibInfoDirStr)</rosparam>
+  </node>
+
+  <param name="calibInfoDirStr" value="$(arg calibInfoDirStr)"/>
+  <param name="configFileStr" value="$(find sdevo)/config/evaluation/eval_vector.yaml"/>
+  <param name="weightsFileStr" value="$(find sdevo)/DEVO.pth"/>
+  <param name="sdevoDirStr" value="$(find sdevo)"/>
+</launch>
