@@ -26,16 +26,24 @@ alignment — ESVIO is stereo + IMU, so it is metric (no scale correction).
 | mountain-normal | **0.72 %** | 0.59 | ✅ ≈ paper |
 | robot-normal | **0.87 %** | 1.08 | ✅ beats paper |
 | corner-slow | **1.95 %** | 1.49 | ✅ near paper |
-| desk-fast | **1.67 %** | *not in paper* | — |
-| sofa-fast | 2.54 % | *not in paper* | — |
-| hdr-fast | **1.26 %** | *not in paper* | — |
-| robot-fast | **init fails** | *not in paper* | ✗ |
-| mountain-fast | **init fails** | *not in paper* | ✗ |
+| hdr-fast | 1.26 % | 0.21 | ⚠️ runs, ~6× paper |
+| desk-fast | 1.67 % | 0.13 | ⚠️ runs, ~13× paper |
+| sofa-fast | 2.54 % | 0.17 | ⚠️ runs, ~15× paper |
+| robot-fast | **init fails** | 0.20 | ✗ not reproduced |
+| mountain-fast | **init fails** | 0.16 | ✗ not reproduced |
 
-**On the 6 sequences the ESVIO paper reports, we match or beat it on 5** — desk-normal and
-robot-normal beat it; sofa-normal / hdr-normal / mountain-normal are within ~0.1; corner-slow
-(1.95 vs 1.49) is near. The other 5 (the fast sequences) are **not in the ESVIO paper**, so we
-report our own SE3 numbers with no comparison; robot-fast and mountain-fast fail initialisation.
+*(Correction 2026-07-13: an earlier version of this page claimed the fast sequences were "not in
+the paper". They are — Table II covers all 11 small-scale sequences; full transcription in
+[`results_db/`](../../results_db/).)*
+
+**On the 6 normal/slow sequences we match or beat the paper on 5** — desk-normal and robot-normal
+beat it; sofa-normal / hdr-normal / mountain-normal are within ~0.1; corner-slow (1.95 vs 1.49) is
+near. **The 5 fast sequences are not reproduced**: three run but land 6–15× above the paper's
+0.13–0.21 %, and robot-fast / mountain-fast deterministically fail initialisation. This is after
+exhausting every config-level lever (features, parallax, event rate 30–100 Hz, start-crop, IMU
+noise both directions, playback rate — and the event-only [ESIO front-end fails on every fast
+sequence too](esio_vector.md)). The released code + config do not reach the paper's fast-sequence
+numbers in our uniform setup; whatever initialisation help the authors used there is undisclosed.
 Every sequence uses the **identical setup** — imported full-stereo data (left+right event +
 left+right camera + IMU), `FIX_CALIB` + VECtor IMU model, SE3 metric — *no per-sequence differences*.
 hdr-normal is a near-static short sequence (GT path 3.1 m), so its metric is sensitive, but coverage

@@ -22,7 +22,8 @@ scripts**, and the **estimated trajectories** — not just a table of numbers.
 
 | Algorithm | Modality | Datasets | State |
 |-----------|----------|----------|-------|
-| [ESVIO](esvio/) | stereo events + IMU (+ frames) | VECtor small-scale — [report](docs/validation/esvio_vector.md) | 9/11 good, uniform full-stereo setup; 2 fast seqs fail init |
+| [ESVIO](esvio/) | stereo events + IMU (+ frames) | VECtor small-scale — [report](docs/validation/esvio_vector.md) | 6 normal/slow seqs reproduced (5 match/beat paper); **5 fast seqs not reproduced** (3 run 6–15× worse, 2 fail init) |
+| [ESIO](esvio/) (ESVIO's event-only variant) | stereo events + IMU | VECtor small-scale — [report](docs/validation/esio_vector.md) | new coverage (not in paper): 5 normal seqs ok but 1.4–18× worse than ESVIO; **all fast seqs fail init** |
 | [DEIO](deio/) | monocular events + IMU (deep) | VECtor — [report](docs/validation/deio_vector.md) | our run, SE3 (metric), event-frame GT; **≥ DEIO's own released trajectories on 3/4 paper seqs** under honest SE3 — paper's Table IV uses Sim3 that hides scale-broken trajectories |
 | [DEVO](devo/) | monocular events (deep, vision-only) | VECtor — [report](devo/README.md) | our run (dpvo-clean + DEVO's eval pipeline), Sim3; **4-seq avg 0.36 = paper's DEVO baseline 0.36** (reproduced) |
 | ESVO2, SuperEvent, … | — | DSEC, M3ED, … | planned |
