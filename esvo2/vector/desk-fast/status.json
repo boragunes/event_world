@@ -1,0 +1,7 @@
+{
+  "sequence": "desk-fast",
+  "status": "diverged",
+  "ATE_cm": 1332163787.06,
+  "paper_ATE_cm": null,
+  "recipe": "1kHz event chunks + 0.25x playback (uniform); SE3 vs event-frame GT"
+}

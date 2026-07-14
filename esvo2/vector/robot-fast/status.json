@@ -1,0 +1,7 @@
+{
+  "sequence": "robot-fast",
+  "status": "diverged",
+  "ATE_cm": 25158.25,
+  "paper_ATE_cm": 24.18,
+  "recipe": "1kHz event chunks + 0.25x playback (uniform); SE3 vs event-frame GT"
+}

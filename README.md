@@ -27,7 +27,8 @@ scripts**, and the **estimated trajectories** — not just a table of numbers.
 | [DEIO](deio/) | monocular events + IMU (deep) | VECtor — [report](docs/validation/deio_vector.md) | our run, SE3 (metric), event-frame GT; **≥ DEIO's own released trajectories on 3/4 paper seqs** under honest SE3 — paper's Table IV uses Sim3 that hides scale-broken trajectories |
 | [DEVO](devo/) | monocular events (deep, vision-only) | VECtor — [report](devo/README.md) | our run (dpvo-clean + DEVO's eval pipeline), Sim3; **4-seq avg 0.36 = paper's DEVO baseline 0.36** (reproduced) |
 | [SDEVO](sdevo/) | stereo events (deep, metric w/o IMU) | VECtor — [report](docs/validation/sdevo_vector.md) | **4/5 paper seqs reproduced** (3.6–7.2 cm ≈ paper; corner-slow systematic gap); **completes all 5 fast seqs** the paper skips & classical front-ends fail (new coverage) |
-| ESVO2, SuperEvent, … | — | DSEC, M3ED, … | planned |
+| [ESVO2](esvo2/) | stereo events + IMU (direct, classical) | VECtor — [report](docs/validation/esvo2_vector.md) | 3/6 paper seqs ≈ paper (1.2–1.4×); corner-slow/sofa-normal/robot-fast **not reproduced** (diverge; robot-fast is the paper's one fast claim); **all fast seqs diverge** — 1 kHz event-chunking requirement found & documented |
+| SuperEvent, … | — | DSEC, M3ED, … | planned (SuperEvent's SLAM part is closed-source) |
 
 ## Layout
 

@@ -1,0 +1,7 @@
+{
+  "sequence": "robot-normal",
+  "status": "ok",
+  "ATE_cm": 6.86,
+  "paper_ATE_cm": 4.81,
+  "recipe": "1kHz event chunks + 0.25x playback (uniform); SE3 vs event-frame GT"
+}

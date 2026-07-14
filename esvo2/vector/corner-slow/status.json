@@ -1,0 +1,7 @@
+{
+  "sequence": "corner-slow",
+  "status": "diverged",
+  "ATE_cm": 1025.95,
+  "paper_ATE_cm": 2.15,
+  "recipe": "1kHz event chunks + 0.25x playback (uniform); SE3 vs event-frame GT"
+}

@@ -1,0 +1,80 @@
+ * /esvo2_Mapping/residual_vis_threshold: 20
+ * /esvo2_Mapping/residual_vis_threshold_ln: 20
+ * /esvo2_Mapping/select_points_from_AA: True
+ * /esvo2_Mapping/stdVar_vis_threshold: 0.1
+ * /esvo2_Mapping/stdVar_vis_threshold_ln: 1
+ * /esvo2_Mapping/visualizeGPC_interval: 0.5
+ * /esvo2_Mapping/visualize_range: 30
+ * /esvo2_Mapping/world_frame_id: map
+ * /esvo2_Mapping/x_patches: 8
+ * /esvo2_Mapping/y_patches: 6
+ * /esvo2_Tracking/BATCH_SIZE: 300
+ * /esvo2_Tracking/LSnorm: Huber
+ * /esvo2_Tracking/MAX_ITERATION: 10
+ * /esvo2_Tracking/MAX_REGISTRATION_POINTS: 2000
+ * /esvo2_Tracking/MIN_NUM_EVENTS: 1000
+ * /esvo2_Tracking/PATH_TO_SAVE_TRAJECTORY: /out/
+ * /esvo2_Tracking/REF_HISTORY_LENGTH: 10
+ * /esvo2_Tracking/RegProblemType: 1
+ * /esvo2_Tracking/SAVE_TRAJECTORY: True
+ * /esvo2_Tracking/TS_HISTORY_LENGTH: 100
+ * /esvo2_Tracking/USE_IMU: True
+ * /esvo2_Tracking/VISUALIZE_TRAJECTORY: False
+ * /esvo2_Tracking/calibInfoDir: /catkin_ws/src/ES...
+ * /esvo2_Tracking/dvs_frame_id: dvs
+ * /esvo2_Tracking/huber_threshold: 50
+ * /esvo2_Tracking/invDepth_max_range: 2
+ * /esvo2_Tracking/invDepth_min_range: 0.1
+ * /esvo2_Tracking/kernelSize: 5
+ * /esvo2_Tracking/patch_size_X: 1
+ * /esvo2_Tracking/patch_size_Y: 1
+ * /esvo2_Tracking/tracking_rate_hz: 100
+ * /esvo2_Tracking/world_frame_id: map
+ * /image_representation_left/blur_size: 7
+ * /image_representation_left/calibInfoDir: /catkin_ws/src/ES...
+ * /image_representation_left/decay_ms: 20
+ * /image_representation_left/generation_rate_hz: 100
+ * /image_representation_left/is_left: True
+ * /image_representation_left/median_blur_kernel_size: 1
+ * /image_representation_left/representation_mode: 2
+ * /image_representation_left/synchronize_on_external_time: True
+ * /image_representation_left/use_sim_time: True
+ * /image_representation_left/use_stereo_cam: True
+ * /image_representation_left/x_patches: 8
+ * /image_representation_left/y_patches: 6
+ * /image_representation_right/blur_size: 7
+ * /image_representation_right/calibInfoDir: /catkin_ws/src/ES...
+ * /image_representation_right/decay_ms: 20
+ * /image_representation_right/generation_rate_hz: 100
+ * /image_representation_right/is_left: False
+ * /image_representation_right/median_blur_kernel_size: 1
+ * /image_representation_right/representation_mode: 2
+ * /image_representation_right/synchronize_on_external_time: True
+ * /image_representation_right/use_sim_time: True
+ * /image_representation_right/use_stereo_cam: True
+ * /image_representation_right/x_patches: 8
+ * /image_representation_right/y_patches: 6
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /use_sim_time: True
+
+NODES
+  /
+    esvo2_Mapping (esvo2_core/esvo2_Mapping)
+    esvo2_Tracking (esvo2_core/esvo2_Tracking)
+    image_representation_left (image_representation/image_representation)
+    image_representation_right (image_representation/image_representation)
+
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;/work/system_vector_headless.launch http://localhost:11311
+[1mprocess[image_representation_left-1]: started with pid [125][0m
+[1mprocess[image_representation_right-2]: started with pid [126][0m
+[1mprocess[esvo2_Mapping-3]: started with pid [127][0m
+[1mprocess[esvo2_Tracking-4]: started with pid [128][0m
+[esvo2_Tracking-4] killing on exit
+[esvo2_Mapping-3] killing on exit
+[image_representation_right-2] killing on exit
+[image_representation_left-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

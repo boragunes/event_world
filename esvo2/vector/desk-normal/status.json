@@ -1,0 +1,7 @@
+{
+  "sequence": "desk-normal",
+  "status": "ok",
+  "ATE_cm": 20.4,
+  "paper_ATE_cm": 16.47,
+  "recipe": "1kHz event chunks + 0.25x playback (uniform); SE3 vs event-frame GT"
+}

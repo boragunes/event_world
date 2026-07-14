@@ -1,0 +1,7 @@
+{
+  "sequence": "hdr-normal",
+  "status": "ok",
+  "ATE_cm": 19.35,
+  "paper_ATE_cm": 13.53,
+  "recipe": "1kHz event chunks + 0.25x playback (uniform); SE3 vs event-frame GT"
+}

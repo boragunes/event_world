@@ -1,0 +1,7 @@
+{
+  "sequence": "sofa-normal",
+  "status": "diverged",
+  "ATE_cm": 87431.09,
+  "paper_ATE_cm": 40.28,
+  "recipe": "1kHz event chunks + 0.25x playback (uniform); SE3 vs event-frame GT"
+}

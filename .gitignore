@@ -22,6 +22,9 @@ evo_traj.log
 timer.log
 poses_tum_format.txt
 poses_interpolated.txt
+pose.bag
+stamped_traj_estimate.txt
+stamped_traj_estimate_ours.txt
 *_odometry.tum
 esvio_result_*.csv
 esvio_result_*.txt

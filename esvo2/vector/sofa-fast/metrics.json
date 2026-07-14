@@ -1,0 +1,44 @@
+{
+  "label": "esvo2/vector/sofa-fast",
+  "algo": "esvo2",
+  "dataset": null,
+  "sequence": null,
+  "generated_utc": "2026-07-14T07:17:22+00:00",
+  "evo_version": "v1.36.5",
+  "est_file": "esvo2/vector/sofa-fast/stamped_traj.tum",
+  "gt_file": "data/deio_vector/sofa_fast1/poses_evs_left.txt",
+  "alignment": "se3",
+  "n_poses_matched": 3858,
+  "n_poses_est_raw": 3858,
+  "gt_trajectory_length_m": 34.0264,
+  "duration_s": 38.583,
+  "ate_translation_m": {
+    "rmse": 839.933452,
+    "mean": 741.2413,
+    "median": 613.413138,
+    "std": 395.031061,
+    "min": 72.406122,
+    "max": 1615.884342,
+    "sse": 2721773489.073765
+  },
+  "rotation_deg": {
+    "body_frame_offset_deg": 80.649,
+    "residual_after_offset": {
+      "rmse": 109.593607,
+      "mean": 104.534756,
+      "median": 100.731276,
+      "std": 32.912662,
+      "min": 35.708002,
+      "max": 179.911058,
+      "sse": 46337506.879418
+    },
+    "note": "absolute orientation error AFTER removing the constant estimator-vs-GT body-frame offset"
+  },
+  "paper_metric": {
+    "MPE_percent_ate": 2468.474,
+    "MPE_percent_ate_mean": 2178.4284,
+    "MPE_percent_rel_1m": 96.5235,
+    "MRE_deg_per_m_rel_1m": 4.9702,
+    "note": "MPE_ate = 100*ATE_trans_RMSE/length; MPE_ate_mean = 100*mean(ATE_trans)/length (DEIO/authors' convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
+  }
+}
