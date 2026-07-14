@@ -1,80 +1,80 @@
- * /esvo2_Mapping/residual_vis_threshold: 20
- * /esvo2_Mapping/residual_vis_threshold_ln: 20
- * /esvo2_Mapping/select_points_from_AA: True
- * /esvo2_Mapping/stdVar_vis_threshold: 0.1
- * /esvo2_Mapping/stdVar_vis_threshold_ln: 1
- * /esvo2_Mapping/visualizeGPC_interval: 0.5
- * /esvo2_Mapping/visualize_range: 30
- * /esvo2_Mapping/world_frame_id: map
- * /esvo2_Mapping/x_patches: 8
- * /esvo2_Mapping/y_patches: 6
- * /esvo2_Tracking/BATCH_SIZE: 300
- * /esvo2_Tracking/LSnorm: Huber
- * /esvo2_Tracking/MAX_ITERATION: 10
- * /esvo2_Tracking/MAX_REGISTRATION_POINTS: 2000
- * /esvo2_Tracking/MIN_NUM_EVENTS: 1000
- * /esvo2_Tracking/PATH_TO_SAVE_TRAJECTORY: /out/
- * /esvo2_Tracking/REF_HISTORY_LENGTH: 10
- * /esvo2_Tracking/RegProblemType: 1
- * /esvo2_Tracking/SAVE_TRAJECTORY: True
- * /esvo2_Tracking/TS_HISTORY_LENGTH: 100
- * /esvo2_Tracking/USE_IMU: True
- * /esvo2_Tracking/VISUALIZE_TRAJECTORY: False
- * /esvo2_Tracking/calibInfoDir: /catkin_ws/src/ES...
- * /esvo2_Tracking/dvs_frame_id: dvs
- * /esvo2_Tracking/huber_threshold: 50
- * /esvo2_Tracking/invDepth_max_range: 2
- * /esvo2_Tracking/invDepth_min_range: 0.1
- * /esvo2_Tracking/kernelSize: 5
- * /esvo2_Tracking/patch_size_X: 1
- * /esvo2_Tracking/patch_size_Y: 1
- * /esvo2_Tracking/tracking_rate_hz: 100
- * /esvo2_Tracking/world_frame_id: map
- * /image_representation_left/blur_size: 7
- * /image_representation_left/calibInfoDir: /catkin_ws/src/ES...
- * /image_representation_left/decay_ms: 20
- * /image_representation_left/generation_rate_hz: 100
- * /image_representation_left/is_left: True
- * /image_representation_left/median_blur_kernel_size: 1
- * /image_representation_left/representation_mode: 2
- * /image_representation_left/synchronize_on_external_time: True
- * /image_representation_left/use_sim_time: True
- * /image_representation_left/use_stereo_cam: True
- * /image_representation_left/x_patches: 8
- * /image_representation_left/y_patches: 6
- * /image_representation_right/blur_size: 7
- * /image_representation_right/calibInfoDir: /catkin_ws/src/ES...
- * /image_representation_right/decay_ms: 20
- * /image_representation_right/generation_rate_hz: 100
- * /image_representation_right/is_left: False
- * /image_representation_right/median_blur_kernel_size: 1
- * /image_representation_right/representation_mode: 2
- * /image_representation_right/synchronize_on_external_time: True
- * /image_representation_right/use_sim_time: True
- * /image_representation_right/use_stereo_cam: True
- * /image_representation_right/x_patches: 8
- * /image_representation_right/y_patches: 6
- * /rosdistro: noetic
- * /rosversion: 1.17.4
- * /use_sim_time: True
-
-NODES
-  /
-    esvo2_Mapping (esvo2_core/esvo2_Mapping)
-    esvo2_Tracking (esvo2_core/esvo2_Tracking)
-    image_representation_left (image_representation/image_representation)
-    image_representation_right (image_representation/image_representation)
-
-[1mROS_MASTER_URI=http://localhost:11311[0m
-]2;/work/system_vector_headless.launch http://localhost:11311
-[1mprocess[image_representation_left-1]: started with pid [125][0m
-[1mprocess[image_representation_right-2]: started with pid [126][0m
-[1mprocess[esvo2_Mapping-3]: started with pid [127][0m
-[1mprocess[esvo2_Tracking-4]: started with pid [128][0m
-[esvo2_Tracking-4] killing on exit
-[esvo2_Mapping-3] killing on exit
-[image_representation_right-2] killing on exit
-[image_representation_left-1] killing on exit
-shutting down processing monitor...
-... shutting down processing monitor complete
-[1mdone[0m
+I0714 11:22:51.681766   212 BackendOptimization.cpp:105] Ba = 00.909429 -0.280048 0.0914251
+I0714 11:22:51.681774   212 BackendOptimization.cpp:106] Bg = 000.0309737 00.00873042 -0.00585403
+I0714 11:22:53.276100   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 9, Initial cost: 1.357813e+06, Final cost: 2.265042e+05, Termination: CONVERGENCE
+I0714 11:22:53.276129   212 BackendOptimization.cpp:105] Ba = 00.758682 -0.025305 00.328261
+I0714 11:22:53.276139   212 BackendOptimization.cpp:106] Bg = 00.0225525 0.00577318 0.00884836
+I0714 11:22:57.261575   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 9, Initial cost: 3.555119e+05, Final cost: 8.628430e+04, Termination: CONVERGENCE
+I0714 11:22:57.261592   212 BackendOptimization.cpp:105] Ba = 0.690482 0.210618 0.531008
+I0714 11:22:57.261601   212 BackendOptimization.cpp:106] Bg = 00.0584233 0.00752851 -0.0162541
+I0714 11:22:58.064630   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 8, Initial cost: 1.016800e+06, Final cost: 1.253903e+05, Termination: CONVERGENCE
+I0714 11:22:58.064652   212 BackendOptimization.cpp:105] Ba = 00.765614 00.468204 -0.315001
+I0714 11:22:58.064664   212 BackendOptimization.cpp:106] Bg = 00.0549341 -0.0214915 -0.0465419
+I0714 11:22:59.657198   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 8, Initial cost: 2.055093e+05, Final cost: 1.418014e+05, Termination: CONVERGENCE
+I0714 11:22:59.657214   212 BackendOptimization.cpp:105] Ba = 000.819094 -0.0108647 00.0572661
+I0714 11:22:59.657224   212 BackendOptimization.cpp:106] Bg = 000.0456712 -0.00301448 0-0.0227087
+I0714 11:23:00.466163   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 9, Initial cost: 2.993191e+05, Final cost: 6.927900e+04, Termination: CONVERGENCE
+I0714 11:23:00.466181   212 BackendOptimization.cpp:105] Ba = 000.635368 -0.0379216 000.647281
+I0714 11:23:00.466192   212 BackendOptimization.cpp:106] Bg = 00.0286704 00-0.01598 -0.0284108
+I0714 11:23:01.267222   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 9, Initial cost: 1.652544e+05, Final cost: 5.318070e+04, Termination: CONVERGENCE
+I0714 11:23:01.267238   212 BackendOptimization.cpp:105] Ba = 00.825972 00.183898 0.0285015
+I0714 11:23:01.267247   212 BackendOptimization.cpp:106] Bg = 00.0338178 0.00171168 -0.0139013
+I0714 11:23:02.051997   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 9, Initial cost: 2.836237e+05, Final cost: 9.241291e+04, Termination: CONVERGENCE
+I0714 11:23:02.052012   212 BackendOptimization.cpp:105] Ba = 0.560367 0.545862 0.273342
+I0714 11:23:02.052021   212 BackendOptimization.cpp:106] Bg = 00.0313678 -0.0188005 -0.0207016
+I0714 11:23:02.865551   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 9, Initial cost: 2.349479e+05, Final cost: 7.721782e+04, Termination: CONVERGENCE
+I0714 11:23:02.865578   212 BackendOptimization.cpp:105] Ba = 00.354853 -0.103729 000.75269
+I0714 11:23:02.865589   212 BackendOptimization.cpp:106] Bg = 000.0412051 -0.00334273 00.00351898
+I0714 11:23:03.670074   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 8, Initial cost: 6.422122e+05, Final cost: 1.556225e+05, Termination: CONVERGENCE
+I0714 11:23:03.670090   212 BackendOptimization.cpp:105] Ba = 00.500793 0.0408054 00.474159
+I0714 11:23:03.670099   212 BackendOptimization.cpp:106] Bg = 0.0539958 0.0116676 0.0225559
+I0714 11:23:04.474341   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 8, Initial cost: 6.849393e+05, Final cost: 1.829398e+05, Termination: CONVERGENCE
+I0714 11:23:04.474359   212 BackendOptimization.cpp:105] Ba = 0.472608 0.606871 0.616047
+I0714 11:23:04.474370   212 BackendOptimization.cpp:106] Bg = 000.0390437 00.00926248 -0.00323892
+I0714 11:23:05.280097   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 7, Initial cost: 3.646605e+06, Final cost: 1.053101e+06, Termination: CONVERGENCE
+I0714 11:23:05.280112   212 BackendOptimization.cpp:105] Ba = 00.555877 -0.101496 00.621254
+I0714 11:23:05.280121   212 BackendOptimization.cpp:106] Bg = 000.0351214 000.0293267 -0.00038173
+I0714 11:23:06.878314   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 7, Initial cost: 9.597776e+05, Final cost: 4.446216e+05, Termination: CONVERGENCE
+I0714 11:23:06.878329   212 BackendOptimization.cpp:105] Ba = 0.0969175 -0.493504 00.424371
+I0714 11:23:06.878340   212 BackendOptimization.cpp:106] Bg = 0.0275329 00.021702 -0.017237
+I0714 11:23:08.493359   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 8, Initial cost: 6.366366e+05, Final cost: 2.395311e+05, Termination: CONVERGENCE
+I0714 11:23:08.493386   212 BackendOptimization.cpp:105] Ba = 00.617148 0.0691901 00.118531
+I0714 11:23:08.493396   212 BackendOptimization.cpp:106] Bg = 000.0212663 -0.00333552 -0.00695151
+I0714 11:23:09.310187   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 8, Initial cost: 8.733191e+05, Final cost: 2.034640e+05, Termination: CONVERGENCE
+I0714 11:23:09.310206   212 BackendOptimization.cpp:105] Ba = 000.357621 0.00179813 000.140074
+I0714 11:23:09.310217   212 BackendOptimization.cpp:106] Bg = 000.0236032 0.000748631 000.0179774
+I0714 11:23:10.920472   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 8, Initial cost: 5.162688e+05, Final cost: 1.389797e+05, Termination: CONVERGENCE
+I0714 11:23:10.920492   212 BackendOptimization.cpp:105] Ba = 00.580112 -0.541862 00.340029
+I0714 11:23:10.920503   212 BackendOptimization.cpp:106] Bg = 00000.022045 00.000167813 -0.000235795
+I0714 11:23:12.508481   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 7, Initial cost: 2.650330e+05, Final cost: 1.183758e+05, Termination: CONVERGENCE
+I0714 11:23:12.508502   212 BackendOptimization.cpp:105] Ba = 00.643791 0-0.36385 0.0519177
+I0714 11:23:12.508515   212 BackendOptimization.cpp:106] Bg = 000.0466165 -0.00742748 0-0.0306052
+I0714 11:23:13.326998   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 7, Initial cost: 1.113576e+06, Final cost: 5.429902e+05, Termination: CONVERGENCE
+I0714 11:23:13.327023   212 BackendOptimization.cpp:105] Ba = 0.519894 0.110418 0.715633
+I0714 11:23:13.327031   212 BackendOptimization.cpp:106] Bg = 00.0449941 -0.0132301 -0.0317768
+I0714 11:23:14.115357   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 8, Initial cost: 1.527667e+06, Final cost: 6.124275e+05, Termination: CONVERGENCE
+I0714 11:23:14.115375   212 BackendOptimization.cpp:105] Ba = 000.65459 0-0.34271 0.0123761
+I0714 11:23:14.115386   212 BackendOptimization.cpp:106] Bg = 00.0492443 -0.0204576 -0.0469191
+I0714 11:23:16.499154   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 6, Initial cost: 2.001103e+06, Final cost: 1.123531e+06, Termination: CONVERGENCE
+I0714 11:23:16.499179   212 BackendOptimization.cpp:105] Ba = 00.516224 -0.596043 00.508134
+I0714 11:23:16.499194   212 BackendOptimization.cpp:106] Bg = 00.0468264 -0.0359873 -0.0494396
+I0714 11:23:17.298698   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 7, Initial cost: 1.280017e+06, Final cost: 5.213948e+05, Termination: CONVERGENCE
+I0714 11:23:17.298732   212 BackendOptimization.cpp:105] Ba = 00.503061 00.443296 -0.396661
+I0714 11:23:17.298746   212 BackendOptimization.cpp:106] Bg = 00.0378713 -0.0357171 -0.0308655
+I0714 11:23:18.881631   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 7, Initial cost: 3.362273e+05, Final cost: 5.216690e+04, Termination: CONVERGENCE
+I0714 11:23:18.881649   212 BackendOptimization.cpp:105] Ba = 00.230727 00.455415 0.0687509
+I0714 11:23:18.881656   212 BackendOptimization.cpp:106] Bg = -0.00523546 0-0.0406355 0-0.0185977
+I0714 11:23:19.677661   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 8, Initial cost: 3.067640e+05, Final cost: 8.151904e+04, Termination: CONVERGENCE
+I0714 11:23:19.677678   212 BackendOptimization.cpp:105] Ba = 000.76974 -0.169027 00.301789
+I0714 11:23:19.677686   212 BackendOptimization.cpp:106] Bg = -0.0144252 -0.0439373 -0.0171627
+I0714 11:23:20.484100   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 9, Initial cost: 4.614808e+05, Final cost: 9.808034e+04, Termination: CONVERGENCE
+I0714 11:23:20.484119   212 BackendOptimization.cpp:105] Ba = 00.581578 -0.104516 00.454898
+I0714 11:23:20.484129   212 BackendOptimization.cpp:106] Bg = -0.00489185 0-0.0347885 0-0.0276455
+I0714 11:23:25.286373   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 7, Initial cost: 1.068492e+06, Final cost: 3.005315e+05, Termination: CONVERGENCE
+I0714 11:23:25.286394   212 BackendOptimization.cpp:105] Ba = 000.23937 -0.619519 00.485932
+I0714 11:23:25.286404   212 BackendOptimization.cpp:106] Bg = 0-0.017049 -0.0689374 0-0.036655
+I0714 11:23:43.705466   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 8, Initial cost: 1.906916e+05, Final cost: 1.021819e+05, Termination: CONVERGENCE
+I0714 11:23:43.705482   212 BackendOptimization.cpp:105] Ba = -0.334122 -0.641585 -0.342666
+I0714 11:23:43.705489   212 BackendOptimization.cpp:106] Bg = -0.0269922 00.0032851 00.0182496
+I0714 11:23:45.288278   212 BackendOptimization.cpp:104] Ceres Solver Report: Iterations: 8, Initial cost: 1.747478e+05, Final cost: 5.170669e+04, Termination: CONVERGENCE
+I0714 11:23:45.288318   212 BackendOptimization.cpp:105] Ba = -0.493159 -0.567541 -0.579026
+I0714 11:23:45.288331   212 BackendOptimization.cpp:106] Bg = -0.0367579 -0.0244199 00.0430055

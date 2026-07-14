@@ -1,7 +1,9 @@
 {
   "sequence": "corner-slow",
+  "tier": "released config",
   "status": "diverged",
-  "ATE_cm": 1025.95,
+  "ATE_cm": 556.64,
+  "coverage_pct": 94.0,
   "paper_ATE_cm": 2.15,
-  "recipe": "1kHz event chunks + 0.25x playback (uniform); SE3 vs event-frame GT"
+  "recipe": "UPSTREAM events_repacking_tool 1kHz; 0.25x playback; SE3 vs event-frame GT"
 }

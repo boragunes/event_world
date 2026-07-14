@@ -1,0 +1,9 @@
+{
+  "sequence": "robot-fast",
+  "tier": "author fast profile (issue #9)",
+  "status": "diverged",
+  "ATE_cm": 33884.31,
+  "coverage_pct": 96.4,
+  "paper_ATE_cm": 24.18,
+  "recipe": "UPSTREAM events_repacking_tool 1kHz; 0.25x playback; SE3 vs event-frame GT"
+}

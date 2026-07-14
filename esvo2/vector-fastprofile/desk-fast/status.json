@@ -1,0 +1,9 @@
+{
+  "sequence": "desk-fast",
+  "tier": "author fast profile (issue #9)",
+  "status": "diverged",
+  "ATE_cm": 14407.68,
+  "coverage_pct": 99.1,
+  "paper_ATE_cm": null,
+  "recipe": "UPSTREAM events_repacking_tool 1kHz; 0.25x playback; SE3 vs event-frame GT"
+}

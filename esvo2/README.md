@@ -19,16 +19,16 @@ does not compile: `events_repacking_tool` calls `add_message_files()` before any
 its generated `V_ba_bg.h` header without declaring the dependency. The Dockerfile patches exactly
 that (a `find_package` line, a `cs_export()` line, a `<depend>` line).
 
-## The input-chunking finding (why 1 kHz repacking is required)
-ESVO2's `image_representation` node samples "all events received so far" on a **100 Hz** clock
-(`generation_rate_hz: 100`). With our 60 Hz-chunked dvs bags (fine for feature-based ESVIO), every
-TS tick is missing up to ~17 ms of the freshest events — fatal for a 20 ms-decay surface:
-desk-normal **diverged 400 m**. Repacked at **1 kHz** (exactly what upstream's own
-`events_repacking_tool` produces for their distributed bags), the same sequence lands at paper
-accuracy. The 16× message count also raises CPU load, so playback runs at **0.25×**
-(upstream's README itself prescribes reducing the rate on lag; `use_sim_time` makes this
-result-equivalent). Both knobs are upstream's own remedies; conversion is lossless (event counts
-conserved) and cached as `data/vector/<seq>/*_dvs1k.bag`.
+## Input repacking — upstream's own tool, and the A/B that mandates it
+ESVO2's TS/AA node samples "events received so far" on a fixed clock, making accuracy sensitive to
+event-array chunking to a degree documented nowhere upstream (the authors state the 1000 Hz packet
+requirement only in issue #4). All repacking is therefore done by **upstream's own
+`events_repacking_tool` (`EventMessageEditor`, 1000 Hz)**, built in this image; our tooling only
+type-converts (prophesee→dvs, lossless, native chunking; + the issue-#9 2× downscale for the fast
+profile) and merges L+R bags byte-preserving to feed the tool. The A/B that settles it, on
+desk-normal: 60 Hz chunks → diverges 400 m; our own mechanically-equivalent 1 kHz repacker →
+20.40 cm; **upstream's tool → 16.42 cm vs the paper's 16.47** (its gap-lagging array stamps are
+functionally part of the system). Playback 0.25× (their lag remedy), uniform.
 
 ## Run on VECtor
 ```bash

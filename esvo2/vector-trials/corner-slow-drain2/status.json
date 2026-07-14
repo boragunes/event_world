@@ -1,8 +1,0 @@
-{
-  "sequence": "corner-slow-drain2",
-  "status": "diverged",
-  "ATE_cm": 637.18,
-  "paper_ATE_cm": 2.15,
-  "recipe": "1kHz event chunks + 0.25x playback (uniform); SE3 vs event-frame GT",
-  "note": "637 cm on a ~1.4 m path = diverged; end-of-sequence event starvation (see report)"
-}

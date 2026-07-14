@@ -17,38 +17,66 @@ if ! docker info >/dev/null 2>&1; then
 fi
 
 DATA="$ROOT/data/vector/$SEQ"
-OUT="$HERE/vector/$SEQ"
+# FAST_PROFILE=1 -> the authors' fast-sequence recipe from NAIL-HNU/ESVO2 issue #9:
+# events downscaled to 320x240 + generation_rate_hz 200 (halved calib, same extrinsics).
+# Results land in vector-fastprofile/ to keep the released-config tier separate.
+if [ "${FAST_PROFILE:-0}" = "1" ]; then
+  OUT="$HERE/vector-fastprofile/$SEQ"; SUF2="_ds2"; DSARG="--downscale 2"
+  LAUNCH="$HERE/launch/system_vector_fast_headless.launch"
+  XMOUNTS=(-v "$HERE/calib_fast_vector":/work/calib_fast_vector:ro -v "$HERE/cfg_fast":/work/cfg_fast:ro)
+else
+  OUT="$HERE/vector/$SEQ"; SUF2=""; DSARG=""
+  LAUNCH="$HERE/launch/system_vector_headless.launch"
+  XMOUNTS=()
+fi
 mkdir -p "$OUT"
 [ -d "$DATA" ] || { echo "ERROR: no data at $DATA"; exit 1; }
 
-# events: lossless prophesee->dvs conversion, repacked at 1 kHz chunks (cached).
-# The ESVO family needs fine-grained event-array chunking: the TS/AA node samples
-# "events received so far" on a 100 Hz clock, so 60 Hz chunks starve each tick of up
-# to ~17 ms of fresh events (desk-normal diverged 400 m); 1 kHz matches what upstream's
-# own events_repacking_tool produces for their repacked bags.
-for side in left right; do
-  src="$DATA/${SEQ}_${side}_event.bag"; dvs="$DATA/${SEQ}_${side}_event_dvs1k.bag"
-  [ -s "$src" ] || { echo "ERROR: missing $src"; exit 1; }
-  if [ ! -s "$dvs" ]; then
-    echo ">> converting ${side} events -> dvs_msgs @1kHz"
-    rm -f "$dvs.tmp"
-    "$PY" "$ROOT/scripts/prophesee_to_dvs_bag.py" "$src" "$dvs.tmp" \
-          --out-topic "/davis/${side}/events" --repack-hz 1000
-    mv "$dvs.tmp" "$dvs"
-  fi
-  [ -s "$dvs" ] || { echo "ERROR: conversion failed for $dvs"; exit 1; }
-done
+# Bag preparation — temporal repacking is done EXCLUSIVELY by upstream's own
+# events_repacking_tool (EventMessageEditor, 1000 Hz, built in the image), per the
+# authors' recipe. Our tooling only does a lossless type conversion
+# (prophesee->dvs, native chunking; + the issue-#9 2x spatial downscale for the
+# fast profile) and a byte-preserving L+R merge to feed the tool's single input.
+UP="$DATA/${SEQ}_upstream1k${SUF2}.bag"
+if [ ! -s "$UP" ]; then
+  for side in left right; do
+    src="$DATA/${SEQ}_${side}_event.bag"; nat="$DATA/${SEQ}_${side}_event_dvsnat${SUF2}.bag"
+    [ -s "$src" ] || { echo "ERROR: missing $src"; exit 1; }
+    if [ ! -s "$nat" ]; then
+      echo ">> type-converting ${side} events (native chunking)${DSARG:+ + downscale}"
+      rm -f "$nat.tmp"
+      "$PY" "$ROOT/scripts/prophesee_to_dvs_bag.py" "$src" "$nat.tmp" \
+            --out-topic "/davis/${side}/events" $DSARG
+      mv "$nat.tmp" "$nat"
+    fi
+  done
+  MERGED="$DATA/${SEQ}_events_in${SUF2}.bag"
+  echo ">> merging L+R (byte-preserving)"
+  rm -f "$MERGED"
+  "$PY" "$ROOT/scripts/merge_dvs_bags.py" "$MERGED" \
+        "$DATA/${SEQ}_left_event_dvsnat${SUF2}.bag" "$DATA/${SEQ}_right_event_dvsnat${SUF2}.bag"
+  echo ">> repacking with UPSTREAM events_repacking_tool (1000 Hz) + IMU merge"
+  rm -f "$UP.tmp"
+  docker run --rm --entrypoint /bin/bash -v "$DATA":/data \
+    "$IMAGE" -c "source /opt/ros/noetic/setup.bash && source /catkin_ws/devel/setup.bash && \
+      /catkin_ws/devel/lib/events_repacking_tool/EventMessageEditor \
+      /data/$(basename "$MERGED") /data/${SEQ}_imu.bag /data/$(basename "$UP").tmp"
+  mv "$UP.tmp" "$UP"
+  rm -f "$MERGED" "$DATA/${SEQ}_left_event_dvsnat${SUF2}.bag" "$DATA/${SEQ}_right_event_dvsnat${SUF2}.bag"
+fi
+[ -s "$UP" ] || { echo "ERROR: upstream repack failed for $UP"; exit 1; }
 
 echo "== running ESVO2 on vector/$SEQ (headless, CPU, play rate ${PLAY_RATE:-0.25}x)"
 docker run --rm --entrypoint /bin/bash \
   -v "$DATA":/data:ro \
   -v "$OUT":/out \
-  -v "$HERE/launch/system_vector_headless.launch":/work/system_vector_headless.launch:ro \
+  -v "$LAUNCH":/work/system_vector_headless.launch:ro \
   -v "$HERE/run_in_container.sh":/work/run_in_container.sh:ro \
+  "${XMOUNTS[@]}" \
   -e OUT_DIR=/out \
   -e PLAY_RATE="${PLAY_RATE:-0.25}" -e INIT_WAIT="${INIT_WAIT:-10}" -e DRAIN_WAIT="${DRAIN_WAIT:-8}" \
   "$IMAGE" /work/run_in_container.sh \
-  "/data/${SEQ}_left_event_dvs1k.bag" "/data/${SEQ}_right_event_dvs1k.bag" "/data/${SEQ}_imu.bag"
+  "/data/${SEQ}_upstream1k${SUF2}.bag"
 
 # trajectory: prefer the node's own file; fall back to the recorded pose topic
 if [ -s "$OUT/stamped_traj_estimate.txt" ]; then

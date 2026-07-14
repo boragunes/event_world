@@ -3,42 +3,42 @@
   "algo": "esvo2",
   "dataset": null,
   "sequence": null,
-  "generated_utc": "2026-07-14T06:48:19+00:00",
+  "generated_utc": "2026-07-14T09:26:28+00:00",
   "evo_version": "v1.36.5",
   "est_file": "esvo2/vector/corner-slow/stamped_traj.tum",
   "gt_file": "data/deio_vector/corner_slow1/poses_evs_left.txt",
   "alignment": "se3",
-  "n_poses_matched": 3922,
-  "n_poses_est_raw": 3922,
-  "gt_trajectory_length_m": 1.4156,
-  "duration_s": 39.25,
+  "n_poses_matched": 3876,
+  "n_poses_est_raw": 3876,
+  "gt_trajectory_length_m": 1.4127,
+  "duration_s": 38.783,
   "ate_translation_m": {
-    "rmse": 10.259489,
-    "mean": 1.178324,
-    "median": 0.413098,
-    "std": 10.191598,
-    "min": 0.301278,
-    "max": 270.421639,
-    "sse": 412818.414736
+    "rmse": 5.566407,
+    "mean": 0.45358,
+    "median": 0.191883,
+    "std": 5.547896,
+    "min": 0.114006,
+    "max": 195.319073,
+    "sse": 120097.408704
   },
   "rotation_deg": {
-    "body_frame_offset_deg": 35.282,
+    "body_frame_offset_deg": 143.953,
     "residual_after_offset": {
-      "rmse": 19.076764,
-      "mean": 9.207075,
-      "median": 7.010738,
-      "std": 16.707864,
-      "min": 0.761088,
-      "max": 168.713341,
-      "sse": 1427305.730484
+      "rmse": 20.592215,
+      "mean": 18.277964,
+      "median": 17.310821,
+      "std": 9.48448,
+      "min": 4.564065,
+      "max": 171.808982,
+      "sse": 1643576.380917
     },
     "note": "absolute orientation error AFTER removing the constant estimator-vs-GT body-frame offset"
   },
   "paper_metric": {
-    "MPE_percent_ate": 724.7439,
-    "MPE_percent_ate_mean": 83.2383,
-    "MPE_percent_rel_1m": 4.6848,
-    "MRE_deg_per_m_rel_1m": 10.48395,
+    "MPE_percent_ate": 394.0294,
+    "MPE_percent_ate_mean": 32.1076,
+    "MPE_percent_rel_1m": 5.5192,
+    "MRE_deg_per_m_rel_1m": 24.48099,
     "note": "MPE_ate = 100*ATE_trans_RMSE/length; MPE_ate_mean = 100*mean(ATE_trans)/length (DEIO/authors' convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
   }
 }

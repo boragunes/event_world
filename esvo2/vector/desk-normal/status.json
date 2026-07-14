@@ -1,7 +1,9 @@
 {
   "sequence": "desk-normal",
+  "tier": "released config",
   "status": "ok",
-  "ATE_cm": 20.4,
+  "ATE_cm": 16.42,
+  "coverage_pct": 97.5,
   "paper_ATE_cm": 16.47,
-  "recipe": "1kHz event chunks + 0.25x playback (uniform); SE3 vs event-frame GT"
+  "recipe": "UPSTREAM events_repacking_tool 1kHz; 0.25x playback; SE3 vs event-frame GT"
 }

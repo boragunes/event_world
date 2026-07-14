@@ -1,7 +1,9 @@
 {
   "sequence": "sofa-fast",
+  "tier": "released config",
   "status": "diverged",
-  "ATE_cm": 83993.35,
+  "ATE_cm": 68282.08,
+  "coverage_pct": 95.9,
   "paper_ATE_cm": null,
-  "recipe": "1kHz event chunks + 0.25x playback (uniform); SE3 vs event-frame GT"
+  "recipe": "UPSTREAM events_repacking_tool 1kHz; 0.25x playback; SE3 vs event-frame GT"
 }

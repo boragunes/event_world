@@ -1,7 +1,9 @@
 {
   "sequence": "desk-fast",
+  "tier": "released config",
   "status": "diverged",
-  "ATE_cm": 1332163787.06,
+  "ATE_cm": 20149.97,
+  "coverage_pct": 99.1,
   "paper_ATE_cm": null,
-  "recipe": "1kHz event chunks + 0.25x playback (uniform); SE3 vs event-frame GT"
+  "recipe": "UPSTREAM events_repacking_tool 1kHz; 0.25x playback; SE3 vs event-frame GT"
 }

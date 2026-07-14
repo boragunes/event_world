@@ -3,42 +3,42 @@
   "algo": "esvo2",
   "dataset": null,
   "sequence": null,
-  "generated_utc": "2026-07-14T07:53:16+00:00",
+  "generated_utc": "2026-07-14T10:02:19+00:00",
   "evo_version": "v1.36.5",
   "est_file": "esvo2/vector/robot-fast/stamped_traj.tum",
   "gt_file": "data/deio_vector/robot_fast1/poses_evs_left.txt",
   "alignment": "se3",
-  "n_poses_matched": 2977,
-  "n_poses_est_raw": 2977,
-  "gt_trajectory_length_m": 24.4162,
-  "duration_s": 29.775,
+  "n_poses_matched": 2975,
+  "n_poses_est_raw": 2975,
+  "gt_trajectory_length_m": 24.4131,
+  "duration_s": 29.75,
   "ate_translation_m": {
-    "rmse": 251.582535,
-    "mean": 224.518798,
-    "median": 228.970856,
-    "std": 113.512472,
-    "min": 15.631808,
-    "max": 466.582457,
-    "sse": 188425559.039635
+    "rmse": 30187.210684,
+    "mean": 18597.069465,
+    "median": 10985.857902,
+    "std": 23778.492303,
+    "min": 2661.322686,
+    "max": 130704.014676,
+    "sse": 2711021374468.671
   },
   "rotation_deg": {
-    "body_frame_offset_deg": 62.568,
+    "body_frame_offset_deg": 109.859,
     "residual_after_offset": {
-      "rmse": 65.29986,
-      "mean": 60.151099,
-      "median": 60.446862,
-      "std": 25.414897,
-      "min": 7.263698,
-      "max": 127.595738,
-      "sse": 12694141.568137
+      "rmse": 87.493161,
+      "mean": 73.135008,
+      "median": 55.720627,
+      "std": 48.024201,
+      "min": 3.780881,
+      "max": 179.997078,
+      "sse": 22773783.425478
     },
     "note": "absolute orientation error AFTER removing the constant estimator-vs-GT body-frame offset"
   },
   "paper_metric": {
-    "MPE_percent_ate": 1030.3939,
-    "MPE_percent_ate_mean": 919.5503,
-    "MPE_percent_rel_1m": 97.3089,
-    "MRE_deg_per_m_rel_1m": 8.50845,
+    "MPE_percent_ate": 123651.4481,
+    "MPE_percent_ate_mean": 76176.4508,
+    "MPE_percent_rel_1m": 96.3869,
+    "MRE_deg_per_m_rel_1m": 10.82142,
     "note": "MPE_ate = 100*ATE_trans_RMSE/length; MPE_ate_mean = 100*mean(ATE_trans)/length (DEIO/authors' convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
   }
 }

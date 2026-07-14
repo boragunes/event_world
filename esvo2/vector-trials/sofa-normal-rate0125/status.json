@@ -1,7 +1,9 @@
 {
   "sequence": "sofa-normal-rate0125",
+  "tier": "diagnostic: 0.125x playback",
   "status": "diverged",
-  "ATE_cm": 379986195574.68,
-  "paper_ATE_cm": 40.28,
-  "recipe": "1kHz event chunks + 0.25x playback (uniform); SE3 vs event-frame GT"
+  "ATE_cm": 17037.38,
+  "coverage_pct": 98.2,
+  "recipe": "UPSTREAM events_repacking_tool 1kHz; SE3 vs event-frame GT",
+  "note": "diverges at 0.125x too -> not compute-bound"
 }

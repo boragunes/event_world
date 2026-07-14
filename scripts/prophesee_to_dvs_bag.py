@@ -87,7 +87,21 @@ def main():
     ap.add_argument("--out-topic", required=True)
     ap.add_argument("--repack-hz", type=float, default=0.0,
                     help="re-bin events into 1/hz-second frames (0 = keep native packaging)")
+    ap.add_argument("--downscale", type=int, default=1,
+                    help="integer spatial downscale N: x//N, y//N, width/N, height/N "
+                         "(ESVO2 authors' fast-sequence recipe, NAIL-HNU/ESVO2 issue #9)")
     a = ap.parse_args()
+
+    if a.downscale > 1:
+        import numpy as np
+        _EV_DT = np.dtype([("x", "<u2"), ("y", "<u2"), ("sec", "<u4"),
+                           ("nsec", "<u4"), ("pol", "u1")])
+
+        def downscale_block(block, n):
+            arr = np.frombuffer(block, dtype=_EV_DT).copy()
+            arr["x"] //= n
+            arr["y"] //= n
+            return arr.tobytes()
 
     ts = get_typestore(Stores.ROS1_NOETIC)
     types = {}
@@ -114,6 +128,11 @@ def main():
             wconn = writer.add_connection(a.out_topic, "dvs_msgs/msg/EventArray", typestore=ts)
             if a.repack_hz <= 0:
                 for conn, t, raw in reader.messages(connections=src):
+                    if a.downscale > 1:
+                        seq_, sec, nsec, fid, h, w, c, ev = parse_envelope(raw)
+                        raw = build_envelope(seq_, sec, nsec, fid, h // a.downscale,
+                                             w // a.downscale, c,
+                                             downscale_block(ev, a.downscale))
                     writer.write(wconn, t, raw); n_out += 1
             else:
                 period = int(round(1e9 / a.repack_hz))
@@ -121,6 +140,10 @@ def main():
                 buf, cnt, W, H, seq = [], 0, 0, 0, 0
                 for conn, t, raw in reader.messages(connections=src):
                     _, sec, nsec, _, h, w, c, ev = parse_envelope(raw)
+                    if a.downscale > 1:
+                        ev = downscale_block(ev, a.downscale)
+                        h //= a.downscale
+                        w //= a.downscale
                     W, H = w, h
                     tns = sec * 1_000_000_000 + nsec
                     if win_end is None:

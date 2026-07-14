@@ -1,7 +1,9 @@
 {
   "sequence": "mountain-normal",
+  "tier": "released config",
   "status": "ok",
-  "ATE_cm": 24.42,
+  "ATE_cm": 35.62,
+  "coverage_pct": 99.4,
   "paper_ATE_cm": null,
-  "recipe": "1kHz event chunks + 0.25x playback (uniform); SE3 vs event-frame GT"
+  "recipe": "UPSTREAM events_repacking_tool 1kHz; 0.25x playback; SE3 vs event-frame GT"
 }

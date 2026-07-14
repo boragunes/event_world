@@ -72,9 +72,9 @@ NODES
 [1mprocess[esvo2_Mapping-3]: started with pid [127][0m
 [1mprocess[esvo2_Tracking-4]: started with pid [128][0m
 [esvo2_Tracking-4] killing on exit
-[image_representation_right-2] killing on exit
 [esvo2_Mapping-3] killing on exit
 [image_representation_left-1] killing on exit
+[image_representation_right-2] killing on exit
 shutting down processing monitor...
 ... shutting down processing monitor complete
 [1mdone[0m
