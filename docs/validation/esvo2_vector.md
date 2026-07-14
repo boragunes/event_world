@@ -41,31 +41,48 @@ geometrically-forced dependent parameter (`BM_max_disparity` 300→150 — dispa
 | hdr-fast | *not in paper* | ✗ diverged (147 m) | ✗ diverged (136 m) |
 | mountain-fast | *not in paper* | ✗ diverged (48,000 km) | ✗ dead at 0.8 s (2 % coverage) |
 
-† *sofa-normal*: diverges at the uniform 0.25× and at a 0.125× diagnostic
-(`esvo2/vector-trials/`) — not compute-bound. The paper's own 40.28 cm is already ~5× their other
-normal-sequence numbers; the sequence (highest event rate of the set) is marginal for the method
-and its released form does not reproduce it.
+† *sofa-normal — not reproducible from the release, now exhaustively*: diverges at 0.25× and
+0.125×, and **also with upstream's README step-4 hot-pixel filter applied** (105+101 genuine hot
+pixels removed; `esvo2/vector-trials/sofa-normal-hotpixel`). Yet the authors' *released trajectory*
+for sofa-normal scores exactly 40.28 under their own protocol — the configuration that produced it
+is not in the release (their issue-#11 admission, verbatim below).
 
-‡ *corner-slow — end-of-sequence event starvation*: centimetre-accurate for 38.4 of 38.8 s
-(**7.69 cm** diagnostic ATE on that span, same order as the paper's 2.15), then the near-static
-ending starves the time surface and the direct optimizer runs away in the final fraction of a
-second. A shorter stop-drain does not prevent it — the runaway is in-sequence. Upstream's
-interactive workflow (a human stops the system) implicitly crops this; our headless uniform
-harness reports the full trajectory. Committed number = full trajectory.
+‡ *corner-slow — decomposed*: (a) the catastrophic full-trajectory number is an end-of-sequence
+event-starvation runaway — and **the authors' own released trajectory stops at 38.3 s, before that
+ending**, so it is excluded from their published evaluation too; (b) matched to their exact span,
+our runs give a *stable* **6.38 / 7.63 / 7.82 cm across three trials** vs their 2.15 — a systematic
+~3× residual, not variance, consistent with the release↔paper parameter gap they acknowledge.
 
-§ *robot-fast — the paper's one fast-sequence claim does not reproduce* under the complete union
-of everything the authors have publicly disclosed: released code + their own repacking tool + the
-issue-#9 fast profile. The authors' own words on the release↔paper relationship (issue #11, on
-TUM-VIE reproduction): *"it is likely that the parameters in the released version differ slightly
-from those we used to generate the published results."* Issue #6 further discloses that their
-MVSEC numbers were computed on a *segment* of the sequence.
+§ *robot-fast*: diverges under the complete union of everything disclosed (released code + their
+repacking tool + the issue-#9 fast profile) — and notably, robot-fast is the **only Table VI VECtor
+sequence with no released trajectory and no released GT** in their `results/` folder.
+
+## Reconciliation against the authors' released trajectories (`ESVO2/results/`)
+
+The repo ships their 5 VECtor trajectories + the GT they evaluated against. Re-evaluating them
+ourselves (evo, SE3): **their trajectories vs their GT reproduce Table VI to the digit**
+(2.15 / 16.47 / 4.81 / 40.28 / 13.53) — so their protocol is plain SE3 ATE, their GT ≈ our
+event-camera-frame GT (re-evaluating their trajectories against *our* GT shifts results by
+< 0.5 cm), and our evaluation pipeline is exactly comparable. The complete decomposition:
+
+| sequence | paper | their traj / our GT | ours, span-matched | verdict |
+|---|---|---|---|---|
+| desk-normal | 16.47 | 16.94 | **16.42** | reproduced exactly |
+| robot-normal | 4.81 | 4.94 | **6.10** | reproduced (1.3×) |
+| hdr-normal | 13.53 | 13.41 | **18.67** | reproduced (1.4×) |
+| corner-slow | 2.15 | 2.61 | **6.4–7.8** (3 trials) | ~3× residual; tail excluded by *their* span too |
+| sofa-normal | 40.28 | 40.26 | ✗ diverges (all disclosed levers) | released config ≠ published run |
+| robot-fast | 24.18 | *not released* | ✗ diverges (both tiers) | nothing released to verify against |
 
 ## Reading
 1. **Reproduced (3/6 paper sequences)**: desk-normal exactly (16.42 vs 16.47);
    robot-normal / hdr-normal within 1.3–1.4× — under a fully faithful input chain.
-2. **Not reproduced (3/6)**: corner-slow (end-starvation runaway; accurate until the final
-   instant), sofa-normal (diverges at any rate), robot-fast (diverges under every disclosed
-   configuration). Consistent with the authors' issue-#11 admission.
+2. **Explained but not fully reproduced (3/6)**: corner-slow reaches a stable 6.4–7.8 cm on the
+   authors' own evaluation span (the tail runaway is outside *their* published span too) — a ~3×
+   systematic residual vs 2.15; sofa-normal and robot-fast diverge under every publicly disclosed
+   lever (incl. their hot-pixel filter), while their released sofa trajectory scores 40.28 and
+   robot-fast ships no trajectory at all. All three are consistent with the authors' issue-#11
+   admission that released parameters differ from those behind the published results.
 3. **Fast motion**: the direct method diverges on **all five** fast sequences in both tiers. The
    cross-method taxonomy on identical data stands:
 

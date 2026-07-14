@@ -1,0 +1,6 @@
+{
+  "status": "diverged (tail); span-matched 7.82 cm",
+  "ATE_cm_their_span": 7.82,
+  "tier": "diagnostic",
+  "recipe": "UPSTREAM events_repacking_tool 1kHz; 0.25x; SE3 vs event-frame GT"
+}

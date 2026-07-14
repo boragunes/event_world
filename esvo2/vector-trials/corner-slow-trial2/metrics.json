@@ -1,0 +1,44 @@
+{
+  "label": "corner-t2",
+  "algo": "esvo2",
+  "dataset": null,
+  "sequence": null,
+  "generated_utc": "2026-07-14T12:32:02+00:00",
+  "evo_version": "v1.36.5",
+  "est_file": "../../../tmp/claude-1000/-home-ogam-event-world/7cbb5a11-e588-4499-bdef-4fa414d4f124/scratchpad/corner_trial2/stamped_traj_estimate.txt",
+  "gt_file": "data/deio_vector/corner_slow1/poses_evs_left.txt",
+  "alignment": "se3",
+  "n_poses_matched": 3894,
+  "n_poses_est_raw": 3894,
+  "gt_trajectory_length_m": 1.4139,
+  "duration_s": 38.983,
+  "ate_translation_m": {
+    "rmse": 18.557041,
+    "mean": 2.049388,
+    "median": 1.000415,
+    "std": 18.443529,
+    "min": 0.94751,
+    "max": 487.927688,
+    "sse": 1340952.491883
+  },
+  "rotation_deg": {
+    "body_frame_offset_deg": 117.645,
+    "residual_after_offset": {
+      "rmse": 21.55891,
+      "mean": 17.137195,
+      "median": 15.751251,
+      "std": 13.080639,
+      "min": 2.946725,
+      "max": 174.017794,
+      "sse": 1809878.941217
+    },
+    "note": "absolute orientation error AFTER removing the constant estimator-vs-GT body-frame offset"
+  },
+  "paper_metric": {
+    "MPE_percent_ate": 1312.4621,
+    "MPE_percent_ate_mean": 144.9447,
+    "MPE_percent_rel_1m": 5.4201,
+    "MRE_deg_per_m_rel_1m": 23.74903,
+    "note": "MPE_ate = 100*ATE_trans_RMSE/length; MPE_ate_mean = 100*mean(ATE_trans)/length (DEIO/authors' convention); *_rel_1m = mean drift over 1 m segments after body-frame correction"
+  }
+}

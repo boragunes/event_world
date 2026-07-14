@@ -1,0 +1,7 @@
+{
+  "status": "diverged",
+  "ATE_cm": 31023.5,
+  "note": "upstream README step-4 dvs_hot_pixel_filter applied (105+101 hot pixels removed, 0.14% events); still diverges -> filter does not explain their released 40.28",
+  "tier": "diagnostic",
+  "recipe": "UPSTREAM events_repacking_tool 1kHz; 0.25x; SE3 vs event-frame GT"
+}
