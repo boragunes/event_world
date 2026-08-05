@@ -3,21 +3,22 @@
 % Put these macros in the preamble:
 %   \newcommand{\nr}{{\footnotesize\textsc{n/r}}}  % not reported in any source
 %   \newcommand{\src}[1]{\textsuperscript{#1}}
+%   \newcommand{\fail}{{\footnotesize\textsc{fail}}}  % source reports a failure
 % A ready-made preamble block is in paper_tables/preamble.tex
 
 \begin{table}[t]
 \centering
-\caption{Absolute trajectory error (ATE, cm) on RPG for stereo/metric event odometry baselines, taken from the literature. All values are SE(3)-aligned full-trajectory results; monocular up-to-scale (\mbox{Sim(3)}) results are excluded as they are not the same quantity. Where several papers report the same method and sequence we quote the best published value. Superscripts give the source of each number, which is not always the paper proposing the method. \nr{} marks a cell no surveyed source reports; such cells must be produced by us or carry a reason code.}
+\caption{Absolute trajectory error (ATE, cm) on RPG for stereo/metric event odometry baselines, taken from the literature. All values are SE(3)-aligned full-trajectory results; monocular up-to-scale (\mbox{Sim(3)}) results are excluded as they are not the same quantity. Where several papers report the same method and sequence we quote the best published value, so each column is a \emph{composite upper bound} over all published results rather than any single reported configuration: no baseline is understated, and no one configuration ever achieved these numbers simultaneously. Superscripts give the source of each number, which is not always the paper proposing the method. \nr{} marks a cell no surveyed source reports; such cells must be produced by us or carry a reason code. \fail{} marks a cell a source explicitly reports as a failure, which is a measured outcome rather than missing data. Every ES-PTAM, ESIO, ESVIO value is second-hand: its own paper is not the source of any cell here.}
 \label{tab:lit-rpg}
 \begin{tabular}{lrrrrrr}
 \toprule
-Sequence & Stereo-DEVO\,\cite{zhong2025stereodevo} & ESVO2\,\cite{niu2025esvo2} & ESVIO\,\cite{chen2023esvio} & ESIO\,\cite{chen2023esvio} & DEIO\,\cite{guan2025deio} & ES-PTAM\,\cite{esptam_FIXME} \\
+Sequence & Stereo-DEVO\,\cite{zhong2025stereodevo} & ESVO2\,\cite{niu2025esvo2} & ESVIO\,\cite{chen2023esvio} & ESIO\,\cite{chen2023esvio} & DEIO\,\cite{guan2025deio} & ES-PTAM\,\cite{ghosh2024esptam} \\
 \midrule
 rpg\_box & 1.92\src{a} & 4.31\src{b} & 4.41\src{b} & 11.38\src{b} & \nr & 4.06\src{b} \\
 rpg\_monitor & 0.91\src{a} & 2.31\src{b} & 3.48\src{b} & 7.87\src{b} & \nr & 2.34\src{b} \\
 rpg\_bin & 1.16\src{a} & 2.27\src{b} & 2.28\src{b} & 7.08\src{b} & \nr & 2.57\src{b} \\
 rpg\_desk & 1.46\src{a} & 1.57\src{b} & 2.03\src{b} & 3.16\src{b} & \nr & 2.84\src{b} \\
-rpg\_reader & 3.78\src{a} & 2.68\src{b} & \nr & \nr & \nr & \nr \\
+rpg\_reader & 3.78\src{a} & 2.68\src{b} & \nr & \fail\src{b} & \nr & \nr \\
 \bottomrule
 \end{tabular}
 \\[2pt] {\footnotesize Sources: \textsuperscript{a}\cite{zhong2025stereodevo}, \textsuperscript{b}\cite{niu2025esvo2}.}
@@ -25,60 +26,61 @@ rpg\_reader & 3.78\src{a} & 2.68\src{b} & \nr & \nr & \nr & \nr \\
 
 \begin{table}[t]
 \centering
-\caption{Absolute trajectory error (ATE, cm) on MVSEC for stereo/metric event odometry baselines, taken from the literature. All values are SE(3)-aligned full-trajectory results; monocular up-to-scale (\mbox{Sim(3)}) results are excluded as they are not the same quantity. Where several papers report the same method and sequence we quote the best published value. Superscripts give the source of each number, which is not always the paper proposing the method. \nr{} marks a cell no surveyed source reports; such cells must be produced by us or carry a reason code.}
+\caption{Absolute trajectory error (ATE, cm) on MVSEC for stereo/metric event odometry baselines, taken from the literature. All values are SE(3)-aligned full-trajectory results; monocular up-to-scale (\mbox{Sim(3)}) results are excluded as they are not the same quantity. Where several papers report the same method and sequence we quote the best published value, so each column is a \emph{composite upper bound} over all published results rather than any single reported configuration: no baseline is understated, and no one configuration ever achieved these numbers simultaneously. Superscripts give the source of each number, which is not always the paper proposing the method. \nr{} marks a cell no surveyed source reports; such cells must be produced by us or carry a reason code. \fail{} marks a cell a source explicitly reports as a failure, which is a measured outcome rather than missing data. Every ES-PTAM, ESIO, ESVIO value is second-hand: its own paper is not the source of any cell here.}
 \label{tab:lit-mvsec}
 \begin{tabular}{lrrrrrr}
 \toprule
-Sequence & Stereo-DEVO\,\cite{zhong2025stereodevo} & ESVO2\,\cite{niu2025esvo2} & ESVIO\,\cite{chen2023esvio} & ESIO\,\cite{chen2023esvio} & DEIO\,\cite{guan2025deio} & ES-PTAM\,\cite{esptam_FIXME} \\
+Sequence & Stereo-DEVO\,\cite{zhong2025stereodevo} & ESVO2\,\cite{niu2025esvo2} & ESVIO\,\cite{chen2023esvio} & ESIO\,\cite{chen2023esvio} & DEIO\,\cite{guan2025deio} & ES-PTAM\,\cite{ghosh2024esptam} \\
 \midrule
 indoor\_flying1 & 3.76\src{a} & 7.63\src{b} & 9.63\src{b} & 820.4\src{b} & 7.52\src{a} & 15.02\src{b} \\
 indoor\_flying2 & 8.00\src{a} & 10.05\src{b} & \nr & 417.9\src{b} & 6.96\src{a} & \nr \\
-indoor\_flying3 & 5.57\src{a} & 7.35\src{b} & 8.06\src{b} & \nr & 29.75\src{a} & \nr \\
+indoor\_flying3 & 5.57\src{a} & 7.35\src{b} & 8.06\src{b} & \fail\src{b} & 29.75\src{a} & \nr \\
 indoor\_flying4 & 4.57\src{a} & 5.59\src{b} & \nr & 173.5\src{b} & 12.71\src{a} & \nr \\
 \bottomrule
 \end{tabular}
 \\[2pt] {\footnotesize Sources: \textsuperscript{a}\cite{zhong2025stereodevo}, \textsuperscript{b}\cite{niu2025esvo2}.}
+\par\smallskip {\footnotesize \textbf{Sequence caveat.} Sources evaluate the \emph{edited} MVSEC bags (\texttt{indoor\_flying*\_data\_edited}), and further restrict scoring to a sub-window of those: the trajectories released with~\cite{niu2025esvo2} span 25.8, 24.2, 25.0 and 5.9\,s against ground truth of 70.3, 84.9, 94.0 and 19.8\,s respectively. Numbers here are therefore $\approx$26--37\% windows, not whole sequences, and are not comparable with a full-sequence run.}
 \end{table}
 
 \begin{table}[t]
 \centering
-\caption{Absolute trajectory error (ATE, cm) on DSEC for stereo/metric event odometry baselines, taken from the literature. All values are SE(3)-aligned full-trajectory results; monocular up-to-scale (\mbox{Sim(3)}) results are excluded as they are not the same quantity. Where several papers report the same method and sequence we quote the best published value. Superscripts give the source of each number, which is not always the paper proposing the method. \nr{} marks a cell no surveyed source reports; such cells must be produced by us or carry a reason code.}
+\caption{Absolute trajectory error (ATE, cm) on DSEC for stereo/metric event odometry baselines, taken from the literature. All values are SE(3)-aligned full-trajectory results; monocular up-to-scale (\mbox{Sim(3)}) results are excluded as they are not the same quantity. Where several papers report the same method and sequence we quote the best published value, so each column is a \emph{composite upper bound} over all published results rather than any single reported configuration: no baseline is understated, and no one configuration ever achieved these numbers simultaneously. Superscripts give the source of each number, which is not always the paper proposing the method. \nr{} marks a cell no surveyed source reports; such cells must be produced by us or carry a reason code. \fail{} marks a cell a source explicitly reports as a failure, which is a measured outcome rather than missing data. Every ES-PTAM, ESIO, ESVIO value is second-hand: its own paper is not the source of any cell here.}
 \label{tab:lit-dsec}
 \begin{tabular}{lrrrrrr}
 \toprule
-Sequence & Stereo-DEVO\,\cite{zhong2025stereodevo} & ESVO2\,\cite{niu2025esvo2} & ESVIO\,\cite{chen2023esvio} & ESIO\,\cite{chen2023esvio} & DEIO\,\cite{guan2025deio} & ES-PTAM\,\cite{esptam_FIXME} \\
+Sequence & Stereo-DEVO\,\cite{zhong2025stereodevo} & ESVO2\,\cite{niu2025esvo2} & ESVIO\,\cite{chen2023esvio} & ESIO\,\cite{chen2023esvio} & DEIO\,\cite{guan2025deio} & ES-PTAM\,\cite{ghosh2024esptam} \\
 \midrule
 city04\_a & 96.86\src{a} & 56.17\src{b} & 201.5\src{b} & 543.5\src{c} & 80.60\src{c} & 131.6\src{c} \\
 city04\_b & 17.65\src{a} & 73.83\src{b} & 48.33\src{b} & 295.1\src{c} & 35.40\src{c} & 29.02\src{c} \\
 city04\_c & 481.6\src{a} & 508.7\src{b} & 1400.8\src{b} & 896.2\src{c} & 413.8\src{c} & 1184.4\src{c} \\
 city04\_d & 406.2\src{a} & 546.6\src{b} & 921.7\src{c} & 2977.0\src{c} & 207.6\src{c} & 1053.9\src{c} \\
-city09\_a & 197.0\src{a} & 1183.0\src{a} & 328.5\src{a} & \nr & \nr & \nr \\
+city09\_a & 197.0\src{a} & 1183.0\src{a} & 328.5\src{a} & \fail\src{a} & \nr & \fail\src{a} \\
 city09\_b & 267.8\src{a} & 87.83\src{b} & 3481.5\src{a} & 2887.8\src{a} & \nr & 195.1\src{b} \\
-city09\_c & 931.1\src{a} & 1648.3\src{a} & 8043.5\src{a} & \nr & \nr & 3673.8\src{a} \\
-city09\_d & 564.3\src{a} & 1920.4\src{a} & 1677.1\src{a} & 1766.2\src{a} & \nr & \nr \\
+city09\_c & 931.1\src{a} & 1648.3\src{a} & 8043.5\src{a} & \fail\src{a} & \nr & 3673.8\src{a} \\
+city09\_d & 564.3\src{a}\textsuperscript{$\dagger$} & 1920.4\src{a} & 1677.1\src{a} & 1766.2\src{a} & \nr & \fail\src{a} \\
 city09\_e & 246.3\src{a} & 1075.1\src{a} & 438.2\src{a} & 4201.0\src{a} & \nr & 1480.8\src{a} \\
 city11\_a & 47.56\src{a} & 48.77\src{b} & 406.1\src{b} & 107.4\src{b} & \nr & 117.9\src{a} \\
-city11\_b & 282.1\src{a} & 441.8\src{b} & \nr & 300.1\src{b} & \nr & \nr \\
+city11\_b & 282.1\src{a} & 441.8\src{b} & \nr & 300.1\src{b} & \nr & \fail\src{a} \\
 \bottomrule
 \end{tabular}
-\\[2pt] {\footnotesize Sources: \textsuperscript{a}\cite{zhong2025stereodevo}, \textsuperscript{b}\cite{niu2025esvo2}, \textsuperscript{c}\cite{guan2025deio}.}
+\\[2pt] {\footnotesize Sources: \textsuperscript{a}\cite{zhong2025stereodevo}, \textsuperscript{b}\cite{niu2025esvo2}, \textsuperscript{c}\cite{guan2025deio}. \\ \textsuperscript{$\dagger$}The source reports two different values for this cell: 625.81\,cm in its Table~II and 564.33\,cm in its Table~III. We quote the lower under the best-published-value rule.}
 \end{table}
 
 \begin{table}[t]
 \centering
-\caption{Absolute trajectory error (ATE, cm) on VECtor for stereo/metric event odometry baselines, taken from the literature. All values are SE(3)-aligned full-trajectory results; monocular up-to-scale (\mbox{Sim(3)}) results are excluded as they are not the same quantity. Where several papers report the same method and sequence we quote the best published value. Superscripts give the source of each number, which is not always the paper proposing the method. \nr{} marks a cell no surveyed source reports; such cells must be produced by us or carry a reason code.}
+\caption{Absolute trajectory error (ATE, cm) on VECtor for stereo/metric event odometry baselines, taken from the literature. All values are SE(3)-aligned full-trajectory results; monocular up-to-scale (\mbox{Sim(3)}) results are excluded as they are not the same quantity. Where several papers report the same method and sequence we quote the best published value, so each column is a \emph{composite upper bound} over all published results rather than any single reported configuration: no baseline is understated, and no one configuration ever achieved these numbers simultaneously. Superscripts give the source of each number, which is not always the paper proposing the method. \nr{} marks a cell no surveyed source reports; such cells must be produced by us or carry a reason code. \fail{} marks a cell a source explicitly reports as a failure, which is a measured outcome rather than missing data. Every ES-PTAM, ESIO, ESVIO value is second-hand: its own paper is not the source of any cell here.}
 \label{tab:lit-vector}
 \begin{tabular}{lrrrrrr}
 \toprule
-Sequence & Stereo-DEVO\,\cite{zhong2025stereodevo} & ESVO2\,\cite{niu2025esvo2} & ESVIO\,\cite{chen2023esvio} & ESIO\,\cite{chen2023esvio} & DEIO\,\cite{guan2025deio} & ES-PTAM\,\cite{esptam_FIXME} \\
+Sequence & Stereo-DEVO\,\cite{zhong2025stereodevo} & ESVO2\,\cite{niu2025esvo2} & ESVIO\,\cite{chen2023esvio} & ESIO\,\cite{chen2023esvio} & DEIO\,\cite{guan2025deio} & ES-PTAM\,\cite{ghosh2024esptam} \\
 \midrule
 corner\_slow & 1.06\src{a} & 2.15\src{b} & 1.43\src{a} & 2.67\src{b} & 10.70\src{a} & \nr \\
 robot\_normal & 3.16\src{a} & 4.81\src{b} & 4.95\src{a} & 5.17\src{b} & \nr & \nr \\
-desk\_normal & 6.48\src{a} & 16.47\src{b} & 6.00\src{a} & \nr & 254.8\src{a} & \nr \\
+desk\_normal & 6.48\src{a} & 16.47\src{b} & 6.00\src{a} & \fail\src{b} & 254.8\src{a} & \nr \\
 sofa\_normal & 7.18\src{a} & 40.28\src{b} & 5.06\src{a} & 43.94\src{b} & \nr & \nr \\
 hdr\_normal & 6.71\src{a} & 13.53\src{b} & 1.96\src{a} & 27.85\src{b} & \nr & \nr \\
-corridors\_dolly & 196.5\src{a} & \nr & 92.04\src{a} & \nr & 492.6\src{d} & \nr \\
-units\_dolly & 444.5\src{a} & \nr & 872.1\src{a} & \nr & 826.4\src{d} & \nr \\
+corridors\_dolly & 196.5\src{a} & \fail\src{a} & 92.04\src{a} & \fail\src{a} & 492.6\src{d} & \nr \\
+units\_dolly & 444.5\src{a} & \fail\src{a} & 872.1\src{a} & \fail\src{a} & 826.4\src{d} & \nr \\
 \bottomrule
 \end{tabular}
 \\[2pt] {\footnotesize Sources: \textsuperscript{a}\cite{zhong2025stereodevo}, \textsuperscript{b}\cite{niu2025esvo2}, \textsuperscript{d}\cite{burkhardt2025superevent}.}
@@ -86,17 +88,17 @@ units\_dolly & 444.5\src{a} & \nr & 872.1\src{a} & \nr & 826.4\src{d} & \nr \\
 
 \begin{table}[t]
 \centering
-\caption{Absolute trajectory error (ATE, cm) on TUM-VIE for stereo/metric event odometry baselines, taken from the literature. All values are SE(3)-aligned full-trajectory results; monocular up-to-scale (\mbox{Sim(3)}) results are excluded as they are not the same quantity. Where several papers report the same method and sequence we quote the best published value. Superscripts give the source of each number, which is not always the paper proposing the method. \nr{} marks a cell no surveyed source reports; such cells must be produced by us or carry a reason code.}
+\caption{Absolute trajectory error (ATE, cm) on TUM-VIE for stereo/metric event odometry baselines, taken from the literature. All values are SE(3)-aligned full-trajectory results; monocular up-to-scale (\mbox{Sim(3)}) results are excluded as they are not the same quantity. Where several papers report the same method and sequence we quote the best published value, so each column is a \emph{composite upper bound} over all published results rather than any single reported configuration: no baseline is understated, and no one configuration ever achieved these numbers simultaneously. Superscripts give the source of each number, which is not always the paper proposing the method. \nr{} marks a cell no surveyed source reports; such cells must be produced by us or carry a reason code. \fail{} marks a cell a source explicitly reports as a failure, which is a measured outcome rather than missing data. Every ES-PTAM, ESIO, ESVIO value is second-hand: its own paper is not the source of any cell here.}
 \label{tab:lit-tumvie}
 \begin{tabular}{lrrrrrr}
 \toprule
-Sequence & Stereo-DEVO\,\cite{zhong2025stereodevo} & ESVO2\,\cite{niu2025esvo2} & ESVIO\,\cite{chen2023esvio} & ESIO\,\cite{chen2023esvio} & DEIO\,\cite{guan2025deio} & ES-PTAM\,\cite{esptam_FIXME} \\
+Sequence & Stereo-DEVO\,\cite{zhong2025stereodevo} & ESVO2\,\cite{niu2025esvo2} & ESVIO\,\cite{chen2023esvio} & ESIO\,\cite{chen2023esvio} & DEIO\,\cite{guan2025deio} & ES-PTAM\,\cite{ghosh2024esptam} \\
 \midrule
-tumvie\_1d\_trans & 1.05\src{a} & 3.33\src{b} & \nr & \nr & 1.85\src{a} & 1.05\src{b} \\
-tumvie\_3d\_trans & 1.26\src{a} & 7.26\src{b} & \nr & \nr & 1.28\src{a} & 8.53\src{b} \\
-tumvie\_6dof & 1.69\src{a} & 3.21\src{b} & \nr & \nr & 1.45\src{a} & 10.25\src{b} \\
-tumvie\_desk & 2.44\src{a} & 6.16\src{b} & \nr & \nr & 1.49\src{a} & 2.50\src{b} \\
-tumvie\_desk2 & 1.79\src{a} & 4.02\src{b} & \nr & \nr & 1.45\src{a} & 7.20\src{b} \\
+tumvie\_1d\_trans & 1.05\src{a} & 3.33\src{b} & \nr & \fail\src{b} & 1.85\src{a} & 1.05\src{b} \\
+tumvie\_3d\_trans & 1.26\src{a} & 7.26\src{b} & \nr & \fail\src{b} & 1.28\src{a} & 8.53\src{b} \\
+tumvie\_6dof & 1.69\src{a} & 3.21\src{b} & \nr & \fail\src{b} & 1.45\src{a} & 10.25\src{b} \\
+tumvie\_desk & 2.44\src{a} & 6.16\src{b} & \nr & \fail\src{b} & 1.49\src{a} & 2.50\src{b} \\
+tumvie\_desk2 & 1.79\src{a} & 4.02\src{b} & \nr & \fail\src{b} & 1.45\src{a} & 7.20\src{b} \\
 \bottomrule
 \end{tabular}
 \\[2pt] {\footnotesize Sources: \textsuperscript{a}\cite{zhong2025stereodevo}, \textsuperscript{b}\cite{niu2025esvo2}.}
@@ -104,14 +106,14 @@ tumvie\_desk2 & 1.79\src{a} & 4.02\src{b} & \nr & \nr & 1.45\src{a} & 7.20\src{b
 
 \begin{table}[t]
 \centering
-\caption{Absolute trajectory error (ATE, cm) on Other for stereo/metric event odometry baselines, taken from the literature. All values are SE(3)-aligned full-trajectory results; monocular up-to-scale (\mbox{Sim(3)}) results are excluded as they are not the same quantity. Where several papers report the same method and sequence we quote the best published value. Superscripts give the source of each number, which is not always the paper proposing the method. \nr{} marks a cell no surveyed source reports; such cells must be produced by us or carry a reason code.}
+\caption{Absolute trajectory error (ATE, cm) on Other for stereo/metric event odometry baselines, taken from the literature. All values are SE(3)-aligned full-trajectory results; monocular up-to-scale (\mbox{Sim(3)}) results are excluded as they are not the same quantity. Where several papers report the same method and sequence we quote the best published value, so each column is a \emph{composite upper bound} over all published results rather than any single reported configuration: no baseline is understated, and no one configuration ever achieved these numbers simultaneously. Superscripts give the source of each number, which is not always the paper proposing the method. \nr{} marks a cell no surveyed source reports; such cells must be produced by us or carry a reason code. \fail{} marks a cell a source explicitly reports as a failure, which is a measured outcome rather than missing data. Every ES-PTAM, ESIO, ESVIO value is second-hand: its own paper is not the source of any cell here.}
 \label{tab:lit-other}
 \begin{tabular}{lrrrrrr}
 \toprule
-Sequence & Stereo-DEVO\,\cite{zhong2025stereodevo} & ESVO2\,\cite{niu2025esvo2} & ESVIO\,\cite{chen2023esvio} & ESIO\,\cite{chen2023esvio} & DEIO\,\cite{guan2025deio} & ES-PTAM\,\cite{esptam_FIXME} \\
+Sequence & Stereo-DEVO\,\cite{zhong2025stereodevo} & ESVO2\,\cite{niu2025esvo2} & ESVIO\,\cite{chen2023esvio} & ESIO\,\cite{chen2023esvio} & DEIO\,\cite{guan2025deio} & ES-PTAM\,\cite{ghosh2024esptam} \\
 \midrule
 hnu\_campus & 151.8\src{a} & 181.8\src{a} & \nr & 1420.5\src{a} & \nr & \nr \\
-drone\_fast & 13.29\src{a} & \nr & \nr & 154.0\src{a} & \nr & \nr \\
+drone\_fast & 13.29\src{a} & \fail\src{a} & \nr & 154.0\src{a} & \nr & \nr \\
 \bottomrule
 \end{tabular}
 \\[2pt] {\footnotesize Sources: \textsuperscript{a}\cite{zhong2025stereodevo}.}

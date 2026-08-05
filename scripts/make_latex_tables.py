@@ -61,25 +61,44 @@ BIB = {
   journal = {arXiv preprint arXiv:2504.00139},
   year    = {2025}
 }"""),
+    "ESPTAM": ("ghosh2024esptam", """@inproceedings{ghosh2024esptam,
+  author    = {Ghosh, Suman and Cavinato, Valentina and Gallego, Guillermo},
+  title     = {{ES-PTAM}: Event-based Stereo Parallel Tracking and Mapping},
+  booktitle = {European Conference on Computer Vision (ECCV) Workshops},
+  year      = {2024}
+}"""),
 }
-# Methods whose own paper we have never extracted -- flagged so nobody cites a guess.
-NO_BIB = {"ES-PTAM": "not in results_db/papers.csv; fill in before submission."}
 
-# bib key for each METHOD's own paper, for the column headers. ES-PTAM's own paper was
-# never extracted, so it gets a stub that compiles but is impossible to miss.
+# bib key for each METHOD's own paper, for the column headers. Methods whose own paper
+# never sources a cell are detected at render time and called out in the caption.
 METHOD_CITE = {
     "Stereo-DEVO": "zhong2025stereodevo",
     "ESVO2": "niu2025esvo2",
     "ESVIO": "chen2023esvio",
     "ESIO": "chen2023esvio",      # ESIO is ESVIO's event-only variant, same paper
     "DEIO": "guan2025deio",
-    "ES-PTAM": "esptam_FIXME",
+    "ES-PTAM": "ghosh2024esptam",
 }
-STUB_BIB = """@misc{esptam_FIXME,
-  title = {{FIXME --- add the ES-PTAM reference (Ghosh et al.) by hand}},
-  note  = {Placeholder: this paper was never extracted into the results database,
-           so no verified bibliographic data exists for it in this repository.}
-}"""
+# Per-cell footnotes for hazards that a checking reviewer would otherwise read as our error.
+FOOT = {
+    ("DSEC", "city09_d", "Stereo-DEVO"): r"\textsuperscript{$\dagger$}",
+}
+# Rendered in the notes block below the tabular: \footnotetext inside a float is dropped.
+FOOTNOTE_TEXT = {
+    "dsec": r"\textsuperscript{$\dagger$}The source reports two different values for this "
+            r"cell: 625.81\,cm in its Table~II and 564.33\,cm in its Table~III. We quote "
+            r"the lower under the best-published-value rule.",
+}
+# Datasets whose published numbers are not computed over the full sequence.
+CAVEAT = {
+    "mvsec": r"\par\smallskip {\footnotesize \textbf{Sequence caveat.} Sources evaluate "
+             r"the \emph{edited} MVSEC bags (\texttt{indoor\_flying*\_data\_edited}), and "
+             r"further restrict scoring to a sub-window of those: the trajectories released "
+             r"with~\cite{niu2025esvo2} span 25.8, 24.2, 25.0 and 5.9\,s against ground truth "
+             r"of 70.3, 84.9, 94.0 and 19.8\,s respectively. Numbers here are therefore "
+             r"$\approx$26--37\% windows, not whole sequences, and are not comparable with a "
+             r"full-sequence run.}",
+}
 
 PLAN = [
     ("RPG", "rpg", ["rpg_box", "rpg_monitor", "rpg_bin", "rpg_desk", "rpg_reader"]),
@@ -104,15 +123,26 @@ def is_se3(x):
 
 
 def load_best():
-    best = {}
+    """-> best[(ds, seq, method)] = (value, paper, table)
+       failed[(ds, seq, method)] = {papers that explicitly report a failure}
+
+    A source that reports "failed" is asserting a measured outcome: the method ran and
+    did not produce a usable trajectory. A source that simply omits the cell asserts
+    nothing. Collapsing the two would discard the baseline failure rate, so they are
+    tracked separately and rendered with different markers.
+    """
+    best, failed = {}, {}
     for x in csv.DictReader(open(f"{ROOT}/results_db/results.csv")):
-        if x["method"] not in METHODS or x["metric"] != "ATE" or not x["value"] or not is_se3(x):
+        if x["method"] not in METHODS or x["metric"] != "ATE" or not is_se3(x):
             continue
         k = (x["dataset"], x["sequence_norm"] or x["sequence"], x["method"])
-        v = float(x["value"])
-        if k not in best or v < best[k][0]:
-            best[k] = (v, x["paper"], x["table"])
-    return best
+        if x["value"]:
+            v = float(x["value"])
+            if k not in best or v < best[k][0]:
+                best[k] = (v, x["paper"], x["table"])
+        elif x["status"] == "failed":
+            failed.setdefault(k, set()).add(x["paper"])
+    return best, failed
 
 
 def fmt(v):
@@ -121,13 +151,19 @@ def fmt(v):
 
 def main():
     os.makedirs(OUT, exist_ok=True)
-    best = load_best()
+    best, failed = load_best()
 
     # provenance markers, ordered by how often each source is used
-    used = Counter(v[1] for v in best.values())
+    used = Counter([v[1] for v in best.values()] +
+                   [p for ps in failed.values() for p in ps])
     marks = {}
     for i, (paper, _) in enumerate(used.most_common()):
         marks[paper] = chr(ord("a") + i)
+
+    # a method is "second-hand" if its own paper is never the source of any of its cells
+    own = {m: METHOD_CITE[m] for m in METHODS}
+    src_keys = {BIB[p][0] for p in marks if p in BIB}
+    SECOND_HAND = {m for m in METHODS if own[m] not in src_keys}
 
     L = []
     A = L.append
@@ -136,6 +172,7 @@ def main():
     A(r"% Put these macros in the preamble:")
     A(r"%   \newcommand{\nr}{{\footnotesize\textsc{n/r}}}  % not reported in any source")
     A(r"%   \newcommand{\src}[1]{\textsuperscript{#1}}")
+    A(r"%   \newcommand{\fail}{{\footnotesize\textsc{fail}}}  % source reports a failure")
     A(r"% A ready-made preamble block is in paper_tables/preamble.tex")
     A("")
     for name, slug, seqs in PLAN:
@@ -147,9 +184,16 @@ def main():
           r"All values are SE(3)-aligned full-trajectory results; monocular up-to-scale "
           r"(\mbox{Sim(3)}) results are excluded as they are not the same quantity. "
           r"Where several papers report the same method and sequence we quote the best "
-          r"published value. Superscripts give the source of each number, which is not "
+          r"published value, so each column is a \emph{composite upper bound} over all "
+          r"published results rather than any single reported configuration: no baseline "
+          r"is understated, and no one configuration ever achieved these numbers "
+          r"simultaneously. Superscripts give the source of each number, which is not "
           r"always the paper proposing the method. \nr{} marks a cell no surveyed source "
-          r"reports; such cells must be produced by us or carry a reason code.}")
+          r"reports; such cells must be produced by us or carry a reason code. "
+          r"\fail{} marks a cell a source explicitly reports as a failure, which is a "
+          r"measured outcome rather than missing data." +
+          (r" Every " + ", ".join(sorted(SECOND_HAND)) + r" value is second-hand: its own "
+           r"paper is not the source of any cell here." if SECOND_HAND else "") + r"}")
         A(r"\label{tab:lit-" + slug + "}")
         A(r"\begin{tabular}{l" + "r" * ncol + "}")
         A(r"\toprule")
@@ -160,11 +204,16 @@ def main():
         for s in seqs:
             cells = []
             for m in METHODS:
-                hit = best.get((name, s, m))
+                k = (name, s, m)
+                hit = best.get(k)
                 if hit:
                     v, paper, _ = hit
                     used_here.add(paper)
-                    cells.append(f"{fmt(v)}\\src{{{marks[paper]}}}")
+                    cells.append(f"{fmt(v)}\\src{{{marks[paper]}}}" + FOOT.get(k, ""))
+                elif k in failed:
+                    fp = sorted(failed[k])[0]
+                    used_here.add(fp)
+                    cells.append(f"\\fail\\src{{{marks.get(fp, '?')}}}")
                 else:
                     cells.append(r"\nr")
             A(tex_escape(s) + " & " + " & ".join(cells) + r" \\")
@@ -175,7 +224,12 @@ def main():
             f"\\textsuperscript{{{mk}}}\\cite{{{BIB[p][0]}}}"
             for p, mk in sorted(marks.items(), key=lambda kv: kv[1])
             if p in BIB and p in used_here)
-        A(r"\\[2pt] {\footnotesize Sources: " + legend + r".}")
+        note = "Sources: " + legend + "."
+        if slug in FOOTNOTE_TEXT:
+            note += r" \\ " + FOOTNOTE_TEXT[slug]
+        A(r"\\[2pt] {\footnotesize " + note + r"}")
+        if slug in CAVEAT:
+            A(CAVEAT[slug])
         A(r"\end{table}")
         A("")
 
@@ -183,7 +237,8 @@ def main():
         "% Macros required by literature_se3.tex\n"
         "\\usepackage{booktabs}\n"
         "\\newcommand{\\nr}{{\\footnotesize\\textsc{n/r}}}  % not reported in any source\n"
-        "\\newcommand{\\src}[1]{\\textsuperscript{#1}}\n")
+        "\\newcommand{\\src}[1]{\\textsuperscript{#1}}\n"
+        "\\newcommand{\\fail}{{\\footnotesize\\textsc{fail}}}  % source reports a failure\n")
     tex_path = os.path.join(OUT, "literature_se3.tex")
     open(tex_path, "w").write("\n".join(L))
 
@@ -193,22 +248,22 @@ def main():
         for pkey, (bkey, _) in BIB.items():
             if bkey == key:
                 needed.add(pkey)
-    bib = [BIB[p][1] for p in sorted(needed)] + [STUB_BIB]
-    for m, why in NO_BIB.items():
-        bib.append(f"% MISSING: {m}. {why}")
+    bib = [BIB[p][1] for p in sorted(needed)]
     bib_path = os.path.join(OUT, "literature_se3.bib")
     open(bib_path, "w").write("\n\n".join(bib) + "\n")
 
-    total = sum(len(s) for _, _, s in PLAN) * len(METHODS)
-    have = sum(1 for (d, s, m) in best
-               if any(d == n and s in ss for n, _, ss in PLAN))
+    inplan = {(n, sq) for n, _, ss in PLAN for sq in ss}
+    total = len(inplan) * len(METHODS)
+    have = sum(1 for (d, s, m) in best if (d, s) in inplan)
+    nfail = sum(1 for (d, s, m) in failed if (d, s) in inplan and (d, s, m) not in best)
     print(f"wrote {tex_path}")
     print(f"wrote {bib_path}")
-    print(f"cells: {have}/{total} reported, {total - have} \\nr")
+    print(f"cells: {have} reported, {nfail} FAIL (source says it failed), "
+          f"{total - have - nfail} n/r, of {total}")
     print("provenance markers: " + ", ".join(f"{mk}={p}" for p, mk in
                                              sorted(marks.items(), key=lambda kv: kv[1])))
-    for m in NO_BIB:
-        print(f"WARNING: no bib entry for {m} -- add by hand")
+    for m in SECOND_HAND:
+        print(f"NOTE: every {m} value is second-hand (its own paper sources no cell)")
 
 
 if __name__ == "__main__":
